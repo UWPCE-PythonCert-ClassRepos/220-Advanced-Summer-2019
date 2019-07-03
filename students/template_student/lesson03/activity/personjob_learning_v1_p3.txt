@@ -1,3 +1,0 @@
-Field Name: 'Person Name', Type: String, Maximum Length: 30, Mandatory
-Field Name: 'SSN', Type: String, Maximum Length: 11, Mandatory
-etc
