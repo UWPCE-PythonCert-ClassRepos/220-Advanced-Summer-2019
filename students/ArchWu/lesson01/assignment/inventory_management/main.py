@@ -5,6 +5,8 @@ import inventory_class
 import furniture_class
 import electric_appliances_class
 
+FULL_INVENTORY = {}
+
 def main_menu(user_prompt=None):
     """ Main menu """
     valid_prompts = {"1": add_new_item,
@@ -30,6 +32,7 @@ def get_price(item_code):
 
 def add_new_item():
     """ Add a new item to inventory """
+    #global FULL_INVENTORY
     item_code = input("Enter item code: ")
     item_description = input("Enter item description: ")
     item_rental_price = input("Enter item rental price: ")

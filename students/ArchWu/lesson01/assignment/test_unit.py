@@ -1,5 +1,7 @@
 """ Unit tests for inventory management """
+from unittest import TestCase, mock
 import unittest
+
 from inventory_management.inventory_class import Inventory
 from inventory_management.furniture_class import Furniture
 from inventory_management.electric_appliances_class import ElectricAppliances
@@ -70,4 +72,20 @@ class ElectricAppliancesTest(unittest.TestCase):
 
 class MainTest(unittest.TestCase):
     """Test main module"""
-    def test_init():
+    def test_main(self):
+        """Test main_menu function """
+        self.assertEqual(main.main_menu('1'), main.add_new_item)
+        self.assertEqual(main.main_menu('2'), main.item_info)
+        self.assertEqual(main.main_menu('q'), main.exit_program)
+
+    @mock.patch("main.market_prices", return_value=24)
+    def test_add_new_item(self, mocked_market_prices):
+        """Test add_new_item function """
+        with mock.patch('builtins.input', return_value='n'):
+            main.add_new_item()
+            self.assertEqual(main.FULL_INVENTORY['n']['product_code'], 'n')
+            self.assertEqual(main.FULL_INVENTORY['n']['market_price'], 24)
+            mocked_market_prices.get_latest_price.assert_called_once()
+
+    def test_item_info(self):
+        """Test item info function"""
