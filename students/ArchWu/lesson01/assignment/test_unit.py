@@ -3,6 +3,7 @@ import unittest
 from inventory_management.inventory_class import Inventory
 from inventory_management.furniture_class import Furniture
 from inventory_management.electric_appliances_class import ElectricAppliances
+from inventory_management import main
 
 class InventoryTest(unittest.TestCase):
     """test Inventory class"""
@@ -44,3 +45,29 @@ class FurnitureTest(unittest.TestCase):
         self.assertEqual(test_obj['rental_price'], 4)
         self.assertEqual(test_obj['material'], 5)
         self.assertEqual(test_obj['size'], 6)
+
+class ElectricAppliancesTest(unittest.TestCase):
+    """Test EA class"""
+    def test_init(self):
+        """Test __init__()"""
+        test_obj = ElectricAppliances(1, 2, 3, 4, 5, 6)
+        self.assertEqual(test_obj.product_code, 1)
+        self.assertEqual(test_obj.description, 2)
+        self.assertEqual(test_obj.market_price, 3)
+        self.assertEqual(test_obj.rental_price, 4)
+        self.assertEqual(test_obj.brand, 5)
+        self.assertEqual(test_obj.voltage, 6)
+    def test_return_dict(self):
+        """Test return as dict func"""
+        test_obj = ElectricAppliances(1, 2, 3,
+                                      4, 5, 6).return_as_dictionary()
+        self.assertEqual(test_obj['product_code'], 1)
+        self.assertEqual(test_obj['description'], 2)
+        self.assertEqual(test_obj['market_price'], 3)
+        self.assertEqual(test_obj['rental_price'], 4)
+        self.assertEqual(test_obj['brand'], 5)
+        self.assertEqual(test_obj['voltage'], 6)
+
+class MainTest(unittest.TestCase):
+    """Test main module"""
+    def test_init():

@@ -9,7 +9,7 @@ class ElectricAppliances(Inventory):
                  rentalPrice,
                  brand,
                  voltage):
-        super().__init__(self, productCode, description, marketPrice,
+        super().__init__(productCode, description, marketPrice,
                          rentalPrice)
         # Creates common instance variables from the parent class
         self.brand = brand

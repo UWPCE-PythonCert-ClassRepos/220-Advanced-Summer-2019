@@ -11,8 +11,7 @@ class Furniture(Inventory):
                  rentalPrice,
                  material,
                  size):
-        super().__init__(self,
-                         productCode,
+        super().__init__(productCode,
                          description,
                          marketPrice,
                          rentalPrice)
