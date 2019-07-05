@@ -147,3 +147,6 @@ class MarketPriceTest(TestCase):
     def test_get_latest_price(self):
         """Test get_latest_price function"""
         self.assertEqual(market_prices.get_latest_price(''), 24)
+
+if __name__ == "__main__":
+    unittest.main()
