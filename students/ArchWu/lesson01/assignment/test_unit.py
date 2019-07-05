@@ -1,12 +1,12 @@
 """ Unit tests for inventory management """
 from unittest import TestCase, mock
 import unittest
-import io
 
 from inventory_management.inventory_class import Inventory
 from inventory_management.furniture_class import Furniture
 from inventory_management.electric_appliances_class import ElectricAppliances
 from inventory_management import main
+from inventory_management import market_prices
 
 class InventoryTest(unittest.TestCase):
     """test Inventory class"""
@@ -78,6 +78,12 @@ class MainTest(unittest.TestCase):
         self.assertEqual(main.main_menu('1'), main.add_new_item)
         self.assertEqual(main.main_menu('2'), main.item_info)
         self.assertEqual(main.main_menu('q'), main.exit_program)
+        with mock.patch('builtins.input', side_effect=['0', 'q']):
+            with mock.patch('sys.stdout'):
+                main.main_menu()
+                mock.call.write(
+                    "Please choose from the following options (1, 2, q)"
+                    ).assert_called_once()
 
     @mock.patch('main.market_prices.get_latest_price', return_value=25)
     def test_add_new_item(self, mocked_get_latest_price):
@@ -110,6 +116,18 @@ class MainTest(unittest.TestCase):
                 fake_stdout.assert_has_calls(
                     [mock.call.write("Item not found in inventory"),
                      mock.call.write("\n")])
+        with mock.patch('builtins.input', return_value='n'):
+            with mock.patch('sys.stdout') as fake_stdout:
+                main.item_info()
+                fake_stdout.assert_has_calls(
+                    [mock.call.write('product_code:n'),
+                     mock.call.write('\n'),
+                     mock.call.write('description:n'),
+                     mock.call.write('\n'),
+                     mock.call.write('market_price:25'),
+                     mock.call.write('\n'),
+                     mock.call.write('rental_price:n'),
+                     mock.call.write('\n')])
 
     def test_get_price(self):
         """Test get_price function"""
@@ -123,3 +141,9 @@ class MainTest(unittest.TestCase):
         """Test exit_program function"""
         with self.assertRaises(SystemExit):
             self.assertRaises(SystemExit, main.exit_program())
+
+class MarketPriceTest(TestCase):
+    """Test market_price module"""
+    def test_get_latest_price(self):
+        """Test get_latest_price function"""
+        self.assertEqual(market_prices.get_latest_price(''), 24)
