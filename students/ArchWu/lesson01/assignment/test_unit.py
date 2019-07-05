@@ -96,3 +96,16 @@ class MainTest(unittest.TestCase):
                 fake_stdout.assert_has_calls(
                     [mock.call.write("Item not found in inventory"),
                      mock.call.write("\n")])
+
+    def test_get_price(self):
+        """Test get_price function"""
+        with mock.patch('sys.stdout') as fake_stdout:
+            main.get_price('n') # A dummy input
+            fake_stdout.assert_has_calls(
+                [mock.call.write("Get price"),
+                 mock.call.write("\n")])
+
+    def test_exit_program(self):
+        """Test exit_program function"""
+        with self.assertRaises(SystemExit):
+            self.assertRaises(SystemExit, main.exit_program())
