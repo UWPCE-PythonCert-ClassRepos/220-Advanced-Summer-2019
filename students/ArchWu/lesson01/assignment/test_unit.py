@@ -87,6 +87,20 @@ class MainTest(unittest.TestCase):
             self.assertEqual(main.FULL_INVENTORY['n']['product_code'], 'n')
             self.assertEqual(main.FULL_INVENTORY['n']['market_price'], 25)
             mocked_get_latest_price.assert_called_once()
+        with mock.patch('builtins.input', return_value='y'):
+            main.add_new_item()
+            self.assertEqual(main.FULL_INVENTORY['y']['product_code'], 'y')
+            self.assertEqual(main.FULL_INVENTORY['y']['market_price'], 25)
+            self.assertEqual(main.FULL_INVENTORY['y']['size'], 'y')
+            self.assertEqual(main.FULL_INVENTORY['y']['material'], 'y')
+
+        with mock.patch('builtins.input',
+                        side_effect=['1', '2', '3', 'n', 'y', '4', '5']):
+            main.add_new_item()
+            self.assertEqual(main.FULL_INVENTORY['1']['product_code'], '1')
+            self.assertEqual(main.FULL_INVENTORY['1']['market_price'], 25)
+            self.assertEqual(main.FULL_INVENTORY['1']['brand'], '4')
+            self.assertEqual(main.FULL_INVENTORY['1']['voltage'], '5')
 
     def test_item_info(self):
         """Test item info function"""
