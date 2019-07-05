@@ -1,6 +1,7 @@
 """ Unit tests for inventory management """
 from unittest import TestCase, mock
 import unittest
+import io
 
 from inventory_management.inventory_class import Inventory
 from inventory_management.furniture_class import Furniture
@@ -78,14 +79,20 @@ class MainTest(unittest.TestCase):
         self.assertEqual(main.main_menu('2'), main.item_info)
         self.assertEqual(main.main_menu('q'), main.exit_program)
 
-    @mock.patch("main.market_prices", return_value=24)
-    def test_add_new_item(self, mocked_market_prices):
+    @mock.patch('main.market_prices.get_latest_price', return_value=25)
+    def test_add_new_item(self, mocked_get_latest_price):
         """Test add_new_item function """
         with mock.patch('builtins.input', return_value='n'):
             main.add_new_item()
             self.assertEqual(main.FULL_INVENTORY['n']['product_code'], 'n')
-            self.assertEqual(main.FULL_INVENTORY['n']['market_price'], 24)
-            mocked_market_prices.get_latest_price.assert_called_once()
+            self.assertEqual(main.FULL_INVENTORY['n']['market_price'], 25)
+            mocked_get_latest_price.assert_called_once()
 
     def test_item_info(self):
         """Test item info function"""
+        with mock.patch('builtins.input', return_value='0'):
+            with mock.patch('sys.stdout') as fake_stdout:
+                main.item_info()
+                fake_stdout.assert_has_calls(
+                    [mock.call.write("Item not found in inventory"),
+                     mock.call.write("\n")])
