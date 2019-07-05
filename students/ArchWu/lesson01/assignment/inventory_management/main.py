@@ -22,8 +22,8 @@ def main_menu(user_prompt=None):
         print("2. Get item information")
         print("q. Quit")
         user_prompt = input(">")
-    valid_prompts.get(user_prompt)()
-    return
+    return valid_prompts.get(user_prompt)()
+
 
 def get_price(item_code):
     """ Get the price of the input item code """

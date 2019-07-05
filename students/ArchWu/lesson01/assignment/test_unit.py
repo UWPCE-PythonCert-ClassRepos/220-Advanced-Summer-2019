@@ -75,15 +75,14 @@ class MainTest(unittest.TestCase):
     """Test main module"""
     def test_main(self):
         """Test main_menu function """
-        self.assertEqual(main.main_menu('1'), main.add_new_item)
-        self.assertEqual(main.main_menu('2'), main.item_info)
-        self.assertEqual(main.main_menu('q'), main.exit_program)
         with mock.patch('builtins.input', side_effect=['0', 'q']):
             with mock.patch('sys.stdout'):
-                main.main_menu()
-                mock.call.write(
-                    "Please choose from the following options (1, 2, q)"
-                    ).assert_called_once()
+                with self.assertRaises(SystemExit):
+                    main.main_menu()
+                    mock.call.write(
+                        "Please choose from the following options (1, 2, q)"
+                        ).assert_called_once()
+                    self.assertRaises(SystemExit, main.exit_program())
 
     @mock.patch('main.market_prices.get_latest_price', return_value=25)
     def test_add_new_item(self, mocked_get_latest_price):
