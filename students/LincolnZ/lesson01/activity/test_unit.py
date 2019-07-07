@@ -47,17 +47,21 @@ class CalculatorTests(TestCase):
     def test_adder_call(self):
         self.adder.calc = MagicMock(return_value=0)
 
-        self.calculator.enter_number(1)
+        #Calculator.enter_number.stack.insert(0, number)
         self.calculator.enter_number(2)
+        self.calculator.enter_number(1)
+        
         self.calculator.add()
 
         self.adder.calc.assert_called_with(1, 2)
 
     def test_subtracter_call(self):
         self.subtracter.calc = MagicMock(return_value=0)
-
-        self.calculator.enter_number(1)
+        
+        #Calculator.enter_number.stack.insert(0, number)
         self.calculator.enter_number(2)
+        self.calculator.enter_number(1)
+        
         self.calculator.subtract()
 
         self.subtracter.calc.assert_called_with(1, 2)
