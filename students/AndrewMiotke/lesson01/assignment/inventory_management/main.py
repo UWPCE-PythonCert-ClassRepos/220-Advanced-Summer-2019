@@ -20,7 +20,7 @@ def main_menu(user_prompt=None):
         print("1. Add a new item to the inventory")
         print("2. Get item information")
         print("q. Quit")
-        user_prompt = input(">")
+        user_prompt = input("> ")
 
     return valid_prompts.get(user_prompt)
 
@@ -81,7 +81,7 @@ def item_info():
     if item_code in FULL_INVENTORY:
         print_dict = FULL_INVENTORY[item_code]
         for key, value in print_dict.items():
-            print("{}:{}".format(key, value))
+            print("{}: {}".format(key, value))
     else:
         print("Item not found in inventory")
 
