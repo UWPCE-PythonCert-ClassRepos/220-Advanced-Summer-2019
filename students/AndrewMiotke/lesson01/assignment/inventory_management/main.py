@@ -15,7 +15,7 @@ def main_menu(user_prompt=None):
     options = list(valid_prompts.keys())
 
     while user_prompt not in valid_prompts:
-        options_str = ("{}" + (", {}") * (len(options)-1)).format(*options)
+        options = ("{}" + (", {}") * (len(options)-1)).format(*options)
         print("Please choose from the following options ({options_str}):")
         print("1. Add a new item to the inventory")
         print("2. Get item information")
@@ -25,7 +25,7 @@ def main_menu(user_prompt=None):
     return valid_prompts.get(user_prompt)
 
 
-def get_price(item_code):
+def get_price():
     """ Prints the get price string """
 
     print("Get price")
@@ -70,7 +70,7 @@ def add_new_item():
                                  item_description,
                                  item_price,
                                  item_rental_price)
-    full_inventory[item_code] = new_item.return_as_dictionary()
+    FULL_INVENTORY[item_code] = new_item.return_as_dictionary()
     print("New inventory item added")
 
 
@@ -78,10 +78,10 @@ def item_info():
     """ Get info of item """
 
     item_code = input("Enter item code: ")
-    if item_code in full_inventory:
-        print_dict = full_inventory[item_code]
-        for k, v in print_dict.items():
-            print("{}:{}".format(k, v))
+    if item_code in FULL_INVENTORY:
+        print_dict = FULL_INVENTORY[item_code]
+        for key, value in print_dict.items():
+            print("{}:{}".format(key, value))
     else:
         print("Item not found in inventory")
 
@@ -92,8 +92,8 @@ def exit_program():
     sys.exit()
 
 if __name__ == '__main__':
-    full_inventory = {}
+    FULL_INVENTORY = {}
     while True:
-        print(full_inventory)
+        print(FULL_INVENTORY)
         main_menu()()
         input("Press Enter to continue...........")
