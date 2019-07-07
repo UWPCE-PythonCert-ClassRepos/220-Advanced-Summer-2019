@@ -12,6 +12,7 @@ class Furniture(Inventory):
         self.size = size
 
     def return_as_dictionary(self):
+        """class method to return a dictionary"""
         output_dict = {}
         super().return_as_dictionary()
         output_dict['material'] = self.material
