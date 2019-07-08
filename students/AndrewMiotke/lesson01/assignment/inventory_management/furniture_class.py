@@ -7,6 +7,7 @@ class Furniture(Inventory):
     Furniture Class
     Inheriting from Inventory
     """
+
     def __init__(self,
                  product_code,
                  description,

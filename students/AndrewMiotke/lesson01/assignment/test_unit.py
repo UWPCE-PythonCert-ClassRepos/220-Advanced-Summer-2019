@@ -81,3 +81,7 @@ class ElectricTest(unittest.TestCase):
 
         self.assertEqual(test_inventory['brand'], 'GE')
         self.assertEqual(test_inventory['voltage'], 75)
+
+
+if __name__ == '__main__':
+    unittest.main()
