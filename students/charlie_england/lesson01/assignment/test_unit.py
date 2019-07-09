@@ -1,6 +1,6 @@
 import sys
 sys.path.insert(0,'./inventory_management')
-import main
+from main import item_info
 from unittest import TestCase
 from unittest.mock import patch
 from unittest.mock import Mock
@@ -59,9 +59,7 @@ class MainTest(TestCase):
     def test_add_new_item(self):
         pass
 
-    def test_item_info(self):
-        original_raw_input = __builtins__.raw_input
-        __builtins__.raw_input = lambda _: 123
-        self.assertEqual(answerReturn(),'you entered 123')
-        __builtins__.original_raw_input
+    @patch('main.item_info', return_value=123)
+    def test_item_info_123(self,input):
+        self.assertEqual(item_info(),"Item not found in inventory")
 
