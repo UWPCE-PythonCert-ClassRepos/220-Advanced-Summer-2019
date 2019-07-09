@@ -11,7 +11,7 @@ class Calculator(object):
         self.stack = []
 
     def enter_number(self, number):
-        self.stack.insert(0, number)
+        self.stack.append(number)
 
     def _do_calc(self, operator):
         try:
