@@ -5,6 +5,7 @@ import inventoryClass
 import furnitureClass
 import electricAppliancesClass
 
+
 def mainMenu(user_prompt=None):
     valid_prompts = {"1": addNewItem,
                      "2": itemInfo,
@@ -20,8 +21,10 @@ def mainMenu(user_prompt=None):
         user_prompt = input(">")
     return valid_prompts.get(user_prompt)
 
+
 def getPrice(itemCode):
     print("Get price")
+
 
 def addNewItem():
     global fullInventory
@@ -36,15 +39,30 @@ def addNewItem():
     if isFurniture.lower() == "y":
         itemMaterial = input("Enter item material: ")
         itemSize = input("Enter item size (S,M,L,XL): ")
-        newItem = furnitureClass.furniture(itemCode,itemDescription,itemPrice,itemRentalPrice,itemMaterial,itemSize)
+        newItem = furnitureClass.furniture(itemCode,
+                                           itemDescription,
+                                           itemPrice,
+                                           itemRentalPrice,
+                                           itemMaterial,
+                                           itemSize)
     else:
-        isElectricAppliance = input("Is this item an electric appliance? (Y/N): ")
+        isElectricAppliance = input("Is this item \
+                                    an electric appliance? (Y/N): ")
         if isElectricAppliance.lower() == "y":
             itemBrand = input("Enter item brand: ")
             itemVoltage = input("Enter item voltage: ")
-            newItem = electricAppliancesClass.electricAppliances(itemCode,itemDescription,itemPrice,itemRentalPrice,itemBrand,itemVoltage)
+            newItem = electricAppliancesClass.electricAppliances(
+                                                       itemCode,
+                                                       itemDescription,
+                                                       itemPrice,
+                                                       itemRentalPrice,
+                                                       itemBrand,
+                                                       itemVoltage)
         else:
-            newItem = inventoryClass.inventory(itemCode,itemDescription,itemPrice,itemRentalPrice)
+            newItem = inventoryClass.inventory(itemCode,
+                                               itemDescription,
+                                               itemPrice,
+                                               itemRentalPrice)
     fullInventory[itemCode] = newItem.returnAsDictionary()
     print("New inventory item added")
 
@@ -53,10 +71,11 @@ def itemInfo():
     itemCode = input("Enter item code: ")
     if itemCode in fullInventory:
         printDict = fullInventory[itemCode]
-        for k,v in printDict.items():
-            print("{}:{}".format(k,v))
+        for k, v in printDict.items():
+            print("{}:{}".format(k, v))
     else:
         print("Item not found in inventory")
+
 
 def exitProgram():
     sys.exit()
