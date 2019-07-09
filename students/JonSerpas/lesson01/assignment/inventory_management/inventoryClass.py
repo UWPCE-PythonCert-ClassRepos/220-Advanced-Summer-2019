@@ -1,8 +1,7 @@
 # Inventory class
 class inventory:
 
-    def __init__(self, productCode, description,
-                 marketPrice, rentalPrice):
+    def __init__(self, productCode, description, marketPrice, rentalPrice):
         self.productCode = productCode
         self.description = description
         self.marketPrice = marketPrice
