@@ -7,6 +7,7 @@ from unittest.mock import Mock
 import electric_appliances_class
 import furniture_class
 import inventory_class
+from market_prices import get_latest_price
 
 class ElectricAppliancesTest(TestCase):
 
@@ -59,7 +60,12 @@ class MainTest(TestCase):
     def test_add_new_item(self):
         pass
 
-    @patch('main.item_info', return_value=123)
-    def test_item_info_123(self,input):
-        self.assertEqual(item_info(),"Item not found in inventory")
+    # @patch('main.item_info', return_value=123)
+    # def test_item_info_123(self,input):
+    #     self.assertEqual(item_info(),"Item not found in inventory")
 
+class MarketPriceTest(TestCase):
+
+    def test_market_price(self):
+        val = 24
+        self.assertEqual(val,get_latest_price(val),f'{val} is equal to {get_latest_price(val)}')
