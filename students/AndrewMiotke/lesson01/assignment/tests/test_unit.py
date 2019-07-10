@@ -3,7 +3,7 @@
 import unittest
 from inventory_management.inventory_class import Inventory
 from inventory_management.furniture_class import Furniture
-from inventory_management.electric_appliance_class import ElectricAppliances
+# from inventory_management.electric_appliance_class import ElectricAppliances
 
 class InventoryTest(unittest.TestCase):
     """ Test the Inventory class """
@@ -57,31 +57,27 @@ class FurnitureTest(Inventory, unittest.TestCase):
 
 
 
-class ElectricTest(unittest.TestCase):
-    """ Test the Electrical class """
+# class ElectricTest(unittest.TestCase):
+#     """ Test the Electrical class """
 
-    def test_init(self):
-        """ Test init """
+#     def test_init(self):
+#         """ Test init """
 
-        test_inventory = ElectricAppliances(123, "chair", 100, 50, "GE", 75)
+#         test_inventory = ElectricAppliances(123, "chair", 100, 50, "GE", 75)
 
-        self.assertEqual(test_inventory.brand, "GE")
-        self.assertEqual(test_inventory.voltage, 75)
-
-
-    def test_return_as_dictionary(self):
-        """ Test the return as dictionary method """
-
-        test_inventory = ElectricAppliances(123,
-                                            "chair",
-                                            100,
-                                            50,
-                                            "GE",
-                                            75).return_as_dictionary()
-
-        self.assertEqual(test_inventory['brand'], 'GE')
-        self.assertEqual(test_inventory['voltage'], 75)
+#         self.assertEqual(test_inventory.brand, "GE")
+#         self.assertEqual(test_inventory.voltage, 75)
 
 
-if __name__ == '__main__':
-    unittest.main()
+#     def test_return_as_dictionary(self):
+#         """ Test the return as dictionary method """
+
+#         test_inventory = ElectricAppliances(123,
+#                                             "chair",
+#                                             100,
+#                                             50,
+#                                             "GE",
+#                                             75).return_as_dictionary()
+
+#         self.assertEqual(test_inventory['brand'], 'GE')
+#         self.assertEqual(test_inventory['voltage'], 75)
