@@ -1,9 +1,10 @@
 import sys
+import unittest
 sys.path.insert(0,'./inventory_management')
-from main import item_info
+from main import main_menu, add_new_item, item_info
 from unittest import TestCase
 from unittest.mock import patch
-from unittest.mock import Mock
+from unittest.mock import MagicMock
 import electric_appliances_class
 import furniture_class
 import inventory_class
@@ -55,10 +56,16 @@ class InventoryClassTest(TestCase):
 class MainTest(TestCase):
 
     def test_main_menu(self):
-        pass
+        with patch("builtins.input", side_effect="2"):
+            self.assertEqual(main_menu(), item_info)
+        with patch('builtins.input', side_effect='1'):
+            self.assertEqual(main_menu(), add_new_item)
 
     def test_add_new_item(self):
-        pass
+        with patch("builtins.input", side_effect=[123, 'couch', 7, 'y', 'synthetic', 'L']):
+            mock_couch = furniture_class.Furniture()
+            test_couch = add_new_item()
+            self.assertEqual(test_couch.return_as_dictionary,'working')
 
     # @patch('main.item_info', return_value=123)
     # def test_item_info_123(self,input):
@@ -69,3 +76,7 @@ class MarketPriceTest(TestCase):
     def test_market_price(self):
         val = 24
         self.assertEqual(val,get_latest_price(val),f'{val} is equal to {get_latest_price(val)}')
+
+    
+if __name__ == "__main__":
+    unittest.main()
