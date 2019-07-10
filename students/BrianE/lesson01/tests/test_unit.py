@@ -106,21 +106,27 @@ class MainTest(TestCase):
     This class tests the main.py module
     """
 
-    @patch('inventory_management.main.get_price', return_value=99.99)
-    def setUp(self, get_price):
+    def setUp(self):
         self.test_item = {'product_code': 1, 'description': 'test',
                           'market_price': 99.99, 'rental_price': 9.99}
-        self.get_price = get_price(item_code=1)
 
     def test_main_menu(self):
-        pass
+        with patch("builtins.input", side_effect="1"):
+            self.assertEqual(main_menu(), add_new_item)
 
-    @patch('inventory_management.main.get_price', return_value=99.99)
-    def test_get_price(self, get_price):
-        self.assertEqual(get_price(item_code=1), 99.99)
+        with patch("builtins.input", side_effect="2"):
+            self.assertEqual(main_menu(), item_info)
+
+        with patch("builtins.input", side_effect="q"):
+            self.assertEqual(main_menu(), exit_program)
+
+    def test_get_price(self):
+        self.assertEqual(get_price(item_code=1),  24)
 
     def test_add_new_item(self):
-        pass
+        with patch("builtins.input", side_effect="Test"):
+            with self.assertRaises(StopIteration):
+                add_new_item(full_inventory={})
 
     @patch('inventory_management.main.item_info', return_value='product_code:1\n'
                                                                'description:test\n'
