@@ -12,26 +12,35 @@ import logging
 NOTES FROM CLASS - DELETE THESE LATER
 Create 2 file handlers
 Create a if/elif statement for each logging level
-
 """
 
+LOG_FORMAT = "%(asctime)s %(filename)s:%(lineno)-3d %(levelname)s %(message)s"
 
-# logging details
-log_format = "%(asctime)s %(filename)s:%(lineno)-3d %(levelname)s %(message)s"
-log_file = datetime.datetime.now().strftime('%Y-%m-%d')+’.log’
+FORMATTER = logging.Formatter(LOG_FORMAT)
 
-formatter = logging.Formatter(log_format)
-file_handler = logging.FileHandler(log_file)
-logger = logging.getLogger()
-logger.addHandler(file_handler)
+# DEBUG
+FILE_HANDLER = logging.FileHandler('charges_calc.log')
+FILE_HANDLER.setLevel(logging.DEBUG)
+FILE_HANDLER.setFormatter(FORMATTER)
 
-# set a new debug arguement to set the level
+# Warning
+WARNING_HANDLER = logging.FileHandler('charges_calc.log')
+WARNING_HANDLER.setLevel(logging.WARNING)
+WARNING_HANDLER.setFormatter(FORMATTER)
+
+# Error
+ERROR_HANDLER = logging.FileHandler('charges_calc.log')
+ERROR_HANDLER.setLevel(logging.ERROR)
+ERROR_HANDLER.setFormatter(FORMATTER)
 
 
 def parse_cmd_arguments():
     parser = argparse.ArgumentParser(description='Process some integers.')
     parser.add_argument('-i', '--input', help='input JSON file', required=True)
     parser.add_argument('-o', '--output', help='ouput JSON file', required=True)
+    parser.add_argument('-d1', '--debug1', action='store_true', help='debug error messages')
+    parser.add_argument('-d2', '--debug2', action='store_true', help='debug error and warning messages')
+    parser.add_argument('-d3', '--debug3', action='store_true', help='Shows error, warnings, and debug messages')
 
     return parser.parse_args()
 
@@ -39,9 +48,12 @@ def parse_cmd_arguments():
 def load_rentals_file(filename):
     with open(filename) as file:
         try:
-            data = json.load(file)
-        except:
-            # Add logging here
+            # s needs a better variable name
+            s = file.read()
+            s = s.replace(',,', ',')
+            data = json.loads(s)
+        except ValueError:
+            logging.warning("Exiting: load_rentals_file()")
             exit(0)
     return data
 
@@ -56,7 +68,7 @@ def calculate_additional_fields(data):
             value["sqrt_total_price"] = math.sqrt(value["total_price"])
             value["unit_cost"] = value["total_price"] / value["units_rented"]
         except:
-            # Add logging here
+            logging.error("Exiting: calculate_additional_fields()")
             exit(0)
 
     return data
