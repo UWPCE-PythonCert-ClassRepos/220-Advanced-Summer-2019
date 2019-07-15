@@ -20,6 +20,7 @@ LOGGER.addHandler(file_handler)
 LOGGER.addHandler(console_handler)
 
 def parse_cmd_arguments():
+    """Command Parser"""
     parser = argparse.ArgumentParser(description='Process some integers.')
     parser.add_argument('-i', '--input', help='input JSON file', required=True)
     parser.add_argument('-o', '--output', help='ouput JSON file', required=True)
@@ -28,15 +29,18 @@ def parse_cmd_arguments():
 
 
 def load_rentals_file(filename):
+    """File loader"""
     file = open(filename, 'r')
     try:
         data = json.load(file)
+        logging.info("Data loading Hajime")
         return data
     except json.decoder.JSONDecodeError as e:
         exit(0)
     return -1
 
 def calculate_additional_fields(data):
+    """Calculator"""
     for value in data.values():
         try:
             rental_start = datetime.datetime.strptime(value['rental_start'], '%m/%d/%y')
@@ -58,13 +62,28 @@ def calculate_additional_fields(data):
     return data
 
 def save_to_json(filename, data):
+    """File Saver"""
     with open(filename, 'w') as file:
         json.dump(data, file)
 
+def choose_debug_lvl(arg):
+    """Debug Level Chooser"""
+    if arg == 0:
+        LOGGER.setLevel(0)
+    elif arg == 1:
+        LOGGER.setLevel(logging.ERROR)
+    elif arg == 2:
+        LOGGER.setLevel(logging.WARNING)
+    elif arg == 3:
+        LOGGER.setLevel(logging.NOTSET)
+    else:
+        logging.error("Error setting logging level {}".format(arg))
+
 if __name__ == "__main__":
     args = parse_cmd_arguments()
-    #pdb.set_trace()
-    #LOGGER.setLevel(LEVEL[args.debug])
+    choose_debug_lvl(args.debug)
     DATA = load_rentals_file(args.input)
     DATA = calculate_additional_fields(DATA)
     save_to_json(args.output, DATA)
+    logging.info('All Done!')
+    logging.warning("Just a test warning")
