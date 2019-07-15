@@ -6,7 +6,7 @@ import json
 import datetime
 import math
 import logging
-
+from logging.config import dictConfig
 
 """
 NOTES FROM CLASS - DELETE THESE LATER
@@ -57,7 +57,7 @@ def load_rentals_file(filename):
             parsed_json = parsed_json.replace(',,', ',')
             data = json.loads(parsed_json)
         except ValueError:
-            logging.warning("Exiting: load_rentals_file()")
+            WARNING_LOGGER.warning("Exiting: load_rentals_file()")
             exit(0)
     return data
 
@@ -67,14 +67,17 @@ def calculate_additional_fields(data):
     for value in data.values():
         try:
             rental_start = datetime.datetime.strptime(value["rental_start"], "%m/%d/%y")
+        except ValueError:
+            WARNING_LOGGER.warning("check rental_end")
             rental_end = datetime.datetime.strptime(value["rental_end"], "%m/%d/%y")
             value["total_days"] = (rental_end - rental_start).days
             value["total_price"] = value["total_days"] * value["price_per_day"]
-            value["sqrt_total_price"] = math.sqrt(value["total_price"])
             value["unit_cost"] = value["total_price"] / value["units_rented"]
+            value["sqrt_total_price"] = math.sqrt(value["total_price"])
         except ValueError:
             ERROR_LOGGER.error("Exiting: calculate_additional_fields()")
-            exit(0)
+            # exit(0)
+            raise
 
     return data
 
@@ -86,7 +89,6 @@ def save_to_json(filename, data):
 
 
 if __name__ == "__main__":
-    # use args debug and handle the logging
     args = parse_cmd_arguments()
     data = load_rentals_file(args.input)
     data = calculate_additional_fields(data)
