@@ -1,3 +1,0 @@
-"""
-run linting only
-"""
