@@ -12,4 +12,8 @@
 (Pdb) > /Users/jserpas/Python/UWPCE/220-Advanced-Summer-2019/students/JonSerpas/lesson02/assignment/src/charges_calc.py(3)<module>()
 -> '''
 (Pdb) --KeyboardInterrupt--
-(Pdb) (Pdb) 
+(Pdb) (Pdb) 2019-07-16 15:51:58,517 charges_calc.py:65  WARNING division by zero
+2019-07-16 15:52:02,262 charges_calc.py:65  WARNING division by zero
+2019-07-16 15:52:03,833 charges_calc.py:65  WARNING division by zero
+2019-07-16 15:52:04,987 charges_calc.py:65  WARNING division by zero
+2019-07-16 15:52:06,411 charges_calc.py:65  WARNING division by zero

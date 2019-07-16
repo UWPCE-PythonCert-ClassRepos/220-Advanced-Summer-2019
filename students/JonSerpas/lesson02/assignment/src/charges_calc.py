@@ -7,6 +7,23 @@ import datetime
 import math
 import logging
 
+# defining the format for logs as they are written to the logfile
+log_format = '%(asctime)s %(filename)s:%(lineno)-3d %(levelname)s %(message)s'
+formatter = logging.Formatter(log_format)
+
+log_file = datetime.datetime.now().strftime('%Y-%m-%d')+".log"
+file_handler = logging.FileHandler(log_file)
+
+
+file_handler.setFormatter(formatter)
+
+logger = logging.getLogger()
+
+logger.addHandler(file_handler)
+# sets the format style for log file output
+# log_file = datetime.datetime.now().strftime(“%Y-%m-%d”)+’.log’
+
+
 
 def parse_cmd_arguments():
     parser = argparse.ArgumentParser(description='Process some integers.')
@@ -47,11 +64,10 @@ def calculate_additional_fields(data):
             else:
                 print(value)
         except ZeroDivisionError as zero_error:
-            logging.basicConfig(level=logging.WARNING)
+            logging.warning(zero_error)
             pass
         except Exception as some_error:
-            logging.basicConfig(level=logging.WARNING)
-            print(some_error)
+            logging.error(some_error)
             # exit(0)
         # wouldn't we want to return the above variables?
         # this looks to be returning the exact same data.
