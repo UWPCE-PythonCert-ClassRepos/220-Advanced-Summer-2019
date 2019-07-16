@@ -50,6 +50,7 @@ def calculate_additional_fields(data):
             logging.basicConfig(level=logging.WARNING)
             pass
         except Exception as some_error:
+            logging.basicConfig(level=logging.WARNING)
             print(some_error)
             # exit(0)
         # wouldn't we want to return the above variables?
