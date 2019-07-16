@@ -24,7 +24,6 @@ logger.addHandler(file_handler)
 # log_file = datetime.datetime.now().strftime(“%Y-%m-%d”)+’.log’
 
 
-
 def parse_cmd_arguments():
     parser = argparse.ArgumentParser(description='Process some integers.')
     parser.add_argument('-i', '--input',
@@ -34,6 +33,8 @@ def parse_cmd_arguments():
                         help='ouput JSON file',
                         required=True)
     return parser.parse_args()
+
+
 def load_rentals_file(filename):
     with open(filename, 'r') as file:
         loaded_json_data = json.load(file)
@@ -48,17 +49,22 @@ def load_rentals_file(filename):
 def calculate_additional_fields(data):
     output = []
     for key, value in data.items():
-        try:
-            if value['rental_start'] and value['rental_end']:  # validating non '' data
-                rental_start = datetime.datetime.strptime(value['rental_start'], '%m/%d/%y')
-                rental_end = datetime.datetime.strptime(value['rental_end'], '%m/%d/%y')
+        try:  # validating non '' data
+            if value['rental_start'] and value['rental_end']:
+                rental_start = datetime.datetime.strptime(
+                    value['rental_start'], '%m/%d/%y')
+                rental_end = datetime.datetime.strptime(
+                    value['rental_end'], '%m/%d/%y')
                 value['total_days'] = (rental_end - rental_start).days
 
                 # some dates appear to be off and giving a neg int
                 # abs() allows the stop start to always be pos int
-                value['total_price'] = abs(value['total_days']) * value['price_per_day']
-                value['sqrt_total_price'] = math.sqrt(value['total_price'])
-                value['unit_cost'] = value['total_price'] / value['units_rented']
+                value['total_price'] = abs(
+                    value['total_days']) * value['price_per_day']
+                value['sqrt_total_price'] = math.sqrt(
+                    value['total_price'])
+                value['unit_cost'] = \
+                    value['total_price'] / value['units_rented']
                 value['key'] = key
                 output.append(value)
             else:
