@@ -6,25 +6,25 @@ import json
 import datetime
 import math
 import logging
-import pdb
 
-log_format = "%(asctime)s %(filename)s:%(lineno)-3d %(levelname)s %(message)s"
-log_file = datetime.datetime.now().strftime("%Y-%m-%d")+'.log'
-file_handler = logging.FileHandler(log_file)
-formatter = logging.Formatter(log_format)
-#LEVEL = {1:logging.ERROR, 2:logging.WARNING, 3:logging.INFO}
-console_handler = logging.StreamHandler()
-console_handler.setFormatter(formatter)
+LOG_FORMAT = "%(asctime)s %(filename)s:%(lineno)-3d %(levelname)s %(message)s"
+LOG_FILE = datetime.datetime.now().strftime("%Y-%m-%d")+'.log'
+FILE_HANDLER = logging.FileHandler(LOG_FILE)
+FORMATTER = logging.Formatter(LOG_FORMAT)
+#LEVEL = {0: logging.NOTSET, 1:logging.ERROR, 2:logging.WARNING, 3:logging.INFO}
+CONSOLE_HANDLER = logging.StreamHandler()
+CONSOLE_HANDLER.setFormatter(FORMATTER)
 LOGGER = logging.getLogger()
-LOGGER.addHandler(file_handler)
-LOGGER.addHandler(console_handler)
+LOGGER.addHandler(FILE_HANDLER)
+LOGGER.addHandler(CONSOLE_HANDLER)
 
 def parse_cmd_arguments():
     """Command Parser"""
     parser = argparse.ArgumentParser(description='Process some integers.')
     parser.add_argument('-i', '--input', help='input JSON file', required=True)
     parser.add_argument('-o', '--output', help='ouput JSON file', required=True)
-    parser.add_argument('-d', '--debug', help='debug option', required=True, type=int)
+    parser.add_argument('-d', '--debug', help='debug option',
+                        required=True, type=int)
     return parser.parse_args()
 
 
@@ -35,7 +35,7 @@ def load_rentals_file(filename):
         data = json.load(file)
         logging.info("Data loading Hajime")
         return data
-    except json.decoder.JSONDecodeError as e:
+    except json.decoder.JSONDecodeError:
         exit(0)
     return -1
 
@@ -43,10 +43,12 @@ def calculate_additional_fields(data):
     """Calculator"""
     for value in data.values():
         try:
-            rental_start = datetime.datetime.strptime(value['rental_start'], '%m/%d/%y')
+            rental_start = datetime.datetime.strptime(value['rental_start'],
+                                                      '%m/%d/%y')
             if not rental_start:
                 logging.warning("Missing rental start date!")
-            rental_end = datetime.datetime.strptime(value['rental_end'], '%m/%d/%y')
+            rental_end = datetime.datetime.strptime(value['rental_end'],
+                                                    '%m/%d/%y')
             if not rental_end:
                 logging.warning("Missing rental end date!")
             value['total_days'] = (rental_end - rental_start).days
@@ -54,9 +56,9 @@ def calculate_additional_fields(data):
             value['sqrt_total_price'] = math.sqrt(value['total_price'])
             value['unit_cost'] = value['total_price'] / value['units_rented']
         except ValueError:
-            logging.error("Something's not quite right! {}".format(value))
+            logging.error("Something's not quite right! %s", value)
             continue
-        except:
+        except (RuntimeError, TypeError, NameError):
             logging.error("Wierd thing happens")
             exit(0)
     return data
@@ -77,13 +79,13 @@ def choose_debug_lvl(arg):
     elif arg == 3:
         LOGGER.setLevel(logging.NOTSET)
     else:
-        logging.error("Error setting logging level {}".format(arg))
+        logging.error("Error setting logging level %s", arg)
 
 if __name__ == "__main__":
-    args = parse_cmd_arguments()
-    choose_debug_lvl(args.debug)
-    DATA = load_rentals_file(args.input)
+    ARGS = parse_cmd_arguments()
+    choose_debug_lvl(ARGS.debug)
+    DATA = load_rentals_file(ARGS.input)
     DATA = calculate_additional_fields(DATA)
-    save_to_json(args.output, DATA)
+    save_to_json(ARGS.output, DATA)
     logging.info('All Done!')
     logging.warning("Just a test warning")
