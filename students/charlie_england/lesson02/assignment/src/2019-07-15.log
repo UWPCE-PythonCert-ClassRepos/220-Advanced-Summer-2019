@@ -1,0 +1,1504 @@
+2019-07-15 17:49:18,360 charges_calc.py:128 DEBUG logger set up with level 3
+2019-07-15 17:49:18,366 charges_calc.py:130 DEBUG data gathered from JSON file source.json
+2019-07-15 17:49:18,370 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT001
+2019-07-15 17:49:18,370 charges_calc.py:61  DEBUG total price for RNT001 is 2542
+2019-07-15 17:49:18,372 charges_calc.py:61  DEBUG total price for RNT002 is 12832
+2019-07-15 17:49:18,372 charges_calc.py:61  DEBUG total price for RNT003 is 19560
+2019-07-15 17:49:18,372 charges_calc.py:61  DEBUG total price for RNT004 is 19200
+2019-07-15 17:49:18,373 charges_calc.py:61  DEBUG total price for RNT005 is 3493
+2019-07-15 17:49:18,373 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT006
+2019-07-15 17:49:18,373 charges_calc.py:61  DEBUG total price for RNT006 is 560
+2019-07-15 17:49:18,374 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT007
+2019-07-15 17:49:18,374 charges_calc.py:61  DEBUG total price for RNT007 is 640
+2019-07-15 17:49:18,374 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT008
+2019-07-15 17:49:18,374 charges_calc.py:61  DEBUG total price for RNT008 is 1356
+2019-07-15 17:49:18,374 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT009
+2019-07-15 17:49:18,374 charges_calc.py:61  DEBUG total price for RNT009 is 4968
+2019-07-15 17:49:18,375 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT010
+2019-07-15 17:49:18,375 charges_calc.py:61  DEBUG total price for RNT010 is 5400
+2019-07-15 17:49:18,375 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT011
+2019-07-15 17:49:18,375 charges_calc.py:61  DEBUG total price for RNT011 is 13468
+2019-07-15 17:49:18,375 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT012
+2019-07-15 17:49:18,375 charges_calc.py:61  DEBUG total price for RNT012 is 11664
+2019-07-15 17:49:18,375 charges_calc.py:61  DEBUG total price for RNT013 is 2090
+2019-07-15 17:49:18,376 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT014
+2019-07-15 17:49:18,376 charges_calc.py:61  DEBUG total price for RNT014 is 6808
+2019-07-15 17:49:18,376 charges_calc.py:61  DEBUG total price for RNT015 is 12064
+2019-07-15 17:49:18,376 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT016
+2019-07-15 17:49:18,376 charges_calc.py:61  DEBUG total price for RNT016 is 9504
+2019-07-15 17:49:18,376 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT017
+2019-07-15 17:49:18,376 charges_calc.py:61  DEBUG total price for RNT017 is 612
+2019-07-15 17:49:18,377 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT018
+2019-07-15 17:49:18,377 charges_calc.py:61  DEBUG total price for RNT018 is 8640
+2019-07-15 17:49:18,377 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT019
+2019-07-15 17:49:18,377 charges_calc.py:61  DEBUG total price for RNT019 is 22815
+2019-07-15 17:49:18,377 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT020
+2019-07-15 17:49:18,377 charges_calc.py:61  DEBUG total price for RNT020 is 29370
+2019-07-15 17:49:18,377 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT021
+2019-07-15 17:49:18,378 charges_calc.py:61  DEBUG total price for RNT021 is 18777
+2019-07-15 17:49:18,378 charges_calc.py:61  DEBUG total price for RNT022 is 5516
+2019-07-15 17:49:18,378 charges_calc.py:61  DEBUG total price for RNT023 is 15880
+2019-07-15 17:49:18,378 charges_calc.py:61  DEBUG total price for RNT024 is 9980
+2019-07-15 17:49:18,378 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT025
+2019-07-15 17:49:18,378 charges_calc.py:61  DEBUG total price for RNT025 is 16718
+2019-07-15 17:49:18,379 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT026
+2019-07-15 17:49:18,379 charges_calc.py:61  DEBUG total price for RNT026 is 16920
+2019-07-15 17:49:18,379 charges_calc.py:61  DEBUG total price for RNT027 is 3456
+2019-07-15 17:49:18,379 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT028
+2019-07-15 17:49:18,379 charges_calc.py:61  DEBUG total price for RNT028 is 7242
+2019-07-15 17:49:18,379 charges_calc.py:61  DEBUG total price for RNT029 is 6050
+2019-07-15 17:49:18,380 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT030
+2019-07-15 17:49:18,380 charges_calc.py:61  DEBUG total price for RNT030 is 2294
+2019-07-15 17:49:18,381 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT031
+2019-07-15 17:49:18,381 charges_calc.py:61  DEBUG total price for RNT031 is 9990
+2019-07-15 17:49:18,381 charges_calc.py:61  DEBUG total price for RNT032 is 544
+2019-07-15 17:49:18,381 charges_calc.py:61  DEBUG total price for RNT033 is 408
+2019-07-15 17:49:18,381 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT034
+2019-07-15 17:49:18,381 charges_calc.py:61  DEBUG total price for RNT034 is 20016
+2019-07-15 17:49:18,382 charges_calc.py:61  DEBUG total price for RNT035 is 8300
+2019-07-15 17:49:18,382 charges_calc.py:61  DEBUG total price for RNT036 is 1190
+2019-07-15 17:49:18,382 charges_calc.py:61  DEBUG total price for RNT037 is 1239
+2019-07-15 17:49:18,382 charges_calc.py:61  DEBUG total price for RNT038 is 2304
+2019-07-15 17:49:18,382 charges_calc.py:61  DEBUG total price for RNT039 is 0
+2019-07-15 17:49:18,382 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT040
+2019-07-15 17:49:18,383 charges_calc.py:61  DEBUG total price for RNT040 is 7728
+2019-07-15 17:49:18,383 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT041
+2019-07-15 17:49:18,383 charges_calc.py:61  DEBUG total price for RNT041 is 4564
+2019-07-15 17:49:18,383 charges_calc.py:61  DEBUG total price for RNT042 is 924
+2019-07-15 17:49:18,383 charges_calc.py:61  DEBUG total price for RNT043 is 12204
+2019-07-15 17:49:18,383 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT044
+2019-07-15 17:49:18,384 charges_calc.py:61  DEBUG total price for RNT044 is 9360
+2019-07-15 17:49:18,384 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT045
+2019-07-15 17:49:18,384 charges_calc.py:61  DEBUG total price for RNT045 is 1221
+2019-07-15 17:49:18,384 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT046
+2019-07-15 17:49:18,384 charges_calc.py:61  DEBUG total price for RNT046 is 9520
+2019-07-15 17:49:18,384 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT047
+2019-07-15 17:49:18,384 charges_calc.py:61  DEBUG total price for RNT047 is 9240
+2019-07-15 17:49:18,385 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT048
+2019-07-15 17:49:18,385 charges_calc.py:61  DEBUG total price for RNT048 is 11232
+2019-07-15 17:49:18,385 charges_calc.py:61  DEBUG total price for RNT049 is 896
+2019-07-15 17:49:18,385 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT050
+2019-07-15 17:49:18,385 charges_calc.py:61  DEBUG total price for RNT050 is 17816
+2019-07-15 17:49:18,385 charges_calc.py:61  DEBUG total price for RNT051 is 17061
+2019-07-15 17:49:18,386 charges_calc.py:61  DEBUG total price for RNT052 is 1206
+2019-07-15 17:49:18,386 charges_calc.py:61  DEBUG total price for RNT053 is 2820
+2019-07-15 17:49:18,386 charges_calc.py:61  DEBUG total price for RNT054 is 2130
+2019-07-15 17:49:18,386 charges_calc.py:61  DEBUG total price for RNT055 is 7326
+2019-07-15 17:49:18,386 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT056
+2019-07-15 17:49:18,386 charges_calc.py:61  DEBUG total price for RNT056 is 31000
+2019-07-15 17:49:18,387 charges_calc.py:61  DEBUG total price for RNT057 is 8257
+2019-07-15 17:49:18,387 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT058
+2019-07-15 17:49:18,387 charges_calc.py:61  DEBUG total price for RNT058 is 4760
+2019-07-15 17:49:18,387 charges_calc.py:61  DEBUG total price for RNT059 is 1393
+2019-07-15 17:49:18,387 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT060
+2019-07-15 17:49:18,387 charges_calc.py:61  DEBUG total price for RNT060 is 812
+2019-07-15 17:49:18,388 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT061
+2019-07-15 17:49:18,388 charges_calc.py:61  DEBUG total price for RNT061 is 8376
+2019-07-15 17:49:18,388 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT062
+2019-07-15 17:49:18,388 charges_calc.py:61  DEBUG total price for RNT062 is 996
+2019-07-15 17:49:18,388 charges_calc.py:61  DEBUG total price for RNT063 is 17220
+2019-07-15 17:49:18,388 charges_calc.py:61  DEBUG total price for RNT064 is 2852
+2019-07-15 17:49:18,389 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT065
+2019-07-15 17:49:18,389 charges_calc.py:61  DEBUG total price for RNT065 is 7348
+2019-07-15 17:49:18,390 charges_calc.py:61  DEBUG total price for RNT066 is 24297
+2019-07-15 17:49:18,390 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT067
+2019-07-15 17:49:18,390 charges_calc.py:61  DEBUG total price for RNT067 is 2852
+2019-07-15 17:49:18,390 charges_calc.py:61  DEBUG total price for RNT068 is 2014
+2019-07-15 17:49:18,391 charges_calc.py:61  DEBUG total price for RNT069 is 3213
+2019-07-15 17:49:18,391 charges_calc.py:61  DEBUG total price for RNT070 is 4706
+2019-07-15 17:49:18,391 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT071
+2019-07-15 17:49:18,391 charges_calc.py:61  DEBUG total price for RNT071 is 798
+2019-07-15 17:49:18,391 charges_calc.py:61  DEBUG total price for RNT072 is 19872
+2019-07-15 17:49:18,391 charges_calc.py:61  DEBUG total price for RNT073 is 3634
+2019-07-15 17:49:18,392 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT074
+2019-07-15 17:49:18,392 charges_calc.py:61  DEBUG total price for RNT074 is 1254
+2019-07-15 17:49:18,392 charges_calc.py:61  DEBUG total price for RNT075 is 23300
+2019-07-15 17:49:18,392 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT076
+2019-07-15 17:49:18,392 charges_calc.py:61  DEBUG total price for RNT076 is 15100
+2019-07-15 17:49:18,393 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT077
+2019-07-15 17:49:18,393 charges_calc.py:61  DEBUG total price for RNT077 is 8876
+2019-07-15 17:49:18,393 charges_calc.py:61  DEBUG total price for RNT078 is 4186
+2019-07-15 17:49:18,393 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT079
+2019-07-15 17:49:18,393 charges_calc.py:61  DEBUG total price for RNT079 is 6384
+2019-07-15 17:49:18,393 charges_calc.py:61  DEBUG total price for RNT080 is 6195
+2019-07-15 17:49:18,394 charges_calc.py:61  DEBUG total price for RNT081 is 5168
+2019-07-15 17:49:18,394 charges_calc.py:61  DEBUG total price for RNT082 is 9816
+2019-07-15 17:49:18,394 charges_calc.py:61  DEBUG total price for RNT083 is 2550
+2019-07-15 17:49:18,394 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT084
+2019-07-15 17:49:18,394 charges_calc.py:61  DEBUG total price for RNT084 is 6064
+2019-07-15 17:49:18,394 charges_calc.py:61  DEBUG total price for RNT085 is 567
+2019-07-15 17:49:18,395 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT086
+2019-07-15 17:49:18,395 charges_calc.py:61  DEBUG total price for RNT086 is 10320
+2019-07-15 17:49:18,395 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT087
+2019-07-15 17:49:18,395 charges_calc.py:61  DEBUG total price for RNT087 is 1961
+2019-07-15 17:49:18,395 charges_calc.py:61  DEBUG total price for RNT088 is 5220
+2019-07-15 17:49:18,395 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT089
+2019-07-15 17:49:18,395 charges_calc.py:61  DEBUG total price for RNT089 is 1640
+2019-07-15 17:49:18,397 charges_calc.py:61  DEBUG total price for RNT090 is 5820
+2019-07-15 17:49:18,397 charges_calc.py:61  DEBUG total price for RNT091 is 600
+2019-07-15 17:49:18,397 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT092
+2019-07-15 17:49:18,397 charges_calc.py:61  DEBUG total price for RNT092 is 5238
+2019-07-15 17:49:18,398 charges_calc.py:61  DEBUG total price for RNT093 is 31713
+2019-07-15 17:49:18,398 charges_calc.py:61  DEBUG total price for RNT094 is 38
+2019-07-15 17:49:18,398 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT095
+2019-07-15 17:49:18,398 charges_calc.py:61  DEBUG total price for RNT095 is 2268
+2019-07-15 17:49:18,398 charges_calc.py:61  DEBUG total price for RNT096 is 1848
+2019-07-15 17:49:18,398 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT097
+2019-07-15 17:49:18,399 charges_calc.py:61  DEBUG total price for RNT097 is 3915
+2019-07-15 17:49:18,399 charges_calc.py:61  DEBUG total price for RNT098 is 7201
+2019-07-15 17:49:18,399 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT099
+2019-07-15 17:49:18,399 charges_calc.py:61  DEBUG total price for RNT099 is 13734
+2019-07-15 17:49:18,399 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT100
+2019-07-15 17:49:18,399 charges_calc.py:61  DEBUG total price for RNT100 is 7560
+2019-07-15 17:49:18,400 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT101
+2019-07-15 17:49:18,400 charges_calc.py:61  DEBUG total price for RNT101 is 3951
+2019-07-15 17:49:18,400 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT102
+2019-07-15 17:49:18,400 charges_calc.py:61  DEBUG total price for RNT102 is 7514
+2019-07-15 17:49:18,401 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT103
+2019-07-15 17:49:18,401 charges_calc.py:61  DEBUG total price for RNT103 is 6820
+2019-07-15 17:49:18,401 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT104
+2019-07-15 17:49:18,401 charges_calc.py:61  DEBUG total price for RNT104 is 14787
+2019-07-15 17:49:18,402 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT105
+2019-07-15 17:49:18,402 charges_calc.py:61  DEBUG total price for RNT105 is 21696
+2019-07-15 17:49:18,402 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT106
+2019-07-15 17:49:18,402 charges_calc.py:61  DEBUG total price for RNT106 is 2520
+2019-07-15 17:49:18,403 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT107
+2019-07-15 17:49:18,403 charges_calc.py:61  DEBUG total price for RNT107 is 3960
+2019-07-15 17:49:18,403 charges_calc.py:61  DEBUG total price for RNT108 is 7358
+2019-07-15 17:49:18,404 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT109
+2019-07-15 17:49:18,404 charges_calc.py:61  DEBUG total price for RNT109 is 15990
+2019-07-15 17:49:18,404 charges_calc.py:61  DEBUG total price for RNT110 is 20691
+2019-07-15 17:49:18,404 charges_calc.py:61  DEBUG total price for RNT111 is 2160
+2019-07-15 17:49:18,405 charges_calc.py:61  DEBUG total price for RNT112 is 1040
+2019-07-15 17:49:18,405 charges_calc.py:61  DEBUG total price for RNT113 is 108
+2019-07-15 17:49:18,405 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT114
+2019-07-15 17:49:18,405 charges_calc.py:61  DEBUG total price for RNT114 is 7196
+2019-07-15 17:49:18,406 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT115
+2019-07-15 17:49:18,406 charges_calc.py:61  DEBUG total price for RNT115 is 6624
+2019-07-15 17:49:18,406 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT116
+2019-07-15 17:49:18,406 charges_calc.py:61  DEBUG total price for RNT116 is 2024
+2019-07-15 17:49:18,406 charges_calc.py:61  DEBUG total price for RNT117 is 5626
+2019-07-15 17:49:18,407 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT118
+2019-07-15 17:49:18,407 charges_calc.py:61  DEBUG total price for RNT118 is 9522
+2019-07-15 17:49:18,407 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT119
+2019-07-15 17:49:18,407 charges_calc.py:61  DEBUG total price for RNT119 is 5964
+2019-07-15 17:49:18,407 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT120
+2019-07-15 17:49:18,407 charges_calc.py:61  DEBUG total price for RNT120 is 930
+2019-07-15 17:49:18,407 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT121
+2019-07-15 17:49:18,407 charges_calc.py:61  DEBUG total price for RNT121 is 7073
+2019-07-15 17:49:18,407 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT122
+2019-07-15 17:49:18,408 charges_calc.py:61  DEBUG total price for RNT122 is 9728
+2019-07-15 17:49:18,409 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT123
+2019-07-15 17:49:18,409 charges_calc.py:61  DEBUG total price for RNT123 is 2860
+2019-07-15 17:49:18,409 charges_calc.py:61  DEBUG total price for RNT124 is 1397
+2019-07-15 17:49:18,409 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT125
+2019-07-15 17:49:18,409 charges_calc.py:61  DEBUG total price for RNT125 is 3726
+2019-07-15 17:49:18,409 charges_calc.py:61  DEBUG total price for RNT126 is 5440
+2019-07-15 17:49:18,410 charges_calc.py:61  DEBUG total price for RNT127 is 33891
+2019-07-15 17:49:18,410 charges_calc.py:61  DEBUG total price for RNT128 is 7047
+2019-07-15 17:49:18,410 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT129
+2019-07-15 17:49:18,410 charges_calc.py:61  DEBUG total price for RNT129 is 1824
+2019-07-15 17:49:18,410 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT130
+2019-07-15 17:49:18,410 charges_calc.py:61  DEBUG total price for RNT130 is 2720
+2019-07-15 17:49:18,411 charges_calc.py:61  DEBUG total price for RNT131 is 2466
+2019-07-15 17:49:18,411 charges_calc.py:61  DEBUG total price for RNT132 is 10880
+2019-07-15 17:49:18,411 charges_calc.py:61  DEBUG total price for RNT133 is 11153
+2019-07-15 17:49:18,411 charges_calc.py:61  DEBUG total price for RNT134 is 8399
+2019-07-15 17:49:18,411 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT135
+2019-07-15 17:49:18,412 charges_calc.py:61  DEBUG total price for RNT135 is 693
+2019-07-15 17:49:18,412 charges_calc.py:61  DEBUG total price for RNT136 is 635
+2019-07-15 17:49:18,412 charges_calc.py:61  DEBUG total price for RNT137 is 1545
+2019-07-15 17:49:18,412 charges_calc.py:61  DEBUG total price for RNT138 is 7744
+2019-07-15 17:49:18,412 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT139
+2019-07-15 17:49:18,412 charges_calc.py:61  DEBUG total price for RNT139 is 3105
+2019-07-15 17:49:18,413 charges_calc.py:61  DEBUG total price for RNT140 is 518
+2019-07-15 17:49:18,413 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT141
+2019-07-15 17:49:18,413 charges_calc.py:61  DEBUG total price for RNT141 is 6384
+2019-07-15 17:49:18,413 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT142
+2019-07-15 17:49:18,414 charges_calc.py:61  DEBUG total price for RNT142 is 3152
+2019-07-15 17:49:18,414 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT143
+2019-07-15 17:49:18,414 charges_calc.py:61  DEBUG total price for RNT143 is 41028
+2019-07-15 17:49:18,415 charges_calc.py:61  DEBUG total price for RNT144 is 25935
+2019-07-15 17:49:18,415 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT145
+2019-07-15 17:49:18,415 charges_calc.py:61  DEBUG total price for RNT145 is 23033
+2019-07-15 17:49:18,415 charges_calc.py:61  DEBUG total price for RNT146 is 18886
+2019-07-15 17:49:18,416 charges_calc.py:61  DEBUG total price for RNT147 is 2035
+2019-07-15 17:49:18,416 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT148
+2019-07-15 17:49:18,416 charges_calc.py:61  DEBUG total price for RNT148 is 429
+2019-07-15 17:49:18,417 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT149
+2019-07-15 17:49:18,417 charges_calc.py:61  DEBUG total price for RNT149 is 13900
+2019-07-15 17:49:18,417 charges_calc.py:61  DEBUG total price for RNT150 is 4216
+2019-07-15 17:49:18,417 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT151
+2019-07-15 17:49:18,418 charges_calc.py:61  DEBUG total price for RNT151 is 18125
+2019-07-15 17:49:18,418 charges_calc.py:61  DEBUG total price for RNT152 is 0
+2019-07-15 17:49:18,418 charges_calc.py:61  DEBUG total price for RNT153 is 2115
+2019-07-15 17:49:18,419 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT154
+2019-07-15 17:49:18,419 charges_calc.py:61  DEBUG total price for RNT154 is 6720
+2019-07-15 17:49:18,419 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT155
+2019-07-15 17:49:18,419 charges_calc.py:61  DEBUG total price for RNT155 is 3784
+2019-07-15 17:49:18,419 charges_calc.py:61  DEBUG total price for RNT156 is 1845
+2019-07-15 17:49:18,420 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT157
+2019-07-15 17:49:18,420 charges_calc.py:61  DEBUG total price for RNT157 is 18656
+2019-07-15 17:49:18,420 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT158
+2019-07-15 17:49:18,420 charges_calc.py:61  DEBUG total price for RNT158 is 10272
+2019-07-15 17:49:18,420 charges_calc.py:61  DEBUG total price for RNT159 is 20720
+2019-07-15 17:49:18,420 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT160
+2019-07-15 17:49:18,421 charges_calc.py:61  DEBUG total price for RNT160 is 780
+2019-07-15 17:49:18,421 charges_calc.py:61  DEBUG total price for RNT161 is 3402
+2019-07-15 17:49:18,421 charges_calc.py:61  DEBUG total price for RNT162 is 9768
+2019-07-15 17:49:18,421 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT163
+2019-07-15 17:49:18,421 charges_calc.py:61  DEBUG total price for RNT163 is 2328
+2019-07-15 17:49:18,422 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT164
+2019-07-15 17:49:18,422 charges_calc.py:61  DEBUG total price for RNT164 is 5460
+2019-07-15 17:49:18,422 charges_calc.py:61  DEBUG total price for RNT165 is 5616
+2019-07-15 17:49:18,422 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT166
+2019-07-15 17:49:18,422 charges_calc.py:61  DEBUG total price for RNT166 is 29193
+2019-07-15 17:49:18,422 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT167
+2019-07-15 17:49:18,423 charges_calc.py:61  DEBUG total price for RNT167 is 1458
+2019-07-15 17:49:18,423 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT168
+2019-07-15 17:49:18,423 charges_calc.py:61  DEBUG total price for RNT168 is 5577
+2019-07-15 17:49:18,423 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT169
+2019-07-15 17:49:18,423 charges_calc.py:61  DEBUG total price for RNT169 is 15092
+2019-07-15 17:49:18,423 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT170
+2019-07-15 17:49:18,423 charges_calc.py:61  DEBUG total price for RNT170 is 9195
+2019-07-15 17:49:18,425 charges_calc.py:61  DEBUG total price for RNT171 is 11448
+2019-07-15 17:49:18,425 charges_calc.py:61  DEBUG total price for RNT172 is 390
+2019-07-15 17:49:18,425 charges_calc.py:61  DEBUG total price for RNT173 is 5736
+2019-07-15 17:49:18,425 charges_calc.py:61  DEBUG total price for RNT174 is 8272
+2019-07-15 17:49:18,426 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT175
+2019-07-15 17:49:18,426 charges_calc.py:61  DEBUG total price for RNT175 is 2418
+2019-07-15 17:49:18,426 charges_calc.py:61  DEBUG total price for RNT176 is 984
+2019-07-15 17:49:18,426 charges_calc.py:61  DEBUG total price for RNT177 is 14912
+2019-07-15 17:49:18,426 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT178
+2019-07-15 17:49:18,426 charges_calc.py:61  DEBUG total price for RNT178 is 4640
+2019-07-15 17:49:18,427 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT179
+2019-07-15 17:49:18,427 charges_calc.py:61  DEBUG total price for RNT179 is 60
+2019-07-15 17:49:18,427 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT180
+2019-07-15 17:49:18,427 charges_calc.py:61  DEBUG total price for RNT180 is 22734
+2019-07-15 17:49:18,427 charges_calc.py:61  DEBUG total price for RNT181 is 4000
+2019-07-15 17:49:18,427 charges_calc.py:61  DEBUG total price for RNT182 is 5175
+2019-07-15 17:49:18,427 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT183
+2019-07-15 17:49:18,428 charges_calc.py:61  DEBUG total price for RNT183 is 1272
+2019-07-15 17:49:18,428 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT184
+2019-07-15 17:49:18,428 charges_calc.py:61  DEBUG total price for RNT184 is 2650
+2019-07-15 17:49:18,428 charges_calc.py:61  DEBUG total price for RNT185 is 13895
+2019-07-15 17:49:18,428 charges_calc.py:61  DEBUG total price for RNT186 is 2301
+2019-07-15 17:49:18,429 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT187
+2019-07-15 17:49:18,429 charges_calc.py:61  DEBUG total price for RNT187 is 6330
+2019-07-15 17:49:18,429 charges_calc.py:61  DEBUG total price for RNT188 is 7840
+2019-07-15 17:49:18,429 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT189
+2019-07-15 17:49:18,429 charges_calc.py:61  DEBUG total price for RNT189 is 1710
+2019-07-15 17:49:18,429 charges_calc.py:61  DEBUG total price for RNT190 is 1275
+2019-07-15 17:49:18,430 charges_calc.py:61  DEBUG total price for RNT191 is 30192
+2019-07-15 17:49:18,430 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT192
+2019-07-15 17:49:18,430 charges_calc.py:61  DEBUG total price for RNT192 is 310
+2019-07-15 17:49:18,430 charges_calc.py:61  DEBUG total price for RNT193 is 4356
+2019-07-15 17:49:18,430 charges_calc.py:61  DEBUG total price for RNT194 is 6720
+2019-07-15 17:49:18,430 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT195
+2019-07-15 17:49:18,431 charges_calc.py:61  DEBUG total price for RNT195 is 14433
+2019-07-15 17:49:18,432 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT196
+2019-07-15 17:49:18,432 charges_calc.py:61  DEBUG total price for RNT196 is 17233
+2019-07-15 17:49:18,432 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT197
+2019-07-15 17:49:18,432 charges_calc.py:61  DEBUG total price for RNT197 is 3564
+2019-07-15 17:49:18,432 charges_calc.py:61  DEBUG total price for RNT198 is 11060
+2019-07-15 17:49:18,433 charges_calc.py:61  DEBUG total price for RNT199 is 2139
+2019-07-15 17:49:18,433 charges_calc.py:61  DEBUG total price for RNT200 is 936
+2019-07-15 17:49:18,433 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT201
+2019-07-15 17:49:18,433 charges_calc.py:61  DEBUG total price for RNT201 is 6630
+2019-07-15 17:49:18,433 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT202
+2019-07-15 17:49:18,433 charges_calc.py:61  DEBUG total price for RNT202 is 34034
+2019-07-15 17:49:18,434 charges_calc.py:61  DEBUG total price for RNT203 is 9275
+2019-07-15 17:49:18,434 charges_calc.py:61  DEBUG total price for RNT204 is 9178
+2019-07-15 17:49:18,434 charges_calc.py:61  DEBUG total price for RNT205 is 11975
+2019-07-15 17:49:18,434 charges_calc.py:61  DEBUG total price for RNT206 is 36
+2019-07-15 17:49:18,435 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT207
+2019-07-15 17:49:18,435 charges_calc.py:61  DEBUG total price for RNT207 is 13650
+2019-07-15 17:49:18,435 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT208
+2019-07-15 17:49:18,435 charges_calc.py:61  DEBUG total price for RNT208 is 96
+2019-07-15 17:49:18,435 charges_calc.py:61  DEBUG total price for RNT209 is 6426
+2019-07-15 17:49:18,436 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT210
+2019-07-15 17:49:18,436 charges_calc.py:61  DEBUG total price for RNT210 is 1104
+2019-07-15 17:49:18,436 charges_calc.py:61  DEBUG total price for RNT211 is 646
+2019-07-15 17:49:18,437 charges_calc.py:61  DEBUG total price for RNT212 is 621
+2019-07-15 17:49:18,437 charges_calc.py:61  DEBUG total price for RNT213 is 24584
+2019-07-15 17:49:18,437 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT214
+2019-07-15 17:49:18,437 charges_calc.py:61  DEBUG total price for RNT214 is 4108
+2019-07-15 17:49:18,437 charges_calc.py:61  DEBUG total price for RNT215 is 8835
+2019-07-15 17:49:18,438 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT216
+2019-07-15 17:49:18,438 charges_calc.py:61  DEBUG total price for RNT216 is 1120
+2019-07-15 17:49:18,438 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT217
+2019-07-15 17:49:18,438 charges_calc.py:61  DEBUG total price for RNT217 is 3720
+2019-07-15 17:49:18,439 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT218
+2019-07-15 17:49:18,439 charges_calc.py:61  DEBUG total price for RNT218 is 14120
+2019-07-15 17:49:18,440 charges_calc.py:61  DEBUG total price for RNT219 is 9780
+2019-07-15 17:49:18,440 charges_calc.py:61  DEBUG total price for RNT220 is 4510
+2019-07-15 17:49:18,441 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT221
+2019-07-15 17:49:18,441 charges_calc.py:61  DEBUG total price for RNT221 is 32800
+2019-07-15 17:49:18,441 charges_calc.py:61  DEBUG total price for RNT222 is 6854
+2019-07-15 17:49:18,441 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT223
+2019-07-15 17:49:18,441 charges_calc.py:61  DEBUG total price for RNT223 is 17442
+2019-07-15 17:49:18,441 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT224
+2019-07-15 17:49:18,442 charges_calc.py:61  DEBUG total price for RNT224 is 13396
+2019-07-15 17:49:18,442 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT225
+2019-07-15 17:49:18,442 charges_calc.py:61  DEBUG total price for RNT225 is 3550
+2019-07-15 17:49:18,442 charges_calc.py:61  DEBUG total price for RNT226 is 225
+2019-07-15 17:49:18,442 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT227
+2019-07-15 17:49:18,442 charges_calc.py:61  DEBUG total price for RNT227 is 14059
+2019-07-15 17:49:18,442 charges_calc.py:61  DEBUG total price for RNT228 is 10710
+2019-07-15 17:49:18,443 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT229
+2019-07-15 17:49:18,443 charges_calc.py:61  DEBUG total price for RNT229 is 1120
+2019-07-15 17:49:18,443 charges_calc.py:61  DEBUG total price for RNT230 is 1449
+2019-07-15 17:49:18,443 charges_calc.py:61  DEBUG total price for RNT231 is 33145
+2019-07-15 17:49:18,443 charges_calc.py:61  DEBUG total price for RNT232 is 9646
+2019-07-15 17:49:18,444 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT233
+2019-07-15 17:49:18,444 charges_calc.py:61  DEBUG total price for RNT233 is 5769
+2019-07-15 17:49:18,444 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT234
+2019-07-15 17:49:18,444 charges_calc.py:61  DEBUG total price for RNT234 is 1235
+2019-07-15 17:49:18,444 charges_calc.py:61  DEBUG total price for RNT235 is 144
+2019-07-15 17:49:18,444 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT236
+2019-07-15 17:49:18,445 charges_calc.py:61  DEBUG total price for RNT236 is 9970
+2019-07-15 17:49:18,445 charges_calc.py:61  DEBUG total price for RNT237 is 7428
+2019-07-15 17:49:18,445 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT238
+2019-07-15 17:49:18,445 charges_calc.py:61  DEBUG total price for RNT238 is 735
+2019-07-15 17:49:18,445 charges_calc.py:61  DEBUG total price for RNT239 is 560
+2019-07-15 17:49:18,445 charges_calc.py:61  DEBUG total price for RNT240 is 2394
+2019-07-15 17:49:18,446 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT241
+2019-07-15 17:49:18,446 charges_calc.py:61  DEBUG total price for RNT241 is 5796
+2019-07-15 17:49:18,446 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT242
+2019-07-15 17:49:18,446 charges_calc.py:61  DEBUG total price for RNT242 is 3132
+2019-07-15 17:49:18,446 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT243
+2019-07-15 17:49:18,446 charges_calc.py:61  DEBUG total price for RNT243 is 5473
+2019-07-15 17:49:18,447 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT244
+2019-07-15 17:49:18,447 charges_calc.py:61  DEBUG total price for RNT244 is 7764
+2019-07-15 17:49:18,447 charges_calc.py:61  DEBUG total price for RNT245 is 32019
+2019-07-15 17:49:18,447 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT246
+2019-07-15 17:49:18,447 charges_calc.py:61  DEBUG total price for RNT246 is 3318
+2019-07-15 17:49:18,447 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT247
+2019-07-15 17:49:18,447 charges_calc.py:61  DEBUG total price for RNT247 is 270
+2019-07-15 17:49:18,448 charges_calc.py:61  DEBUG total price for RNT248 is 13233
+2019-07-15 17:49:18,449 charges_calc.py:61  DEBUG total price for RNT249 is 666
+2019-07-15 17:49:18,449 charges_calc.py:61  DEBUG total price for RNT250 is 864
+2019-07-15 17:49:18,449 charges_calc.py:61  DEBUG total price for RNT251 is 7209
+2019-07-15 17:49:18,449 charges_calc.py:61  DEBUG total price for RNT252 is 5040
+2019-07-15 17:49:18,449 charges_calc.py:61  DEBUG total price for RNT253 is 19740
+2019-07-15 17:49:18,450 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT254
+2019-07-15 17:49:18,450 charges_calc.py:61  DEBUG total price for RNT254 is 1576
+2019-07-15 17:49:18,450 charges_calc.py:61  DEBUG total price for RNT255 is 8823
+2019-07-15 17:49:18,450 charges_calc.py:61  DEBUG total price for RNT256 is 2054
+2019-07-15 17:49:18,450 charges_calc.py:61  DEBUG total price for RNT257 is 19700
+2019-07-15 17:49:18,450 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT258
+2019-07-15 17:49:18,451 charges_calc.py:61  DEBUG total price for RNT258 is 3492
+2019-07-15 17:49:18,451 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT259
+2019-07-15 17:49:18,451 charges_calc.py:61  DEBUG total price for RNT259 is 18598
+2019-07-15 17:49:18,451 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT260
+2019-07-15 17:49:18,451 charges_calc.py:61  DEBUG total price for RNT260 is 5984
+2019-07-15 17:49:18,451 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT261
+2019-07-15 17:49:18,452 charges_calc.py:61  DEBUG total price for RNT261 is 1860
+2019-07-15 17:49:18,452 charges_calc.py:61  DEBUG total price for RNT262 is 1199
+2019-07-15 17:49:18,452 charges_calc.py:61  DEBUG total price for RNT263 is 9141
+2019-07-15 17:49:18,452 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT264
+2019-07-15 17:49:18,452 charges_calc.py:61  DEBUG total price for RNT264 is 10935
+2019-07-15 17:49:18,452 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT265
+2019-07-15 17:49:18,453 charges_calc.py:61  DEBUG total price for RNT265 is 16
+2019-07-15 17:49:18,453 charges_calc.py:61  DEBUG total price for RNT266 is 507
+2019-07-15 17:49:18,453 charges_calc.py:61  DEBUG total price for RNT267 is 12480
+2019-07-15 17:49:18,453 charges_calc.py:61  DEBUG total price for RNT268 is 540
+2019-07-15 17:49:18,453 charges_calc.py:61  DEBUG total price for RNT269 is 20319
+2019-07-15 17:49:18,453 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT270
+2019-07-15 17:49:18,453 charges_calc.py:61  DEBUG total price for RNT270 is 703
+2019-07-15 17:49:18,453 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT271
+2019-07-15 17:49:18,454 charges_calc.py:61  DEBUG total price for RNT271 is 9262
+2019-07-15 17:49:18,454 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT272
+2019-07-15 17:49:18,454 charges_calc.py:61  DEBUG total price for RNT272 is 1752
+2019-07-15 17:49:18,454 charges_calc.py:61  DEBUG total price for RNT273 is 2952
+2019-07-15 17:49:18,454 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT274
+2019-07-15 17:49:18,454 charges_calc.py:61  DEBUG total price for RNT274 is 25498
+2019-07-15 17:49:18,455 charges_calc.py:61  DEBUG total price for RNT275 is 1012
+2019-07-15 17:49:18,456 charges_calc.py:61  DEBUG total price for RNT276 is 17253
+2019-07-15 17:49:18,456 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT277
+2019-07-15 17:49:18,456 charges_calc.py:61  DEBUG total price for RNT277 is 3275
+2019-07-15 17:49:18,456 charges_calc.py:61  DEBUG total price for RNT278 is 31716
+2019-07-15 17:49:18,456 charges_calc.py:61  DEBUG total price for RNT279 is 23868
+2019-07-15 17:49:18,456 charges_calc.py:61  DEBUG total price for RNT280 is 6633
+2019-07-15 17:49:18,457 charges_calc.py:61  DEBUG total price for RNT281 is 1866
+2019-07-15 17:49:18,457 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT282
+2019-07-15 17:49:18,457 charges_calc.py:61  DEBUG total price for RNT282 is 3040
+2019-07-15 17:49:18,457 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT283
+2019-07-15 17:49:18,457 charges_calc.py:61  DEBUG total price for RNT283 is 216
+2019-07-15 17:49:18,457 charges_calc.py:61  DEBUG total price for RNT284 is 12132
+2019-07-15 17:49:18,458 charges_calc.py:61  DEBUG total price for RNT285 is 1155
+2019-07-15 17:49:18,458 charges_calc.py:61  DEBUG total price for RNT286 is 1675
+2019-07-15 17:49:18,458 charges_calc.py:61  DEBUG total price for RNT287 is 7828
+2019-07-15 17:49:18,458 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT288
+2019-07-15 17:49:18,458 charges_calc.py:61  DEBUG total price for RNT288 is 4033
+2019-07-15 17:49:18,458 charges_calc.py:61  DEBUG total price for RNT289 is 540
+2019-07-15 17:49:18,459 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT290
+2019-07-15 17:49:18,459 charges_calc.py:61  DEBUG total price for RNT290 is 130
+2019-07-15 17:49:18,459 charges_calc.py:61  DEBUG total price for RNT291 is 11284
+2019-07-15 17:49:18,459 charges_calc.py:61  DEBUG total price for RNT292 is 2233
+2019-07-15 17:49:18,459 charges_calc.py:61  DEBUG total price for RNT293 is 1928
+2019-07-15 17:49:18,459 charges_calc.py:61  DEBUG total price for RNT294 is 16592
+2019-07-15 17:49:18,460 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT295
+2019-07-15 17:49:18,460 charges_calc.py:61  DEBUG total price for RNT295 is 6965
+2019-07-15 17:49:18,460 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT296
+2019-07-15 17:49:18,460 charges_calc.py:61  DEBUG total price for RNT296 is 13776
+2019-07-15 17:49:18,460 charges_calc.py:61  DEBUG total price for RNT297 is 1245
+2019-07-15 17:49:18,460 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT298
+2019-07-15 17:49:18,461 charges_calc.py:61  DEBUG total price for RNT298 is 3120
+2019-07-15 17:49:18,461 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT299
+2019-07-15 17:49:18,461 charges_calc.py:61  DEBUG total price for RNT299 is 195
+2019-07-15 17:49:18,461 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT300
+2019-07-15 17:49:18,461 charges_calc.py:61  DEBUG total price for RNT300 is 5697
+2019-07-15 17:49:18,461 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT301
+2019-07-15 17:49:18,461 charges_calc.py:61  DEBUG total price for RNT301 is 8385
+2019-07-15 17:49:18,462 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT302
+2019-07-15 17:49:18,462 charges_calc.py:61  DEBUG total price for RNT302 is 1704
+2019-07-15 17:49:18,462 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT303
+2019-07-15 17:49:18,462 charges_calc.py:61  DEBUG total price for RNT303 is 12150
+2019-07-15 17:49:18,462 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT304
+2019-07-15 17:49:18,462 charges_calc.py:61  DEBUG total price for RNT304 is 3600
+2019-07-15 17:49:18,463 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT305
+2019-07-15 17:49:18,463 charges_calc.py:61  DEBUG total price for RNT305 is 11970
+2019-07-15 17:49:18,463 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT306
+2019-07-15 17:49:18,463 charges_calc.py:61  DEBUG total price for RNT306 is 22480
+2019-07-15 17:49:18,463 charges_calc.py:61  DEBUG total price for RNT307 is 2260
+2019-07-15 17:49:18,463 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT308
+2019-07-15 17:49:18,463 charges_calc.py:61  DEBUG total price for RNT308 is 440
+2019-07-15 17:49:18,464 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT309
+2019-07-15 17:49:18,464 charges_calc.py:61  DEBUG total price for RNT309 is 1330
+2019-07-15 17:49:18,464 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT310
+2019-07-15 17:49:18,464 charges_calc.py:61  DEBUG total price for RNT310 is 11388
+2019-07-15 17:49:18,464 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT311
+2019-07-15 17:49:18,464 charges_calc.py:61  DEBUG total price for RNT311 is 18104
+2019-07-15 17:49:18,464 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT312
+2019-07-15 17:49:18,464 charges_calc.py:61  DEBUG total price for RNT312 is 2822
+2019-07-15 17:49:18,465 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT313
+2019-07-15 17:49:18,465 charges_calc.py:61  DEBUG total price for RNT313 is 4420
+2019-07-15 17:49:18,465 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT314
+2019-07-15 17:49:18,465 charges_calc.py:61  DEBUG total price for RNT314 is 19734
+2019-07-15 17:49:18,465 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT315
+2019-07-15 17:49:18,465 charges_calc.py:61  DEBUG total price for RNT315 is 9520
+2019-07-15 17:49:18,466 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT316
+2019-07-15 17:49:18,466 charges_calc.py:61  DEBUG total price for RNT316 is 4320
+2019-07-15 17:49:18,466 charges_calc.py:61  DEBUG total price for RNT317 is 10262
+2019-07-15 17:49:18,466 charges_calc.py:61  DEBUG total price for RNT318 is 11507
+2019-07-15 17:49:18,466 charges_calc.py:61  DEBUG total price for RNT319 is 39938
+2019-07-15 17:49:18,466 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT320
+2019-07-15 17:49:18,467 charges_calc.py:61  DEBUG total price for RNT320 is 5838
+2019-07-15 17:49:18,467 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT321
+2019-07-15 17:49:18,467 charges_calc.py:61  DEBUG total price for RNT321 is 5321
+2019-07-15 17:49:18,467 charges_calc.py:61  DEBUG total price for RNT322 is 4810
+2019-07-15 17:49:18,467 charges_calc.py:61  DEBUG total price for RNT323 is 3591
+2019-07-15 17:49:18,467 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT324
+2019-07-15 17:49:18,469 charges_calc.py:61  DEBUG total price for RNT324 is 19080
+2019-07-15 17:49:18,469 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT325
+2019-07-15 17:49:18,469 charges_calc.py:61  DEBUG total price for RNT325 is 24038
+2019-07-15 17:49:18,469 charges_calc.py:61  DEBUG total price for RNT326 is 15120
+2019-07-15 17:49:18,469 charges_calc.py:61  DEBUG total price for RNT327 is 19561
+2019-07-15 17:49:18,469 charges_calc.py:61  DEBUG total price for RNT328 is 510
+2019-07-15 17:49:18,470 charges_calc.py:61  DEBUG total price for RNT329 is 15440
+2019-07-15 17:49:18,470 charges_calc.py:61  DEBUG total price for RNT330 is 2625
+2019-07-15 17:49:18,470 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT331
+2019-07-15 17:49:18,470 charges_calc.py:61  DEBUG total price for RNT331 is 76
+2019-07-15 17:49:18,470 charges_calc.py:61  DEBUG total price for RNT332 is 6734
+2019-07-15 17:49:18,470 charges_calc.py:61  DEBUG total price for RNT333 is 5688
+2019-07-15 17:49:18,471 charges_calc.py:61  DEBUG total price for RNT334 is 2145
+2019-07-15 17:49:18,471 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT335
+2019-07-15 17:49:18,471 charges_calc.py:61  DEBUG total price for RNT335 is 150
+2019-07-15 17:49:18,471 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT336
+2019-07-15 17:49:18,471 charges_calc.py:61  DEBUG total price for RNT336 is 4488
+2019-07-15 17:49:18,471 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT337
+2019-07-15 17:49:18,472 charges_calc.py:61  DEBUG total price for RNT337 is 6650
+2019-07-15 17:49:18,472 charges_calc.py:61  DEBUG total price for RNT338 is 8816
+2019-07-15 17:49:18,472 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT339
+2019-07-15 17:49:18,472 charges_calc.py:61  DEBUG total price for RNT339 is 18924
+2019-07-15 17:49:18,472 charges_calc.py:61  DEBUG total price for RNT340 is 9604
+2019-07-15 17:49:18,473 charges_calc.py:61  DEBUG total price for RNT341 is 10571
+2019-07-15 17:49:18,473 charges_calc.py:61  DEBUG total price for RNT342 is 8175
+2019-07-15 17:49:18,473 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT343
+2019-07-15 17:49:18,473 charges_calc.py:61  DEBUG total price for RNT343 is 928
+2019-07-15 17:49:18,473 charges_calc.py:61  DEBUG total price for RNT344 is 624
+2019-07-15 17:49:18,473 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT345
+2019-07-15 17:49:18,473 charges_calc.py:61  DEBUG total price for RNT345 is 7790
+2019-07-15 17:49:18,474 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT346
+2019-07-15 17:49:18,474 charges_calc.py:61  DEBUG total price for RNT346 is 14715
+2019-07-15 17:49:18,474 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT347
+2019-07-15 17:49:18,474 charges_calc.py:61  DEBUG total price for RNT347 is 3744
+2019-07-15 17:49:18,474 charges_calc.py:61  DEBUG total price for RNT348 is 3366
+2019-07-15 17:49:18,474 charges_calc.py:61  DEBUG total price for RNT349 is 8115
+2019-07-15 17:49:18,475 charges_calc.py:61  DEBUG total price for RNT350 is 3416
+2019-07-15 17:49:18,476 charges_calc.py:61  DEBUG total price for RNT351 is 17442
+2019-07-15 17:49:18,476 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT352
+2019-07-15 17:49:18,476 charges_calc.py:61  DEBUG total price for RNT352 is 18051
+2019-07-15 17:49:18,476 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT353
+2019-07-15 17:49:18,476 charges_calc.py:61  DEBUG total price for RNT353 is 11210
+2019-07-15 17:49:18,476 charges_calc.py:61  DEBUG total price for RNT354 is 4740
+2019-07-15 17:49:18,477 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT355
+2019-07-15 17:49:18,477 charges_calc.py:61  DEBUG total price for RNT355 is 540
+2019-07-15 17:49:18,477 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT356
+2019-07-15 17:49:18,477 charges_calc.py:61  DEBUG total price for RNT356 is 1036
+2019-07-15 17:49:18,477 charges_calc.py:61  DEBUG total price for RNT357 is 5478
+2019-07-15 17:49:18,477 charges_calc.py:61  DEBUG total price for RNT358 is 2583
+2019-07-15 17:49:18,478 charges_calc.py:61  DEBUG total price for RNT359 is 11456
+2019-07-15 17:49:18,478 charges_calc.py:61  DEBUG total price for RNT360 is 10773
+2019-07-15 17:49:18,478 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT361
+2019-07-15 17:49:18,478 charges_calc.py:61  DEBUG total price for RNT361 is 14595
+2019-07-15 17:49:18,478 charges_calc.py:61  DEBUG total price for RNT362 is 10716
+2019-07-15 17:49:18,478 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT363
+2019-07-15 17:49:18,479 charges_calc.py:61  DEBUG total price for RNT363 is 418
+2019-07-15 17:49:18,479 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT364
+2019-07-15 17:49:18,479 charges_calc.py:61  DEBUG total price for RNT364 is 1558
+2019-07-15 17:49:18,479 charges_calc.py:61  DEBUG total price for RNT365 is 14110
+2019-07-15 17:49:18,479 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT366
+2019-07-15 17:49:18,479 charges_calc.py:61  DEBUG total price for RNT366 is 9826
+2019-07-15 17:49:18,480 charges_calc.py:61  DEBUG total price for RNT367 is 3922
+2019-07-15 17:49:18,480 charges_calc.py:61  DEBUG total price for RNT368 is 2727
+2019-07-15 17:49:18,480 charges_calc.py:61  DEBUG total price for RNT369 is 2040
+2019-07-15 17:49:18,480 charges_calc.py:61  DEBUG total price for RNT370 is 16240
+2019-07-15 17:49:18,480 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT371
+2019-07-15 17:49:18,480 charges_calc.py:61  DEBUG total price for RNT371 is 15840
+2019-07-15 17:49:18,480 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT372
+2019-07-15 17:49:18,481 charges_calc.py:61  DEBUG total price for RNT372 is 9412
+2019-07-15 17:49:18,481 charges_calc.py:61  DEBUG total price for RNT373 is 2058
+2019-07-15 17:49:18,481 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT374
+2019-07-15 17:49:18,481 charges_calc.py:61  DEBUG total price for RNT374 is 1476
+2019-07-15 17:49:18,481 charges_calc.py:61  DEBUG total price for RNT375 is 480
+2019-07-15 17:49:18,481 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT376
+2019-07-15 17:49:18,482 charges_calc.py:61  DEBUG total price for RNT376 is 4922
+2019-07-15 17:49:18,482 charges_calc.py:61  DEBUG total price for RNT377 is 14700
+2019-07-15 17:49:18,482 charges_calc.py:61  DEBUG total price for RNT378 is 15204
+2019-07-15 17:49:18,482 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT379
+2019-07-15 17:49:18,482 charges_calc.py:61  DEBUG total price for RNT379 is 11203
+2019-07-15 17:49:18,482 charges_calc.py:61  DEBUG total price for RNT380 is 10632
+2019-07-15 17:49:18,483 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT381
+2019-07-15 17:49:18,483 charges_calc.py:61  DEBUG total price for RNT381 is 9842
+2019-07-15 17:49:18,483 charges_calc.py:61  DEBUG total price for RNT382 is 11928
+2019-07-15 17:49:18,483 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT383
+2019-07-15 17:49:18,483 charges_calc.py:61  DEBUG total price for RNT383 is 198
+2019-07-15 17:49:18,485 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT384
+2019-07-15 17:49:18,485 charges_calc.py:61  DEBUG total price for RNT384 is 6222
+2019-07-15 17:49:18,485 charges_calc.py:61  DEBUG total price for RNT385 is 11178
+2019-07-15 17:49:18,485 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT386
+2019-07-15 17:49:18,486 charges_calc.py:61  DEBUG total price for RNT386 is 7980
+2019-07-15 17:49:18,486 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT387
+2019-07-15 17:49:18,486 charges_calc.py:61  DEBUG total price for RNT387 is 35720
+2019-07-15 17:49:18,486 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT388
+2019-07-15 17:49:18,486 charges_calc.py:61  DEBUG total price for RNT388 is 2935
+2019-07-15 17:49:18,487 charges_calc.py:61  DEBUG total price for RNT389 is 13662
+2019-07-15 17:49:18,487 charges_calc.py:61  DEBUG total price for RNT390 is 1535
+2019-07-15 17:49:18,487 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT391
+2019-07-15 17:49:18,487 charges_calc.py:61  DEBUG total price for RNT391 is 324
+2019-07-15 17:49:18,487 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT392
+2019-07-15 17:49:18,488 charges_calc.py:61  DEBUG total price for RNT392 is 2184
+2019-07-15 17:49:18,488 charges_calc.py:61  DEBUG total price for RNT393 is 5880
+2019-07-15 17:49:18,488 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT394
+2019-07-15 17:49:18,488 charges_calc.py:61  DEBUG total price for RNT394 is 10827
+2019-07-15 17:49:18,488 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT395
+2019-07-15 17:49:18,489 charges_calc.py:61  DEBUG total price for RNT395 is 552
+2019-07-15 17:49:18,489 charges_calc.py:61  DEBUG total price for RNT396 is 3225
+2019-07-15 17:49:18,489 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT397
+2019-07-15 17:49:18,489 charges_calc.py:61  DEBUG total price for RNT397 is 7326
+2019-07-15 17:49:18,489 charges_calc.py:61  DEBUG total price for RNT398 is 144
+2019-07-15 17:49:18,490 charges_calc.py:61  DEBUG total price for RNT399 is 22015
+2019-07-15 17:49:18,490 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT400
+2019-07-15 17:49:18,490 charges_calc.py:61  DEBUG total price for RNT400 is 15795
+2019-07-15 17:49:18,490 charges_calc.py:61  DEBUG total price for RNT401 is 4644
+2019-07-15 17:49:18,490 charges_calc.py:61  DEBUG total price for RNT402 is 6480
+2019-07-15 17:49:18,491 charges_calc.py:61  DEBUG total price for RNT403 is 2502
+2019-07-15 17:49:18,491 charges_calc.py:61  DEBUG total price for RNT404 is 17920
+2019-07-15 17:49:18,491 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT405
+2019-07-15 17:49:18,491 charges_calc.py:61  DEBUG total price for RNT405 is 9720
+2019-07-15 17:49:18,491 charges_calc.py:61  DEBUG total price for RNT406 is 4017
+2019-07-15 17:49:18,491 charges_calc.py:61  DEBUG total price for RNT407 is 8251
+2019-07-15 17:49:18,491 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT408
+2019-07-15 17:49:18,491 charges_calc.py:61  DEBUG total price for RNT408 is 1110
+2019-07-15 17:49:18,492 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT409
+2019-07-15 17:49:18,492 charges_calc.py:61  DEBUG total price for RNT409 is 6504
+2019-07-15 17:49:18,492 charges_calc.py:61  DEBUG total price for RNT410 is 420
+2019-07-15 17:49:18,492 charges_calc.py:61  DEBUG total price for RNT411 is 9648
+2019-07-15 17:49:18,492 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT412
+2019-07-15 17:49:18,493 charges_calc.py:61  DEBUG total price for RNT412 is 9471
+2019-07-15 17:49:18,494 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT413
+2019-07-15 17:49:18,494 charges_calc.py:61  DEBUG total price for RNT413 is 1780
+2019-07-15 17:49:18,494 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT414
+2019-07-15 17:49:18,494 charges_calc.py:61  DEBUG total price for RNT414 is 10412
+2019-07-15 17:49:18,494 charges_calc.py:61  DEBUG total price for RNT415 is 4671
+2019-07-15 17:49:18,494 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT416
+2019-07-15 17:49:18,495 charges_calc.py:61  DEBUG total price for RNT416 is 6750
+2019-07-15 17:49:18,495 charges_calc.py:61  DEBUG total price for RNT417 is 5217
+2019-07-15 17:49:18,495 charges_calc.py:61  DEBUG total price for RNT418 is 6028
+2019-07-15 17:49:18,495 charges_calc.py:61  DEBUG total price for RNT419 is 9420
+2019-07-15 17:49:18,495 charges_calc.py:61  DEBUG total price for RNT420 is 16540
+2019-07-15 17:49:18,495 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT421
+2019-07-15 17:49:18,496 charges_calc.py:61  DEBUG total price for RNT421 is 5409
+2019-07-15 17:49:18,496 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT422
+2019-07-15 17:49:18,496 charges_calc.py:61  DEBUG total price for RNT422 is 3339
+2019-07-15 17:49:18,496 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT423
+2019-07-15 17:49:18,496 charges_calc.py:61  DEBUG total price for RNT423 is 9310
+2019-07-15 17:49:18,496 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT424
+2019-07-15 17:49:18,497 charges_calc.py:61  DEBUG total price for RNT424 is 19426
+2019-07-15 17:49:18,497 charges_calc.py:61  DEBUG total price for RNT425 is 17815
+2019-07-15 17:49:18,497 charges_calc.py:61  DEBUG total price for RNT426 is 9568
+2019-07-15 17:49:18,497 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT427
+2019-07-15 17:49:18,497 charges_calc.py:61  DEBUG total price for RNT427 is 5291
+2019-07-15 17:49:18,498 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT428
+2019-07-15 17:49:18,498 charges_calc.py:61  DEBUG total price for RNT428 is 2295
+2019-07-15 17:49:18,498 charges_calc.py:61  DEBUG total price for RNT429 is 6120
+2019-07-15 17:49:18,498 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT430
+2019-07-15 17:49:18,498 charges_calc.py:61  DEBUG total price for RNT430 is 330
+2019-07-15 17:49:18,499 charges_calc.py:61  DEBUG total price for RNT431 is 7605
+2019-07-15 17:49:18,499 charges_calc.py:61  DEBUG total price for RNT432 is 6992
+2019-07-15 17:49:18,499 charges_calc.py:61  DEBUG total price for RNT433 is 25250
+2019-07-15 17:49:18,499 charges_calc.py:61  DEBUG total price for RNT434 is 12818
+2019-07-15 17:49:18,500 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT435
+2019-07-15 17:49:18,500 charges_calc.py:61  DEBUG total price for RNT435 is 9696
+2019-07-15 17:49:18,500 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT436
+2019-07-15 17:49:18,500 charges_calc.py:61  DEBUG total price for RNT436 is 3450
+2019-07-15 17:49:18,500 charges_calc.py:61  DEBUG total price for RNT437 is 12224
+2019-07-15 17:49:18,501 charges_calc.py:61  DEBUG total price for RNT438 is 528
+2019-07-15 17:49:18,501 charges_calc.py:61  DEBUG total price for RNT439 is 3230
+2019-07-15 17:49:18,501 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT440
+2019-07-15 17:49:18,501 charges_calc.py:61  DEBUG total price for RNT440 is 25956
+2019-07-15 17:49:18,502 charges_calc.py:61  DEBUG total price for RNT441 is 8388
+2019-07-15 17:49:18,502 charges_calc.py:61  DEBUG total price for RNT442 is 7293
+2019-07-15 17:49:18,502 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT443
+2019-07-15 17:49:18,502 charges_calc.py:61  DEBUG total price for RNT443 is 24327
+2019-07-15 17:49:18,503 charges_calc.py:61  DEBUG total price for RNT444 is 7000
+2019-07-15 17:49:18,504 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT445
+2019-07-15 17:49:18,504 charges_calc.py:61  DEBUG total price for RNT445 is 1936
+2019-07-15 17:49:18,504 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT446
+2019-07-15 17:49:18,504 charges_calc.py:61  DEBUG total price for RNT446 is 13212
+2019-07-15 17:49:18,505 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT447
+2019-07-15 17:49:18,505 charges_calc.py:61  DEBUG total price for RNT447 is 2730
+2019-07-15 17:49:18,505 charges_calc.py:61  DEBUG total price for RNT448 is 5452
+2019-07-15 17:49:18,505 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT449
+2019-07-15 17:49:18,505 charges_calc.py:61  DEBUG total price for RNT449 is 16428
+2019-07-15 17:49:18,506 charges_calc.py:61  DEBUG total price for RNT450 is 7898
+2019-07-15 17:49:18,507 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT451
+2019-07-15 17:49:18,507 charges_calc.py:61  DEBUG total price for RNT451 is 948
+2019-07-15 17:49:18,507 charges_calc.py:61  DEBUG total price for RNT452 is 11682
+2019-07-15 17:49:18,507 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT453
+2019-07-15 17:49:18,507 charges_calc.py:61  DEBUG total price for RNT453 is 27506
+2019-07-15 17:49:18,508 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT454
+2019-07-15 17:49:18,508 charges_calc.py:61  DEBUG total price for RNT454 is 170
+2019-07-15 17:49:18,508 charges_calc.py:61  DEBUG total price for RNT455 is 1176
+2019-07-15 17:49:18,508 charges_calc.py:61  DEBUG total price for RNT456 is 1273
+2019-07-15 17:49:18,509 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT457
+2019-07-15 17:49:18,509 charges_calc.py:61  DEBUG total price for RNT457 is 19189
+2019-07-15 17:49:18,509 charges_calc.py:61  DEBUG total price for RNT458 is 1085
+2019-07-15 17:49:18,509 charges_calc.py:61  DEBUG total price for RNT459 is 9730
+2019-07-15 17:49:18,509 charges_calc.py:61  DEBUG total price for RNT460 is 14007
+2019-07-15 17:49:18,509 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT461
+2019-07-15 17:49:18,510 charges_calc.py:61  DEBUG total price for RNT461 is 8525
+2019-07-15 17:49:18,510 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT462
+2019-07-15 17:49:18,510 charges_calc.py:61  DEBUG total price for RNT462 is 646
+2019-07-15 17:49:18,510 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT463
+2019-07-15 17:49:18,510 charges_calc.py:61  DEBUG total price for RNT463 is 9711
+2019-07-15 17:49:18,510 charges_calc.py:61  DEBUG total price for RNT464 is 684
+2019-07-15 17:49:18,512 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT465
+2019-07-15 17:49:18,512 charges_calc.py:61  DEBUG total price for RNT465 is 15429
+2019-07-15 17:49:18,512 charges_calc.py:61  DEBUG total price for RNT466 is 4081
+2019-07-15 17:49:18,512 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT467
+2019-07-15 17:49:18,512 charges_calc.py:61  DEBUG total price for RNT467 is 20300
+2019-07-15 17:49:18,512 charges_calc.py:61  DEBUG total price for RNT468 is 408
+2019-07-15 17:49:18,513 charges_calc.py:61  DEBUG total price for RNT469 is 6940
+2019-07-15 17:49:18,513 charges_calc.py:61  DEBUG total price for RNT470 is 2737
+2019-07-15 17:49:18,513 charges_calc.py:61  DEBUG total price for RNT471 is 5089
+2019-07-15 17:49:18,513 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT472
+2019-07-15 17:49:18,513 charges_calc.py:61  DEBUG total price for RNT472 is 1836
+2019-07-15 17:49:18,513 charges_calc.py:61  DEBUG total price for RNT473 is 20310
+2019-07-15 17:49:18,514 charges_calc.py:61  DEBUG total price for RNT474 is 420
+2019-07-15 17:49:18,514 charges_calc.py:61  DEBUG total price for RNT475 is 2088
+2019-07-15 17:49:18,514 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT476
+2019-07-15 17:49:18,514 charges_calc.py:61  DEBUG total price for RNT476 is 21924
+2019-07-15 17:49:18,515 charges_calc.py:61  DEBUG total price for RNT477 is 2585
+2019-07-15 17:49:18,515 charges_calc.py:61  DEBUG total price for RNT478 is 2772
+2019-07-15 17:49:18,515 charges_calc.py:61  DEBUG total price for RNT479 is 330
+2019-07-15 17:49:18,515 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT480
+2019-07-15 17:49:18,516 charges_calc.py:61  DEBUG total price for RNT480 is 3848
+2019-07-15 17:49:18,516 charges_calc.py:61  DEBUG total price for RNT481 is 2331
+2019-07-15 17:49:18,516 charges_calc.py:61  DEBUG total price for RNT482 is 4745
+2019-07-15 17:49:18,516 charges_calc.py:61  DEBUG total price for RNT483 is 9890
+2019-07-15 17:49:18,517 charges_calc.py:61  DEBUG total price for RNT484 is 6174
+2019-07-15 17:49:18,517 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT485
+2019-07-15 17:49:18,517 charges_calc.py:61  DEBUG total price for RNT485 is 15998
+2019-07-15 17:49:18,518 charges_calc.py:61  DEBUG total price for RNT486 is 2088
+2019-07-15 17:49:18,518 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT487
+2019-07-15 17:49:18,518 charges_calc.py:61  DEBUG total price for RNT487 is 11448
+2019-07-15 17:49:18,518 charges_calc.py:61  DEBUG total price for RNT488 is 16307
+2019-07-15 17:49:18,519 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT489
+2019-07-15 17:49:18,519 charges_calc.py:61  DEBUG total price for RNT489 is 1976
+2019-07-15 17:49:18,520 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT490
+2019-07-15 17:49:18,520 charges_calc.py:61  DEBUG total price for RNT490 is 703
+2019-07-15 17:49:18,520 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT491
+2019-07-15 17:49:18,520 charges_calc.py:61  DEBUG total price for RNT491 is 7260
+2019-07-15 17:49:18,521 charges_calc.py:61  DEBUG total price for RNT492 is 2871
+2019-07-15 17:49:18,521 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT493
+2019-07-15 17:49:18,521 charges_calc.py:61  DEBUG total price for RNT493 is 8184
+2019-07-15 17:49:18,521 charges_calc.py:61  DEBUG total price for RNT494 is 3473
+2019-07-15 17:49:18,521 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT495
+2019-07-15 17:49:18,522 charges_calc.py:61  DEBUG total price for RNT495 is 2282
+2019-07-15 17:49:18,522 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT496
+2019-07-15 17:49:18,522 charges_calc.py:61  DEBUG total price for RNT496 is 9308
+2019-07-15 17:49:18,522 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT497
+2019-07-15 17:49:18,522 charges_calc.py:61  DEBUG total price for RNT497 is 7191
+2019-07-15 17:49:18,522 charges_calc.py:61  DEBUG total price for RNT498 is 5096
+2019-07-15 17:49:18,522 charges_calc.py:61  DEBUG total price for RNT499 is 5635
+2019-07-15 17:49:18,523 charges_calc.py:61  DEBUG total price for RNT500 is 2187
+2019-07-15 17:49:18,523 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT501
+2019-07-15 17:49:18,523 charges_calc.py:61  DEBUG total price for RNT501 is 3186
+2019-07-15 17:49:18,523 charges_calc.py:61  DEBUG total price for RNT502 is 7365
+2019-07-15 17:49:18,523 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT503
+2019-07-15 17:49:18,523 charges_calc.py:61  DEBUG total price for RNT503 is 4407
+2019-07-15 17:49:18,524 charges_calc.py:61  DEBUG total price for RNT504 is 9680
+2019-07-15 17:49:18,524 charges_calc.py:61  DEBUG total price for RNT505 is 2780
+2019-07-15 17:49:18,524 charges_calc.py:61  DEBUG total price for RNT506 is 10728
+2019-07-15 17:49:18,524 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT507
+2019-07-15 17:49:18,524 charges_calc.py:61  DEBUG total price for RNT507 is 2304
+2019-07-15 17:49:18,525 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT508
+2019-07-15 17:49:18,525 charges_calc.py:61  DEBUG total price for RNT508 is 13516
+2019-07-15 17:49:18,525 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT509
+2019-07-15 17:49:18,525 charges_calc.py:61  DEBUG total price for RNT509 is 3312
+2019-07-15 17:49:18,525 charges_calc.py:61  DEBUG total price for RNT510 is 255
+2019-07-15 17:49:18,525 charges_calc.py:61  DEBUG total price for RNT511 is 6325
+2019-07-15 17:49:18,525 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT512
+2019-07-15 17:49:18,527 charges_calc.py:61  DEBUG total price for RNT512 is 96
+2019-07-15 17:49:18,527 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT513
+2019-07-15 17:49:18,527 charges_calc.py:61  DEBUG total price for RNT513 is 4225
+2019-07-15 17:49:18,527 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT514
+2019-07-15 17:49:18,527 charges_calc.py:61  DEBUG total price for RNT514 is 11118
+2019-07-15 17:49:18,527 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT515
+2019-07-15 17:49:18,528 charges_calc.py:61  DEBUG total price for RNT515 is 3888
+2019-07-15 17:49:18,528 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT516
+2019-07-15 17:49:18,528 charges_calc.py:61  DEBUG total price for RNT516 is 9352
+2019-07-15 17:49:18,528 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT517
+2019-07-15 17:49:18,528 charges_calc.py:61  DEBUG total price for RNT517 is 8470
+2019-07-15 17:49:18,528 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT518
+2019-07-15 17:49:18,529 charges_calc.py:61  DEBUG total price for RNT518 is 15475
+2019-07-15 17:49:18,529 charges_calc.py:61  DEBUG total price for RNT519 is 7
+2019-07-15 17:49:18,529 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT520
+2019-07-15 17:49:18,529 charges_calc.py:61  DEBUG total price for RNT520 is 2286
+2019-07-15 17:49:18,529 charges_calc.py:61  DEBUG total price for RNT521 is 5382
+2019-07-15 17:49:18,529 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT522
+2019-07-15 17:49:18,530 charges_calc.py:61  DEBUG total price for RNT522 is 2535
+2019-07-15 17:49:18,530 charges_calc.py:61  DEBUG total price for RNT523 is 980
+2019-07-15 17:49:18,530 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT524
+2019-07-15 17:49:18,530 charges_calc.py:61  DEBUG total price for RNT524 is 4773
+2019-07-15 17:49:18,530 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT525
+2019-07-15 17:49:18,530 charges_calc.py:61  DEBUG total price for RNT525 is 3910
+2019-07-15 17:49:18,531 charges_calc.py:61  DEBUG total price for RNT526 is 24087
+2019-07-15 17:49:18,531 charges_calc.py:61  DEBUG total price for RNT527 is 6240
+2019-07-15 17:49:18,531 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT528
+2019-07-15 17:49:18,531 charges_calc.py:61  DEBUG total price for RNT528 is 23632
+2019-07-15 17:49:18,531 charges_calc.py:61  DEBUG total price for RNT529 is 3280
+2019-07-15 17:49:18,531 charges_calc.py:61  DEBUG total price for RNT530 is 18582
+2019-07-15 17:49:18,532 charges_calc.py:61  DEBUG total price for RNT531 is 7923
+2019-07-15 17:49:18,532 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT532
+2019-07-15 17:49:18,532 charges_calc.py:61  DEBUG total price for RNT532 is 13702
+2019-07-15 17:49:18,532 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT533
+2019-07-15 17:49:18,532 charges_calc.py:61  DEBUG total price for RNT533 is 6384
+2019-07-15 17:49:18,532 charges_calc.py:61  DEBUG total price for RNT534 is 4180
+2019-07-15 17:49:18,532 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT535
+2019-07-15 17:49:18,532 charges_calc.py:61  DEBUG total price for RNT535 is 14560
+2019-07-15 17:49:18,533 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT536
+2019-07-15 17:49:18,533 charges_calc.py:61  DEBUG total price for RNT536 is 6981
+2019-07-15 17:49:18,533 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT537
+2019-07-15 17:49:18,533 charges_calc.py:61  DEBUG total price for RNT537 is 10980
+2019-07-15 17:49:18,533 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT538
+2019-07-15 17:49:18,533 charges_calc.py:61  DEBUG total price for RNT538 is 9384
+2019-07-15 17:49:18,534 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT539
+2019-07-15 17:49:18,534 charges_calc.py:61  DEBUG total price for RNT539 is 8970
+2019-07-15 17:49:18,534 charges_calc.py:61  DEBUG total price for RNT540 is 1768
+2019-07-15 17:49:18,534 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT541
+2019-07-15 17:49:18,534 charges_calc.py:61  DEBUG total price for RNT541 is 16580
+2019-07-15 17:49:18,534 charges_calc.py:61  DEBUG total price for RNT542 is 10354
+2019-07-15 17:49:18,535 charges_calc.py:61  DEBUG total price for RNT543 is 70
+2019-07-15 17:49:18,535 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT544
+2019-07-15 17:49:18,535 charges_calc.py:61  DEBUG total price for RNT544 is 2856
+2019-07-15 17:49:18,535 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT545
+2019-07-15 17:49:18,535 charges_calc.py:61  DEBUG total price for RNT545 is 10989
+2019-07-15 17:49:18,535 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT546
+2019-07-15 17:49:18,535 charges_calc.py:61  DEBUG total price for RNT546 is 5439
+2019-07-15 17:49:18,535 charges_calc.py:61  DEBUG total price for RNT547 is 8295
+2019-07-15 17:49:18,537 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT548
+2019-07-15 17:49:18,537 charges_calc.py:61  DEBUG total price for RNT548 is 14508
+2019-07-15 17:49:18,537 charges_calc.py:61  DEBUG total price for RNT549 is 2408
+2019-07-15 17:49:18,537 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT550
+2019-07-15 17:49:18,537 charges_calc.py:61  DEBUG total price for RNT550 is 18057
+2019-07-15 17:49:18,537 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT551
+2019-07-15 17:49:18,537 charges_calc.py:61  DEBUG total price for RNT551 is 3200
+2019-07-15 17:49:18,538 charges_calc.py:61  DEBUG total price for RNT552 is 19602
+2019-07-15 17:49:18,538 charges_calc.py:61  DEBUG total price for RNT553 is 5424
+2019-07-15 17:49:18,538 charges_calc.py:61  DEBUG total price for RNT554 is 4032
+2019-07-15 17:49:18,538 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT555
+2019-07-15 17:49:18,538 charges_calc.py:61  DEBUG total price for RNT555 is 2440
+2019-07-15 17:49:18,538 charges_calc.py:61  DEBUG total price for RNT556 is 12636
+2019-07-15 17:49:18,539 charges_calc.py:61  DEBUG total price for RNT557 is 18915
+2019-07-15 17:49:18,539 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT558
+2019-07-15 17:49:18,539 charges_calc.py:61  DEBUG total price for RNT558 is 2968
+2019-07-15 17:49:18,539 charges_calc.py:61  DEBUG total price for RNT559 is 2450
+2019-07-15 17:49:18,539 charges_calc.py:61  DEBUG total price for RNT560 is 3180
+2019-07-15 17:49:18,539 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT561
+2019-07-15 17:49:18,539 charges_calc.py:61  DEBUG total price for RNT561 is 23700
+2019-07-15 17:49:18,539 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT562
+2019-07-15 17:49:18,540 charges_calc.py:61  DEBUG total price for RNT562 is 3072
+2019-07-15 17:49:18,540 charges_calc.py:61  DEBUG total price for RNT563 is 7848
+2019-07-15 17:49:18,540 charges_calc.py:61  DEBUG total price for RNT564 is 4403
+2019-07-15 17:49:18,540 charges_calc.py:61  DEBUG total price for RNT565 is 2772
+2019-07-15 17:49:18,540 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT566
+2019-07-15 17:49:18,540 charges_calc.py:61  DEBUG total price for RNT566 is 33066
+2019-07-15 17:49:18,540 charges_calc.py:61  DEBUG total price for RNT567 is 10920
+2019-07-15 17:49:18,541 charges_calc.py:61  DEBUG total price for RNT568 is 13468
+2019-07-15 17:49:18,541 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT569
+2019-07-15 17:49:18,541 charges_calc.py:61  DEBUG total price for RNT569 is 4588
+2019-07-15 17:49:18,541 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT570
+2019-07-15 17:49:18,541 charges_calc.py:61  DEBUG total price for RNT570 is 4978
+2019-07-15 17:49:18,541 charges_calc.py:61  DEBUG total price for RNT571 is 84
+2019-07-15 17:49:18,541 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT572
+2019-07-15 17:49:18,542 charges_calc.py:61  DEBUG total price for RNT572 is 7970
+2019-07-15 17:49:18,542 charges_calc.py:61  DEBUG total price for RNT573 is 460
+2019-07-15 17:49:18,542 charges_calc.py:61  DEBUG total price for RNT574 is 7407
+2019-07-15 17:49:18,542 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT575
+2019-07-15 17:49:18,542 charges_calc.py:61  DEBUG total price for RNT575 is 2292
+2019-07-15 17:49:18,542 charges_calc.py:61  DEBUG total price for RNT576 is 23790
+2019-07-15 17:49:18,542 charges_calc.py:61  DEBUG total price for RNT577 is 12272
+2019-07-15 17:49:18,543 charges_calc.py:61  DEBUG total price for RNT578 is 2560
+2019-07-15 17:49:18,543 charges_calc.py:61  DEBUG total price for RNT579 is 1378
+2019-07-15 17:49:18,543 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT580
+2019-07-15 17:49:18,543 charges_calc.py:61  DEBUG total price for RNT580 is 10850
+2019-07-15 17:49:18,543 charges_calc.py:61  DEBUG total price for RNT581 is 15456
+2019-07-15 17:49:18,543 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT582
+2019-07-15 17:49:18,543 charges_calc.py:61  DEBUG total price for RNT582 is 140
+2019-07-15 17:49:18,544 charges_calc.py:61  DEBUG total price for RNT583 is 13182
+2019-07-15 17:49:18,544 charges_calc.py:61  DEBUG total price for RNT584 is 16254
+2019-07-15 17:49:18,544 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT585
+2019-07-15 17:49:18,544 charges_calc.py:61  DEBUG total price for RNT585 is 12096
+2019-07-15 17:49:18,544 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT586
+2019-07-15 17:49:18,544 charges_calc.py:61  DEBUG total price for RNT586 is 5562
+2019-07-15 17:49:18,544 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT587
+2019-07-15 17:49:18,545 charges_calc.py:61  DEBUG total price for RNT587 is 10989
+2019-07-15 17:49:18,545 charges_calc.py:61  DEBUG total price for RNT588 is 2988
+2019-07-15 17:49:18,545 charges_calc.py:61  DEBUG total price for RNT589 is 944
+2019-07-15 17:49:18,545 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT590
+2019-07-15 17:49:18,545 charges_calc.py:61  DEBUG total price for RNT590 is 21800
+2019-07-15 17:49:18,545 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT591
+2019-07-15 17:49:18,546 charges_calc.py:61  DEBUG total price for RNT591 is 1606
+2019-07-15 17:49:18,546 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT592
+2019-07-15 17:49:18,546 charges_calc.py:61  DEBUG total price for RNT592 is 2394
+2019-07-15 17:49:18,546 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT593
+2019-07-15 17:49:18,546 charges_calc.py:61  DEBUG total price for RNT593 is 2368
+2019-07-15 17:49:18,546 charges_calc.py:61  DEBUG total price for RNT594 is 14160
+2019-07-15 17:49:18,547 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT595
+2019-07-15 17:49:18,548 charges_calc.py:61  DEBUG total price for RNT595 is 13376
+2019-07-15 17:49:18,548 charges_calc.py:61  DEBUG total price for RNT596 is 1035
+2019-07-15 17:49:18,548 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT597
+2019-07-15 17:49:18,548 charges_calc.py:61  DEBUG total price for RNT597 is 22755
+2019-07-15 17:49:18,548 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT598
+2019-07-15 17:49:18,548 charges_calc.py:61  DEBUG total price for RNT598 is 4950
+2019-07-15 17:49:18,549 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT599
+2019-07-15 17:49:18,549 charges_calc.py:61  DEBUG total price for RNT599 is 17976
+2019-07-15 17:49:18,549 charges_calc.py:61  DEBUG total price for RNT600 is 7900
+2019-07-15 17:49:18,549 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT601
+2019-07-15 17:49:18,549 charges_calc.py:61  DEBUG total price for RNT601 is 4832
+2019-07-15 17:49:18,549 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT602
+2019-07-15 17:49:18,549 charges_calc.py:61  DEBUG total price for RNT602 is 5611
+2019-07-15 17:49:18,550 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT603
+2019-07-15 17:49:18,550 charges_calc.py:61  DEBUG total price for RNT603 is 5292
+2019-07-15 17:49:18,550 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT604
+2019-07-15 17:49:18,550 charges_calc.py:61  DEBUG total price for RNT604 is 2238
+2019-07-15 17:49:18,550 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT605
+2019-07-15 17:49:18,550 charges_calc.py:61  DEBUG total price for RNT605 is 13992
+2019-07-15 17:49:18,551 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT606
+2019-07-15 17:49:18,551 charges_calc.py:61  DEBUG total price for RNT606 is 34047
+2019-07-15 17:49:18,551 charges_calc.py:61  DEBUG total price for RNT607 is 19320
+2019-07-15 17:49:18,551 charges_calc.py:61  DEBUG total price for RNT608 is 399
+2019-07-15 17:49:18,551 charges_calc.py:61  DEBUG total price for RNT609 is 16560
+2019-07-15 17:49:18,552 charges_calc.py:61  DEBUG total price for RNT610 is 6840
+2019-07-15 17:49:18,552 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT611
+2019-07-15 17:49:18,552 charges_calc.py:61  DEBUG total price for RNT611 is 1122
+2019-07-15 17:49:18,552 charges_calc.py:61  DEBUG total price for RNT612 is 8320
+2019-07-15 17:49:18,552 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT613
+2019-07-15 17:49:18,553 charges_calc.py:61  DEBUG total price for RNT613 is 2600
+2019-07-15 17:49:18,553 charges_calc.py:61  DEBUG total price for RNT614 is 4416
+2019-07-15 17:49:18,553 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT615
+2019-07-15 17:49:18,553 charges_calc.py:61  DEBUG total price for RNT615 is 3720
+2019-07-15 17:49:18,553 charges_calc.py:61  DEBUG total price for RNT616 is 8610
+2019-07-15 17:49:18,553 charges_calc.py:61  DEBUG total price for RNT617 is 6440
+2019-07-15 17:49:18,554 charges_calc.py:61  DEBUG total price for RNT618 is 6156
+2019-07-15 17:49:18,554 charges_calc.py:61  DEBUG total price for RNT619 is 364
+2019-07-15 17:49:18,554 charges_calc.py:61  DEBUG total price for RNT620 is 8384
+2019-07-15 17:49:18,554 charges_calc.py:61  DEBUG total price for RNT621 is 26832
+2019-07-15 17:49:18,554 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT622
+2019-07-15 17:49:18,554 charges_calc.py:61  DEBUG total price for RNT622 is 4032
+2019-07-15 17:49:18,556 charges_calc.py:61  DEBUG total price for RNT623 is 2847
+2019-07-15 17:49:18,556 charges_calc.py:61  DEBUG total price for RNT624 is 2448
+2019-07-15 17:49:18,556 charges_calc.py:61  DEBUG total price for RNT625 is 160
+2019-07-15 17:49:18,556 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT626
+2019-07-15 17:49:18,556 charges_calc.py:61  DEBUG total price for RNT626 is 11360
+2019-07-15 17:49:18,556 charges_calc.py:61  DEBUG total price for RNT627 is 18060
+2019-07-15 17:49:18,557 charges_calc.py:61  DEBUG total price for RNT628 is 3234
+2019-07-15 17:49:18,557 charges_calc.py:61  DEBUG total price for RNT629 is 4579
+2019-07-15 17:49:18,557 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT630
+2019-07-15 17:49:18,557 charges_calc.py:61  DEBUG total price for RNT630 is 2701
+2019-07-15 17:49:18,557 charges_calc.py:61  DEBUG total price for RNT631 is 24250
+2019-07-15 17:49:18,557 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT632
+2019-07-15 17:49:18,558 charges_calc.py:61  DEBUG total price for RNT632 is 108
+2019-07-15 17:49:18,558 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT633
+2019-07-15 17:49:18,558 charges_calc.py:61  DEBUG total price for RNT633 is 948
+2019-07-15 17:49:18,558 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT634
+2019-07-15 17:49:18,558 charges_calc.py:61  DEBUG total price for RNT634 is 560
+2019-07-15 17:49:18,558 charges_calc.py:61  DEBUG total price for RNT635 is 3586
+2019-07-15 17:49:18,559 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT636
+2019-07-15 17:49:18,559 charges_calc.py:61  DEBUG total price for RNT636 is 15694
+2019-07-15 17:49:18,559 charges_calc.py:61  DEBUG total price for RNT637 is 9911
+2019-07-15 17:49:18,559 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT638
+2019-07-15 17:49:18,559 charges_calc.py:61  DEBUG total price for RNT638 is 5797
+2019-07-15 17:49:18,559 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT639
+2019-07-15 17:49:18,559 charges_calc.py:61  DEBUG total price for RNT639 is 10465
+2019-07-15 17:49:18,560 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT640
+2019-07-15 17:49:18,560 charges_calc.py:61  DEBUG total price for RNT640 is 2490
+2019-07-15 17:49:18,560 charges_calc.py:61  DEBUG total price for RNT641 is 4326
+2019-07-15 17:49:18,560 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT642
+2019-07-15 17:49:18,560 charges_calc.py:61  DEBUG total price for RNT642 is 616
+2019-07-15 17:49:18,560 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT643
+2019-07-15 17:49:18,561 charges_calc.py:61  DEBUG total price for RNT643 is 31360
+2019-07-15 17:49:18,561 charges_calc.py:61  DEBUG total price for RNT644 is 396
+2019-07-15 17:49:18,561 charges_calc.py:61  DEBUG total price for RNT645 is 3016
+2019-07-15 17:49:18,561 charges_calc.py:61  DEBUG total price for RNT646 is 34593
+2019-07-15 17:49:18,561 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT647
+2019-07-15 17:49:18,561 charges_calc.py:61  DEBUG total price for RNT647 is 1463
+2019-07-15 17:49:18,562 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT648
+2019-07-15 17:49:18,562 charges_calc.py:61  DEBUG total price for RNT648 is 4268
+2019-07-15 17:49:18,562 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT649
+2019-07-15 17:49:18,562 charges_calc.py:61  DEBUG total price for RNT649 is 8991
+2019-07-15 17:49:18,562 charges_calc.py:61  DEBUG total price for RNT650 is 5511
+2019-07-15 17:49:18,562 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT651
+2019-07-15 17:49:18,563 charges_calc.py:61  DEBUG total price for RNT651 is 4800
+2019-07-15 17:49:18,563 charges_calc.py:61  DEBUG total price for RNT652 is 7670
+2019-07-15 17:49:18,563 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT653
+2019-07-15 17:49:18,563 charges_calc.py:61  DEBUG total price for RNT653 is 1800
+2019-07-15 17:49:18,563 charges_calc.py:61  DEBUG total price for RNT654 is 2430
+2019-07-15 17:49:18,563 charges_calc.py:61  DEBUG total price for RNT655 is 448
+2019-07-15 17:49:18,564 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT656
+2019-07-15 17:49:18,564 charges_calc.py:61  DEBUG total price for RNT656 is 8230
+2019-07-15 17:49:18,564 charges_calc.py:61  DEBUG total price for RNT657 is 21632
+2019-07-15 17:49:18,564 charges_calc.py:61  DEBUG total price for RNT658 is 24360
+2019-07-15 17:49:18,564 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT659
+2019-07-15 17:49:18,565 charges_calc.py:61  DEBUG total price for RNT659 is 8579
+2019-07-15 17:49:18,565 charges_calc.py:61  DEBUG total price for RNT660 is 11359
+2019-07-15 17:49:18,565 charges_calc.py:61  DEBUG total price for RNT661 is 6031
+2019-07-15 17:49:18,565 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT662
+2019-07-15 17:49:18,565 charges_calc.py:61  DEBUG total price for RNT662 is 2190
+2019-07-15 17:49:18,566 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT663
+2019-07-15 17:49:18,566 charges_calc.py:61  DEBUG total price for RNT663 is 11832
+2019-07-15 17:49:18,567 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT664
+2019-07-15 17:49:18,567 charges_calc.py:61  DEBUG total price for RNT664 is 7491
+2019-07-15 17:49:18,567 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT665
+2019-07-15 17:49:18,567 charges_calc.py:61  DEBUG total price for RNT665 is 4536
+2019-07-15 17:49:18,568 charges_calc.py:61  DEBUG total price for RNT666 is 6248
+2019-07-15 17:49:18,568 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT667
+2019-07-15 17:49:18,568 charges_calc.py:61  DEBUG total price for RNT667 is 16100
+2019-07-15 17:49:18,568 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT668
+2019-07-15 17:49:18,568 charges_calc.py:61  DEBUG total price for RNT668 is 799
+2019-07-15 17:49:18,569 charges_calc.py:61  DEBUG total price for RNT669 is 5358
+2019-07-15 17:49:18,569 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT670
+2019-07-15 17:49:18,569 charges_calc.py:61  DEBUG total price for RNT670 is 6040
+2019-07-15 17:49:18,569 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT671
+2019-07-15 17:49:18,570 charges_calc.py:61  DEBUG total price for RNT671 is 5502
+2019-07-15 17:49:18,570 charges_calc.py:61  DEBUG total price for RNT672 is 9268
+2019-07-15 17:49:18,571 charges_calc.py:61  DEBUG total price for RNT673 is 2223
+2019-07-15 17:49:18,571 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT674
+2019-07-15 17:49:18,571 charges_calc.py:61  DEBUG total price for RNT674 is 11400
+2019-07-15 17:49:18,571 charges_calc.py:61  DEBUG total price for RNT675 is 54
+2019-07-15 17:49:18,572 charges_calc.py:61  DEBUG total price for RNT676 is 7800
+2019-07-15 17:49:18,572 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT677
+2019-07-15 17:49:18,572 charges_calc.py:61  DEBUG total price for RNT677 is 680
+2019-07-15 17:49:18,572 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT678
+2019-07-15 17:49:18,572 charges_calc.py:61  DEBUG total price for RNT678 is 350
+2019-07-15 17:49:18,572 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT679
+2019-07-15 17:49:18,572 charges_calc.py:61  DEBUG total price for RNT679 is 19053
+2019-07-15 17:49:18,572 charges_calc.py:61  DEBUG total price for RNT680 is 23265
+2019-07-15 17:49:18,574 charges_calc.py:61  DEBUG total price for RNT681 is 34920
+2019-07-15 17:49:18,574 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT682
+2019-07-15 17:49:18,574 charges_calc.py:61  DEBUG total price for RNT682 is 2117
+2019-07-15 17:49:18,574 charges_calc.py:61  DEBUG total price for RNT683 is 7769
+2019-07-15 17:49:18,575 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT684
+2019-07-15 17:49:18,575 charges_calc.py:61  DEBUG total price for RNT684 is 11225
+2019-07-15 17:49:18,575 charges_calc.py:61  DEBUG total price for RNT685 is 175
+2019-07-15 17:49:18,575 charges_calc.py:61  DEBUG total price for RNT686 is 22984
+2019-07-15 17:49:18,575 charges_calc.py:61  DEBUG total price for RNT687 is 726
+2019-07-15 17:49:18,575 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT688
+2019-07-15 17:49:18,575 charges_calc.py:61  DEBUG total price for RNT688 is 238
+2019-07-15 17:49:18,576 charges_calc.py:61  DEBUG total price for RNT689 is 1178
+2019-07-15 17:49:18,576 charges_calc.py:61  DEBUG total price for RNT690 is 6549
+2019-07-15 17:49:18,576 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT691
+2019-07-15 17:49:18,576 charges_calc.py:61  DEBUG total price for RNT691 is 26604
+2019-07-15 17:49:18,576 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT692
+2019-07-15 17:49:18,577 charges_calc.py:61  DEBUG total price for RNT692 is 522
+2019-07-15 17:49:18,577 charges_calc.py:61  DEBUG total price for RNT693 is 3480
+2019-07-15 17:49:18,577 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT694
+2019-07-15 17:49:18,577 charges_calc.py:61  DEBUG total price for RNT694 is 11700
+2019-07-15 17:49:18,577 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT695
+2019-07-15 17:49:18,578 charges_calc.py:61  DEBUG total price for RNT695 is 3275
+2019-07-15 17:49:18,578 charges_calc.py:61  DEBUG total price for RNT696 is 7098
+2019-07-15 17:49:18,578 charges_calc.py:61  DEBUG total price for RNT697 is 8512
+2019-07-15 17:49:18,578 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT698
+2019-07-15 17:49:18,578 charges_calc.py:61  DEBUG total price for RNT698 is 18848
+2019-07-15 17:49:18,579 charges_calc.py:61  DEBUG total price for RNT699 is 282
+2019-07-15 17:49:18,579 charges_calc.py:61  DEBUG total price for RNT700 is 24584
+2019-07-15 17:49:18,579 charges_calc.py:61  DEBUG total price for RNT701 is 7744
+2019-07-15 17:49:18,579 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT702
+2019-07-15 17:49:18,579 charges_calc.py:61  DEBUG total price for RNT702 is 4380
+2019-07-15 17:49:18,580 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT703
+2019-07-15 17:49:18,580 charges_calc.py:61  DEBUG total price for RNT703 is 954
+2019-07-15 17:49:18,580 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT704
+2019-07-15 17:49:18,580 charges_calc.py:61  DEBUG total price for RNT704 is 11970
+2019-07-15 17:49:18,581 charges_calc.py:61  DEBUG total price for RNT705 is 1416
+2019-07-15 17:49:18,582 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT706
+2019-07-15 17:49:18,582 charges_calc.py:61  DEBUG total price for RNT706 is 2280
+2019-07-15 17:49:18,582 charges_calc.py:61  DEBUG total price for RNT707 is 21984
+2019-07-15 17:49:18,582 charges_calc.py:61  DEBUG total price for RNT708 is 2720
+2019-07-15 17:49:18,582 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT709
+2019-07-15 17:49:18,582 charges_calc.py:61  DEBUG total price for RNT709 is 1476
+2019-07-15 17:49:18,583 charges_calc.py:61  DEBUG total price for RNT710 is 16212
+2019-07-15 17:49:18,583 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT711
+2019-07-15 17:49:18,583 charges_calc.py:61  DEBUG total price for RNT711 is 3285
+2019-07-15 17:49:18,583 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT712
+2019-07-15 17:49:18,583 charges_calc.py:61  DEBUG total price for RNT712 is 4270
+2019-07-15 17:49:18,584 charges_calc.py:61  DEBUG total price for RNT713 is 1190
+2019-07-15 17:49:18,584 charges_calc.py:61  DEBUG total price for RNT714 is 15039
+2019-07-15 17:49:18,584 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT715
+2019-07-15 17:49:18,584 charges_calc.py:61  DEBUG total price for RNT715 is 11502
+2019-07-15 17:49:18,585 charges_calc.py:61  DEBUG total price for RNT716 is 1584
+2019-07-15 17:49:18,585 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT717
+2019-07-15 17:49:18,585 charges_calc.py:61  DEBUG total price for RNT717 is 30597
+2019-07-15 17:49:18,585 charges_calc.py:61  DEBUG total price for RNT718 is 608
+2019-07-15 17:49:18,585 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT719
+2019-07-15 17:49:18,585 charges_calc.py:61  DEBUG total price for RNT719 is 4080
+2019-07-15 17:49:18,586 charges_calc.py:61  DEBUG total price for RNT720 is 29160
+2019-07-15 17:49:18,586 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT721
+2019-07-15 17:49:18,586 charges_calc.py:61  DEBUG total price for RNT721 is 5628
+2019-07-15 17:49:18,586 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT722
+2019-07-15 17:49:18,586 charges_calc.py:61  DEBUG total price for RNT722 is 12694
+2019-07-15 17:49:18,588 charges_calc.py:61  DEBUG total price for RNT723 is 10892
+2019-07-15 17:49:18,588 charges_calc.py:61  DEBUG total price for RNT724 is 11330
+2019-07-15 17:49:18,588 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT725
+2019-07-15 17:49:18,588 charges_calc.py:61  DEBUG total price for RNT725 is 3008
+2019-07-15 17:49:18,588 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT726
+2019-07-15 17:49:18,589 charges_calc.py:61  DEBUG total price for RNT726 is 22113
+2019-07-15 17:49:18,589 charges_calc.py:61  DEBUG total price for RNT727 is 13032
+2019-07-15 17:49:18,589 charges_calc.py:61  DEBUG total price for RNT728 is 7220
+2019-07-15 17:49:18,589 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT729
+2019-07-15 17:49:18,589 charges_calc.py:61  DEBUG total price for RNT729 is 4563
+2019-07-15 17:49:18,590 charges_calc.py:61  DEBUG total price for RNT730 is 9776
+2019-07-15 17:49:18,590 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT731
+2019-07-15 17:49:18,590 charges_calc.py:61  DEBUG total price for RNT731 is 760
+2019-07-15 17:49:18,590 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT732
+2019-07-15 17:49:18,590 charges_calc.py:61  DEBUG total price for RNT732 is 9345
+2019-07-15 17:49:18,590 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT733
+2019-07-15 17:49:18,590 charges_calc.py:61  DEBUG total price for RNT733 is 6464
+2019-07-15 17:49:18,591 charges_calc.py:61  DEBUG total price for RNT734 is 15390
+2019-07-15 17:49:18,591 charges_calc.py:61  DEBUG total price for RNT735 is 10804
+2019-07-15 17:49:18,591 charges_calc.py:61  DEBUG total price for RNT736 is 15614
+2019-07-15 17:49:18,591 charges_calc.py:61  DEBUG total price for RNT737 is 6740
+2019-07-15 17:49:18,591 charges_calc.py:61  DEBUG total price for RNT738 is 2640
+2019-07-15 17:49:18,592 charges_calc.py:61  DEBUG total price for RNT739 is 9509
+2019-07-15 17:49:18,592 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT740
+2019-07-15 17:49:18,592 charges_calc.py:61  DEBUG total price for RNT740 is 4032
+2019-07-15 17:49:18,592 charges_calc.py:61  DEBUG total price for RNT741 is 3942
+2019-07-15 17:49:18,593 charges_calc.py:61  DEBUG total price for RNT742 is 12584
+2019-07-15 17:49:18,593 charges_calc.py:61  DEBUG total price for RNT743 is 29024
+2019-07-15 17:49:18,593 charges_calc.py:61  DEBUG total price for RNT744 is 7290
+2019-07-15 17:49:18,593 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT745
+2019-07-15 17:49:18,593 charges_calc.py:61  DEBUG total price for RNT745 is 6699
+2019-07-15 17:49:18,593 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT746
+2019-07-15 17:49:18,594 charges_calc.py:61  DEBUG total price for RNT746 is 1932
+2019-07-15 17:49:18,595 charges_calc.py:61  DEBUG total price for RNT747 is 14278
+2019-07-15 17:49:18,595 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT748
+2019-07-15 17:49:18,595 charges_calc.py:61  DEBUG total price for RNT748 is 1176
+2019-07-15 17:49:18,595 charges_calc.py:61  DEBUG total price for RNT749 is 6804
+2019-07-15 17:49:18,595 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT750
+2019-07-15 17:49:18,596 charges_calc.py:61  DEBUG total price for RNT750 is 5480
+2019-07-15 17:49:18,596 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT751
+2019-07-15 17:49:18,596 charges_calc.py:61  DEBUG total price for RNT751 is 6699
+2019-07-15 17:49:18,596 charges_calc.py:61  DEBUG total price for RNT752 is 17884
+2019-07-15 17:49:18,596 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT753
+2019-07-15 17:49:18,596 charges_calc.py:61  DEBUG total price for RNT753 is 1775
+2019-07-15 17:49:18,597 charges_calc.py:61  DEBUG total price for RNT754 is 11858
+2019-07-15 17:49:18,597 charges_calc.py:61  DEBUG total price for RNT755 is 3360
+2019-07-15 17:49:18,597 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT756
+2019-07-15 17:49:18,597 charges_calc.py:61  DEBUG total price for RNT756 is 1988
+2019-07-15 17:49:18,597 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT757
+2019-07-15 17:49:18,598 charges_calc.py:61  DEBUG total price for RNT757 is 2240
+2019-07-15 17:49:18,598 charges_calc.py:61  DEBUG total price for RNT758 is 5377
+2019-07-15 17:49:18,598 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT759
+2019-07-15 17:49:18,598 charges_calc.py:61  DEBUG total price for RNT759 is 8437
+2019-07-15 17:49:18,598 charges_calc.py:61  DEBUG total price for RNT760 is 7448
+2019-07-15 17:49:18,599 charges_calc.py:61  DEBUG total price for RNT761 is 24640
+2019-07-15 17:49:18,599 charges_calc.py:61  DEBUG total price for RNT762 is 5538
+2019-07-15 17:49:18,599 charges_calc.py:61  DEBUG total price for RNT763 is 4061
+2019-07-15 17:49:18,599 charges_calc.py:61  DEBUG total price for RNT764 is 6591
+2019-07-15 17:49:18,599 charges_calc.py:61  DEBUG total price for RNT765 is 2270
+2019-07-15 17:49:18,599 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT766
+2019-07-15 17:49:18,600 charges_calc.py:61  DEBUG total price for RNT766 is 5750
+2019-07-15 17:49:18,600 charges_calc.py:61  DEBUG total price for RNT767 is 12029
+2019-07-15 17:49:18,600 charges_calc.py:61  DEBUG total price for RNT768 is 5460
+2019-07-15 17:49:18,600 charges_calc.py:61  DEBUG total price for RNT769 is 10388
+2019-07-15 17:49:18,601 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT770
+2019-07-15 17:49:18,601 charges_calc.py:61  DEBUG total price for RNT770 is 38196
+2019-07-15 17:49:18,601 charges_calc.py:61  DEBUG total price for RNT771 is 663
+2019-07-15 17:49:18,601 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT772
+2019-07-15 17:49:18,601 charges_calc.py:61  DEBUG total price for RNT772 is 2340
+2019-07-15 17:49:18,602 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT773
+2019-07-15 17:49:18,602 charges_calc.py:61  DEBUG total price for RNT773 is 240
+2019-07-15 17:49:18,602 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT774
+2019-07-15 17:49:18,602 charges_calc.py:61  DEBUG total price for RNT774 is 20232
+2019-07-15 17:49:18,604 charges_calc.py:61  DEBUG total price for RNT775 is 19368
+2019-07-15 17:49:18,604 charges_calc.py:48  WARNING FAILED - rental start/rental end RNT776 with exception time data '' does not match format '%m/%d/%y'
+2019-07-15 17:49:18,604 charges_calc.py:61  DEBUG total price for RNT776 is 11802
+2019-07-15 17:49:18,604 charges_calc.py:61  DEBUG total price for RNT777 is 16458
+2019-07-15 17:49:18,605 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT778
+2019-07-15 17:49:18,605 charges_calc.py:61  DEBUG total price for RNT778 is 14625
+2019-07-15 17:49:18,605 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT779
+2019-07-15 17:49:18,605 charges_calc.py:61  DEBUG total price for RNT779 is 3749
+2019-07-15 17:49:18,605 charges_calc.py:61  DEBUG total price for RNT780 is 945
+2019-07-15 17:49:18,606 charges_calc.py:61  DEBUG total price for RNT781 is 13910
+2019-07-15 17:49:18,606 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT782
+2019-07-15 17:49:18,606 charges_calc.py:61  DEBUG total price for RNT782 is 6248
+2019-07-15 17:49:18,606 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT783
+2019-07-15 17:49:18,607 charges_calc.py:61  DEBUG total price for RNT783 is 7995
+2019-07-15 17:49:18,607 charges_calc.py:61  DEBUG total price for RNT784 is 5828
+2019-07-15 17:49:18,607 charges_calc.py:61  DEBUG total price for RNT785 is 3976
+2019-07-15 17:49:18,607 charges_calc.py:61  DEBUG total price for RNT786 is 6314
+2019-07-15 17:49:18,607 charges_calc.py:61  DEBUG total price for RNT787 is 744
+2019-07-15 17:49:18,609 charges_calc.py:61  DEBUG total price for RNT788 is 4266
+2019-07-15 17:49:18,609 charges_calc.py:61  DEBUG total price for RNT789 is 1430
+2019-07-15 17:49:18,609 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT790
+2019-07-15 17:49:18,609 charges_calc.py:61  DEBUG total price for RNT790 is 4400
+2019-07-15 17:49:18,610 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT791
+2019-07-15 17:49:18,610 charges_calc.py:61  DEBUG total price for RNT791 is 7776
+2019-07-15 17:49:18,610 charges_calc.py:61  DEBUG total price for RNT792 is 4537
+2019-07-15 17:49:18,610 charges_calc.py:61  DEBUG total price for RNT793 is 484
+2019-07-15 17:49:18,610 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT794
+2019-07-15 17:49:18,611 charges_calc.py:61  DEBUG total price for RNT794 is 37986
+2019-07-15 17:49:18,611 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT795
+2019-07-15 17:49:18,611 charges_calc.py:61  DEBUG total price for RNT795 is 2508
+2019-07-15 17:49:18,611 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT796
+2019-07-15 17:49:18,611 charges_calc.py:61  DEBUG total price for RNT796 is 7008
+2019-07-15 17:49:18,611 charges_calc.py:61  DEBUG total price for RNT797 is 4810
+2019-07-15 17:49:18,612 charges_calc.py:61  DEBUG total price for RNT798 is 25056
+2019-07-15 17:49:18,612 charges_calc.py:61  DEBUG total price for RNT799 is 13398
+2019-07-15 17:49:18,612 charges_calc.py:61  DEBUG total price for RNT800 is 16675
+2019-07-15 17:49:18,612 charges_calc.py:61  DEBUG total price for RNT801 is 11152
+2019-07-15 17:49:18,612 charges_calc.py:61  DEBUG total price for RNT802 is 2160
+2019-07-15 17:49:18,612 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT803
+2019-07-15 17:49:18,612 charges_calc.py:61  DEBUG total price for RNT803 is 1250
+2019-07-15 17:49:18,613 charges_calc.py:61  DEBUG total price for RNT804 is 7220
+2019-07-15 17:49:18,614 charges_calc.py:61  DEBUG total price for RNT805 is 376
+2019-07-15 17:49:18,614 charges_calc.py:61  DEBUG total price for RNT806 is 288
+2019-07-15 17:49:18,614 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT807
+2019-07-15 17:49:18,614 charges_calc.py:61  DEBUG total price for RNT807 is 6708
+2019-07-15 17:49:18,614 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT808
+2019-07-15 17:49:18,614 charges_calc.py:61  DEBUG total price for RNT808 is 2220
+2019-07-15 17:49:18,614 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT809
+2019-07-15 17:49:18,614 charges_calc.py:61  DEBUG total price for RNT809 is 4097
+2019-07-15 17:49:18,615 charges_calc.py:61  DEBUG total price for RNT810 is 22707
+2019-07-15 17:49:18,615 charges_calc.py:61  DEBUG total price for RNT811 is 3864
+2019-07-15 17:49:18,615 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT812
+2019-07-15 17:49:18,615 charges_calc.py:61  DEBUG total price for RNT812 is 1768
+2019-07-15 17:49:18,615 charges_calc.py:61  DEBUG total price for RNT813 is 7368
+2019-07-15 17:49:18,616 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT814
+2019-07-15 17:49:18,616 charges_calc.py:61  DEBUG total price for RNT814 is 14364
+2019-07-15 17:49:18,616 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT815
+2019-07-15 17:49:18,616 charges_calc.py:61  DEBUG total price for RNT815 is 9672
+2019-07-15 17:49:18,616 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT816
+2019-07-15 17:49:18,616 charges_calc.py:61  DEBUG total price for RNT816 is 1336
+2019-07-15 17:49:18,616 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT817
+2019-07-15 17:49:18,616 charges_calc.py:61  DEBUG total price for RNT817 is 36720
+2019-07-15 17:49:18,617 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT818
+2019-07-15 17:49:18,617 charges_calc.py:61  DEBUG total price for RNT818 is 21960
+2019-07-15 17:49:18,617 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT819
+2019-07-15 17:49:18,617 charges_calc.py:61  DEBUG total price for RNT819 is 1460
+2019-07-15 17:49:18,618 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT820
+2019-07-15 17:49:18,618 charges_calc.py:61  DEBUG total price for RNT820 is 80
+2019-07-15 17:49:18,618 charges_calc.py:61  DEBUG total price for RNT821 is 5058
+2019-07-15 17:49:18,618 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT822
+2019-07-15 17:49:18,618 charges_calc.py:61  DEBUG total price for RNT822 is 2772
+2019-07-15 17:49:18,618 charges_calc.py:61  DEBUG total price for RNT823 is 1230
+2019-07-15 17:49:18,619 charges_calc.py:61  DEBUG total price for RNT824 is 16902
+2019-07-15 17:49:18,619 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT825
+2019-07-15 17:49:18,619 charges_calc.py:61  DEBUG total price for RNT825 is 2147
+2019-07-15 17:49:18,619 charges_calc.py:61  DEBUG total price for RNT826 is 4312
+2019-07-15 17:49:18,619 charges_calc.py:61  DEBUG total price for RNT827 is 1575
+2019-07-15 17:49:18,620 charges_calc.py:61  DEBUG total price for RNT828 is 21150
+2019-07-15 17:49:18,620 charges_calc.py:61  DEBUG total price for RNT829 is 11225
+2019-07-15 17:49:18,620 charges_calc.py:61  DEBUG total price for RNT830 is 1640
+2019-07-15 17:49:18,620 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT831
+2019-07-15 17:49:18,620 charges_calc.py:61  DEBUG total price for RNT831 is 15
+2019-07-15 17:49:18,620 charges_calc.py:61  DEBUG total price for RNT832 is 12714
+2019-07-15 17:49:18,620 charges_calc.py:61  DEBUG total price for RNT833 is 19968
+2019-07-15 17:49:18,622 charges_calc.py:61  DEBUG total price for RNT834 is 27573
+2019-07-15 17:49:18,622 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT835
+2019-07-15 17:49:18,622 charges_calc.py:61  DEBUG total price for RNT835 is 13068
+2019-07-15 17:49:18,622 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT836
+2019-07-15 17:49:18,622 charges_calc.py:61  DEBUG total price for RNT836 is 100
+2019-07-15 17:49:18,623 charges_calc.py:61  DEBUG total price for RNT837 is 736
+2019-07-15 17:49:18,623 charges_calc.py:61  DEBUG total price for RNT838 is 5278
+2019-07-15 17:49:18,623 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT839
+2019-07-15 17:49:18,623 charges_calc.py:61  DEBUG total price for RNT839 is 1611
+2019-07-15 17:49:18,624 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT840
+2019-07-15 17:49:18,624 charges_calc.py:61  DEBUG total price for RNT840 is 12065
+2019-07-15 17:49:18,624 charges_calc.py:61  DEBUG total price for RNT841 is 8398
+2019-07-15 17:49:18,624 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT842
+2019-07-15 17:49:18,624 charges_calc.py:61  DEBUG total price for RNT842 is 9316
+2019-07-15 17:49:18,624 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT843
+2019-07-15 17:49:18,624 charges_calc.py:61  DEBUG total price for RNT843 is 16966
+2019-07-15 17:49:18,625 charges_calc.py:71  WARNING FAILED - unit cost RNT843 with exception division by zero
+2019-07-15 17:49:18,625 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT844
+2019-07-15 17:49:18,625 charges_calc.py:61  DEBUG total price for RNT844 is 8029
+2019-07-15 17:49:18,625 charges_calc.py:61  DEBUG total price for RNT845 is 14880
+2019-07-15 17:49:18,625 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT846
+2019-07-15 17:49:18,625 charges_calc.py:61  DEBUG total price for RNT846 is 11772
+2019-07-15 17:49:18,626 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT847
+2019-07-15 17:49:18,626 charges_calc.py:61  DEBUG total price for RNT847 is 3164
+2019-07-15 17:49:18,626 charges_calc.py:61  DEBUG total price for RNT848 is 2044
+2019-07-15 17:49:18,626 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT849
+2019-07-15 17:49:18,626 charges_calc.py:61  DEBUG total price for RNT849 is 4200
+2019-07-15 17:49:18,627 charges_calc.py:61  DEBUG total price for RNT850 is 7068
+2019-07-15 17:49:18,627 charges_calc.py:61  DEBUG total price for RNT851 is 9545
+2019-07-15 17:49:18,628 charges_calc.py:61  DEBUG total price for RNT852 is 14560
+2019-07-15 17:49:18,628 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT853
+2019-07-15 17:49:18,628 charges_calc.py:61  DEBUG total price for RNT853 is 12375
+2019-07-15 17:49:18,628 charges_calc.py:61  DEBUG total price for RNT854 is 32877
+2019-07-15 17:49:18,628 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT855
+2019-07-15 17:49:18,629 charges_calc.py:61  DEBUG total price for RNT855 is 2576
+2019-07-15 17:49:18,629 charges_calc.py:61  DEBUG total price for RNT856 is 5106
+2019-07-15 17:49:18,629 charges_calc.py:61  DEBUG total price for RNT857 is 1520
+2019-07-15 17:49:18,629 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT858
+2019-07-15 17:49:18,629 charges_calc.py:61  DEBUG total price for RNT858 is 1725
+2019-07-15 17:49:18,629 charges_calc.py:61  DEBUG total price for RNT859 is 1512
+2019-07-15 17:49:18,630 charges_calc.py:61  DEBUG total price for RNT860 is 2250
+2019-07-15 17:49:18,630 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT861
+2019-07-15 17:49:18,630 charges_calc.py:61  DEBUG total price for RNT861 is 12120
+2019-07-15 17:49:18,630 charges_calc.py:61  DEBUG total price for RNT862 is 576
+2019-07-15 17:49:18,630 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT863
+2019-07-15 17:49:18,631 charges_calc.py:61  DEBUG total price for RNT863 is 5256
+2019-07-15 17:49:18,631 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT864
+2019-07-15 17:49:18,631 charges_calc.py:61  DEBUG total price for RNT864 is 96
+2019-07-15 17:49:18,631 charges_calc.py:61  DEBUG total price for RNT865 is 2112
+2019-07-15 17:49:18,631 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT866
+2019-07-15 17:49:18,631 charges_calc.py:61  DEBUG total price for RNT866 is 9082
+2019-07-15 17:49:18,631 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT867
+2019-07-15 17:49:18,632 charges_calc.py:61  DEBUG total price for RNT867 is 2774
+2019-07-15 17:49:18,632 charges_calc.py:61  DEBUG total price for RNT868 is 6179
+2019-07-15 17:49:18,632 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT869
+2019-07-15 17:49:18,632 charges_calc.py:61  DEBUG total price for RNT869 is 7774
+2019-07-15 17:49:18,632 charges_calc.py:61  DEBUG total price for RNT870 is 5628
+2019-07-15 17:49:18,633 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT871
+2019-07-15 17:49:18,634 charges_calc.py:61  DEBUG total price for RNT871 is 2001
+2019-07-15 17:49:18,634 charges_calc.py:61  DEBUG total price for RNT872 is 12480
+2019-07-15 17:49:18,634 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT873
+2019-07-15 17:49:18,634 charges_calc.py:61  DEBUG total price for RNT873 is 380
+2019-07-15 17:49:18,635 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT874
+2019-07-15 17:49:18,635 charges_calc.py:61  DEBUG total price for RNT874 is 114
+2019-07-15 17:49:18,635 charges_calc.py:61  DEBUG total price for RNT875 is 750
+2019-07-15 17:49:18,635 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT876
+2019-07-15 17:49:18,636 charges_calc.py:61  DEBUG total price for RNT876 is 5772
+2019-07-15 17:49:18,636 charges_calc.py:61  DEBUG total price for RNT877 is 8148
+2019-07-15 17:49:18,636 charges_calc.py:61  DEBUG total price for RNT878 is 80
+2019-07-15 17:49:18,636 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT879
+2019-07-15 17:49:18,636 charges_calc.py:61  DEBUG total price for RNT879 is 16632
+2019-07-15 17:49:18,637 charges_calc.py:61  DEBUG total price for RNT880 is 1479
+2019-07-15 17:49:18,637 charges_calc.py:61  DEBUG total price for RNT881 is 3032
+2019-07-15 17:49:18,637 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT882
+2019-07-15 17:49:18,637 charges_calc.py:61  DEBUG total price for RNT882 is 18312
+2019-07-15 17:49:18,638 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT883
+2019-07-15 17:49:18,638 charges_calc.py:61  DEBUG total price for RNT883 is 3914
+2019-07-15 17:49:18,638 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT884
+2019-07-15 17:49:18,639 charges_calc.py:61  DEBUG total price for RNT884 is 2376
+2019-07-15 17:49:18,639 charges_calc.py:61  DEBUG total price for RNT885 is 5670
+2019-07-15 17:49:18,639 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT886
+2019-07-15 17:49:18,639 charges_calc.py:61  DEBUG total price for RNT886 is 2232
+2019-07-15 17:49:18,639 charges_calc.py:61  DEBUG total price for RNT887 is 14272
+2019-07-15 17:49:18,640 charges_calc.py:61  DEBUG total price for RNT888 is 2431
+2019-07-15 17:49:18,641 charges_calc.py:61  DEBUG total price for RNT889 is 6321
+2019-07-15 17:49:18,641 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT890
+2019-07-15 17:49:18,641 charges_calc.py:61  DEBUG total price for RNT890 is 6504
+2019-07-15 17:49:18,641 charges_calc.py:61  DEBUG total price for RNT891 is 15708
+2019-07-15 17:49:18,642 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT892
+2019-07-15 17:49:18,642 charges_calc.py:61  DEBUG total price for RNT892 is 1032
+2019-07-15 17:49:18,642 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT893
+2019-07-15 17:49:18,642 charges_calc.py:61  DEBUG total price for RNT893 is 7306
+2019-07-15 17:49:18,642 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT894
+2019-07-15 17:49:18,642 charges_calc.py:61  DEBUG total price for RNT894 is 1157
+2019-07-15 17:49:18,642 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT895
+2019-07-15 17:49:18,643 charges_calc.py:61  DEBUG total price for RNT895 is 36560
+2019-07-15 17:49:18,643 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT896
+2019-07-15 17:49:18,643 charges_calc.py:61  DEBUG total price for RNT896 is 2820
+2019-07-15 17:49:18,643 charges_calc.py:61  DEBUG total price for RNT897 is 4186
+2019-07-15 17:49:18,643 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT898
+2019-07-15 17:49:18,643 charges_calc.py:61  DEBUG total price for RNT898 is 8835
+2019-07-15 17:49:18,643 charges_calc.py:61  DEBUG total price for RNT899 is 852
+2019-07-15 17:49:18,644 charges_calc.py:61  DEBUG total price for RNT900 is 8694
+2019-07-15 17:49:18,644 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT901
+2019-07-15 17:49:18,644 charges_calc.py:61  DEBUG total price for RNT901 is 1960
+2019-07-15 17:49:18,644 charges_calc.py:61  DEBUG total price for RNT902 is 1743
+2019-07-15 17:49:18,644 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT903
+2019-07-15 17:49:18,644 charges_calc.py:61  DEBUG total price for RNT903 is 1638
+2019-07-15 17:49:18,645 charges_calc.py:61  DEBUG total price for RNT904 is 225
+2019-07-15 17:49:18,645 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT905
+2019-07-15 17:49:18,645 charges_calc.py:61  DEBUG total price for RNT905 is 432
+2019-07-15 17:49:18,645 charges_calc.py:61  DEBUG total price for RNT906 is 1504
+2019-07-15 17:49:18,645 charges_calc.py:61  DEBUG total price for RNT907 is 940
+2019-07-15 17:49:18,646 charges_calc.py:61  DEBUG total price for RNT908 is 12015
+2019-07-15 17:49:18,647 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT909
+2019-07-15 17:49:18,647 charges_calc.py:61  DEBUG total price for RNT909 is 11040
+2019-07-15 17:49:18,647 charges_calc.py:61  DEBUG total price for RNT910 is 80
+2019-07-15 17:49:18,647 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT911
+2019-07-15 17:49:18,647 charges_calc.py:61  DEBUG total price for RNT911 is 5420
+2019-07-15 17:49:18,647 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT912
+2019-07-15 17:49:18,648 charges_calc.py:61  DEBUG total price for RNT912 is 17732
+2019-07-15 17:49:18,648 charges_calc.py:61  DEBUG total price for RNT913 is 3374
+2019-07-15 17:49:18,648 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT914
+2019-07-15 17:49:18,648 charges_calc.py:61  DEBUG total price for RNT914 is 27778
+2019-07-15 17:49:18,648 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT915
+2019-07-15 17:49:18,649 charges_calc.py:61  DEBUG total price for RNT915 is 3728
+2019-07-15 17:49:18,649 charges_calc.py:61  DEBUG total price for RNT916 is 25175
+2019-07-15 17:49:18,649 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT917
+2019-07-15 17:49:18,649 charges_calc.py:61  DEBUG total price for RNT917 is 8679
+2019-07-15 17:49:18,649 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT918
+2019-07-15 17:49:18,649 charges_calc.py:61  DEBUG total price for RNT918 is 819
+2019-07-15 17:49:18,650 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT919
+2019-07-15 17:49:18,650 charges_calc.py:61  DEBUG total price for RNT919 is 7072
+2019-07-15 17:49:18,650 charges_calc.py:61  DEBUG total price for RNT920 is 35428
+2019-07-15 17:49:18,650 charges_calc.py:61  DEBUG total price for RNT921 is 14610
+2019-07-15 17:49:18,650 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT922
+2019-07-15 17:49:18,651 charges_calc.py:61  DEBUG total price for RNT922 is 1105
+2019-07-15 17:49:18,651 charges_calc.py:61  DEBUG total price for RNT923 is 6877
+2019-07-15 17:49:18,651 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT924
+2019-07-15 17:49:18,651 charges_calc.py:61  DEBUG total price for RNT924 is 23839
+2019-07-15 17:49:18,651 charges_calc.py:61  DEBUG total price for RNT925 is 16337
+2019-07-15 17:49:18,653 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT926
+2019-07-15 17:49:18,653 charges_calc.py:61  DEBUG total price for RNT926 is 5513
+2019-07-15 17:49:18,653 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT927
+2019-07-15 17:49:18,653 charges_calc.py:61  DEBUG total price for RNT927 is 570
+2019-07-15 17:49:18,654 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT928
+2019-07-15 17:49:18,654 charges_calc.py:61  DEBUG total price for RNT928 is 6127
+2019-07-15 17:49:18,654 charges_calc.py:61  DEBUG total price for RNT929 is 2888
+2019-07-15 17:49:18,654 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT930
+2019-07-15 17:49:18,654 charges_calc.py:61  DEBUG total price for RNT930 is 5120
+2019-07-15 17:49:18,655 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT931
+2019-07-15 17:49:18,655 charges_calc.py:61  DEBUG total price for RNT931 is 18164
+2019-07-15 17:49:18,655 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT932
+2019-07-15 17:49:18,655 charges_calc.py:61  DEBUG total price for RNT932 is 29800
+2019-07-15 17:49:18,655 charges_calc.py:61  DEBUG total price for RNT933 is 826
+2019-07-15 17:49:18,656 charges_calc.py:61  DEBUG total price for RNT934 is 28260
+2019-07-15 17:49:18,656 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT935
+2019-07-15 17:49:18,656 charges_calc.py:61  DEBUG total price for RNT935 is 180
+2019-07-15 17:49:18,656 charges_calc.py:61  DEBUG total price for RNT936 is 4698
+2019-07-15 17:49:18,657 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT937
+2019-07-15 17:49:18,657 charges_calc.py:61  DEBUG total price for RNT937 is 247
+2019-07-15 17:49:18,658 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT938
+2019-07-15 17:49:18,658 charges_calc.py:61  DEBUG total price for RNT938 is 11772
+2019-07-15 17:49:18,658 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT939
+2019-07-15 17:49:18,659 charges_calc.py:61  DEBUG total price for RNT939 is 20691
+2019-07-15 17:49:18,659 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT940
+2019-07-15 17:49:18,659 charges_calc.py:61  DEBUG total price for RNT940 is 104
+2019-07-15 17:49:18,659 charges_calc.py:61  DEBUG total price for RNT941 is 8560
+2019-07-15 17:49:18,660 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT942
+2019-07-15 17:49:18,660 charges_calc.py:61  DEBUG total price for RNT942 is 1575
+2019-07-15 17:49:18,660 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT943
+2019-07-15 17:49:18,660 charges_calc.py:61  DEBUG total price for RNT943 is 18375
+2019-07-15 17:49:18,661 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT944
+2019-07-15 17:49:18,661 charges_calc.py:61  DEBUG total price for RNT944 is 6516
+2019-07-15 17:49:18,661 charges_calc.py:61  DEBUG total price for RNT945 is 1148
+2019-07-15 17:49:18,661 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT946
+2019-07-15 17:49:18,662 charges_calc.py:61  DEBUG total price for RNT946 is 3315
+2019-07-15 17:49:18,662 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT947
+2019-07-15 17:49:18,662 charges_calc.py:61  DEBUG total price for RNT947 is 608
+2019-07-15 17:49:18,662 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT948
+2019-07-15 17:49:18,662 charges_calc.py:61  DEBUG total price for RNT948 is 3990
+2019-07-15 17:49:18,662 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT949
+2019-07-15 17:49:18,663 charges_calc.py:61  DEBUG total price for RNT949 is 4704
+2019-07-15 17:49:18,663 charges_calc.py:61  DEBUG total price for RNT950 is 4818
+2019-07-15 17:49:18,663 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT951
+2019-07-15 17:49:18,663 charges_calc.py:61  DEBUG total price for RNT951 is 3095
+2019-07-15 17:49:18,663 charges_calc.py:61  DEBUG total price for RNT952 is 868
+2019-07-15 17:49:18,663 charges_calc.py:61  DEBUG total price for RNT953 is 37012
+2019-07-15 17:49:18,664 charges_calc.py:61  DEBUG total price for RNT954 is 4074
+2019-07-15 17:49:18,664 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT955
+2019-07-15 17:49:18,664 charges_calc.py:61  DEBUG total price for RNT955 is 3430
+2019-07-15 17:49:18,664 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT956
+2019-07-15 17:49:18,664 charges_calc.py:61  DEBUG total price for RNT956 is 1248
+2019-07-15 17:49:18,664 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT957
+2019-07-15 17:49:18,665 charges_calc.py:61  DEBUG total price for RNT957 is 6750
+2019-07-15 17:49:18,665 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT958
+2019-07-15 17:49:18,665 charges_calc.py:61  DEBUG total price for RNT958 is 5280
+2019-07-15 17:49:18,665 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT959
+2019-07-15 17:49:18,665 charges_calc.py:61  DEBUG total price for RNT959 is 3838
+2019-07-15 17:49:18,665 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT960
+2019-07-15 17:49:18,666 charges_calc.py:61  DEBUG total price for RNT960 is 10890
+2019-07-15 17:49:18,666 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT961
+2019-07-15 17:49:18,666 charges_calc.py:61  DEBUG total price for RNT961 is 784
+2019-07-15 17:49:18,666 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT962
+2019-07-15 17:49:18,666 charges_calc.py:61  DEBUG total price for RNT962 is 1064
+2019-07-15 17:49:18,667 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT963
+2019-07-15 17:49:18,668 charges_calc.py:61  DEBUG total price for RNT963 is 544
+2019-07-15 17:49:18,668 charges_calc.py:61  DEBUG total price for RNT964 is 671
+2019-07-15 17:49:18,668 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT965
+2019-07-15 17:49:18,668 charges_calc.py:61  DEBUG total price for RNT965 is 1890
+2019-07-15 17:49:18,669 charges_calc.py:61  DEBUG total price for RNT966 is 8888
+2019-07-15 17:49:18,669 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT967
+2019-07-15 17:49:18,669 charges_calc.py:61  DEBUG total price for RNT967 is 14560
+2019-07-15 17:49:18,669 charges_calc.py:61  DEBUG total price for RNT968 is 7700
+2019-07-15 17:49:18,669 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT969
+2019-07-15 17:49:18,670 charges_calc.py:61  DEBUG total price for RNT969 is 27432
+2019-07-15 17:49:18,670 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT970
+2019-07-15 17:49:18,670 charges_calc.py:61  DEBUG total price for RNT970 is 14916
+2019-07-15 17:49:18,670 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT971
+2019-07-15 17:49:18,670 charges_calc.py:61  DEBUG total price for RNT971 is 6220
+2019-07-15 17:49:18,670 charges_calc.py:61  DEBUG total price for RNT972 is 20360
+2019-07-15 17:49:18,671 charges_calc.py:61  DEBUG total price for RNT973 is 3178
+2019-07-15 17:49:18,671 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT974
+2019-07-15 17:49:18,671 charges_calc.py:61  DEBUG total price for RNT974 is 7110
+2019-07-15 17:49:18,671 charges_calc.py:61  DEBUG total price for RNT975 is 663
+2019-07-15 17:49:18,671 charges_calc.py:61  DEBUG total price for RNT976 is 6112
+2019-07-15 17:49:18,671 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT977
+2019-07-15 17:49:18,672 charges_calc.py:61  DEBUG total price for RNT977 is 6549
+2019-07-15 17:49:18,672 charges_calc.py:61  DEBUG total price for RNT978 is 12324
+2019-07-15 17:49:18,672 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT979
+2019-07-15 17:49:18,672 charges_calc.py:61  DEBUG total price for RNT979 is 2625
+2019-07-15 17:49:18,672 charges_calc.py:61  DEBUG total price for RNT980 is 840
+2019-07-15 17:49:18,672 charges_calc.py:61  DEBUG total price for RNT981 is 6102
+2019-07-15 17:49:18,672 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT982
+2019-07-15 17:49:18,673 charges_calc.py:61  DEBUG total price for RNT982 is 1624
+2019-07-15 17:49:18,673 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT983
+2019-07-15 17:49:18,673 charges_calc.py:61  DEBUG total price for RNT983 is 8700
+2019-07-15 17:49:18,673 charges_calc.py:61  DEBUG total price for RNT984 is 7038
+2019-07-15 17:49:18,673 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT985
+2019-07-15 17:49:18,673 charges_calc.py:61  DEBUG total price for RNT985 is 1834
+2019-07-15 17:49:18,674 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT986
+2019-07-15 17:49:18,674 charges_calc.py:61  DEBUG total price for RNT986 is 30504
+2019-07-15 17:49:18,674 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT987
+2019-07-15 17:49:18,675 charges_calc.py:61  DEBUG total price for RNT987 is 19040
+2019-07-15 17:49:18,675 charges_calc.py:61  DEBUG total price for RNT988 is 5511
+2019-07-15 17:49:18,675 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT989
+2019-07-15 17:49:18,675 charges_calc.py:61  DEBUG total price for RNT989 is 27930
+2019-07-15 17:49:18,675 charges_calc.py:61  DEBUG total price for RNT990 is 5019
+2019-07-15 17:49:18,675 charges_calc.py:61  DEBUG total price for RNT991 is 5852
+2019-07-15 17:49:18,676 charges_calc.py:61  DEBUG total price for RNT992 is 6734
+2019-07-15 17:49:18,676 charges_calc.py:61  DEBUG total price for RNT993 is 13512
+2019-07-15 17:49:18,676 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT994
+2019-07-15 17:49:18,676 charges_calc.py:61  DEBUG total price for RNT994 is 4590
+2019-07-15 17:49:18,676 charges_calc.py:61  DEBUG total price for RNT995 is 5080
+2019-07-15 17:49:18,676 charges_calc.py:61  DEBUG total price for RNT996 is 22760
+2019-07-15 17:49:18,676 charges_calc.py:61  DEBUG total price for RNT997 is 7084
+2019-07-15 17:49:18,677 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT998
+2019-07-15 17:49:18,677 charges_calc.py:61  DEBUG total price for RNT998 is 26130
+2019-07-15 17:49:18,677 charges_calc.py:52  DEBUG total days is negative, switching rental start and end for RNT999
+2019-07-15 17:49:18,677 charges_calc.py:61  DEBUG total price for RNT999 is 26640
+2019-07-15 17:49:18,677 charges_calc.py:132 DEBUG calculation run on data
+2019-07-15 17:49:18,754 charges_calc.py:134 DEBUG new json data saved to output.json
+2019-07-15 17:51:37,034 charges_calc.py:132 DEBUG logger set up with level 3
+#added the extra , back in at line 5884 to show error.
+2019-07-15 17:51:37,043 charges_calc.py:33  CRITICAL Unable to load json file with name source.json due to Expecting property name enclosed in double quotes: line 5884 column 23 (char 130093)
