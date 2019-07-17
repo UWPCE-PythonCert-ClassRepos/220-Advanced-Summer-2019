@@ -8,20 +8,20 @@ import math
 import logging
 
 # defining the format for logs as they are written to the logfile
-log_format = '%(asctime)s %(filename)s:%(lineno)-3d %(levelname)s %(message)s'
-formatter = logging.Formatter(log_format)
+# log_format = '%(asctime)s %(filename)s:%(lineno)-3d %(levelname)s %(message)s'
+# formatter = logging.Formatter(log_format)
 
-log_file = datetime.datetime.now().strftime('%Y-%m-%d')+".log"
-file_handler = logging.FileHandler(log_file)
+# log_file = datetime.datetime.now().strftime('%Y-%m-%d')+".log"
+# file_handler = logging.FileHandler(log_file)
 
 
-file_handler.setFormatter(formatter)
+# file_handler.setFormatter(formatter)
 
-logger = logging.getLogger()
+# logger = logging.getLogger()
 
-logger.addHandler(file_handler)
-# sets the format style for log file output
-# log_file = datetime.datetime.now().strftime(“%Y-%m-%d”)+’.log’
+# logger.addHandler(file_handler)
+# # sets the format style for log file output
+# # log_file = datetime.datetime.now().strftime(“%Y-%m-%d”)+’.log’
 
 
 def parse_cmd_arguments():
@@ -32,6 +32,9 @@ def parse_cmd_arguments():
     parser.add_argument('-o', '--output',
                         help='ouput JSON file',
                         required=True)
+    parser.add_argument('-d', '--debug',
+                        help='set logging level',
+                        required=False)
     return parser.parse_args()
 
 
@@ -80,6 +83,42 @@ def calculate_additional_fields(data):
     return output
 
 
+def set_logging_level(level=0):
+    '''
+    0: nothing
+    1: error
+    2: error and warnings
+    3: error and warnings and debug
+    '''
+
+    LOG_FILE = "charges_calc.log"
+    logger = logging.getLogger()
+    logger.setLevel(logging.NOTSET)
+    log_format = \
+        '%(asctime)s %(filename)s:%(lineno)-3d %(levelname)s %(message)s'
+    formatter = logging.Formatter(log_format)
+    # set the file handler
+    file_handler = logging.FileHandler(LOG_FILE)
+    file_handler.setFormatter(formatter)
+
+    # set the stream handler
+    stream_handler = logging.StreamHandler()
+    stream_handler.setFormatter(formatter)
+
+    if level == "3":
+        file_handler.setLevel(logging.WARNING)
+        stream_handler.setLevel(logging.DEBUG)
+    elif level == "2":
+        file_handler.setLevel(logging.WARNING)
+        stream_handler.setLevel(logging.WARNING)
+    elif level == "1":
+        file_handler.setLevel(logging.ERROR)
+        stream_handler.setLevel(logging.ERROR)
+    else:  # "0" or None
+        file_handler.setLevel(logging.CRITICAL)
+        stream_handler.setLevel(logging.CRITICAL)
+
+
 def save_to_json(filename, data):
     with open(filename, 'w') as file:
         json.dump(data, file)
@@ -87,6 +126,7 @@ def save_to_json(filename, data):
 
 if __name__ == "__main__":
     args = parse_cmd_arguments()
+    set_logging_level(args.debug)
     data = load_rentals_file(args.input)
     parsed_json_data = calculate_additional_fields(data)
     save_to_json(args.output, parsed_json_data)
