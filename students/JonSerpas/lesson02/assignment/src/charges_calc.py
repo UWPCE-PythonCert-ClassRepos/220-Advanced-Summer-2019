@@ -118,6 +118,13 @@ def set_logging_level(level=0):
         file_handler.setLevel(logging.CRITICAL)
         stream_handler.setLevel(logging.CRITICAL)
 
+    # set this one if you have issues with no default value
+    # logging.setLevel(logging.DEBUG)
+    logging.addHandler(file_handler)
+    logger.addHandler(stream_handler)
+
+    print("logging level selected: {level}".format(level=level))
+
 
 def save_to_json(filename, data):
     with open(filename, 'w') as file:
