@@ -120,7 +120,7 @@ def set_logging_level(level=0):
 
     # set this one if you have issues with no default value
     # logging.setLevel(logging.DEBUG)
-    logging.addHandler(file_handler)
+    logger.addHandler(file_handler)
     logger.addHandler(stream_handler)
 
     print("logging level selected: {level}".format(level=level))
