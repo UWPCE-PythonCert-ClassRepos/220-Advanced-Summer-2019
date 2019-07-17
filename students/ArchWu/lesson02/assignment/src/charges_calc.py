@@ -24,7 +24,7 @@ def parse_cmd_arguments():
     parser.add_argument('-i', '--input', help='input JSON file', required=True)
     parser.add_argument('-o', '--output', help='ouput JSON file', required=True)
     parser.add_argument('-d', '--debug', help='debug option',
-                        required=True, type=int)
+                        required=True, type=int, default=0)
     return parser.parse_args()
 
 
