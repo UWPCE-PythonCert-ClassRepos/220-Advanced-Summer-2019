@@ -27,7 +27,7 @@ def _search_customers(): # needs to del with database
     return [
         [("998", "Name", "Lastname", "Address", "phone", "email", "active", 999),
          ("997", "Name", "Lastname", "Address", "phone", "email", "inactive", 10)],
-        ("998", "000")
+         ("998", "000")
     ]
 @pytest.fixture
 def _delete_customers(): # needs to del with database
