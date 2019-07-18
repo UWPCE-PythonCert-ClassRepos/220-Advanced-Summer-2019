@@ -12,9 +12,7 @@ def parse_cmd_arguments():
     parser = argparse.ArgumentParser(description='Process some integers.')
     parser.add_argument('-i', '--input', help='input JSON file', required=True)
     parser.add_argument('-o', '--output', help='ouput JSON file', required=True)
-    parser.add_argument('-d1', '--debug1', action='store_true', help='debug error messages')
-    parser.add_argument('-d2', '--debug2', action='store_true', help='debug error and warning messages')
-    parser.add_argument('-d3', '--debug3', action='store_true', help='Shows error, warnings, and debug messages')
+    parser.add_argument('-d', '--debug', help='debug error messages', required=False)
 
     return parser.parse_args()
 
@@ -59,7 +57,7 @@ def save_to_json(filename, data):
 
 
 def debug_levels(level=0):
-    LOG_FILE = ('charges_calc.log{today}.log'.format(today=datetime.today.strftime("%Y-%m-%d")))
+    LOG_FILE = datetime.datetime.now().strftime("%Y-%m-%d")+'.log'
 
     logger = logging.getLogger()
     logger.setLevel(logging.NOTSET)
