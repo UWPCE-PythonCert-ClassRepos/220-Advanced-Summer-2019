@@ -5,6 +5,8 @@ from inventory_management.inventory_class import Inventory
 from inventory_management.furniture_class import Furniture
 from inventory_management.electric_appliances_class import ElectricAppliances
 
+FULL_INVENTORY = {}
+
 
 def main_menu(user_prompt=None):
     """ This method sets up the main menu for use """
@@ -14,7 +16,7 @@ def main_menu(user_prompt=None):
     options = list(valid_prompts.keys())
 
     while user_prompt not in valid_prompts:
-        options_str = ("{}" + (", {}") * (len(options) - 1)).format(*options)
+        options_str = ("{}" + ", {}" * (len(options) - 1)).format(*options)
         print(f"Please choose from the following options ({options_str}):")
         print("1. Add a new item to the inventory")
         print("2. Get item information")
@@ -23,14 +25,9 @@ def main_menu(user_prompt=None):
     return valid_prompts.get(user_prompt)
 
 
-def get_price(item_code):
+def get_price():
     """ This function just prints the price for an item code"""
-    if item_code in FULL_INVENTORY:
-        item = FULL_INVENTORY[item_code]
-        print(f"This Item Has A Market Price of {item.market_price}")
-        print(f"This Item Has A Rental Price of {item.rental_price}")
-    else:
-        print("Item not found in inventory")
+    return 50
 
 
 def add_new_item():
@@ -79,8 +76,8 @@ def exit_program():
     """ This will exit out of our menu program """
     sys.exit()
 
+
 if __name__ == '__main__':
-    FULL_INVENTORY = {}
     while True:
         print(FULL_INVENTORY)
         main_menu()()
