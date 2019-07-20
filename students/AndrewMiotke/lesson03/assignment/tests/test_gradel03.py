@@ -8,7 +8,8 @@
 
 import pytest
 
-import basic_operations as l
+# import basic_operations as l
+from src import basic_operations as l
 
 @pytest.fixture
 def _add_customers():
@@ -99,7 +100,7 @@ def test_add_customer(_add_customers):
 
 
 
-def test_search_customer(_search_customers[0]):
+def test_search_customer(_search_customers):
     """ search """
     for customer in _search_customers[0]:
         l.add_customer(customer[0],

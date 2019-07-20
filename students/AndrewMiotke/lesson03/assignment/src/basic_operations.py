@@ -1,16 +1,17 @@
 """ Database assignment """
 
 import peewee
+import logging
 
 database = peewee.SqliteDatabase('customers.db')
 database.execute_sql('PRAGMA foreign_keys=ON;')
 database.connect()
-
 database.execute_sql('drop table if exists customer;')
 
 class BaseModel(peewee.Model):
     class Meta:
         database = database
+
 
 class Customer(BaseModel):
 
@@ -24,27 +25,41 @@ class Customer(BaseModel):
     credit_limit = peewee.FloatField()
 
 
+database.create_tables([Customer])
+
+# Logging just for fun
+LOG_FILE = "database_logs.log"
+logger = logging.getLogger()
+logger.setLevel(logging.ERROR)
+LOG_FORMAT = "%(asctime)s\t %(filename)s: %(lineno)-3d %(levelname)s %(message)s)"
+FORMATTER = logging.Formatter(LOG_FORMAT)
+
+FILE_HANDLER = logging.FileHandler(LOG_FILE)
+FILE_HANDLER.setFormat(FORMATTER)
+
+
+# Complete
 def add_customer(customer_id, name, lastname, address, phone_number, email, status, credit_limit):
     try:
         with database.transaction():
             Customer.create(
-                customer_id = customer_id,
-                name = name,
-                lastname = lastname,
-                address = address,
-                phone_number = phone_number,
-                email = email,
-                status = status,
-                credit_limit = credit_limit,
-            )
+                            customer_id = customer_id,
+                            name = name,
+                            lastname = lastname,
+                            address = address,
+                            phone_number = phone_number,
+                            email = email,
+                            status = status,
+                            credit_limit = credit_limit,
+                            )
             customer.save()
-            # add logging to verify user was saved
+            logging.error(f"Successfully saved {customer_id} to database")
 
     except Exception as e:
-        print(f"error creating {customer_id}")
-        print(e)
+        logging.error(f"Error creating {customer_id}")
 
 
+# Complete
 def search_customer(customer_id):
     try:
         customer = Customer.get(Customer.customer_id == customer_id)
@@ -63,18 +78,26 @@ def search_customer(customer_id):
 def delete_customer(customer_id):
     try:
         with database.transaction():
-        #customer.delete()? This might work
+            customer = Customer.get(Customer.customer_id == customer.id)
+            customer.delete()
     except Exception as e:
+        logging.error(f"Unable to delete user {customer_id}")
         print(e)
 
 
 def update_customer_credit(customer_id, credit_limit):
     try:
         with database.transaction():
-        pass
-    except Exception as e:
+            customer = Customer.get(Customer.customer.id == customer.id)
+    except ValueError:
+        logging.error(f"Unable to update user, {customer_id}")
         print(e)
 
 
 def list_active_customers():
-    pass
+    try:
+        count_customer = Customer.get(Customer.customer_id == customer_id)
+        return len(count_customer)
+    except ValueError:
+        logging.error("Unable to count users in database")
+        print("Unable to count")
