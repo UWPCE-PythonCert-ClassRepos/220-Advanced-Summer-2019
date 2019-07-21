@@ -1,16 +1,16 @@
-""" DATABASE assignment """
+""" database assignment """
 
 import logging
 import peewee
 
-DATABASE = peewee.SqliteDatabase('customers.db')
-# DATABASE.execute_sql('PRAGMA foreign_keys=ON;')
-DATABASE.connect()
-DATABASE.execute_sql('drop table if exists customer;')
+database = peewee.SqliteDatabase('customers.db')
+# database.execute_sql('PRAGMA foreign_keys=ON;')
+database.connect()
+database.execute_sql('drop table if exists customer;')
 
 
 # Logging just for fun
-LOG_FILE = "DATABASE_logs.log"
+LOG_FILE = "database_logs.log"
 LOGGER = logging.getLogger()
 LOGGER.setLevel(logging.ERROR)
 LOG_FORMAT = "%(asctime)s\t %(filename)s: %(lineno)-3d %(levelname)s %(message)s)"
@@ -24,7 +24,7 @@ class BaseModel(peewee.Model):
 
     class Meta:
         """ Peewee boilerblate """
-        DATABASE = DATABASE
+        database = database
 
 
 class Customer(BaseModel):
@@ -40,14 +40,14 @@ class Customer(BaseModel):
     credit_limit = peewee.FloatField()
 
 
-DATABASE.create_tables([Customer])
+database.create_tables([Customer])
 
 
 def add_customer(customer_id, name, lastname, address, phone_number, email, status, credit_limit):
     """ Add a customer to the database """
 
     try:
-        with DATABASE.transaction():
+        with database.transaction():
             Customer.create(
                 customer_id=customer_id,
                 name=name,
@@ -59,13 +59,13 @@ def add_customer(customer_id, name, lastname, address, phone_number, email, stat
                 credit_limit=credit_limit,
                 )
             customer.save()
-            logging.error(f"Successfully saved {customer_id} to DATABASE")
+            logging.error(f"Successfully saved {customer_id} to database")
 
     except:
         logging.error(f"Error creating {customer_id}")
     finally:
-        logging.error('DATABASE closed')
-        DATABASE.close()
+        logging.error('database closed')
+        database.close()
 
 
 def search_customer(customer_id):
@@ -89,28 +89,28 @@ def delete_customer(customer_id):
     """ Delete a customer from the database """
 
     try:
-        with DATABASE.transaction():
+        with database.transaction():
             customer = Customer.get(Customer.customer_id == customer.id)
             customer.delete()
             logging.error(f"{customer.id} has been removed")
     except ValueError:
         logging.error(f"Unable to delete user {customer_id}")
     finally:
-        DATABASE.close()
+        database.close()
 
 
 def update_customer_credit(customer_id, credit_limit):
     """ Update a customer from the database """
 
     try:
-        with DATABASE.transaction():
+        with database.transaction():
             customer_to_update = Customer.update(Customer.credit_limit).where(Customer.credit_limit)
             customer_to_update.execute()
             customer_to_update.save()
     except ValueError:
         logging.error(f"Unable to update user, {customer_id}")
     finally:
-        DATABASE.close()
+        database.close()
 
 
 # Complete
@@ -118,9 +118,9 @@ def list_active_customers():
     """ List all active customers in the database """
 
     try:
-        return Customer.select().where(Customer.status = 'active').count()
+        return Customer.select().where(Customer.status == 'active').count()
     except ValueError:
-        logging.error("Unable to count users in DATABASE")
+        logging.error("Unable to count users in database")
         print("Unable to count")
     finally:
-        DATABASE.close()
+        database.close()
