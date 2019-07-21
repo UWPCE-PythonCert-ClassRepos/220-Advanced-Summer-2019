@@ -43,7 +43,6 @@ class Customer(BaseModel):
 DATABASE.create_tables([Customer])
 
 
-# Complete
 def add_customer(customer_id, name, lastname, address, phone_number, email, status, credit_limit):
     """ Add a customer to the database """
 
@@ -69,7 +68,6 @@ def add_customer(customer_id, name, lastname, address, phone_number, email, stat
         DATABASE.close()
 
 
-# Complete
 def search_customer(customer_id):
     """ Search for customer in the database """
 
@@ -83,7 +81,7 @@ def search_customer(customer_id):
         }
 
     except ValueError:
-        print(f"error reading customer {customer_id}")
+        print(f"Error finding customer, {customer_id}")
         return {}
 
 
@@ -106,7 +104,9 @@ def update_customer_credit(customer_id, credit_limit):
 
     try:
         with DATABASE.transaction():
-            customer_to_update = Customer.get(Customer.customer_id == customer.id)
+            customer_to_update = Customer.update(Customer.credit_limit).where(Customer.credit_limit)
+            customer_to_update.execute()
+            customer_to_update.save()
     except ValueError:
         logging.error(f"Unable to update user, {customer_id}")
     finally:
@@ -118,8 +118,7 @@ def list_active_customers():
     """ List all active customers in the database """
 
     try:
-        count_customer = Customer.get(Customer.customer_id == customer_id)
-        return len(count_customer)
+        return Customer.select().where(Customer.status = 'active').count()
     except ValueError:
         logging.error("Unable to count users in DATABASE")
         print("Unable to count")
