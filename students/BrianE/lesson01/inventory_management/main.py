@@ -1,23 +1,14 @@
 """ Launches the user interface for the inventory management system """
 
 import sys
-import market_prices
-import InventoryClass
-import FurnitureClass
-import ElectricAppliancesClass
+from inventory_management.market_prices import get_latest_price
+from inventory_management.InventoryClass import InventoryClass
+from inventory_management.FurnitureClass import FurnitureClass
+from inventory_management.ElectricAppliancesClass import ElectricAppliancesClass
 
 
 # Dictionary to store inventory data
 FULL_INVENTORY = {}
-
-
-# def request_input(message):
-#     """
-#     Gather input from user and return response
-#     :param message: string containing prompt for user
-#     :return: response
-#     """
-#     return input(message)
 
 
 def main_menu(user_prompt=None):
@@ -47,7 +38,7 @@ def get_price(item_code):
     :param item_code: integer
     :return: floating point
     """
-    return market_prices.get_latest_price(item_code)
+    return get_latest_price(item_code)
 
 
 def add_new_item(full_inventory):
@@ -60,7 +51,7 @@ def add_new_item(full_inventory):
     item_rental_price = input("Enter item rental price: ")
 
     # Get price from the market prices module
-    item_price = market_prices.get_latest_price(item_code)
+    item_price = get_latest_price(item_code)
 
     is_furniture = input("Is this item a piece of furniture? (Y/N): ")
     if is_furniture.lower() == "y":
