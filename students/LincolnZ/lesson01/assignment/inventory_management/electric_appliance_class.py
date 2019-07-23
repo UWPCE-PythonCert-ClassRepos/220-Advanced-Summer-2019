@@ -1,5 +1,5 @@
 """Electric Appliance Class"""
-from inventory_class import Inventory
+from inventory_management.inventory_class import Inventory
 
 
 class ElectricAppliances(Inventory):
@@ -13,9 +13,8 @@ class ElectricAppliances(Inventory):
         self.voltage = voltage
 
     def return_as_dictionary(self):
-        """a method to return a dictionary"""
-        output_dict = {}
-        super().return_as_dictionary()
+        """ This returns a dictionary containing the expected fields """
+        output_dict = super().return_as_dictionary()
         output_dict['brand'] = self.brand
         output_dict['voltage'] = self.voltage
 

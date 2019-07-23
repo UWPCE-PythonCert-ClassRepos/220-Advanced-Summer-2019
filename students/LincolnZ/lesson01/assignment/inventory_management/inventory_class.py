@@ -18,5 +18,6 @@ class Inventory:
         output_dict['description'] = self.description
         output_dict['market_price'] = self.market_price
         output_dict['rental_price'] = self.rental_price
-
         return output_dict
+
+        # return self.__init__
