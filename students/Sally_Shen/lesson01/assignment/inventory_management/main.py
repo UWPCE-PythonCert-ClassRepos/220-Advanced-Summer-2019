@@ -7,6 +7,8 @@ from inventory_management import inventory_class
 from inventory_management import furniture_class
 from inventory_management import electric_appliances_class
 
+FULL_INVENTORY = {}
+
 
 def main_menu(user_prompt=None):
     """this is main menu"""
