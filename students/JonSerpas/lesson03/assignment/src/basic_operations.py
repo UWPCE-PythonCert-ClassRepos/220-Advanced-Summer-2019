@@ -8,8 +8,7 @@ except Exception as e:
     print(e)
 database.execute_sql('PRAGMA foreign_keys = ON;')  # <-- can use this to execute sql cmds
 # database.execute_sql('drop table if exists customer;')
-# database.execute_sql('create table if NOT exists customer;')
-# database.create_tables([customers])
+
 
 
 class BaseModel(peewee.Model):
@@ -58,6 +57,7 @@ def add_customer(customer_id, name, lastname, address,
         print(e)
 
     Customer.save()
+    print('successfully added customer')
 
 def search_customer(customer_id):
     # need to add error handling for not found. possibly with if statment
@@ -65,12 +65,14 @@ def search_customer(customer_id):
         customer = Customer.get(Customer.customer_id == customer_id)
         return {
             "name": customer.name,
-            "name": customer.lastname,
-            "name": customer.phone_number,
-            "name": customer.email,
+            "lastname": customer.lastname,
+            "phone_number": customer.phone_number,
+            "email": customer.email
         }
     except Exception as e:
+        print(f"error retreiving {customer_id}")
         print(e)
+        return {}
 
 def show_all_customers():
     try:
@@ -82,31 +84,36 @@ def show_all_customers():
 def delete_customer(customer_id):
     try:
         # customer = Customer.select().where(Customer.customer_id == customer_id)
-        customer = Customer.get(Customer.customer_id == customer_id)
-        customer.delete_instance()
-        customer.save()
+        with database.transaction():
+            customer = Customer.get(Customer.customer_id == customer_id)
+            customer.delete_instance()
+            customer.save()
+            return True
     except Exception as e:
+        print('failed deleting customer')
         print(e)
+        return False
 
 
 def update_customer_credit(customer_id, new_credit_limit):
     try:
         with database.transaction():
-           customer = Customer.get(Customer.customer_id == customer_id)
-           customer.update(Customer.credit_limit == new_credit_limit)
-           customer.save()
+            customer = Customer.get(Customer.customer_id == customer_id)
+            # customer.credit_limit = credit_limit <-- try this later instead of update
+            customer.update(Customer.credit_limit == new_credit_limit)
+            customer.save()
     except Exception as e:
         print(e)
 
 def list_active_customers():
-    # customer.select().where()
     try:
         #is_active = Customer.select().where(Customer.status == 'active')
         query = Customer.select().where(Customer.status == 'active')
         for active_customer in query:
-            print(active_customer.customer_id, active_customer.name, active_customer.status)
+            # print(active_customer.customer_id, active_customer.name, active_customer.status)
+            print(f"{active_customer.name} {active_customer.lastname}'s status is {active_customer.status}")
     except ValueError:
-        print('Customer not found.')
+        print('No active customers found.')
 
 
 database.create_tables([Customer])
