@@ -95,8 +95,7 @@ def delete_customer(customer_id):
             customer.delete_instance()
             customer.save()
         return True
-    except Exception as e:
-        print(e)
+    except Exception:  # return empty dictionary if customer_id doesn't match
         return {}
 
 
