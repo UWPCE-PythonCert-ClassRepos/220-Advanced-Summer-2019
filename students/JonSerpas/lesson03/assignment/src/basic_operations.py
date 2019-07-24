@@ -6,7 +6,7 @@ try:
     database.connect()
 except Exception as e:
     print(e)
-# database.execute_sql('PRAGMA foreign_keys = ON;') <-- can use this to execute sql cmds
+database.execute_sql('PRAGMA foreign_keys = ON;')  # <-- can use this to execute sql cmds
 # database.execute_sql('drop table if exists customer;')
 # database.execute_sql('create table if NOT exists customer;')
 # database.create_tables([customers])
@@ -53,11 +53,11 @@ def add_customer(customer_id, name, lastname, address,
                 status=status,
                 credit_limit=credit_limit
             )
-        Customer.save()
-
     except Exception as e:
         print('error creating {customer_id}')
         print(e)
+
+    Customer.save()
 
 def search_customer(customer_id):
     # need to add error handling for not found. possibly with if statment
@@ -81,21 +81,22 @@ def show_all_customers():
 
 def delete_customer(customer_id):
     try:
-        with database.transactions():
-            customer = Customer.select().where(Customer.customer_id == customer_id)
-            customer.delete_instance()
-            customer.save()
+        # customer = Customer.select().where(Customer.customer_id == customer_id)
+        customer = Customer.get(Customer.customer_id == customer_id)
+        customer.delete_instance()
+        customer.save()
     except Exception as e:
         print(e)
 
+
 def update_customer_credit(customer_id, new_credit_limit):
-    with database.transactions():
-        try:
-            customer = Customer.select().where(Customer.customer_id == customer_id)
-            customer.update(customer.credit_limit == new_credit_limit)
-            customer.save()
-        except Exception as e:
-            print(e)
+    try:
+        with database.transaction():
+           customer = Customer.get(Customer.customer_id == customer_id)
+           customer.update(Customer.credit_limit == new_credit_limit)
+           customer.save()
+    except Exception as e:
+        print(e)
 
 def list_active_customers():
     # customer.select().where()
@@ -103,7 +104,7 @@ def list_active_customers():
         #is_active = Customer.select().where(Customer.status == 'active')
         query = Customer.select().where(Customer.status == 'active')
         for active_customer in query:
-            print(active_customer.id, active_customer.status, active_customer.name)
+            print(active_customer.customer_id, active_customer.name, active_customer.status)
     except ValueError:
         print('Customer not found.')
 
