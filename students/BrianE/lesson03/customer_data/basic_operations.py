@@ -18,7 +18,7 @@ class Customer(BaseModel):
     """
     Customer class for storing customer details and credit limit
     """
-    customer_id = IntegerField()
+    customer_id = IntegerField(primary_key=True)
     name = CharField(max_length=50)
     lastname = CharField(max_length=50)
     home_address = CharField(max_length=50)
