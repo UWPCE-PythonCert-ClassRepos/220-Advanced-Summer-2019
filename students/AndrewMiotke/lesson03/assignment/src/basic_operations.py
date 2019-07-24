@@ -90,8 +90,8 @@ def delete_customer(customer_id):
 
     try:
         with database.transaction():
-            customer = Customer.get(Customer.customer_id == customer.id)
-            customer.delete()
+            customer = Customer.get(Customer.customer_id == customer_id)
+            customer.delete_instance()
             logging.error(f"{customer.id} has been removed")
     except ValueError:
         logging.error(f"Unable to delete user {customer_id}")
@@ -113,7 +113,6 @@ def update_customer_credit(customer_id, credit_limit):
         database.close()
 
 
-# Complete
 def list_active_customers():
     """ List all active customers in the database """
 
@@ -124,3 +123,12 @@ def list_active_customers():
         print("Unable to count")
     finally:
         database.close()
+
+"""
+Used in the command line when viewing a SQlite database
+
+$ sqlite3 customers.db
+$ .tables # shows the tables
+$ select * from customer # shows anything in the customer table
+
+"""
