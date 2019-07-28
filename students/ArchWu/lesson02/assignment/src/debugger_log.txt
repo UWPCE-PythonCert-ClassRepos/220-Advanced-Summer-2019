@@ -1,0 +1,109 @@
+(base) arch@arch-MS-7821:~/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src$ python charges_calc.py -i source.json -o out.json
+> /home/arch/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src/charges_calc.py(51)<module>()
+-> DATA = load_rentals_file(args.input)
+(Pdb) b
+(Pdb) b
+(Pdb) b(51)
+*** The specified object '(51)' is not a function or was not found along sys.path.
+(Pdb) b(load_rentals_file)
+Breakpoint 1 at /home/arch/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src/charges_calc.py:22
+(Pdb) n
+> /home/arch/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src/charges_calc.py(23)load_rentals_file()
+-> file = open(filename, 'r')
+(Pdb) n
+> /home/arch/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src/charges_calc.py(24)load_rentals_file()
+-> try:
+(Pdb) n
+> /home/arch/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src/charges_calc.py(25)load_rentals_file()
+-> data = json.load(file)
+(Pdb) n
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 5884 column 23 (char 130093)
+> /home/arch/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src/charges_calc.py(25)load_rentals_file()
+-> data = json.load(file)
+(Pdb) n
+> /home/arch/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src/charges_calc.py(26)load_rentals_file()
+-> except:
+(Pdb) n
+> /home/arch/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src/charges_calc.py(27)load_rentals_file()
+-> exit(0)
+(Pdb) n
+SystemExit: 0
+> /home/arch/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src/charges_calc.py(27)load_rentals_file()
+-> exit(0)
+(Pdb) Traceback (most recent call last):
+  File "charges_calc.py", line 25, in load_rentals_file
+    data = json.load(file)
+  File "/home/arch/anaconda3/lib/python3.7/json/__init__.py", line 296, in load
+    parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/home/arch/anaconda3/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/home/arch/anaconda3/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/arch/anaconda3/lib/python3.7/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 5884 column 23 (char 130093)
+
+(base) arch@arch-MS-7821:~/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src$ python charges_calc.py -i source.json -o out.json
+> /home/arch/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src/charges_calc.py(51)<module>()
+-> DATA = load_rentals_file(args.input)
+(Pdb) c
+Traceback (most recent call last):
+  File "charges_calc.py", line 51, in <module>
+    DATA = load_rentals_file(args.input)
+NameError: name 'data' is not defined
+
+
+
+(Pdb) b charges_calc.py:32
+Breakpoint 1 at /home/arch/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src/charges_calc.py:32
+(Pdb) c
+> /home/arch/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src/charges_calc.py(32)calculate_additional_fields()
+-> for value in data.values():
+(Pdb) l
+ 27  	    except json.decoder.JSONDecodeError as e:
+ 28  	        exit(0)
+ 29  	    return -1
+ 30  	
+ 31  	def calculate_additional_fields(data):
+ 32 B->	    for value in data.values():
+ 33  	        try:
+ 34  	            rental_start = datetime.datetime.strptime(value['rental_start'], '%m/%d/%y')
+ 35  	            rental_end = datetime.datetime.strptime(value['rental_end'], '%m/%d/%y')
+ 36  	            value['total_days'] = (rental_end - rental_start).days
+ 37  	            value['total_price'] = value['total_days'] * value['price_per_day']
+(Pdb) n
+> /home/arch/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src/charges_calc.py(33)calculate_additional_fields()
+-> try:
+(Pdb) n
+> /home/arch/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src/charges_calc.py(34)calculate_additional_fields()
+-> rental_start = datetime.datetime.strptime(value['rental_start'], '%m/%d/%y')
+(Pdb) n
+> /home/arch/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src/charges_calc.py(35)calculate_additional_fields()
+-> rental_end = datetime.datetime.strptime(value['rental_end'], '%m/%d/%y')
+(Pdb) n
+> /home/arch/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src/charges_calc.py(36)calculate_additional_fields()
+-> value['total_days'] = (rental_end - rental_start).days
+(Pdb) n
+> /home/arch/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src/charges_calc.py(37)calculate_additional_fields()
+-> value['total_price'] = value['total_days'] * value['price_per_day']
+(Pdb) n
+> /home/arch/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src/charges_calc.py(38)calculate_additional_fields()
+-> value['sqrt_total_price'] = math.sqrt(value['total_price'])
+(Pdb) n
+ValueError: math domain error
+> /home/arch/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src/charges_calc.py(38)calculate_additional_fields()
+-> value['sqrt_total_price'] = math.sqrt(value['total_price'])
+(Pdb) n
+> /home/arch/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src/charges_calc.py(40)calculate_additional_fields()
+-> except:
+(Pdb) n
+> /home/arch/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src/charges_calc.py(41)calculate_additional_fields()
+-> exit(0)
+(Pdb) n
+SystemExit: 0
+> /home/arch/python220/220-Advanced-Summer-2019/students/ArchWu/lesson02/assignment/src/charges_calc.py(41)calculate_additional_fields()
+-> exit(0)
+(Pdb) Traceback (most recent call last):
+  File "charges_calc.py", line 38, in calculate_additional_fields
+    value['sqrt_total_price'] = math.sqrt(value['total_price'])
+ValueError: math domain error
