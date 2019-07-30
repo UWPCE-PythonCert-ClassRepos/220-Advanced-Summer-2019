@@ -72,6 +72,7 @@ def search_customer(customer_id):
             'lastname':customer.lastname,
             'phone_number':customer.phone_number,
             'email':customer.email,
+            'credit_limit':customer.credit_limit,
         }
     except Exception as e:
         logging.info(f'Customer {customer_id} not found with error:{e}')
@@ -104,7 +105,7 @@ def update_customer_credit(customer_id, credit_limit):
         logging.info(f'Customer {customer_id} has been updated with a new {credit_limit} credit limit')
     except Exception as e:
         logging.error(f'Could not update credit limit for {customer_id} due to error: {e}')
-        raise ValueError
+        raise ValueError('NoCustomer')
 
 def list_active_customers():
     """
@@ -112,11 +113,25 @@ def list_active_customers():
         active customers have a status of active
     """
     try:
-        count = 0
-        for _ in Customer.select().where(Customer.status == 'active'):
-            count += 1
+        count = Customer.select().where(Customer.status == 'active').count()
         logging.info(f'Collected information on active customers, currently {count} active customers')
         return count
     except Exception as e:
         logging.error(f'Could not return list of customers that are active due to {e}')
 
+def mass_increase_credit_limit(limit_base=500,increase_by=1.2):
+    """
+        will take a variable (limit_base) and increase_by.
+        will iterate through the current list of customers and increase everyone that is at or above limit_base
+        will increase their credit limit by 1.2 or whatever number is given here
+    """
+    try:
+        with database.transaction():
+            customers = iter(Customer.select().where(Customer.credit_limit>=500))
+            for customer in customers:
+                if customer.status == 'active':
+                    customer.credit_limit = customer.credit_limit*increase_by
+                    customer.save()
+            logging.info(f'all customers with {limit_base} credit limit or higher increased by {increase_by}')
+    except Exception as e:
+        logging.error('Error updating credit limit')

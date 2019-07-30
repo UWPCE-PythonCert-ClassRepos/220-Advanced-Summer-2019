@@ -46,6 +46,16 @@ def _update_customer_credit(): # needs to del with database
     ]
 
 @pytest.fixture
+def _mass_update_customer_credit(): # needs to del with database
+    return [
+        ("542", "Name", "Lastname", "Address", "phone", "email", "active", 999),
+        ("543", "Name", "Lastname", "Address", "phone", "email", "inactive", 10),
+        ("544", "Name", "Lastname", "Address", "phone", "email", "inactive", -99),
+        ("545", "Name", "Lastname", "Address", "phone", "email", "active", 500),
+        ("546", "Name", "Lastname", "Address", "phone", "email", "inactive", 610),
+    ]
+
+@pytest.fixture
 def _list_active_customers():
     return [
         ("598", "Name", "Lastname", "Address", "phone", "email", "active", 999),
@@ -146,6 +156,7 @@ def test_delete_customer(_delete_customers):
 
 def test_update_customer_credit(_update_customer_credit):
     """ update """
+    
     for customer in _update_customer_credit:
         l.add_customer(customer[0],
                        customer[1],
@@ -164,3 +175,24 @@ def test_update_customer_credit(_update_customer_credit):
     with pytest.raises(ValueError) as excinfo:
         l.update_customer_credit("00100", 1000) # error
         assert 'NoCustomer' in str(excinfo.value)
+
+def test_mass_increase_credit_limit(_mass_update_customer_credit):
+    """mass_increase_credit_limit"""
+    for customer in _mass_update_customer_credit:
+        l.add_customer(customer[0],
+                       customer[1],
+                       customer[2],
+                       customer[3],
+                       customer[4],
+                       customer[5],
+                       customer[6],
+                       customer[7]
+                       )
+    l.mass_increase_credit_limit(500,1.5)
+    cnt = 0
+    for customer in _mass_update_customer_credit:
+        if customer[7] >= 500 and customer[6] == 'active':
+            assert customer[7]*1.5 == l.search_customer(customer[0])['credit_limit']
+        else:
+            assert customer[7] == l.search_customer(customer[0])['credit_limit']
+            
