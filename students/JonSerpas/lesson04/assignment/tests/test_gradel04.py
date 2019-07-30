@@ -6,9 +6,9 @@
 
 """
 
+from src import basic_operations as l
 import pytest
 
-import basic_operations as l
 
 @pytest.fixture
 def _add_customers():
@@ -69,10 +69,13 @@ def test_list_active_customers(_list_active_customers):
                        )
     actives = l.list_active_customers()
 
-    assert actives == 2
+    assert actives == 4
 
-    for customer in _list_active_customers:
-        l.delete_customer(customer[0])
+    try:
+        for customer in _list_active_customers:
+            l.delete_customer(customer[0])
+    except IndexError:
+        pass
 
 
 
@@ -94,8 +97,11 @@ def test_add_customer(_add_customers):
         assert added["email"] == customer[5]
         assert added["phone_number"] == customer[4]
 
-    for customer in _add_customers:
-        l.delete_customer(customer[0])
+    try:
+        for customer in _add_customers:
+            l.delete_customer(customer[0])
+    except IndexError:
+        pass
 
 
 
@@ -156,11 +162,11 @@ def test_update_customer_credit(_update_customer_credit):
                        customer[6],
                        customer[7]
                        )
-
+    
     l.update_customer_credit("798", 0)
     l.update_customer_credit("797", 1000)
     l.update_customer_credit("797", -42)
     l.update_customer_credit("796", 500)
     with pytest.raises(ValueError) as excinfo:
         l.update_customer_credit("00100", 1000) # error
-        assert 'NoCustomer'  in str(excinfo.value)
+        assert 'NoCustomer' in str(excinfo.value)

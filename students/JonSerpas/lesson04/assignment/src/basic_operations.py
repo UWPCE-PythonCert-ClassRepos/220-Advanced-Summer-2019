@@ -13,8 +13,9 @@ except Exception as e:
     print(e)
     logging.warning('Database connection failed!')
 
-# <-- can use this to execute sql cmds
+# -- can use this to execute sql cmds--
 database.execute_sql('PRAGMA foreign_keys = ON;')
+database.execute_sql('DROP TABLE customer')
 
 
 class BaseModel(peewee.Model):
@@ -48,7 +49,7 @@ def add_customer(customer_id, name, lastname, address,
                 phone_number, email, status, credit_limit):
     try:
         with database.transaction():
-            Customer.create(
+            customer = Customer.create(
                 customer_id=customer_id,
                 name=name,
                 lastname=lastname,
@@ -58,17 +59,20 @@ def add_customer(customer_id, name, lastname, address,
                 status=status,
                 credit_limit=credit_limit
             )
+            customer.save()
+            print('successfully added customer')
+            logging.info(f'customer {customer_id} added to database')
     except TypeError:
         logging.info(f'stupid typeerror - should troubleshoot')
         pass
     except Exception as e:
         print(f'error creating {customer_id}')
-        logging.error(f'error creating {customer_id}, {customer_name} in database')
         print(e)
+        logging.error(f'error creating {customer_id} {name} in database')
+        
 
-    Customer.save()
-    print('successfully added customer')
-    logging.info(f'customer {customer_id} added to database')
+    
+
 
 def search_customer(customer_id):
     # need to add error handling for not found. possibly with if statment
@@ -101,14 +105,18 @@ def delete_customer(customer_id):
     try:
         # customer = Customer.select().where(Customer.customer_id == customer_id)
         with database.transaction():
-            customer = Customer.get(Customer.customer_id == customer_id)
-            customer.delete_instance()
-            customer.save()
-            return True
-            logging.info(f'deleted {customer_id}, {customer_name} from database lol')
+            try:
+                customer = Customer.get(Customer.customer_id == customer_id)
+                customer.delete_instance()
+                customer.save()
+                return True
+                logging.info(f'deleted {customer_id}, {name} from database lol')
+            except Exception as e:
+                print(e)
+                pass
     except Exception as e:
         print('failed deleting customer')
-        logging.error(f'failed deleting {customer_id}, {customer_name}')
+        logging.error(f'failed deleting {customer_id}, {name}')
         print(e)
         return False
 
@@ -144,7 +152,7 @@ def toggle_status(customer_id):
         print(e)
 
     print(customer.name, customer.status)
-    set_status = input(f'Enter new status for {customer.name}- (active / inactive / none: )'.lower()
+    set_status = input(f'Enter new status for {customer.name}- (active / inactive / none: )').lower()
     if set_status == 'active':
         customer.update(Customer.status == "active")
         logging.info(f'customer {customer_id} set to active')
