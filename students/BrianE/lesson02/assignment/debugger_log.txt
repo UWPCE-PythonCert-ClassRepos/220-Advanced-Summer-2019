@@ -1,0 +1,81 @@
+Initial Iteration:
+    186590d2efe7:src ervbrian$ python charges_calc.py -i source.json -o output.json -d 4
+    2019-07-14 17:57:57,742 charges_calc.py:68  ERROR Could not import date from source.json: Expecting property name enclosed in double quotes: line 5884 column 23 (char 130093)
+    186590d2efe7:src ervbrian$
+
+        Fixed line 5884:
+            "units_rented": 7,,
+                changed to:
+            "units_rented": 7,
+
+
+Second Iteration:
+    * Added debug logging statement after successful import
+
+    186590d2efe7:src ervbrian$ python charges_calc.py -i source.json -o output.json -d 4
+    2019-07-14 18:01:54,597 charges_calc.py:67  DEBUG Successfully loaded 999 elements from source.json
+
+    * Still no output
+
+Third Iteration:
+    * Added debug statements in calculate_additional_fields
+
+    186590d2efe7:src ervbrian$ python charges_calc.py -i source.json -o output.json -d 4
+    2019-07-14 18:16:17,042 charges_calc.py:67  DEBUG Successfully loaded 999 elements from source.json
+    2019-07-14 18:16:17,045 charges_calc.py:78  DEBUG calculated rental_start: 2017-06-12 00:00:00
+    2019-07-14 18:16:17,045 charges_calc.py:80  DEBUG calculated rental_end: 2017-03-22 00:00:00
+    2019-07-14 18:16:17,045 charges_calc.py:82  DEBUG calculated total_days: -82
+    2019-07-14 18:16:17,045 charges_calc.py:84  DEBUG calculated total_price: -2542
+    2019-07-14 18:16:17,046 charges_calc.py:90  ERROR Could not calculate additional fields: math domain error
+
+    * Some of the start and end dates seem to be swapped in the source JSON
+    * Cannot calculate square root of a negative number. Example:
+        >>> math.sqrt(-8)
+        Traceback (most recent call last):
+          File "<stdin>", line 1, in <module>
+        ValueError: math domain error
+
+Forth Iteration:
+    * Created a smaller version of source.json. Three entries, each with a proper start/end date.
+
+    186590d2efe7:src ervbrian$ python charges_calc.py -i source_small.json -o output.json -d 4
+    2019-07-15 13:34:00,151 charges_calc.py:67  DEBUG Successfully loaded 3 elements from source_small.json
+    2019-07-15 13:34:00,154 charges_calc.py:78  DEBUG calculated rental_start: 2017-03-12 00:00:00
+    2019-07-15 13:34:00,154 charges_calc.py:80  DEBUG calculated rental_end: 2017-06-22 00:00:00
+    2019-07-15 13:34:00,154 charges_calc.py:82  DEBUG calculated total_days: 102
+    2019-07-15 13:34:00,154 charges_calc.py:84  DEBUG calculated total_price: 3162
+    2019-07-15 13:34:00,155 charges_calc.py:86  DEBUG calculated sqrt_total_price: 56.231663678038196
+    2019-07-15 13:34:00,155 charges_calc.py:88  DEBUG calculated unit_cost: 395.25
+    2019-07-15 13:34:00,155 charges_calc.py:78  DEBUG calculated rental_start: 2016-07-20 00:00:00
+    2019-07-15 13:34:00,155 charges_calc.py:80  DEBUG calculated rental_end: 2018-09-30 00:00:00
+    2019-07-15 13:34:00,155 charges_calc.py:82  DEBUG calculated total_days: 802
+    2019-07-15 13:34:00,155 charges_calc.py:84  DEBUG calculated total_price: 12832
+    2019-07-15 13:34:00,155 charges_calc.py:86  DEBUG calculated sqrt_total_price: 113.27841806805037
+    2019-07-15 13:34:00,155 charges_calc.py:88  DEBUG calculated unit_cost: 12832.0
+    2019-07-15 13:34:00,155 charges_calc.py:78  DEBUG calculated rental_start: 2016-02-01 00:00:00
+    2019-07-15 13:34:00,156 charges_calc.py:80  DEBUG calculated rental_end: 2017-06-04 00:00:00
+    2019-07-15 13:34:00,156 charges_calc.py:82  DEBUG calculated total_days: 489
+    2019-07-15 13:34:00,156 charges_calc.py:84  DEBUG calculated total_price: 19560
+    2019-07-15 13:34:00,156 charges_calc.py:86  DEBUG calculated sqrt_total_price: 139.85706989637671
+    2019-07-15 13:34:00,156 charges_calc.py:88  DEBUG calculated unit_cost: 4890.0
+
+    * This proves the original source.json start/end dates were the problem. 
+
+Fifth Iteration:
+    * Removed the exit(0) statement and replaced with error statement
+
+    186590d2efe7:src ervbrian$ python charges_calc.py -i source.json -o output.json -d 4
+    2019-07-15 13:54:36,595 charges_calc.py:67  DEBUG Successfully loaded 999 elements from source.json
+    2019-07-15 13:54:36,596 charges_calc.py:77  ERROR start date before end date. Skipping...
+    2019-07-15 13:54:36,599 charges_calc.py:81  DEBUG calculated rental_start: 2016-07-20 00:00:00
+    2019-07-15 13:54:36,599 charges_calc.py:83  DEBUG calculated rental_end: 2018-09-30 00:00:00
+    2019-07-15 13:54:36,599 charges_calc.py:85  DEBUG calculated total_days: 802
+    2019-07-15 13:54:36,599 charges_calc.py:87  DEBUG calculated total_price: 12832
+    2019-07-15 13:54:36,599 charges_calc.py:89  DEBUG calculated sqrt_total_price: 113.27841806805037
+    2019-07-15 13:54:36,600 charges_calc.py:91  DEBUG calculated unit_cost: 12832.0
+    [...snipped...]
+    2019-07-15 13:54:37,314 charges_calc.py:93  ERROR Could not calculate additional fields: math domain error
+    2019-07-15 13:54:37,314 charges_calc.py:98  DEBUG writing data to output.json
+    186590d2efe7:src ervbrian$
+
+    * output.json was generated with expected values
