@@ -5,8 +5,8 @@ from unittest.mock import patch
 from inventory_management.inventory_class import Inventory
 from inventory_management.furniture_class import Furniture
 from inventory_management.electric_appliance_class import ElectricAppliances
-# from inventory_management.market_prices import market_price
 from inventory_management.main import main_menu
+import inventory_management.market_prices as mp
 
 class InventoryTest(unittest.TestCase):
     """ Test the Inventory class """
@@ -33,7 +33,7 @@ class InventoryTest(unittest.TestCase):
         self.assertEqual(test_inventory['rental_price'], 50)
 
 
-class FurnitureTest(Inventory, unittest.TestCase):
+class FurnitureTest(unittest.TestCase):
     """ Test the Furniture class """
 
     def test_init(self):

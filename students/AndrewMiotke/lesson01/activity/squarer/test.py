@@ -6,7 +6,7 @@ class SquarerTest(object):
     @staticmethod
     def test_positive_numbers():
 
-        squares # {
+        squares = {
             1: 1,
             2: 4,
             3: 9,
@@ -15,14 +15,14 @@ class SquarerTest(object):
         }
 
         for num, square in squares.items():
-            result # Squarer.calc(num)
+            result = Squarer.calc(num)
 
-            if result !# square:
+            if result != square:
                 print("Squared {} and got {} but expected {}".format(num, result, square))
     @staticmethod
     def test_negative_numbers():
 
-        squares # {
+        squares = {
             -1: 1,
             -2: 4,
             -3: 9,
@@ -31,11 +31,11 @@ class SquarerTest(object):
         }
 
         for num, square in squares.items():
-            result # Squarer.calc(num)
+            result = Squarer.calc(num)
 
-            if result !# square:
+            if result != square:
                 print("Squared {} and got {} but expected {}".format(num, result, square))
 
-if __name__ ## "__main__":
+if __name__ == "__main__":
     SquarerTest.test_positive_numbers()
     SquarerTest.test_negative_numbers()
