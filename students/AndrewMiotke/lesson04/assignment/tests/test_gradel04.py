@@ -146,6 +146,7 @@ def test_delete_customer(_delete_customers):
 
 def test_update_customer_credit(_update_customer_credit):
     """ update """
+
     for customer in _update_customer_credit:
         l.add_customer(customer[0],
                        customer[1],
