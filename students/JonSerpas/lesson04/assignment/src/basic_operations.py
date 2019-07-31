@@ -125,10 +125,13 @@ def update_customer_credit(customer_id, new_credit_limit):
     try:
         with database.transaction():
             customer = Customer.get(Customer.customer_id == customer_id)
+            print(customer)
             # customer.credit_limit = credit_limit <-- try this later instead of update
             customer.update(Customer.credit_limit == new_credit_limit)
             customer.save()
             logging.info(f'customer {customer_id} credit updated from {Customer.credit_limit} to {new_credit_limit}')
+    except Customer.DoesNotExist as dne:
+        return dne
     except Exception as e:
         logging.error(f'unable to update {customer_id}')
         print(e)

@@ -1,18 +1,23 @@
-"""
-    Autograde Lesson 3 assignment
-    Run pytest
-    Run cobverage and linitng using standard batch file
-    Student should submit an empty database
 
-"""
 
 from src import basic_operations as l
+import logging
 import pytest
 
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
+
+fh = logging.FileHandler("db.log")
+fh.setLevel(logging.DEBUG)
+
+formatter = logging.Formatter("%(asctime)s %(filename)s:%(lineno)-3d %(levelname)s %(message)s")
+fh.setFormatter(formatter)
+
+logger.addHandler(fh)
 
 @pytest.fixture
 def _add_customers():
-    return [
+    return iter([
         ("123", "Name", "Lastname", "Address", "phone", "email", "active", 999),
         ("456", "Name", "Lastname", "Address", "phone", "email", "inactive", 10),
         ("123", "Name", "Lastname", "Address", "phone", "email", "active", 999),
@@ -20,7 +25,7 @@ def _add_customers():
         ("345", "Name", "Lastname", "Address", "phone", "email", "active", -10),
         ("0123", "Name", "Lastname", "Address", "phone", "email", "active", 999),
         ("777", "Name", "Lastname", "Address", "phone", "email", "active", 999)
-    ]
+    ])
 
 @pytest.fixture
 def _search_customers(): # needs to del with database
@@ -31,10 +36,10 @@ def _search_customers(): # needs to del with database
     ]
 @pytest.fixture
 def _delete_customers(): # needs to del with database
-    return [
+    return (row for row in[
         ("898", "Name", "Lastname", "Address", "phone", "email", "active", 999),
         ("897", "Name", "Lastname", "Address", "phone", "email", "inactive", 10)
-    ]
+    ])
 
 @pytest.fixture
 def _update_customer_credit(): # needs to del with database
@@ -172,6 +177,6 @@ def test_update_customer_credit(_update_customer_credit):
     l.update_customer_credit("797", 1000)
     l.update_customer_credit("797", -42)
     l.update_customer_credit("796", 500)
-    with pytest.raises(ValueError) as excinfo:
-        l.update_customer_credit("00100", 1000) # error
-        assert 'NoCustomer' in str(excinfo.value)
+    #with pytest.raises(Exception) as excinfo:
+    dne = l.update_customer_credit("00100", 1000) # error
+    assert '<Model: Customer> instance matching query does not exist:' in str(dne)
