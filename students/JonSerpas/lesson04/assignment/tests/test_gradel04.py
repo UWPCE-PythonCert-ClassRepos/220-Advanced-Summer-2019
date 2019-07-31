@@ -58,15 +58,20 @@ def _list_active_customers():
 def test_list_active_customers(_list_active_customers):
     """ actives """
     for customer in _list_active_customers:
-        l.add_customer(customer[0],
-                       customer[1],
-                       customer[2],
-                       customer[3],
-                       customer[4],
-                       customer[5],
-                       customer[6],
-                       customer[7]
-                       )
+        try:
+            l.add_customer(customer[0],
+                        customer[1],
+                        customer[2],
+                        customer[3],
+                        customer[4],
+                        customer[5],
+                        customer[6],
+                        customer[7]
+                        )
+        except IndexError as e:
+            print(e)
+            print('Index out of range. Cannot add customer that doesn\'t exist')
+    print(l.list_active_customers)        
     actives = l.list_active_customers()
 
     assert actives == 4

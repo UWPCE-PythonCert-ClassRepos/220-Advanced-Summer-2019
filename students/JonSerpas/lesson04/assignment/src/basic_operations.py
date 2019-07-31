@@ -144,6 +144,8 @@ def list_active_customers():
         print('No active customers found.')
         logging.error(f'failed to list active customers')
 
+    return(query)
+
 def toggle_status(customer_id):
     try:
         with database.transaction():
