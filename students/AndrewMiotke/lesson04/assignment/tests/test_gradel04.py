@@ -10,9 +10,31 @@ import pytest
 
 import basic_operations as l
 
+import logging
+
+# __name__ tells logger that this "module" is the module to log
+logger = logging.getLogger(__name__)
+
+logger.setLevel(logging.DEBUG)
+
+# sets the file name that the logs will saved to
+fh = logging.FileHandler('db.log')
+
+# sets the logging level
+fh.setLevel(logging.DEBUG)
+
+# states formats the logs
+formatter = logging.Formatter('%(acstime)s\t%(message)s')
+
+# sets the formatting
+fh.setFormatter(formatter)
+
+# creates the actual handler to make the file and logs
+logger.addHandler(fh)
+
 @pytest.fixture
 def _add_customers():
-    return [
+    return iter([
         ("123", "Name", "Lastname", "Address", "phone", "email", "active", 999),
         ("456", "Name", "Lastname", "Address", "phone", "email", "inactive", 10),
         ("123", "Name", "Lastname", "Address", "phone", "email", "active", 999),
@@ -20,7 +42,8 @@ def _add_customers():
         ("345", "Name", "Lastname", "Address", "phone", "email", "active", -10),
         ("0123", "Name", "Lastname", "Address", "phone", "email", "active", 999),
         ("777", "Name", "Lastname", "Address", "phone", "email", "active", 999)
-    ]
+    ])
+
 
 @pytest.fixture
 def _search_customers(): # needs to del with database
@@ -31,10 +54,10 @@ def _search_customers(): # needs to del with database
     ]
 @pytest.fixture
 def _delete_customers(): # needs to del with database
-    return [
+    return (row for row in [
         ("898", "Name", "Lastname", "Address", "phone", "email", "active", 999),
         ("897", "Name", "Lastname", "Address", "phone", "email", "inactive", 10)
-    ]
+    ])
 
 @pytest.fixture
 def _update_customer_credit(): # needs to del with database
@@ -78,6 +101,7 @@ def test_list_active_customers(_list_active_customers):
 
 def test_add_customer(_add_customers):
     """ additions """
+    logging(type(_add_customers))
     for customer in _add_customers:
         l.add_customer(customer[0],
                        customer[1],
@@ -127,6 +151,7 @@ def test_search_customer(_search_customers):
 
 def test_delete_customer(_delete_customers):
     """ delete """
+    logging(type(_delete_customers))
     for customer in _delete_customers:
         l.add_customer(customer[0],
                        customer[1],
