@@ -1,7 +1,14 @@
+"""
+Running this script:
+    - Ensure docker is running mongod
+    - Make sure mongo is running on port 27017
+    - To run the docker container on port 27017
+        docker run --name mongo -p 27017:27017 -d mongo mongod
+"""
+
 import csv
 from pymongo import MongoClient
 
-# need to run docker before this will work on this machine
 mongo = MongoClient("localhost:27017")
 db = mongo['assignment']
 
@@ -51,7 +58,7 @@ def show_rentals():
 
     for user in users_with_rentals:
         user_id = user['user_id']
-        query(user)
+        query = {'user_id': {'$eq': user_id}}
         user_info = customers_columns.find(query)[0]
         name = user_info['name']
         address = address['address']
