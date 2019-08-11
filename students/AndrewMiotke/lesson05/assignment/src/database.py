@@ -24,3 +24,11 @@ def import_data(data_dir, *files):
 
 import_data('assignment/data', 'product.csv', 'customers.csv', 'rental.csv')
 
+
+def show_available_products():
+    pass
+
+
+def show_rentals():
+    pass
+
