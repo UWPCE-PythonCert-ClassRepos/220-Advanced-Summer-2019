@@ -22,13 +22,42 @@ def import_data(data_dir, *files):
                     cursor = db[collection_name]
                     cursor.insert_one(data)
 
-import_data('assignment/data', 'product.csv', 'customers.csv', 'rental.csv')
+import_data('data/', 'product.csv', 'customers.csv', 'rental.csv')
 
 
 def show_available_products():
-    pass
+    column = db['product']
+    query = {'quantity_available':{'$gt':'0'}}
+    results = {}
+    available_products = iter(column.find(query))
+
+    for product in available_products:
+        product_id = product['product_id']
+        description = product['description']
+        product_type = product['product_type']
+        quantity_available = product['quantity_available']
+
+        results.update({product_id: {'description': description, 'product_type': product_type, 'quantity_available': quantity_available}})
+
+        return results
 
 
 def show_rentals():
-    pass
+    rental_column = db['rental']
+    customers_columns = db['customers']
+    query = {'product_id': {'$eq': product_id}}
+    users_with_rentals = rental_column.find(query)
+    rental_results = {}
 
+    for user in users_with_rentals:
+        user_id = user['user_id']
+        query(user)
+        user_info = customers_columns.find(query)[0]
+        name = user_info['name']
+        address = address['address']
+        phone_number = user_info['phone_number']
+        email = user_info['email']
+
+        rental_results.update({user_id: {'name': name, 'address': address, 'phone_number': phone_number, 'email': email}})
+
+        return rental_results
