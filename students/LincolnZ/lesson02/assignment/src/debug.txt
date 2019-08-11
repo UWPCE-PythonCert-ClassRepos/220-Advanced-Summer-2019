@@ -1,0 +1,105 @@
+(uw_class) lincoln@:~/SU_2019_220_classroom/220-Advanced-Summer-2019/students/template_student/lesson02/assignment/src$ python -m pdb charges_calc.py -i source.json -o output
+> /home/lincoln/SU_2019_220_classroom/220-Advanced-Summer-2019/students/template_student/lesson02/assignment/src/charges_calc.py(3)<module>()
+-> '''
+(Pdb) l
+  1     '''
+  2     Returns total price paid for individual rentals
+  3  -> '''
+  4     import argparse
+  5     import json
+  6     import datetime
+  7     import math
+  8     import logging
+  9
+ 10
+ 11     def parse_cmd_arguments():
+(Pdb) n
+> /home/lincoln/SU_2019_220_classroom/220-Advanced-Summer-2019/students/template_student/lesson02/assignment/src/charges_calc.py(4)<module>()
+-> import argparse
+(Pdb) n
+> /home/lincoln/SU_2019_220_classroom/220-Advanced-Summer-2019/students/template_student/lesson02/assignment/src/charges_calc.py(5)<module>()
+-> import json
+(Pdb) n
+> /home/lincoln/SU_2019_220_classroom/220-Advanced-Summer-2019/students/template_student/lesson02/assignment/src/charges_calc.py(6)<module>()
+-> import datetime
+(Pdb) n
+> /home/lincoln/SU_2019_220_classroom/220-Advanced-Summer-2019/students/template_student/lesson02/assignment/src/charges_calc.py(7)<module>()
+-> import math
+(Pdb) n
+> /home/lincoln/SU_2019_220_classroom/220-Advanced-Summer-2019/students/template_student/lesson02/assignment/src/charges_calc.py(8)<module>()
+-> import logging
+(Pdb) n
+> /home/lincoln/SU_2019_220_classroom/220-Advanced-Summer-2019/students/template_student/lesson02/assignment/src/charges_calc.py(11)<module>()
+-> def parse_cmd_arguments():
+(Pdb) n
+> /home/lincoln/SU_2019_220_classroom/220-Advanced-Summer-2019/students/template_student/lesson02/assignment/src/charges_calc.py(19)<module>()
+-> def load_rentals_file(filename):
+(Pdb) n
+> /home/lincoln/SU_2019_220_classroom/220-Advanced-Summer-2019/students/template_student/lesson02/assignment/src/charges_calc.py(28)<module>()
+-> def calculate_additional_fields(data):
+(Pdb) n
+> /home/lincoln/SU_2019_220_classroom/220-Advanced-Summer-2019/students/template_student/lesson02/assignment/src/charges_calc.py(43)<module>()
+-> def save_to_json(filename, data):
+(Pdb) n
+> /home/lincoln/SU_2019_220_classroom/220-Advanced-Summer-2019/students/template_student/lesson02/assignment/src/charges_calc.py(48)<module>()
+-> if __name__ == "__main__":
+(Pdb) n
+> /home/lincoln/SU_2019_220_classroom/220-Advanced-Summer-2019/students/template_student/lesson02/assignment/src/charges_calc.py(49)<module>()
+-> args = parse_cmd_arguments()
+(Pdb) n
+> /home/lincoln/SU_2019_220_classroom/220-Advanced-Summer-2019/students/template_student/lesson02/assignment/src/charges_calc.py(50)<module>()
+-> data = load_rentals_file(args.input)
+(Pdb) s
+--Call--
+> /home/lincoln/SU_2019_220_classroom/220-Advanced-Summer-2019/students/template_student/lesson02/assignment/src/charges_calc.py(19)load_rentals_file()
+-> def load_rentals_file(filename):
+(Pdb) s
+> /home/lincoln/SU_2019_220_classroom/220-Advanced-Summer-2019/students/template_student/lesson02/assignment/src/charges_calc.py(20)load_rentals_file()
+-> with open(filename) as file:
+(Pdb) s
+--Call--
+> /home/lincoln/anaconda3/envs/uw_class/lib/python3.7/_bootlocale.py(33)getpreferredencoding()
+-> def getpreferredencoding(do_setlocale=True):
+(Pdb) n
+> /home/lincoln/anaconda3/envs/uw_class/lib/python3.7/_bootlocale.py(34)getpreferredencoding()
+-> assert not do_setlocale
+(Pdb) n
+> /home/lincoln/anaconda3/envs/uw_class/lib/python3.7/_bootlocale.py(35)getpreferredencoding()
+-> if sys.flags.utf8_mode:
+(Pdb) n
+> /home/lincoln/anaconda3/envs/uw_class/lib/python3.7/_bootlocale.py(37)getpreferredencoding()
+-> result = _locale.nl_langinfo(_locale.CODESET)
+(Pdb) n
+> /home/lincoln/anaconda3/envs/uw_class/lib/python3.7/_bootlocale.py(38)getpreferredencoding()
+-> if not result and sys.platform == 'darwin':
+(Pdb) n
+> /home/lincoln/anaconda3/envs/uw_class/lib/python3.7/_bootlocale.py(46)getpreferredencoding()
+-> return result
+(Pdb) n
+--Return--
+> /home/lincoln/anaconda3/envs/uw_class/lib/python3.7/_bootlocale.py(46)getpreferredencoding()->'UTF-8'
+-> return result
+(Pdb) n
+--Call--
+> /home/lincoln/anaconda3/envs/uw_class/lib/python3.7/codecs.py(309)__init__()
+-> def __init__(self, errors='strict'):
+(Pdb) n
+> /home/lincoln/anaconda3/envs/uw_class/lib/python3.7/codecs.py(310)__init__()
+-> IncrementalDecoder.__init__(self, errors)
+(Pdb) n
+> /home/lincoln/anaconda3/envs/uw_class/lib/python3.7/codecs.py(312)__init__()
+-> self.buffer = b""
+(Pdb) n
+--Return--
+> /home/lincoln/anaconda3/envs/uw_class/lib/python3.7/codecs.py(312)__init__()->None
+-> self.buffer = b""
+(Pdb) n
+> /home/lincoln/SU_2019_220_classroom/220-Advanced-Summer-2019/students/template_student/lesson02/assignment/src/charges_calc.py(21)load_rentals_file()
+-> try:
+(Pdb) n
+> /home/lincoln/SU_2019_220_classroom/220-Advanced-Summer-2019/students/template_student/lesson02/assignment/src/charges_calc.py(22)load_rentals_file()
+-> data = json.load(file)
+(Pdb) n
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 5884 column 23 (char 130093)
+> /home/lincoln/SU_2019_220_classroom/220-Advanced-Summer-2019/students/template_student/lesson02/assignment/src/charges_calc.py(22)load_rentals_file()
+-> data = json.load(file)

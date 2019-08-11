@@ -24,9 +24,8 @@ def parse_cmd_arguments():
     parser.add_argument('-i', '--input', help='input JSON file', required=True)
     parser.add_argument('-o', '--output', help='ouput JSON file', required=True)
     parser.add_argument('-d', '--debug', help='debug option',
-                        required=True, type=int)
+                        required=False, type=int, default=0)
     return parser.parse_args()
-
 
 def load_rentals_file(filename):
     """File loader"""
@@ -51,16 +50,16 @@ def calculate_additional_fields(data):
                                                     '%m/%d/%y')
             if not rental_end:
                 logging.warning("Missing rental end date!")
-            value['total_days'] = (rental_end - rental_start).days
+            value['total_days'] = abs((rental_end - rental_start).days)
             value['total_price'] = value['total_days'] * value['price_per_day']
             value['sqrt_total_price'] = math.sqrt(value['total_price'])
             value['unit_cost'] = value['total_price'] / value['units_rented']
         except ValueError:
             logging.error("Something's not quite right! %s", value)
             continue
-        except (RuntimeError, TypeError, NameError):
-            logging.error("Wierd thing happens")
-            exit(0)
+        except ZeroDivisionError:
+            logging.error("Divided by zero")
+            continue
     return data
 
 def save_to_json(filename, data):

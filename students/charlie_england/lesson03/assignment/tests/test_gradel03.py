@@ -6,8 +6,9 @@
 
 """
 
+import sys
 import pytest
-
+sys.path.insert(0,'../src')
 import basic_operations as l
 
 @pytest.fixture
@@ -69,7 +70,7 @@ def test_list_active_customers(_list_active_customers):
                        )
     actives = l.list_active_customers()
 
-    assert actives == 2
+    assert actives == 4
 
     for customer in _list_active_customers:
         l.delete_customer(customer[0])
@@ -99,7 +100,7 @@ def test_add_customer(_add_customers):
 
 
 
-def test_search_customer(_search_customers[0]):
+def test_search_customer(_search_customers):
     """ search """
     for customer in _search_customers[0]:
         l.add_customer(customer[0],
@@ -123,7 +124,6 @@ def test_search_customer(_search_customers[0]):
 
     for customer in _search_customers[0]:
         l.delete_customer(customer[0])
-
 
 def test_delete_customer(_delete_customers):
     """ delete """
@@ -163,4 +163,4 @@ def test_update_customer_credit(_update_customer_credit):
     l.update_customer_credit("796", 500)
     with pytest.raises(ValueError) as excinfo:
         l.update_customer_credit("00100", 1000) # error
-        assert 'NoCustomer'  in str(excinfo.value)
+        assert 'NoCustomer' in str(excinfo.value)

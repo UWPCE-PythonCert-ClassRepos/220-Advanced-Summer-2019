@@ -1,22 +1,14 @@
 import unittest
-from inventory_management.market_prices import*
-from inventory_management.inventory_class import Inventory
-from inventory_management.furniture_class import Furniture
-from inventory_management.electric_appliances_class import ElectricAppliances
-
 import sys
-import os
 
-sys.path.insert(0, os.path.abspath(__file__ + "\..\inventory_management"))
+# Note, in windows I have to include the parent path for test run
+sys.path.append("../")
 
-#
-# class demo(unittest.TestCase):
-#     productCode = "A1234"
-#     #inventory =
-#     def test_demo(self):
-#         self.assertDictEqual(
-#             {"productCode" : "A1234"},
-#             {"productCode": "A1234"})
+from unittest.mock import patch
+from inventory_management.furniture_class import Furniture
+from inventory_management.market_prices import *
+from inventory_management.inventory_class import Inventory
+from inventory_management.electric_appliances_class import ElectricAppliances
 
 
 class TestInventoryImplementations(unittest.TestCase):
@@ -78,4 +70,6 @@ class TestInventoryImplementations(unittest.TestCase):
         )
 
     def test_market_price(self):
-        self.assertEquals(24, get_latest_price(123))
+        self.assertEqual(24, get_latest_price(123))
+
+
