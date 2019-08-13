@@ -1,6 +1,6 @@
 # Furniture class
 """ Furniture module """
-from inventory_class import Inventory
+from inventory_management.inventory_class import Inventory
 
 class Furniture(Inventory):
     """ Furniture class, inherits Inventory class """
