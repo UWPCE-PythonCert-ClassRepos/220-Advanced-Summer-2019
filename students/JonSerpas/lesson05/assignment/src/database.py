@@ -33,15 +33,25 @@ def import_data(data_dir, *files):  # using args to import the multiple csv file
 
 def show_available_prodcuts(products):
     # DB query and display all
-
-    available_products = products.find(*)
+    query = {"quantity_available" : >0}  #show all products with quant > 0
+    available_products = products.find(query)
+    print(available_products)
     return available_products
 
 
-def show_rentals(rentals):
-    # db query to show all rentals
-    available_rentals = rentals.find(*)
-    return available_rentals
+def show_rentals(rentals, customers):
+    # db query to show rented products
+    # combines the cusomter collection and product collection
+
+    rentals_query = {"product_id" : "user_id"}
+    rented_items = rentals.find(rentals_query)
+
+    # now look through this list to match rented products with users
+    list(rented_items)
+    for "product_id" in list(rented_items):
+        customer_query = {"user_id" : "name"}
+        
+
 
 
 import_data("assignment/data", "product.csv", "customers.csv", "rental.csv")
