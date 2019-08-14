@@ -3,11 +3,12 @@ test unit module
 """
 
 from unittest import TestCase
-from unittest.mock import MagicMock
+from unittest.mock import MagicMock, patch
 from inventory_management.electric_appliances_class import ElectricAppliances
 from inventory_management.furniture_class import Furniture
 from inventory_management.inventory_class import Inventory
 from inventory_management import market_prices
+from inventory_management.main import main
 
 class ElectricApplianceTest(TestCase):
     """
@@ -80,6 +81,10 @@ class MarketPriceTest(TestCase):
         self.assertEqual(24, market_prices.get_latest_price(100))
 
 
+class MainMenuTest(TestCase):
+    def test_main_menu(self):
+        with patch("builtin.input", side_effect="2"):
+            self.assertEqual(main.main_menu(), main.item_info())
 
 
 

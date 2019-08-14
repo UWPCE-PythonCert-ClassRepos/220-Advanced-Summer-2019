@@ -10,9 +10,22 @@ import pytest
 
 import basic_operations as l
 
+import logging
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
+
+fh = logging.FileHandler("db.log")
+logger.addHandler()
+
+logger.addHandler(fh)
+
+logging.basicConfig(level=logging.DEBUG, filename="bd.log")
+
+
 @pytest.fixture
 def _add_customers():
-    return [
+    return  iter([
         ("123", "Name", "Lastname", "Address", "phone", "email", "active", 999),
         ("456", "Name", "Lastname", "Address", "phone", "email", "inactive", 10),
         ("123", "Name", "Lastname", "Address", "phone", "email", "active", 999),
@@ -20,7 +33,9 @@ def _add_customers():
         ("345", "Name", "Lastname", "Address", "phone", "email", "active", -10),
         ("0123", "Name", "Lastname", "Address", "phone", "email", "active", 999),
         ("777", "Name", "Lastname", "Address", "phone", "email", "active", 999)
-    ]
+    ])
+
+    # first_row = next(it)
 
 @pytest.fixture
 def _search_customers(): # needs to del with database
@@ -31,10 +46,10 @@ def _search_customers(): # needs to del with database
     ]
 @pytest.fixture
 def _delete_customers(): # needs to del with database
-    return [
+    return (row for row in [
         ("898", "Name", "Lastname", "Address", "phone", "email", "active", 999),
         ("897", "Name", "Lastname", "Address", "phone", "email", "inactive", 10)
-    ]
+    ])
 
 @pytest.fixture
 def _update_customer_credit(): # needs to del with database
