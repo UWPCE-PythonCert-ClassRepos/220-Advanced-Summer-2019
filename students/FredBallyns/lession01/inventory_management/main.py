@@ -72,7 +72,6 @@ def add_new_item():
     FULL_INVENTORY[item_code] = new_item.return_as_dictionary()
     print("New inventory item added")
 
-
 def item_info():
     """Returns item info based on user entered item code"""
     item_code = input("Enter item code: ")
