@@ -3,7 +3,6 @@ basic operations module
 """
 import peewee
 import logging
-import os
 
 database = peewee.SqliteDatabase("customer.db")
 database.connect()
@@ -64,10 +63,14 @@ def add_customer(customer_id, name, lastname, home_address,
                 status=status,
                 credit_limit=credit_limit,
             )
-            logger.info(f"Successfully added customer {customer_id} with {credit_limit}")
+            logger.info(
+                f"Successfully added customer {customer_id} with {credit_limit}"
+            )
             customer.save()
     except Exception as unknown_error:
-        logger.error(f"Error. Failed to added customer {customer_id}. {unknown_error}")
+        logger.error(
+            f"Error. Failed to added customer {customer_id}. {unknown_error}"
+        )
         print(unknown_error)
 
 
@@ -87,7 +90,9 @@ def search_customer(customer_id):
             'phone_number': customer.phone_number
         }
     except Exception as unknown_error:
-        logger.error(f"Error. Failed to find customer {customer_id}. {unknown_error}")
+        logger.error(
+            f"Error. Failed to find customer {customer_id}. {unknown_error}"
+        )
         print(f"Error. Could not find customer {customer_id}. {unknown_error}")
         return {}
 
@@ -103,8 +108,12 @@ def delete_customer(customer_id):
             customer.save()
             logger.info(f"Successfully deleted customer {customer_id}")
     except Exception as unknown_error:
-        logger.error(f"Error. Failed to delete customer {customer_id}. {unknown_error}")
-        print(f'Error. Could not delete customer {customer_id}. {unknown_error}')
+        logger.error(
+            f"Error. Failed to delete customer {customer_id}. {unknown_error}"
+        )
+        print(
+            f'Error. Could not delete customer {customer_id}. {unknown_error}'
+        )
 
 
 def update_customer_credit(customer_id, credit_limit):
@@ -118,9 +127,14 @@ def update_customer_credit(customer_id, credit_limit):
             customer = Customer.get_by_id(customer_id)
             customer.credit_limit = credit_limit
             customer.save()
-            logger.info(f"Successfully updated customer {customer_id} credit limit")
+            logger.info(
+                f"Successfully updated customer {customer_id} credit limit"
+            )
     except Exception as unknown_error:
-        logger.error(f"Error. Failed to update customer {customer_id} credit limit. {unknown_error}")
+        logger.error(
+            f"Error. Failed to update customer {customer_id}"
+            " credit limit. {unknown_error}"
+        )
         print(f'Error. Cutomer {customer_id} does not exist. {unknown_error}')
         raise ValueError
 
@@ -134,28 +148,40 @@ def list_active_customers():
         active_customer_count = 0
         for _ in Customer.select().where(Customer.status == 'Active'):
             active_customer_count += 1
-        logger.info(f"Successfully counted active customers {active_costomer_count}")
+        logger.info(
+            f"Successfully counted active customers {active_customer_count}"
+        )
         return active_customer_count
     except Exception as unknown_error:
         logger.error(f"Error. Failed to count customers. {unknown_error}")
-        print(f'Error. Not able to count number of active customers. {unknown_error}')
+        print(
+            f'Error. Not able to count number of active customers.'
+            ' {unknown_error}'
+        )
+
 
 def make_generators_from_csv(csv_file):
     """
-    Make generator from csv file where it yields lists of inputs for adding customers
+    Make generator from csv file where it
+    yields lists of inputs for adding customers
     """
-    with open(csv_file, mode='r', encoding='utf-8', errors='ignore') as source_data:
-        source_data.readline() # skip header
+    with open(csv_file, mode='r', encoding='utf-8',
+              errors='ignore') as source_data:
+        source_data.readline()  # skip header
 
         for line in source_data.readlines():
             try:
                 line = line.rstrip().split(',')
-                if len(line)==8:
+                if len(line) == 8:
                     yield line
                 else:
-                    logger.error(f"Import failure on line split. Expected 8 columns, but got {len(line)}. {line}")
+                    logger.error(
+                        f"Import failure on line split."
+                        " Expected 8 columns, but got {len(line)}. {line}"
+                    )
             except IndexError as e:
                 logger.error(f"Could not import customer data for {line}: {e}")
+
 
 if __name__ == "__main__":
     Customer.create_table()
@@ -166,7 +192,7 @@ if __name__ == "__main__":
     message_generator = "Generators Complete, Starting to add customers"
     logger.info(message_generator)
     print(message_generator)
-    [add_customer(*line) for line in customer_generator]
+    [add_customer(*line) for line in customer_generator]  # Painfully slow
     message_done = "DB import complete"
     logger.info(message_done)
     print(message_done)
