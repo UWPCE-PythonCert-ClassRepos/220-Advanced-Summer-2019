@@ -1,12 +1,14 @@
 import csv
 import os.path
+import time
 from pymongo import MongoClient
+import threading
 
 mongo = MongoClient("localhost:27017")
 
 db = mongo["hp_norton"]
 db.drop_collection("product")
-db.drop_collection("customers")
+db.drop_collection("customer")
 db.drop_collection("rental")
 
 def import_data(data_dir, *files):
@@ -15,8 +17,10 @@ def import_data(data_dir, *files):
     """
     added = [0, 0, 0]
     errors = [0, 0, 0]
-    reference = 0
+    fnl_lst = []
     for filepath in files:
+        start_time = time.time()
+        added = 0
         collection_name = filepath.split(".")[0]
         with open(os.path.join(data_dir, filepath)) as file:
             reader = csv.reader(file, delimiter=",")
@@ -30,11 +34,11 @@ def import_data(data_dir, *files):
                         data = {header[i]:v for i, v in enumerate(row)}
                         cursor = db[collection_name]
                         cursor.insert_one(data)
-                        added[reference] +=1
-                except Exception:
-                    errors[reference] += 1
-            reference += 1
-    return tuple(added), tuple(errors)
+                        added +=1
+                except Exception as e:
+                    print(e)
+        fnl_lst.append((added,0,added,time.time()-start_time))
+    return fnl_lst
 
 def show_available_products():
     """
@@ -79,7 +83,7 @@ def show_rentals(product_id):
         ’email’:’mdata@uw.edu’}}
     """
     rental_col = db["rental"]
-    customers_col = db["customers"]
+    customers_col = db["customer"]
     query = {"ï»¿product_id":{"$eq":product_id}}
     users_with_rentals = rental_col.find(query)
     rentals_dict = {}
@@ -97,3 +101,56 @@ def show_rentals(product_id):
         email = user_info["email"]
         rentals_dict.update({usr_id:{"name":name, "address":address, "phone_number":phone_number, "email": email}})
     return rentals_dict
+
+global results
+results = [None,None]
+def import_data_multithreaded(filepath, index):
+    start_time = time.time()
+    added = 0
+    print(f"opening file: {filepath}")
+    collection_name = filepath.split(".")[0]
+
+    with open(f"..//data//{filepath}") as file:
+        reader = csv.reader(file, delimiter=",")
+
+        header = False
+        table = db[collection_name]
+
+        for row in reader:
+            #for first row, there is not a header, it will then grab the header value in the first row through and bypass the if not header
+            if not header:
+                header = [h for h in row]
+            else:
+                data = {header[i]:v for i,v in enumerate(row)}
+                try:
+                    table.insert_one(data)
+                    added+=1
+                except Exception as e:
+                    print(e)
+    results[index] = (added,0,added,time.time()-start_time)
+
+def linear():
+    return import_data('..//data','customer.csv','product.csv') #rental?
+
+def parallel():
+    files = [
+        "customer.csv",
+        "product.csv"
+    ]
+    threads = []
+    x = 0
+    for filepath in files:
+        thread = threading.Thread(
+            target=import_data_multithreaded,
+            args=(filepath,x)
+        )
+        thread.start()
+        threads.append(thread)
+        x+=1
+    for i in threads:
+        i.join()
+    return results
+
+if __name__ == "__main__":
+    print(linear())
+    print(parallel())
