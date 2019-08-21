@@ -1,56 +1,107 @@
-"""
-grade lesson 5
-"""
-
-import os
+from unittest import TestCase
+from unittest.mock import patch
 import pytest
+import os
 
-import database as l
+from database import import_data, show_rentals, delete_database
+from database import show_customers, show_available_products
 
-@pytest.fixture
-def _show_available_products():
-    return {
-        'P000001': {'description': 'Chair Red leather', 'product_type': 'livingroom',
-                    'quantity_available': '21'},
-        'P000002': {'description': 'Table Oak', 'product_type': 'livingroom',
-                    'quantity_available': '4'},
-        'P000003': {'description': 'Couch Green cloth', 'product_type': 'livingroom',
-                    'quantity_available': '10'},
-        'P000004': {'description': 'Dining table Plastic', 'product_type': 'Kitchen',
-                    'quantity_available': '23'},
-        'P000005': {'description': 'Stool Black ash', 'product_type': 'Kitchen',
-                    'quantity_available': '12'}
-        }
 
-@pytest.fixture
-def _show_rentals():
-    return {
-        'C000001': {'name': 'Shea Boehm', 'address': '3343 Sallie Gateway',
-                    'phone_number': '508.104.0644', 'email': 'Alexander.Weber@monroe.com'},
-        'C000003': {'name': 'Elfrieda Skiles', 'address': '3180 Mose Row',
-                    'phone_number': '839)825-0058', 'email': 'Mylene_Smitham@hannah.co.uk'}
-        }
+class TestDatabase(TestCase):
 
-def test_import_data():
-    """ import """
-    data_dir = os.path.dirname(os.path.abspath(__file__))
-    added, errors = l.import_data(data_dir, "products.csv", "customers.csv", "rentals.csv")
+    """"test for Mongo database.py"""
+    folder_name = ""
+    cwd = os.getcwd()
+    folder_name = os.path.join(os.path.abspath(cwd), "data")
 
-    for add in added:
-        assert isinstance(add, int)
+    def test_import_data(self):
 
-    for error in errors:
-        assert isinstance(error, int)
+        """test import all good data"""
+        delete_database()
 
-    assert added == (5, 11, 9)
-    assert errors == (0, 0, 0)
+        test_import = import_data(self.folder_name, 'inventory.csv',
+                                  'customers.csv', 'rental.csv')
 
-def test_show_available_products(_show_available_products):
-    """ available products """
-    students_response = l.show_available_products()
-    assert students_response == _show_available_products
+        self.assertEqual(test_import, ((7, 9, 7), (0, 0, 0)))
+        
+        """test import bad data"""
+        delete_database()
+        test_import = import_data(self.folder_name, 'inventory1.csv',
+                                  'customers2.csv', 'rental3.csv')
 
-def test_show_rentals(_show_rentals):
-    """ rentals """
-    students_response = l.show_rentals("P000003")
-    assert students_response == _show_rentals
+        self.assertEqual(test_import, ((0, 0, 0), (1, 1, 1)))
+
+    def test_show_rentals(self):
+
+        """test for show_rentals"""
+
+        delete_database()
+
+        import_data(self.folder_name, 'inventory.csv',
+                    'customers.csv', 'rental.csv')
+
+        rental_list = []
+
+        rental_list = show_rentals('p00001')
+
+        gold = [{'Customer_ID': 'c00001', 'Name': 'Danny Holme',
+                 'Home_Address': '231 Richland Street, Santa Ana, CA, 33133',
+                 'Phone_Number': '253-111-8988',
+                 'Email_Address': 'd.zbornak@gmail.com'},
+                {'Customer_ID': 'c00007', 'Name': 'Bettey White',
+                 'Home_Address': '232 Mohuland Drive, Hollywood, CA, 98546',
+                 'Phone_Number': '555-444-4444',
+                 'Email_Address': 'b.white@gmail.com'}]
+
+        for r, g in zip(rental_list, gold):
+            self.assertDictEqual(r, g)
+
+        self.assertEqual(len(rental_list), 2)
+
+    def test_show_available_products(self):
+
+        """rest for show_available_products"""
+
+        delete_database()
+
+        import_data(self.folder_name, 'inventory.csv',
+                    'customers.csv', 'rental.csv')
+
+        product_dict = show_available_products()
+
+        gold = {'Product_ID': 'p00007', 'Description': 'ipad',
+                'Type': 'electronic', 'Total_Quantity': 15}
+
+        self.assertDictEqual(product_dict['p00007'], gold)
+
+    def test_show_customers(self):
+
+        """test for show_customers"""
+
+        delete_database()
+
+        import_data(self.folder_name, 'inventory.csv',
+                    'customers.csv', 'rental.csv')
+
+        customers_dict = show_customers()
+
+        gold = {'Customer_ID': 'c00007', 'Name': 'Bettey White',
+                 'Home_Address': '232 Mohuland Drive, Hollywood, CA, 98546',
+                 'Phone_Number': '555-444-4444',
+                 'Email_Address': 'b.white@gmail.com',
+                 'Status': 1,
+                 'Credit_Limit': 100000}
+
+        self.assertDictEqual(customers_dict['c00007'], gold)
+
+# if __name__ == "__main__":
+
+#     test = TestDatabase()
+
+#     test.test_import_data()
+
+#     test.test_show_rentals()
+
+#     test.test_show_customers()
+
+#     test.test_show_available_products()
