@@ -23,3 +23,16 @@ def counter():
     return increment
 
 c = counter()
+
+"""
+Currying
+Break down multiple parameters so that you can have a
+single or close to a single parameter per function.
+"""
+def make_multiplier(n):
+    def multiply(x):
+        return x * n
+    return multiply
+
+m10 = make_multiplier(10)
+m10(5) # calling m10 returns 50
