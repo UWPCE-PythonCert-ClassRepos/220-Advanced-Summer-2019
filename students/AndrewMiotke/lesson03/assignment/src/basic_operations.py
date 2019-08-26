@@ -63,9 +63,6 @@ def add_customer(customer_id, name, lastname, address, phone_number, email, stat
 
     except:
         logging.error(f"Error creating {customer_id}")
-    finally:
-        logging.error('database closed')
-        database.close()
 
 
 def search_customer(customer_id):
@@ -80,7 +77,7 @@ def search_customer(customer_id):
             "email": customer.email,
         }
 
-    except ValueError:
+    except peewee.DoesNotExist:
         print(f"Error finding customer, {customer_id}")
         return {}
 
@@ -90,13 +87,11 @@ def delete_customer(customer_id):
 
     try:
         with database.transaction():
-            customer = Customer.get(Customer.customer_id == customer.id)
-            customer.delete()
+            customer = Customer.get(Customer.customer_id == customer_id)
+            customer.delete_instance()
             logging.error(f"{customer.id} has been removed")
-    except ValueError:
+    except peewee.DoesNotExist:
         logging.error(f"Unable to delete user {customer_id}")
-    finally:
-        database.close()
 
 
 def update_customer_credit(customer_id, credit_limit):
@@ -107,20 +102,25 @@ def update_customer_credit(customer_id, credit_limit):
             customer_to_update = Customer.update(Customer.credit_limit).where(Customer.credit_limit)
             customer_to_update.execute()
             customer_to_update.save()
-    except ValueError:
+    except peewee.DoesNotExist:
         logging.error(f"Unable to update user, {customer_id}")
-    finally:
-        database.close()
 
 
-# Complete
 def list_active_customers():
     """ List all active customers in the database """
 
     try:
         return Customer.select().where(Customer.status == 'active').count()
-    except ValueError:
+    except peewee.DoesNotExist:
         logging.error("Unable to count users in database")
         print("Unable to count")
-    finally:
-        database.close()
+
+
+"""
+Used in the command line when viewing a SQlite database
+
+$ sqlite3 customers.db
+$ .tables # shows the tables
+$ select * from customer # shows anything in the customer table
+
+"""
