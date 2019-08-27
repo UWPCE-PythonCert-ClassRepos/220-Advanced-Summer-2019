@@ -1,0 +1,999 @@
+2019-08-10 18:57:02,820 charges_calc.py:126 CRITICAL critical
+2019-08-10 18:58:50,481 charges_calc.py:45  ERROR the end date of 2017-03-22 00:00:00 occurs before the start date of 2017-06-12 00:00:00
+2019-08-10 18:58:50,482 charges_calc.py:45  ERROR the end date of 2018-07-29 00:00:00 occurs before the start date of 2018-08-26 00:00:00
+2019-08-10 18:58:50,482 charges_calc.py:45  ERROR the end date of 2017-05-31 00:00:00 occurs before the start date of 2017-07-10 00:00:00
+2019-08-10 18:58:50,483 charges_calc.py:45  ERROR the end date of 2018-07-04 00:00:00 occurs before the start date of 2018-10-25 00:00:00
+2019-08-10 18:58:50,483 charges_calc.py:45  ERROR the end date of 2016-07-28 00:00:00 occurs before the start date of 2018-11-03 00:00:00
+2019-08-10 18:58:50,483 charges_calc.py:45  ERROR the end date of 2017-08-27 00:00:00 occurs before the start date of 2018-03-15 00:00:00
+2019-08-10 18:58:50,483 charges_calc.py:45  ERROR the end date of 2016-04-29 00:00:00 occurs before the start date of 2017-09-29 00:00:00
+2019-08-10 18:58:50,483 charges_calc.py:45  ERROR the end date of 2016-01-15 00:00:00 occurs before the start date of 2017-10-24 00:00:00
+2019-08-10 18:58:50,484 charges_calc.py:45  ERROR the end date of 2016-07-30 00:00:00 occurs before the start date of 2017-01-30 00:00:00
+2019-08-10 18:58:50,484 charges_calc.py:45  ERROR the end date of 2016-02-05 00:00:00 occurs before the start date of 2018-06-18 00:00:00
+2019-08-10 18:58:50,484 charges_calc.py:45  ERROR the end date of 2018-04-11 00:00:00 occurs before the start date of 2018-04-28 00:00:00
+2019-08-10 18:58:50,484 charges_calc.py:45  ERROR the end date of 2016-01-13 00:00:00 occurs before the start date of 2016-08-16 00:00:00
+2019-08-10 18:58:50,485 charges_calc.py:45  ERROR the end date of 2016-05-10 00:00:00 occurs before the start date of 2017-12-16 00:00:00
+2019-08-10 18:58:50,485 charges_calc.py:45  ERROR the end date of 2016-01-12 00:00:00 occurs before the start date of 2018-06-20 00:00:00
+2019-08-10 18:58:50,485 charges_calc.py:45  ERROR the end date of 2016-02-09 00:00:00 occurs before the start date of 2017-08-31 00:00:00
+2019-08-10 18:58:50,485 charges_calc.py:45  ERROR the end date of 2016-05-28 00:00:00 occurs before the start date of 2018-03-02 00:00:00
+2019-08-10 18:58:50,485 charges_calc.py:45  ERROR the end date of 2016-04-21 00:00:00 occurs before the start date of 2018-03-27 00:00:00
+2019-08-10 18:58:50,486 charges_calc.py:45  ERROR the end date of 2017-05-06 00:00:00 occurs before the start date of 2018-07-06 00:00:00
+2019-08-10 18:58:50,486 charges_calc.py:45  ERROR the end date of 2017-04-18 00:00:00 occurs before the start date of 2017-07-01 00:00:00
+2019-08-10 18:58:50,486 charges_calc.py:45  ERROR the end date of 2017-04-13 00:00:00 occurs before the start date of 2018-04-18 00:00:00
+2019-08-10 18:58:50,486 charges_calc.py:45  ERROR the end date of 2016-04-03 00:00:00 occurs before the start date of 2017-10-11 00:00:00
+2019-08-10 18:58:50,487 charges_calc.py:45  ERROR the end date of 2016-12-30 00:00:00 occurs before the start date of 2017-12-01 00:00:00
+2019-08-10 18:58:50,487 charges_calc.py:45  ERROR the end date of 2017-03-30 00:00:00 occurs before the start date of 2018-02-19 00:00:00
+2019-08-10 18:58:50,487 charges_calc.py:45  ERROR the end date of 2016-12-19 00:00:00 occurs before the start date of 2018-09-04 00:00:00
+2019-08-10 18:58:50,488 charges_calc.py:45  ERROR the end date of 2018-11-12 00:00:00 occurs before the start date of 2018-12-19 00:00:00
+2019-08-10 18:58:50,488 charges_calc.py:45  ERROR the end date of 2018-01-08 00:00:00 occurs before the start date of 2018-10-15 00:00:00
+2019-08-10 18:58:50,488 charges_calc.py:45  ERROR the end date of 2016-06-24 00:00:00 occurs before the start date of 2018-08-03 00:00:00
+2019-08-10 18:58:50,488 charges_calc.py:45  ERROR the end date of 2016-10-28 00:00:00 occurs before the start date of 2017-09-05 00:00:00
+2019-08-10 18:58:50,488 charges_calc.py:45  ERROR the end date of 2017-06-30 00:00:00 occurs before the start date of 2018-12-06 00:00:00
+2019-08-10 18:58:50,489 charges_calc.py:45  ERROR the end date of 2016-02-27 00:00:00 occurs before the start date of 2018-04-12 00:00:00
+2019-08-10 18:58:50,489 charges_calc.py:45  ERROR the end date of 2017-01-25 00:00:00 occurs before the start date of 2017-07-14 00:00:00
+2019-08-10 18:58:50,489 charges_calc.py:45  ERROR the end date of 2016-01-18 00:00:00 occurs before the start date of 2016-02-15 00:00:00
+2019-08-10 18:58:50,490 charges_calc.py:45  ERROR the end date of 2017-02-28 00:00:00 occurs before the start date of 2018-02-12 00:00:00
+2019-08-10 18:58:50,490 charges_calc.py:45  ERROR the end date of 2018-06-03 00:00:00 occurs before the start date of 2018-08-25 00:00:00
+2019-08-10 18:58:50,490 charges_calc.py:45  ERROR the end date of 2016-12-12 00:00:00 occurs before the start date of 2018-10-11 00:00:00
+2019-08-10 18:58:50,490 charges_calc.py:45  ERROR the end date of 2017-10-18 00:00:00 occurs before the start date of 2018-01-18 00:00:00
+2019-08-10 18:58:50,491 charges_calc.py:45  ERROR the end date of 2016-05-25 00:00:00 occurs before the start date of 2016-10-05 00:00:00
+2019-08-10 18:58:50,491 charges_calc.py:45  ERROR the end date of 2017-07-14 00:00:00 occurs before the start date of 2017-09-09 00:00:00
+2019-08-10 18:58:50,491 charges_calc.py:45  ERROR the end date of 2016-05-12 00:00:00 occurs before the start date of 2018-06-06 00:00:00
+2019-08-10 18:58:50,491 charges_calc.py:45  ERROR the end date of 2016-11-19 00:00:00 occurs before the start date of 2018-08-15 00:00:00
+2019-08-10 18:58:50,492 charges_calc.py:45  ERROR the end date of 2018-01-27 00:00:00 occurs before the start date of 2018-11-27 00:00:00
+2019-08-10 18:58:50,492 charges_calc.py:45  ERROR the end date of 2016-04-29 00:00:00 occurs before the start date of 2017-05-13 00:00:00
+2019-08-10 18:58:50,492 charges_calc.py:45  ERROR the end date of 2018-03-20 00:00:00 occurs before the start date of 2018-12-03 00:00:00
+2019-08-10 18:58:50,492 charges_calc.py:45  ERROR the end date of 2016-06-18 00:00:00 occurs before the start date of 2016-08-10 00:00:00
+2019-08-10 18:58:50,493 charges_calc.py:45  ERROR the end date of 2018-08-15 00:00:00 occurs before the start date of 2018-11-05 00:00:00
+2019-08-10 18:58:50,493 charges_calc.py:45  ERROR the end date of 2016-05-23 00:00:00 occurs before the start date of 2017-03-10 00:00:00
+2019-08-10 18:58:50,493 charges_calc.py:45  ERROR the end date of 2017-07-23 00:00:00 occurs before the start date of 2018-08-05 00:00:00
+2019-08-10 18:58:50,493 charges_calc.py:45  ERROR the end date of 2016-08-29 00:00:00 occurs before the start date of 2017-01-11 00:00:00
+2019-08-10 18:58:50,494 charges_calc.py:45  ERROR the end date of 2016-10-21 00:00:00 occurs before the start date of 2018-11-23 00:00:00
+2019-08-10 18:58:50,494 charges_calc.py:45  ERROR the end date of 2016-05-21 00:00:00 occurs before the start date of 2018-06-16 00:00:00
+2019-08-10 18:58:50,494 charges_calc.py:45  ERROR the end date of 2017-09-20 00:00:00 occurs before the start date of 2018-12-03 00:00:00
+2019-08-10 18:58:50,494 charges_calc.py:45  ERROR the end date of 2016-12-08 00:00:00 occurs before the start date of 2017-07-17 00:00:00
+2019-08-10 18:58:50,494 charges_calc.py:45  ERROR the end date of 2016-02-18 00:00:00 occurs before the start date of 2017-01-24 00:00:00
+2019-08-10 18:58:50,495 charges_calc.py:45  ERROR the end date of 2016-08-30 00:00:00 occurs before the start date of 2017-12-20 00:00:00
+2019-08-10 18:58:50,495 charges_calc.py:45  ERROR the end date of 2016-02-20 00:00:00 occurs before the start date of 2017-12-29 00:00:00
+2019-08-10 18:58:50,495 charges_calc.py:45  ERROR the end date of 2018-01-01 00:00:00 occurs before the start date of 2018-03-14 00:00:00
+2019-08-10 18:58:50,495 charges_calc.py:45  ERROR the end date of 2016-06-04 00:00:00 occurs before the start date of 2017-05-30 00:00:00
+2019-08-10 18:58:50,496 charges_calc.py:45  ERROR the end date of 2017-01-09 00:00:00 occurs before the start date of 2018-06-26 00:00:00
+2019-08-10 18:58:50,496 charges_calc.py:45  ERROR the end date of 2016-01-09 00:00:00 occurs before the start date of 2017-06-06 00:00:00
+2019-08-10 18:58:50,496 charges_calc.py:45  ERROR the end date of 2016-02-03 00:00:00 occurs before the start date of 2018-05-11 00:00:00
+2019-08-10 18:58:50,496 charges_calc.py:45  ERROR the end date of 2016-08-04 00:00:00 occurs before the start date of 2017-04-14 00:00:00
+2019-08-10 18:58:50,497 charges_calc.py:45  ERROR the end date of 2017-06-04 00:00:00 occurs before the start date of 2018-07-23 00:00:00
+2019-08-10 18:58:50,497 charges_calc.py:45  ERROR the end date of 2017-12-18 00:00:00 occurs before the start date of 2018-07-19 00:00:00
+2019-08-10 18:58:50,497 charges_calc.py:45  ERROR the end date of 2016-08-01 00:00:00 occurs before the start date of 2017-01-03 00:00:00
+2019-08-10 18:58:50,497 charges_calc.py:45  ERROR the end date of 2017-02-25 00:00:00 occurs before the start date of 2018-11-30 00:00:00
+2019-08-10 18:58:50,497 charges_calc.py:45  ERROR the end date of 2017-04-05 00:00:00 occurs before the start date of 2018-12-04 00:00:00
+2019-08-10 18:58:50,498 charges_calc.py:45  ERROR the end date of 2017-07-25 00:00:00 occurs before the start date of 2018-03-02 00:00:00
+2019-08-10 18:58:50,498 charges_calc.py:45  ERROR the end date of 2018-07-30 00:00:00 occurs before the start date of 2018-12-15 00:00:00
+2019-08-10 18:58:50,498 charges_calc.py:45  ERROR the end date of 2017-05-23 00:00:00 occurs before the start date of 2018-03-23 00:00:00
+2019-08-10 18:58:50,498 charges_calc.py:45  ERROR the end date of 2017-06-21 00:00:00 occurs before the start date of 2018-12-17 00:00:00
+2019-08-10 18:58:50,499 charges_calc.py:45  ERROR the end date of 2016-08-11 00:00:00 occurs before the start date of 2016-10-13 00:00:00
+2019-08-10 18:58:50,499 charges_calc.py:45  ERROR the end date of 2017-05-01 00:00:00 occurs before the start date of 2017-09-13 00:00:00
+2019-08-10 18:58:50,499 charges_calc.py:45  ERROR the end date of 2017-03-22 00:00:00 occurs before the start date of 2018-01-20 00:00:00
+2019-08-10 18:58:50,500 charges_calc.py:45  ERROR the end date of 2016-05-02 00:00:00 occurs before the start date of 2016-11-15 00:00:00
+2019-08-10 18:58:50,500 charges_calc.py:45  ERROR the end date of 2016-01-03 00:00:00 occurs before the start date of 2018-11-20 00:00:00
+2019-08-10 18:58:50,500 charges_calc.py:45  ERROR the end date of 2016-07-15 00:00:00 occurs before the start date of 2018-07-28 00:00:00
+2019-08-10 18:58:50,500 charges_calc.py:45  ERROR the end date of 2018-09-17 00:00:00 occurs before the start date of 2018-10-20 00:00:00
+2019-08-10 18:58:50,501 charges_calc.py:45  ERROR the end date of 2016-11-03 00:00:00 occurs before the start date of 2018-09-29 00:00:00
+2019-08-10 18:58:50,501 charges_calc.py:45  ERROR the end date of 2016-08-16 00:00:00 occurs before the start date of 2018-08-11 00:00:00
+2019-08-10 18:58:50,501 charges_calc.py:45  ERROR the end date of 2016-03-30 00:00:00 occurs before the start date of 2017-05-24 00:00:00
+2019-08-10 18:58:50,501 charges_calc.py:45  ERROR the end date of 2017-07-19 00:00:00 occurs before the start date of 2018-01-07 00:00:00
+2019-08-10 18:58:50,501 charges_calc.py:45  ERROR the end date of 2017-05-19 00:00:00 occurs before the start date of 2018-12-23 00:00:00
+2019-08-10 18:58:50,502 charges_calc.py:45  ERROR the end date of 2016-03-06 00:00:00 occurs before the start date of 2018-07-10 00:00:00
+2019-08-10 18:58:50,502 charges_calc.py:45  ERROR the end date of 2018-03-14 00:00:00 occurs before the start date of 2018-05-18 00:00:00
+2019-08-10 18:58:50,502 charges_calc.py:45  ERROR the end date of 2016-09-10 00:00:00 occurs before the start date of 2016-12-16 00:00:00
+2019-08-10 18:58:50,502 charges_calc.py:45  ERROR the end date of 2017-08-07 00:00:00 occurs before the start date of 2018-04-24 00:00:00
+2019-08-10 18:58:50,503 charges_calc.py:45  ERROR the end date of 2016-02-15 00:00:00 occurs before the start date of 2018-04-14 00:00:00
+2019-08-10 18:58:50,503 charges_calc.py:45  ERROR the end date of 2016-12-11 00:00:00 occurs before the start date of 2017-02-03 00:00:00
+2019-08-10 18:58:50,503 charges_calc.py:45  ERROR the end date of 2016-05-25 00:00:00 occurs before the start date of 2016-10-15 00:00:00
+2019-08-10 18:58:50,503 charges_calc.py:45  ERROR the end date of 2016-09-25 00:00:00 occurs before the start date of 2018-03-18 00:00:00
+2019-08-10 18:58:50,504 charges_calc.py:45  ERROR the end date of 2017-01-11 00:00:00 occurs before the start date of 2018-09-16 00:00:00
+2019-08-10 18:58:50,504 charges_calc.py:45  ERROR the end date of 2018-03-15 00:00:00 occurs before the start date of 2018-05-16 00:00:00
+2019-08-10 18:58:50,504 charges_calc.py:45  ERROR the end date of 2018-04-07 00:00:00 occurs before the start date of 2018-08-01 00:00:00
+2019-08-10 18:58:50,504 charges_calc.py:45  ERROR the end date of 2018-08-14 00:00:00 occurs before the start date of 2018-08-24 00:00:00
+2019-08-10 18:58:50,505 charges_calc.py:45  ERROR the end date of 2016-09-08 00:00:00 occurs before the start date of 2018-12-29 00:00:00
+2019-08-10 18:58:50,505 charges_calc.py:45  ERROR the end date of 2018-04-08 00:00:00 occurs before the start date of 2018-05-31 00:00:00
+2019-08-10 18:58:50,505 charges_calc.py:45  ERROR the end date of 2016-09-28 00:00:00 occurs before the start date of 2018-03-12 00:00:00
+2019-08-10 18:58:50,505 charges_calc.py:45  ERROR the end date of 2016-01-11 00:00:00 occurs before the start date of 2017-10-05 00:00:00
+2019-08-10 18:58:50,506 charges_calc.py:45  ERROR the end date of 2016-08-17 00:00:00 occurs before the start date of 2016-11-20 00:00:00
+2019-08-10 18:58:50,506 charges_calc.py:45  ERROR the end date of 2017-04-30 00:00:00 occurs before the start date of 2017-05-10 00:00:00
+2019-08-10 18:58:50,506 charges_calc.py:45  ERROR the end date of 2016-01-06 00:00:00 occurs before the start date of 2018-05-04 00:00:00
+2019-08-10 18:58:50,506 charges_calc.py:45  ERROR the end date of 2016-05-04 00:00:00 occurs before the start date of 2018-10-28 00:00:00
+2019-08-10 18:58:50,507 charges_calc.py:45  ERROR the end date of 2017-11-14 00:00:00 occurs before the start date of 2018-03-02 00:00:00
+2019-08-10 18:58:50,507 charges_calc.py:45  ERROR the end date of 2016-09-17 00:00:00 occurs before the start date of 2017-10-12 00:00:00
+2019-08-10 18:58:50,507 charges_calc.py:45  ERROR the end date of 2016-02-07 00:00:00 occurs before the start date of 2018-11-04 00:00:00
+2019-08-10 18:58:50,507 charges_calc.py:45  ERROR the end date of 2016-06-03 00:00:00 occurs before the start date of 2018-03-15 00:00:00
+2019-08-10 18:58:50,508 charges_calc.py:45  ERROR the end date of 2016-02-18 00:00:00 occurs before the start date of 2016-02-24 00:00:00
+2019-08-10 18:58:50,508 charges_calc.py:45  ERROR the end date of 2017-01-02 00:00:00 occurs before the start date of 2017-07-05 00:00:00
+2019-08-10 18:58:50,508 charges_calc.py:45  ERROR the end date of 2016-06-29 00:00:00 occurs before the start date of 2016-12-04 00:00:00
+2019-08-10 18:58:50,508 charges_calc.py:45  ERROR the end date of 2016-02-10 00:00:00 occurs before the start date of 2016-04-20 00:00:00
+2019-08-10 18:58:50,509 charges_calc.py:45  ERROR the end date of 2016-08-04 00:00:00 occurs before the start date of 2018-08-18 00:00:00
+2019-08-10 18:58:50,509 charges_calc.py:45  ERROR the end date of 2016-12-23 00:00:00 occurs before the start date of 2017-12-11 00:00:00
+2019-08-10 18:58:50,509 charges_calc.py:45  ERROR the end date of 2016-07-28 00:00:00 occurs before the start date of 2018-10-26 00:00:00
+2019-08-10 18:58:50,509 charges_calc.py:45  ERROR the end date of 2016-04-28 00:00:00 occurs before the start date of 2018-02-03 00:00:00
+2019-08-10 18:58:50,510 charges_calc.py:45  ERROR the end date of 2016-10-07 00:00:00 occurs before the start date of 2017-11-05 00:00:00
+2019-08-10 18:58:50,510 charges_calc.py:45  ERROR the end date of 2016-12-24 00:00:00 occurs before the start date of 2017-05-15 00:00:00
+2019-08-10 18:58:50,510 charges_calc.py:45  ERROR the end date of 2016-02-04 00:00:00 occurs before the start date of 2018-05-11 00:00:00
+2019-08-10 18:58:50,510 charges_calc.py:45  ERROR the end date of 2016-11-03 00:00:00 occurs before the start date of 2017-02-23 00:00:00
+2019-08-10 18:58:50,511 charges_calc.py:45  ERROR the end date of 2016-07-25 00:00:00 occurs before the start date of 2018-04-27 00:00:00
+2019-08-10 18:58:50,511 charges_calc.py:45  ERROR the end date of 2018-01-20 00:00:00 occurs before the start date of 2018-04-25 00:00:00
+2019-08-10 18:58:50,511 charges_calc.py:45  ERROR the end date of 2016-03-25 00:00:00 occurs before the start date of 2018-12-17 00:00:00
+2019-08-10 18:58:50,511 charges_calc.py:45  ERROR the end date of 2017-08-07 00:00:00 occurs before the start date of 2018-01-01 00:00:00
+2019-08-10 18:58:50,512 charges_calc.py:45  ERROR the end date of 2017-12-07 00:00:00 occurs before the start date of 2018-07-02 00:00:00
+2019-08-10 18:58:50,512 charges_calc.py:45  ERROR the end date of 2016-02-18 00:00:00 occurs before the start date of 2017-01-31 00:00:00
+2019-08-10 18:58:50,512 charges_calc.py:45  ERROR the end date of 2016-10-13 00:00:00 occurs before the start date of 2017-12-08 00:00:00
+2019-08-10 18:58:50,512 charges_calc.py:45  ERROR the end date of 2016-09-16 00:00:00 occurs before the start date of 2018-06-25 00:00:00
+2019-08-10 18:58:50,512 charges_calc.py:45  ERROR the end date of 2017-08-28 00:00:00 occurs before the start date of 2018-02-02 00:00:00
+2019-08-10 18:58:50,513 charges_calc.py:45  ERROR the end date of 2017-06-10 00:00:00 occurs before the start date of 2017-07-10 00:00:00
+2019-08-10 18:58:50,513 charges_calc.py:45  ERROR the end date of 2016-04-17 00:00:00 occurs before the start date of 2016-10-31 00:00:00
+2019-08-10 18:58:50,513 charges_calc.py:45  ERROR the end date of 2017-04-10 00:00:00 occurs before the start date of 2017-10-21 00:00:00
+2019-08-10 18:58:50,514 charges_calc.py:45  ERROR the end date of 2016-08-16 00:00:00 occurs before the start date of 2018-02-14 00:00:00
+2019-08-10 18:58:50,514 charges_calc.py:45  ERROR the end date of 2017-01-19 00:00:00 occurs before the start date of 2018-01-28 00:00:00
+2019-08-10 18:58:50,514 charges_calc.py:45  ERROR the end date of 2017-11-10 00:00:00 occurs before the start date of 2018-03-14 00:00:00
+2019-08-10 18:58:50,514 charges_calc.py:45  ERROR the end date of 2016-09-26 00:00:00 occurs before the start date of 2018-09-25 00:00:00
+2019-08-10 18:58:50,514 charges_calc.py:45  ERROR the end date of 2017-10-07 00:00:00 occurs before the start date of 2017-10-08 00:00:00
+2019-08-10 18:58:50,515 charges_calc.py:45  ERROR the end date of 2016-07-24 00:00:00 occurs before the start date of 2016-08-30 00:00:00
+2019-08-10 18:58:50,515 charges_calc.py:45  ERROR the end date of 2016-08-07 00:00:00 occurs before the start date of 2018-11-27 00:00:00
+2019-08-10 18:58:50,515 charges_calc.py:45  ERROR the end date of 2017-05-19 00:00:00 occurs before the start date of 2017-07-31 00:00:00
+2019-08-10 18:58:50,515 charges_calc.py:45  ERROR the end date of 2017-02-12 00:00:00 occurs before the start date of 2018-12-15 00:00:00
+2019-08-10 18:58:50,516 charges_calc.py:45  ERROR the end date of 2016-10-21 00:00:00 occurs before the start date of 2018-08-07 00:00:00
+2019-08-10 18:58:50,516 charges_calc.py:45  ERROR the end date of 2017-09-04 00:00:00 occurs before the start date of 2018-02-03 00:00:00
+2019-08-10 18:58:50,517 charges_calc.py:45  ERROR the end date of 2018-06-30 00:00:00 occurs before the start date of 2018-07-18 00:00:00
+2019-08-10 18:58:50,517 charges_calc.py:45  ERROR the end date of 2018-09-13 00:00:00 occurs before the start date of 2018-12-31 00:00:00
+2019-08-10 18:58:50,517 charges_calc.py:45  ERROR the end date of 2016-05-12 00:00:00 occurs before the start date of 2016-05-17 00:00:00
+2019-08-10 18:58:50,518 charges_calc.py:45  ERROR the end date of 2016-04-25 00:00:00 occurs before the start date of 2016-11-10 00:00:00
+2019-08-10 18:58:50,518 charges_calc.py:45  ERROR the end date of 2016-05-13 00:00:00 occurs before the start date of 2017-12-08 00:00:00
+2019-08-10 18:58:50,519 charges_calc.py:45  ERROR the end date of 2018-07-08 00:00:00 occurs before the start date of 2018-12-11 00:00:00
+2019-08-10 18:58:50,519 charges_calc.py:45  ERROR the end date of 2016-10-08 00:00:00 occurs before the start date of 2016-10-13 00:00:00
+2019-08-10 18:58:50,519 charges_calc.py:45  ERROR the end date of 2016-06-30 00:00:00 occurs before the start date of 2017-01-27 00:00:00
+2019-08-10 18:58:50,520 charges_calc.py:45  ERROR the end date of 2016-01-29 00:00:00 occurs before the start date of 2017-08-10 00:00:00
+2019-08-10 18:58:50,520 charges_calc.py:45  ERROR the end date of 2016-02-22 00:00:00 occurs before the start date of 2016-12-02 00:00:00
+2019-08-10 18:58:50,520 charges_calc.py:45  ERROR the end date of 2017-05-23 00:00:00 occurs before the start date of 2018-07-02 00:00:00
+2019-08-10 18:58:50,520 charges_calc.py:45  ERROR the end date of 2017-12-31 00:00:00 occurs before the start date of 2018-06-29 00:00:00
+2019-08-10 18:58:50,521 charges_calc.py:45  ERROR the end date of 2016-04-20 00:00:00 occurs before the start date of 2018-01-10 00:00:00
+2019-08-10 18:58:50,521 charges_calc.py:45  ERROR the end date of 2017-01-21 00:00:00 occurs before the start date of 2018-08-06 00:00:00
+2019-08-10 18:58:50,521 charges_calc.py:45  ERROR the end date of 2016-04-28 00:00:00 occurs before the start date of 2016-07-25 00:00:00
+2019-08-10 18:58:50,521 charges_calc.py:45  ERROR the end date of 2017-10-26 00:00:00 occurs before the start date of 2017-12-03 00:00:00
+2019-08-10 18:58:50,522 charges_calc.py:45  ERROR the end date of 2016-07-05 00:00:00 occurs before the start date of 2018-11-28 00:00:00
+2019-08-10 18:58:50,522 charges_calc.py:45  ERROR the end date of 2017-05-19 00:00:00 occurs before the start date of 2018-12-24 00:00:00
+2019-08-10 18:58:50,522 charges_calc.py:45  ERROR the end date of 2017-03-26 00:00:00 occurs before the start date of 2017-06-17 00:00:00
+2019-08-10 18:58:50,522 charges_calc.py:45  ERROR the end date of 2017-02-17 00:00:00 occurs before the start date of 2018-01-23 00:00:00
+2019-08-10 18:58:50,523 charges_calc.py:45  ERROR the end date of 2017-03-06 00:00:00 occurs before the start date of 2018-07-25 00:00:00
+2019-08-10 18:58:50,523 charges_calc.py:45  ERROR the end date of 2016-12-21 00:00:00 occurs before the start date of 2017-09-19 00:00:00
+2019-08-10 18:58:50,523 charges_calc.py:45  ERROR the end date of 2016-04-14 00:00:00 occurs before the start date of 2017-01-09 00:00:00
+2019-08-10 18:58:50,524 charges_calc.py:45  ERROR the end date of 2017-08-25 00:00:00 occurs before the start date of 2018-10-16 00:00:00
+2019-08-10 18:58:50,524 charges_calc.py:45  ERROR the end date of 2017-06-09 00:00:00 occurs before the start date of 2018-04-18 00:00:00
+2019-08-10 18:58:50,524 charges_calc.py:45  ERROR the end date of 2016-02-03 00:00:00 occurs before the start date of 2018-12-29 00:00:00
+2019-08-10 18:58:50,525 charges_calc.py:45  ERROR the end date of 2016-06-10 00:00:00 occurs before the start date of 2018-05-18 00:00:00
+2019-08-10 18:58:50,525 charges_calc.py:45  ERROR the end date of 2017-07-06 00:00:00 occurs before the start date of 2017-07-08 00:00:00
+2019-08-10 18:58:50,526 charges_calc.py:45  ERROR the end date of 2017-12-04 00:00:00 occurs before the start date of 2017-12-19 00:00:00
+2019-08-10 18:58:50,526 charges_calc.py:45  ERROR the end date of 2016-12-13 00:00:00 occurs before the start date of 2017-09-03 00:00:00
+2019-08-10 18:58:50,526 charges_calc.py:45  ERROR the end date of 2017-03-25 00:00:00 occurs before the start date of 2017-12-16 00:00:00
+2019-08-10 18:58:50,526 charges_calc.py:45  ERROR the end date of 2016-03-01 00:00:00 occurs before the start date of 2017-07-12 00:00:00
+2019-08-10 18:58:50,527 charges_calc.py:45  ERROR the end date of 2017-01-17 00:00:00 occurs before the start date of 2017-02-15 00:00:00
+2019-08-10 18:58:50,527 charges_calc.py:45  ERROR the end date of 2016-10-22 00:00:00 occurs before the start date of 2017-05-15 00:00:00
+2019-08-10 18:58:50,528 charges_calc.py:45  ERROR the end date of 2017-03-21 00:00:00 occurs before the start date of 2018-09-17 00:00:00
+2019-08-10 18:58:50,528 charges_calc.py:45  ERROR the end date of 2017-09-21 00:00:00 occurs before the start date of 2018-04-17 00:00:00
+2019-08-10 18:58:50,529 charges_calc.py:45  ERROR the end date of 2017-01-15 00:00:00 occurs before the start date of 2018-07-16 00:00:00
+2019-08-10 18:58:50,529 charges_calc.py:45  ERROR the end date of 2016-12-13 00:00:00 occurs before the start date of 2017-10-04 00:00:00
+2019-08-10 18:58:50,529 charges_calc.py:45  ERROR the end date of 2018-07-30 00:00:00 occurs before the start date of 2018-09-13 00:00:00
+2019-08-10 18:58:50,529 charges_calc.py:45  ERROR the end date of 2017-08-21 00:00:00 occurs before the start date of 2018-01-16 00:00:00
+2019-08-10 18:58:50,530 charges_calc.py:45  ERROR the end date of 2016-03-05 00:00:00 occurs before the start date of 2018-01-29 00:00:00
+2019-08-10 18:58:50,530 charges_calc.py:45  ERROR the end date of 2018-05-21 00:00:00 occurs before the start date of 2018-06-12 00:00:00
+2019-08-10 18:58:50,530 charges_calc.py:45  ERROR the end date of 2018-05-14 00:00:00 occurs before the start date of 2018-06-24 00:00:00
+2019-08-10 18:58:50,531 charges_calc.py:45  ERROR the end date of 2017-10-08 00:00:00 occurs before the start date of 2018-07-24 00:00:00
+2019-08-10 18:58:50,531 charges_calc.py:45  ERROR the end date of 2017-06-10 00:00:00 occurs before the start date of 2018-11-20 00:00:00
+2019-08-10 18:58:50,531 charges_calc.py:45  ERROR the end date of 2016-09-17 00:00:00 occurs before the start date of 2017-09-14 00:00:00
+2019-08-10 18:58:50,531 charges_calc.py:45  ERROR the end date of 2018-01-15 00:00:00 occurs before the start date of 2018-06-28 00:00:00
+2019-08-10 18:58:50,532 charges_calc.py:45  ERROR the end date of 2017-04-20 00:00:00 occurs before the start date of 2017-11-20 00:00:00
+2019-08-10 18:58:50,532 charges_calc.py:45  ERROR the end date of 2016-11-21 00:00:00 occurs before the start date of 2018-09-11 00:00:00
+2019-08-10 18:58:50,532 charges_calc.py:45  ERROR the end date of 2016-12-26 00:00:00 occurs before the start date of 2018-05-28 00:00:00
+2019-08-10 18:58:50,532 charges_calc.py:45  ERROR the end date of 2017-05-06 00:00:00 occurs before the start date of 2017-05-28 00:00:00
+2019-08-10 18:58:50,533 charges_calc.py:45  ERROR the end date of 2017-05-29 00:00:00 occurs before the start date of 2017-11-28 00:00:00
+2019-08-10 18:58:50,533 charges_calc.py:45  ERROR the end date of 2016-06-09 00:00:00 occurs before the start date of 2017-01-05 00:00:00
+2019-08-10 18:58:50,533 charges_calc.py:45  ERROR the end date of 2016-07-18 00:00:00 occurs before the start date of 2018-12-28 00:00:00
+2019-08-10 18:58:50,533 charges_calc.py:45  ERROR the end date of 2016-12-11 00:00:00 occurs before the start date of 2018-07-21 00:00:00
+2019-08-10 18:58:50,534 charges_calc.py:45  ERROR the end date of 2017-08-06 00:00:00 occurs before the start date of 2017-08-18 00:00:00
+2019-08-10 18:58:50,534 charges_calc.py:45  ERROR the end date of 2018-04-04 00:00:00 occurs before the start date of 2018-07-17 00:00:00
+2019-08-10 18:58:50,534 charges_calc.py:45  ERROR the end date of 2017-01-10 00:00:00 occurs before the start date of 2018-02-15 00:00:00
+2019-08-10 18:58:50,534 charges_calc.py:45  ERROR the end date of 2017-12-29 00:00:00 occurs before the start date of 2018-03-31 00:00:00
+2019-08-10 18:58:50,535 charges_calc.py:45  ERROR the end date of 2016-05-11 00:00:00 occurs before the start date of 2017-06-22 00:00:00
+2019-08-10 18:58:50,535 charges_calc.py:45  ERROR the end date of 2017-03-06 00:00:00 occurs before the start date of 2018-10-12 00:00:00
+2019-08-10 18:58:50,535 charges_calc.py:45  ERROR the end date of 2017-04-17 00:00:00 occurs before the start date of 2018-10-09 00:00:00
+2019-08-10 18:58:50,536 charges_calc.py:45  ERROR the end date of 2017-01-02 00:00:00 occurs before the start date of 2017-02-01 00:00:00
+2019-08-10 18:58:50,536 charges_calc.py:45  ERROR the end date of 2016-11-18 00:00:00 occurs before the start date of 2017-08-16 00:00:00
+2019-08-10 18:58:50,536 charges_calc.py:45  ERROR the end date of 2017-09-16 00:00:00 occurs before the start date of 2018-06-30 00:00:00
+2019-08-10 18:58:50,536 charges_calc.py:45  ERROR the end date of 2017-10-01 00:00:00 occurs before the start date of 2018-09-22 00:00:00
+2019-08-10 18:58:50,537 charges_calc.py:45  ERROR the end date of 2016-11-04 00:00:00 occurs before the start date of 2017-08-05 00:00:00
+2019-08-10 18:58:50,537 charges_calc.py:45  ERROR the end date of 2017-02-18 00:00:00 occurs before the start date of 2017-10-26 00:00:00
+2019-08-10 18:58:50,537 charges_calc.py:45  ERROR the end date of 2016-04-14 00:00:00 occurs before the start date of 2017-12-06 00:00:00
+2019-08-10 18:58:50,537 charges_calc.py:45  ERROR the end date of 2016-07-18 00:00:00 occurs before the start date of 2016-12-24 00:00:00
+2019-08-10 18:58:50,538 charges_calc.py:45  ERROR the end date of 2016-01-25 00:00:00 occurs before the start date of 2016-10-17 00:00:00
+2019-08-10 18:58:50,538 charges_calc.py:45  ERROR the end date of 2016-04-27 00:00:00 occurs before the start date of 2018-09-27 00:00:00
+2019-08-10 18:58:50,538 charges_calc.py:45  ERROR the end date of 2017-01-09 00:00:00 occurs before the start date of 2018-05-05 00:00:00
+2019-08-10 18:58:50,538 charges_calc.py:45  ERROR the end date of 2016-06-11 00:00:00 occurs before the start date of 2016-11-11 00:00:00
+2019-08-10 18:58:50,538 charges_calc.py:45  ERROR the end date of 2018-04-11 00:00:00 occurs before the start date of 2018-05-03 00:00:00
+2019-08-10 18:58:50,539 charges_calc.py:45  ERROR the end date of 2016-01-24 00:00:00 occurs before the start date of 2016-11-22 00:00:00
+2019-08-10 18:58:50,539 charges_calc.py:45  ERROR the end date of 2017-05-07 00:00:00 occurs before the start date of 2018-04-17 00:00:00
+2019-08-10 18:58:50,539 charges_calc.py:45  ERROR the end date of 2016-12-03 00:00:00 occurs before the start date of 2018-11-24 00:00:00
+2019-08-10 18:58:50,540 charges_calc.py:45  ERROR the end date of 2016-02-18 00:00:00 occurs before the start date of 2018-08-07 00:00:00
+2019-08-10 18:58:50,540 charges_calc.py:45  ERROR the end date of 2017-10-24 00:00:00 occurs before the start date of 2018-02-22 00:00:00
+2019-08-10 18:58:50,540 charges_calc.py:45  ERROR the end date of 2016-06-26 00:00:00 occurs before the start date of 2018-06-30 00:00:00
+2019-08-10 18:58:50,540 charges_calc.py:45  ERROR the end date of 2017-07-07 00:00:00 occurs before the start date of 2017-11-14 00:00:00
+2019-08-10 18:58:50,540 charges_calc.py:45  ERROR the end date of 2017-07-30 00:00:00 occurs before the start date of 2018-10-17 00:00:00
+2019-08-10 18:58:50,541 charges_calc.py:45  ERROR the end date of 2016-10-16 00:00:00 occurs before the start date of 2017-03-23 00:00:00
+2019-08-10 18:58:50,541 charges_calc.py:45  ERROR the end date of 2016-07-23 00:00:00 occurs before the start date of 2018-10-10 00:00:00
+2019-08-10 18:58:50,541 charges_calc.py:45  ERROR the end date of 2018-08-25 00:00:00 occurs before the start date of 2018-09-28 00:00:00
+2019-08-10 18:58:50,542 charges_calc.py:45  ERROR the end date of 2016-11-25 00:00:00 occurs before the start date of 2018-08-06 00:00:00
+2019-08-10 18:58:50,542 charges_calc.py:45  ERROR the end date of 2016-06-06 00:00:00 occurs before the start date of 2018-07-21 00:00:00
+2019-08-10 18:58:50,542 charges_calc.py:45  ERROR the end date of 2018-05-02 00:00:00 occurs before the start date of 2018-06-09 00:00:00
+2019-08-10 18:58:50,542 charges_calc.py:45  ERROR the end date of 2018-03-14 00:00:00 occurs before the start date of 2018-11-18 00:00:00
+2019-08-10 18:58:50,543 charges_calc.py:45  ERROR the end date of 2017-03-07 00:00:00 occurs before the start date of 2018-04-28 00:00:00
+2019-08-10 18:58:50,543 charges_calc.py:45  ERROR the end date of 2016-05-23 00:00:00 occurs before the start date of 2018-05-18 00:00:00
+2019-08-10 18:58:50,543 charges_calc.py:45  ERROR the end date of 2017-03-05 00:00:00 occurs before the start date of 2017-04-25 00:00:00
+2019-08-10 18:58:50,543 charges_calc.py:45  ERROR the end date of 2016-11-26 00:00:00 occurs before the start date of 2018-07-28 00:00:00
+2019-08-10 18:58:50,544 charges_calc.py:45  ERROR the end date of 2017-04-08 00:00:00 occurs before the start date of 2018-08-02 00:00:00
+2019-08-10 18:58:50,544 charges_calc.py:45  ERROR the end date of 2017-01-29 00:00:00 occurs before the start date of 2018-03-26 00:00:00
+2019-08-10 18:58:50,544 charges_calc.py:45  ERROR the end date of 2016-04-28 00:00:00 occurs before the start date of 2017-03-12 00:00:00
+2019-08-10 18:58:50,545 charges_calc.py:45  ERROR the end date of 2018-05-09 00:00:00 occurs before the start date of 2018-08-21 00:00:00
+2019-08-10 18:58:50,545 charges_calc.py:45  ERROR the end date of 2017-08-17 00:00:00 occurs before the start date of 2017-09-23 00:00:00
+2019-08-10 18:58:50,545 charges_calc.py:45  ERROR the end date of 2017-02-03 00:00:00 occurs before the start date of 2018-06-02 00:00:00
+2019-08-10 18:58:50,545 charges_calc.py:45  ERROR the end date of 2016-10-10 00:00:00 occurs before the start date of 2018-08-23 00:00:00
+2019-08-10 18:58:50,546 charges_calc.py:45  ERROR the end date of 2016-07-31 00:00:00 occurs before the start date of 2017-06-22 00:00:00
+2019-08-10 18:58:50,546 charges_calc.py:45  ERROR the end date of 2016-12-05 00:00:00 occurs before the start date of 2017-11-28 00:00:00
+2019-08-10 18:58:50,546 charges_calc.py:45  ERROR the end date of 2017-04-20 00:00:00 occurs before the start date of 2018-06-17 00:00:00
+2019-08-10 18:58:50,546 charges_calc.py:45  ERROR the end date of 2016-07-04 00:00:00 occurs before the start date of 2016-10-30 00:00:00
+2019-08-10 18:58:50,547 charges_calc.py:45  ERROR the end date of 2016-11-22 00:00:00 occurs before the start date of 2017-03-15 00:00:00
+2019-08-10 18:58:50,547 charges_calc.py:45  ERROR the end date of 2017-06-01 00:00:00 occurs before the start date of 2018-06-20 00:00:00
+2019-08-10 18:58:50,548 charges_calc.py:45  ERROR the end date of 2016-03-21 00:00:00 occurs before the start date of 2017-05-31 00:00:00
+2019-08-10 18:58:50,548 charges_calc.py:45  ERROR the end date of 2018-03-17 00:00:00 occurs before the start date of 2018-12-18 00:00:00
+2019-08-10 18:58:50,548 charges_calc.py:45  ERROR the end date of 2017-11-03 00:00:00 occurs before the start date of 2017-11-15 00:00:00
+2019-08-10 18:58:50,549 charges_calc.py:45  ERROR the end date of 2018-07-06 00:00:00 occurs before the start date of 2018-12-22 00:00:00
+2019-08-10 18:58:50,549 charges_calc.py:45  ERROR the end date of 2017-09-25 00:00:00 occurs before the start date of 2018-08-18 00:00:00
+2019-08-10 18:58:50,549 charges_calc.py:45  ERROR the end date of 2017-09-18 00:00:00 occurs before the start date of 2018-04-22 00:00:00
+2019-08-10 18:58:50,549 charges_calc.py:45  ERROR the end date of 2017-04-15 00:00:00 occurs before the start date of 2018-03-15 00:00:00
+2019-08-10 18:58:50,549 charges_calc.py:45  ERROR the end date of 2016-12-20 00:00:00 occurs before the start date of 2018-08-17 00:00:00
+2019-08-10 18:58:50,550 charges_calc.py:45  ERROR the end date of 2016-09-29 00:00:00 occurs before the start date of 2018-06-10 00:00:00
+2019-08-10 18:58:50,550 charges_calc.py:45  ERROR the end date of 2017-04-10 00:00:00 occurs before the start date of 2017-08-15 00:00:00
+2019-08-10 18:58:50,550 charges_calc.py:45  ERROR the end date of 2017-11-22 00:00:00 occurs before the start date of 2018-05-10 00:00:00
+2019-08-10 18:58:50,550 charges_calc.py:45  ERROR the end date of 2018-03-22 00:00:00 occurs before the start date of 2018-07-29 00:00:00
+2019-08-10 18:58:50,550 charges_calc.py:45  ERROR the end date of 2017-10-26 00:00:00 occurs before the start date of 2018-02-18 00:00:00
+2019-08-10 18:58:50,551 charges_calc.py:45  ERROR the end date of 2016-02-06 00:00:00 occurs before the start date of 2018-05-30 00:00:00
+2019-08-10 18:58:50,551 charges_calc.py:45  ERROR the end date of 2017-10-30 00:00:00 occurs before the start date of 2018-12-07 00:00:00
+2019-08-10 18:58:50,551 charges_calc.py:45  ERROR the end date of 2016-12-28 00:00:00 occurs before the start date of 2018-03-29 00:00:00
+2019-08-10 18:58:50,552 charges_calc.py:45  ERROR the end date of 2016-11-22 00:00:00 occurs before the start date of 2018-06-05 00:00:00
+2019-08-10 18:58:50,552 charges_calc.py:45  ERROR the end date of 2018-07-03 00:00:00 occurs before the start date of 2018-12-29 00:00:00
+2019-08-10 18:58:50,552 charges_calc.py:45  ERROR the end date of 2016-08-29 00:00:00 occurs before the start date of 2017-06-30 00:00:00
+2019-08-10 18:58:50,552 charges_calc.py:45  ERROR the end date of 2016-02-22 00:00:00 occurs before the start date of 2016-11-24 00:00:00
+2019-08-10 18:58:50,553 charges_calc.py:45  ERROR the end date of 2016-07-03 00:00:00 occurs before the start date of 2017-07-28 00:00:00
+2019-08-10 18:58:50,553 charges_calc.py:45  ERROR the end date of 2016-05-05 00:00:00 occurs before the start date of 2018-08-12 00:00:00
+2019-08-10 18:58:50,553 charges_calc.py:45  ERROR the end date of 2017-06-19 00:00:00 occurs before the start date of 2018-01-09 00:00:00
+2019-08-10 18:58:50,553 charges_calc.py:45  ERROR the end date of 2017-09-27 00:00:00 occurs before the start date of 2018-11-08 00:00:00
+2019-08-10 18:58:50,553 charges_calc.py:45  ERROR the end date of 2016-06-16 00:00:00 occurs before the start date of 2016-11-10 00:00:00
+2019-08-10 18:58:50,554 charges_calc.py:45  ERROR the end date of 2017-10-20 00:00:00 occurs before the start date of 2018-10-27 00:00:00
+2019-08-10 18:58:50,554 charges_calc.py:45  ERROR the end date of 2016-05-30 00:00:00 occurs before the start date of 2017-09-05 00:00:00
+2019-08-10 18:58:50,554 charges_calc.py:45  ERROR the end date of 2017-08-08 00:00:00 occurs before the start date of 2018-06-24 00:00:00
+2019-08-10 18:58:50,554 charges_calc.py:45  ERROR the end date of 2017-04-15 00:00:00 occurs before the start date of 2017-06-15 00:00:00
+2019-08-10 18:58:50,555 charges_calc.py:45  ERROR the end date of 2018-06-10 00:00:00 occurs before the start date of 2018-09-24 00:00:00
+2019-08-10 18:58:50,555 charges_calc.py:45  ERROR the end date of 2016-05-15 00:00:00 occurs before the start date of 2018-07-14 00:00:00
+2019-08-10 18:58:50,555 charges_calc.py:45  ERROR the end date of 2018-08-14 00:00:00 occurs before the start date of 2018-11-18 00:00:00
+2019-08-10 18:58:50,556 charges_calc.py:45  ERROR the end date of 2016-02-27 00:00:00 occurs before the start date of 2018-11-25 00:00:00
+2019-08-10 18:58:50,556 charges_calc.py:45  ERROR the end date of 2018-05-30 00:00:00 occurs before the start date of 2018-10-01 00:00:00
+2019-08-10 18:58:50,556 charges_calc.py:45  ERROR the end date of 2017-07-13 00:00:00 occurs before the start date of 2017-11-21 00:00:00
+2019-08-10 18:58:50,556 charges_calc.py:45  ERROR the end date of 2016-08-07 00:00:00 occurs before the start date of 2018-10-13 00:00:00
+2019-08-10 18:58:50,557 charges_calc.py:45  ERROR the end date of 2017-01-22 00:00:00 occurs before the start date of 2017-08-01 00:00:00
+2019-08-10 18:58:50,557 charges_calc.py:45  ERROR the end date of 2017-04-24 00:00:00 occurs before the start date of 2018-07-02 00:00:00
+2019-08-10 18:58:50,557 charges_calc.py:45  ERROR the end date of 2017-04-28 00:00:00 occurs before the start date of 2017-05-02 00:00:00
+2019-08-10 18:58:50,557 charges_calc.py:45  ERROR the end date of 2016-01-15 00:00:00 occurs before the start date of 2018-02-09 00:00:00
+2019-08-10 18:58:50,558 charges_calc.py:45  ERROR the end date of 2016-07-05 00:00:00 occurs before the start date of 2017-01-27 00:00:00
+2019-08-10 18:58:50,558 charges_calc.py:45  ERROR the end date of 2017-03-20 00:00:00 occurs before the start date of 2018-05-01 00:00:00
+2019-08-10 18:58:50,558 charges_calc.py:45  ERROR the end date of 2017-06-26 00:00:00 occurs before the start date of 2018-12-23 00:00:00
+2019-08-10 18:58:50,558 charges_calc.py:45  ERROR the end date of 2018-03-21 00:00:00 occurs before the start date of 2018-06-02 00:00:00
+2019-08-10 18:58:50,558 charges_calc.py:45  ERROR the end date of 2016-05-04 00:00:00 occurs before the start date of 2016-08-26 00:00:00
+2019-08-10 18:58:50,559 charges_calc.py:45  ERROR the end date of 2016-09-23 00:00:00 occurs before the start date of 2016-11-26 00:00:00
+2019-08-10 18:58:50,559 charges_calc.py:45  ERROR the end date of 2016-01-02 00:00:00 occurs before the start date of 2017-02-23 00:00:00
+2019-08-10 18:58:50,559 charges_calc.py:45  ERROR the end date of 2017-02-21 00:00:00 occurs before the start date of 2018-10-29 00:00:00
+2019-08-10 18:58:50,559 charges_calc.py:45  ERROR the end date of 2016-08-29 00:00:00 occurs before the start date of 2018-03-02 00:00:00
+2019-08-10 18:58:50,560 charges_calc.py:45  ERROR the end date of 2016-02-12 00:00:00 occurs before the start date of 2018-06-17 00:00:00
+2019-08-10 18:58:50,560 charges_calc.py:45  ERROR the end date of 2017-01-12 00:00:00 occurs before the start date of 2017-06-12 00:00:00
+2019-08-10 18:58:50,560 charges_calc.py:45  ERROR the end date of 2016-04-12 00:00:00 occurs before the start date of 2016-10-10 00:00:00
+2019-08-10 18:58:50,560 charges_calc.py:45  ERROR the end date of 2016-02-07 00:00:00 occurs before the start date of 2017-09-17 00:00:00
+2019-08-10 18:58:50,560 charges_calc.py:45  ERROR the end date of 2016-07-06 00:00:00 occurs before the start date of 2017-07-14 00:00:00
+2019-08-10 18:58:50,561 charges_calc.py:45  ERROR the end date of 2016-09-06 00:00:00 occurs before the start date of 2017-11-04 00:00:00
+2019-08-10 18:58:50,561 charges_calc.py:45  ERROR the end date of 2016-05-31 00:00:00 occurs before the start date of 2018-10-21 00:00:00
+2019-08-10 18:58:50,561 charges_calc.py:45  ERROR the end date of 2018-01-30 00:00:00 occurs before the start date of 2018-03-05 00:00:00
+2019-08-10 18:58:50,562 charges_calc.py:45  ERROR the end date of 2018-01-17 00:00:00 occurs before the start date of 2018-10-04 00:00:00
+2019-08-10 18:58:50,562 charges_calc.py:45  ERROR the end date of 2017-06-29 00:00:00 occurs before the start date of 2017-09-30 00:00:00
+2019-08-10 18:58:50,562 charges_calc.py:45  ERROR the end date of 2016-04-18 00:00:00 occurs before the start date of 2016-08-22 00:00:00
+2019-08-10 18:58:50,563 charges_calc.py:45  ERROR the end date of 2017-08-01 00:00:00 occurs before the start date of 2018-07-22 00:00:00
+2019-08-10 18:58:50,563 charges_calc.py:45  ERROR the end date of 2016-09-15 00:00:00 occurs before the start date of 2016-11-27 00:00:00
+2019-08-10 18:58:50,564 charges_calc.py:45  ERROR the end date of 2016-01-07 00:00:00 occurs before the start date of 2016-01-13 00:00:00
+2019-08-10 18:58:50,564 charges_calc.py:45  ERROR the end date of 2018-02-01 00:00:00 occurs before the start date of 2018-07-09 00:00:00
+2019-08-10 18:58:50,564 charges_calc.py:45  ERROR the end date of 2018-08-07 00:00:00 occurs before the start date of 2018-09-16 00:00:00
+2019-08-10 18:58:50,564 charges_calc.py:45  ERROR the end date of 2017-09-15 00:00:00 occurs before the start date of 2018-11-02 00:00:00
+2019-08-10 18:58:50,564 charges_calc.py:45  ERROR the end date of 2016-03-20 00:00:00 occurs before the start date of 2017-02-24 00:00:00
+2019-08-10 18:58:50,565 charges_calc.py:45  ERROR the end date of 2017-09-10 00:00:00 occurs before the start date of 2018-12-09 00:00:00
+2019-08-10 18:58:50,565 charges_calc.py:45  ERROR the end date of 2016-04-29 00:00:00 occurs before the start date of 2017-09-09 00:00:00
+2019-08-10 18:58:50,565 charges_calc.py:45  ERROR the end date of 2016-07-03 00:00:00 occurs before the start date of 2016-07-25 00:00:00
+2019-08-10 18:58:50,565 charges_calc.py:45  ERROR the end date of 2016-02-13 00:00:00 occurs before the start date of 2018-10-20 00:00:00
+2019-08-10 18:58:50,565 charges_calc.py:45  ERROR the end date of 2016-09-08 00:00:00 occurs before the start date of 2017-04-05 00:00:00
+2019-08-10 18:58:50,566 charges_calc.py:45  ERROR the end date of 2017-06-26 00:00:00 occurs before the start date of 2018-07-19 00:00:00
+2019-08-10 18:58:50,566 charges_calc.py:45  ERROR the end date of 2017-11-16 00:00:00 occurs before the start date of 2018-07-17 00:00:00
+2019-08-10 18:58:50,566 charges_calc.py:45  ERROR the end date of 2016-01-27 00:00:00 occurs before the start date of 2018-09-13 00:00:00
+2019-08-10 18:58:50,566 charges_calc.py:45  ERROR the end date of 2017-03-25 00:00:00 occurs before the start date of 2017-08-22 00:00:00
+2019-08-10 18:58:50,566 charges_calc.py:45  ERROR the end date of 2016-07-04 00:00:00 occurs before the start date of 2018-10-05 00:00:00
+2019-08-10 18:58:50,567 charges_calc.py:45  ERROR the end date of 2017-09-06 00:00:00 occurs before the start date of 2018-09-14 00:00:00
+2019-08-10 18:58:50,567 charges_calc.py:45  ERROR the end date of 2018-02-13 00:00:00 occurs before the start date of 2018-04-27 00:00:00
+2019-08-10 18:58:50,567 charges_calc.py:45  ERROR the end date of 2017-01-20 00:00:00 occurs before the start date of 2018-01-03 00:00:00
+2019-08-10 18:58:50,567 charges_calc.py:45  ERROR the end date of 2016-08-20 00:00:00 occurs before the start date of 2018-07-02 00:00:00
+2019-08-10 18:58:50,567 charges_calc.py:45  ERROR the end date of 2017-02-04 00:00:00 occurs before the start date of 2017-09-08 00:00:00
+2019-08-10 18:58:50,567 charges_calc.py:45  ERROR the end date of 2016-03-31 00:00:00 occurs before the start date of 2018-01-04 00:00:00
+2019-08-10 18:58:50,568 charges_calc.py:45  ERROR the end date of 2016-01-01 00:00:00 occurs before the start date of 2016-02-17 00:00:00
+2019-08-10 18:58:50,568 charges_calc.py:45  ERROR the end date of 2016-01-30 00:00:00 occurs before the start date of 2016-11-27 00:00:00
+2019-08-10 18:58:50,568 charges_calc.py:45  ERROR the end date of 2017-06-16 00:00:00 occurs before the start date of 2018-03-05 00:00:00
+2019-08-10 18:58:50,568 charges_calc.py:45  ERROR the end date of 2017-04-24 00:00:00 occurs before the start date of 2018-07-24 00:00:00
+2019-08-10 18:58:50,568 charges_calc.py:45  ERROR the end date of 2017-08-17 00:00:00 occurs before the start date of 2017-09-03 00:00:00
+2019-08-10 18:58:50,569 charges_calc.py:45  ERROR the end date of 2016-11-13 00:00:00 occurs before the start date of 2016-11-27 00:00:00
+2019-08-10 18:58:50,569 charges_calc.py:45  ERROR the end date of 2016-02-03 00:00:00 occurs before the start date of 2017-11-21 00:00:00
+2019-08-10 18:58:50,569 charges_calc.py:45  ERROR the end date of 2018-10-19 00:00:00 occurs before the start date of 2018-12-31 00:00:00
+2019-08-10 18:58:50,569 charges_calc.py:45  ERROR the end date of 2016-04-03 00:00:00 occurs before the start date of 2017-06-26 00:00:00
+2019-08-10 18:58:50,569 charges_calc.py:45  ERROR the end date of 2018-06-02 00:00:00 occurs before the start date of 2018-07-06 00:00:00
+2019-08-10 18:58:50,570 charges_calc.py:45  ERROR the end date of 2016-09-10 00:00:00 occurs before the start date of 2018-09-19 00:00:00
+2019-08-10 18:58:50,570 charges_calc.py:45  ERROR the end date of 2017-07-29 00:00:00 occurs before the start date of 2017-08-27 00:00:00
+2019-08-10 18:58:50,570 charges_calc.py:45  ERROR the end date of 2017-09-15 00:00:00 occurs before the start date of 2018-12-09 00:00:00
+2019-08-10 18:58:50,570 charges_calc.py:45  ERROR the end date of 2016-03-05 00:00:00 occurs before the start date of 2016-07-14 00:00:00
+2019-08-10 18:58:50,570 charges_calc.py:45  ERROR the end date of 2016-11-22 00:00:00 occurs before the start date of 2018-04-02 00:00:00
+2019-08-10 18:58:50,571 charges_calc.py:45  ERROR the end date of 2016-12-08 00:00:00 occurs before the start date of 2017-09-26 00:00:00
+2019-08-10 18:58:50,571 charges_calc.py:45  ERROR the end date of 2018-03-01 00:00:00 occurs before the start date of 2018-06-15 00:00:00
+2019-08-10 18:58:50,571 charges_calc.py:45  ERROR the end date of 2016-04-02 00:00:00 occurs before the start date of 2017-12-23 00:00:00
+2019-08-10 18:58:50,571 charges_calc.py:45  ERROR the end date of 2017-05-17 00:00:00 occurs before the start date of 2017-09-08 00:00:00
+2019-08-10 18:58:50,571 charges_calc.py:45  ERROR the end date of 2017-01-15 00:00:00 occurs before the start date of 2017-05-18 00:00:00
+2019-08-10 18:58:50,572 charges_calc.py:45  ERROR the end date of 2017-04-25 00:00:00 occurs before the start date of 2018-04-25 00:00:00
+2019-08-10 18:58:50,572 charges_calc.py:45  ERROR the end date of 2016-08-08 00:00:00 occurs before the start date of 2017-10-09 00:00:00
+2019-08-10 18:58:50,572 charges_calc.py:45  ERROR the end date of 2016-06-23 00:00:00 occurs before the start date of 2017-08-23 00:00:00
+2019-08-10 18:58:50,572 charges_calc.py:45  ERROR the end date of 2016-01-12 00:00:00 occurs before the start date of 2018-09-25 00:00:00
+2019-08-10 18:58:50,572 charges_calc.py:45  ERROR the end date of 2016-04-05 00:00:00 occurs before the start date of 2016-09-22 00:00:00
+2019-08-10 18:58:50,573 charges_calc.py:45  ERROR the end date of 2018-02-13 00:00:00 occurs before the start date of 2018-09-02 00:00:00
+2019-08-10 18:58:50,573 charges_calc.py:45  ERROR the end date of 2016-03-08 00:00:00 occurs before the start date of 2017-10-06 00:00:00
+2019-08-10 18:58:50,573 charges_calc.py:45  ERROR the end date of 2016-11-17 00:00:00 occurs before the start date of 2017-02-19 00:00:00
+2019-08-10 18:58:50,573 charges_calc.py:45  ERROR the end date of 2016-05-06 00:00:00 occurs before the start date of 2017-11-24 00:00:00
+2019-08-10 18:58:50,573 charges_calc.py:45  ERROR the end date of 2017-04-23 00:00:00 occurs before the start date of 2017-08-18 00:00:00
+2019-08-10 18:58:50,574 charges_calc.py:45  ERROR the end date of 2017-09-02 00:00:00 occurs before the start date of 2017-11-17 00:00:00
+2019-08-10 18:58:50,574 charges_calc.py:45  ERROR the end date of 2016-11-24 00:00:00 occurs before the start date of 2017-08-18 00:00:00
+2019-08-10 18:58:50,575 charges_calc.py:45  ERROR the end date of 2016-11-05 00:00:00 occurs before the start date of 2017-05-26 00:00:00
+2019-08-10 18:58:50,576 charges_calc.py:45  ERROR the end date of 2017-10-13 00:00:00 occurs before the start date of 2018-02-16 00:00:00
+2019-08-10 18:58:50,576 charges_calc.py:45  ERROR the end date of 2017-10-18 00:00:00 occurs before the start date of 2018-09-02 00:00:00
+2019-08-10 18:58:50,576 charges_calc.py:45  ERROR the end date of 2017-08-08 00:00:00 occurs before the start date of 2017-10-16 00:00:00
+2019-08-10 18:58:50,577 charges_calc.py:45  ERROR the end date of 2017-03-30 00:00:00 occurs before the start date of 2017-09-14 00:00:00
+2019-08-10 18:58:50,577 charges_calc.py:45  ERROR the end date of 2016-08-22 00:00:00 occurs before the start date of 2017-01-06 00:00:00
+2019-08-10 18:58:50,577 charges_calc.py:45  ERROR the end date of 2017-05-20 00:00:00 occurs before the start date of 2017-12-09 00:00:00
+2019-08-10 18:58:50,577 charges_calc.py:45  ERROR the end date of 2018-07-10 00:00:00 occurs before the start date of 2018-09-19 00:00:00
+2019-08-10 18:58:50,578 charges_calc.py:45  ERROR the end date of 2017-07-14 00:00:00 occurs before the start date of 2017-12-03 00:00:00
+2019-08-10 18:58:50,578 charges_calc.py:45  ERROR the end date of 2018-07-06 00:00:00 occurs before the start date of 2018-12-13 00:00:00
+2019-08-10 18:58:50,578 charges_calc.py:45  ERROR the end date of 2016-01-05 00:00:00 occurs before the start date of 2018-02-10 00:00:00
+2019-08-10 18:58:50,579 charges_calc.py:45  ERROR the end date of 2017-07-28 00:00:00 occurs before the start date of 2018-03-15 00:00:00
+2019-08-10 18:58:50,579 charges_calc.py:45  ERROR the end date of 2016-01-06 00:00:00 occurs before the start date of 2018-12-02 00:00:00
+2019-08-10 18:58:50,579 charges_calc.py:45  ERROR the end date of 2018-02-21 00:00:00 occurs before the start date of 2018-06-18 00:00:00
+2019-08-10 18:58:50,580 charges_calc.py:45  ERROR the end date of 2016-10-13 00:00:00 occurs before the start date of 2016-10-23 00:00:00
+2019-08-10 18:58:50,580 charges_calc.py:45  ERROR the end date of 2016-12-28 00:00:00 occurs before the start date of 2018-07-13 00:00:00
+2019-08-10 18:58:50,581 charges_calc.py:45  ERROR the end date of 2017-01-03 00:00:00 occurs before the start date of 2018-01-13 00:00:00
+2019-08-10 18:58:50,581 charges_calc.py:45  ERROR the end date of 2016-08-21 00:00:00 occurs before the start date of 2017-01-31 00:00:00
+2019-08-10 18:58:50,582 charges_calc.py:45  ERROR the end date of 2017-04-16 00:00:00 occurs before the start date of 2018-01-25 00:00:00
+2019-08-10 18:58:50,582 charges_calc.py:45  ERROR the end date of 2017-03-22 00:00:00 occurs before the start date of 2018-11-27 00:00:00
+2019-08-10 18:58:50,582 charges_calc.py:45  ERROR the end date of 2016-02-24 00:00:00 occurs before the start date of 2017-03-30 00:00:00
+2019-08-10 18:58:50,582 charges_calc.py:45  ERROR the end date of 2017-06-03 00:00:00 occurs before the start date of 2018-03-18 00:00:00
+2019-08-10 18:58:50,583 charges_calc.py:45  ERROR the end date of 2016-04-30 00:00:00 occurs before the start date of 2018-12-30 00:00:00
+2019-08-10 18:58:50,583 charges_calc.py:45  ERROR the end date of 2017-09-15 00:00:00 occurs before the start date of 2018-01-25 00:00:00
+2019-08-10 18:58:50,583 charges_calc.py:45  ERROR the end date of 2017-06-08 00:00:00 occurs before the start date of 2018-01-13 00:00:00
+2019-08-10 18:58:50,584 charges_calc.py:45  ERROR the end date of 2016-02-10 00:00:00 occurs before the start date of 2016-10-17 00:00:00
+2019-08-10 18:58:50,584 charges_calc.py:45  ERROR the end date of 2017-07-19 00:00:00 occurs before the start date of 2018-04-03 00:00:00
+2019-08-10 18:58:50,584 charges_calc.py:45  ERROR the end date of 2016-12-15 00:00:00 occurs before the start date of 2017-07-25 00:00:00
+2019-08-10 18:58:50,584 charges_calc.py:45  ERROR the end date of 2017-04-07 00:00:00 occurs before the start date of 2017-12-04 00:00:00
+2019-08-10 18:58:50,585 charges_calc.py:45  ERROR the end date of 2016-08-18 00:00:00 occurs before the start date of 2016-10-25 00:00:00
+2019-08-10 18:58:50,585 charges_calc.py:45  ERROR the end date of 2017-05-03 00:00:00 occurs before the start date of 2018-05-16 00:00:00
+2019-08-10 18:58:50,585 charges_calc.py:45  ERROR the end date of 2017-03-26 00:00:00 occurs before the start date of 2017-11-29 00:00:00
+2019-08-10 18:58:50,585 charges_calc.py:45  ERROR the end date of 2017-07-06 00:00:00 occurs before the start date of 2017-12-20 00:00:00
+2019-08-10 18:58:50,586 charges_calc.py:45  ERROR the end date of 2016-02-11 00:00:00 occurs before the start date of 2018-11-27 00:00:00
+2019-08-10 18:58:50,586 charges_calc.py:45  ERROR the end date of 2016-05-13 00:00:00 occurs before the start date of 2017-11-13 00:00:00
+2019-08-10 18:58:50,586 charges_calc.py:45  ERROR the end date of 2017-09-25 00:00:00 occurs before the start date of 2017-12-07 00:00:00
+2019-08-10 18:58:50,586 charges_calc.py:45  ERROR the end date of 2016-04-25 00:00:00 occurs before the start date of 2016-05-03 00:00:00
+2019-08-10 18:58:50,587 charges_calc.py:45  ERROR the end date of 2017-08-11 00:00:00 occurs before the start date of 2017-12-15 00:00:00
+2019-08-10 18:58:50,587 charges_calc.py:45  ERROR the end date of 2017-11-25 00:00:00 occurs before the start date of 2018-03-18 00:00:00
+2019-08-10 18:58:50,587 charges_calc.py:45  ERROR the end date of 2017-02-25 00:00:00 occurs before the start date of 2017-02-28 00:00:00
+2019-08-10 18:58:50,588 charges_calc.py:45  ERROR the end date of 2016-01-08 00:00:00 occurs before the start date of 2017-08-24 00:00:00
+2019-08-10 18:58:50,588 charges_calc.py:45  ERROR the end date of 2016-07-09 00:00:00 occurs before the start date of 2016-07-14 00:00:00
+2019-08-10 18:58:50,588 charges_calc.py:45  ERROR the end date of 2018-06-25 00:00:00 occurs before the start date of 2018-12-21 00:00:00
+2019-08-10 18:58:50,588 charges_calc.py:45  ERROR the end date of 2017-02-04 00:00:00 occurs before the start date of 2018-11-01 00:00:00
+2019-08-10 18:58:50,589 charges_calc.py:45  ERROR the end date of 2016-04-16 00:00:00 occurs before the start date of 2017-10-16 00:00:00
+2019-08-10 18:58:50,589 charges_calc.py:45  ERROR the end date of 2016-06-26 00:00:00 occurs before the start date of 2017-11-07 00:00:00
+2019-08-10 18:58:50,589 charges_calc.py:45  ERROR the end date of 2017-09-09 00:00:00 occurs before the start date of 2018-04-14 00:00:00
+2019-08-10 18:58:50,589 charges_calc.py:45  ERROR the end date of 2016-06-29 00:00:00 occurs before the start date of 2017-09-08 00:00:00
+2019-08-10 18:58:50,590 charges_calc.py:45  ERROR the end date of 2018-03-07 00:00:00 occurs before the start date of 2018-10-19 00:00:00
+2019-08-10 18:58:50,590 charges_calc.py:45  ERROR the end date of 2016-08-18 00:00:00 occurs before the start date of 2018-07-19 00:00:00
+2019-08-10 18:58:50,590 charges_calc.py:45  ERROR the end date of 2016-02-09 00:00:00 occurs before the start date of 2018-05-14 00:00:00
+2019-08-10 18:58:50,590 charges_calc.py:45  ERROR the end date of 2018-06-16 00:00:00 occurs before the start date of 2018-10-06 00:00:00
+2019-08-10 18:58:50,591 charges_calc.py:45  ERROR the end date of 2018-06-07 00:00:00 occurs before the start date of 2018-08-15 00:00:00
+2019-08-10 18:58:50,591 charges_calc.py:45  ERROR the end date of 2016-09-12 00:00:00 occurs before the start date of 2018-01-30 00:00:00
+2019-08-10 18:58:50,591 charges_calc.py:45  ERROR the end date of 2016-03-31 00:00:00 occurs before the start date of 2016-11-05 00:00:00
+2019-08-10 18:58:50,592 charges_calc.py:45  ERROR the end date of 2018-01-12 00:00:00 occurs before the start date of 2018-01-20 00:00:00
+2019-08-10 18:58:50,592 charges_calc.py:45  ERROR the end date of 2017-05-07 00:00:00 occurs before the start date of 2018-01-01 00:00:00
+2019-08-10 18:58:50,592 charges_calc.py:45  ERROR the end date of 2017-01-19 00:00:00 occurs before the start date of 2017-06-14 00:00:00
+2019-08-10 18:58:50,592 charges_calc.py:45  ERROR the end date of 2016-12-02 00:00:00 occurs before the start date of 2017-09-27 00:00:00
+2019-08-10 18:58:50,592 charges_calc.py:45  ERROR the end date of 2017-02-20 00:00:00 occurs before the start date of 2017-04-30 00:00:00
+2019-08-10 18:58:50,593 charges_calc.py:45  ERROR the end date of 2017-11-24 00:00:00 occurs before the start date of 2018-02-08 00:00:00
+2019-08-10 18:58:50,593 charges_calc.py:45  ERROR the end date of 2018-08-08 00:00:00 occurs before the start date of 2018-08-11 00:00:00
+2019-08-10 18:58:50,593 charges_calc.py:45  ERROR the end date of 2016-09-20 00:00:00 occurs before the start date of 2017-04-30 00:00:00
+2019-08-10 18:58:50,593 charges_calc.py:45  ERROR the end date of 2016-06-11 00:00:00 occurs before the start date of 2018-05-05 00:00:00
+2019-08-10 18:58:50,594 charges_calc.py:45  ERROR the end date of 2016-04-13 00:00:00 occurs before the start date of 2018-01-27 00:00:00
+2019-08-10 18:58:50,594 charges_calc.py:45  ERROR the end date of 2017-11-20 00:00:00 occurs before the start date of 2018-06-14 00:00:00
+2019-08-10 18:58:50,594 charges_calc.py:45  ERROR the end date of 2016-05-01 00:00:00 occurs before the start date of 2016-12-03 00:00:00
+2019-08-10 18:58:50,594 charges_calc.py:45  ERROR the end date of 2016-10-23 00:00:00 occurs before the start date of 2017-01-24 00:00:00
+2019-08-10 18:58:50,595 charges_calc.py:45  ERROR the end date of 2016-03-21 00:00:00 occurs before the start date of 2018-06-12 00:00:00
+2019-08-10 18:58:50,595 charges_calc.py:45  ERROR the end date of 2016-11-20 00:00:00 occurs before the start date of 2017-03-29 00:00:00
+2019-08-10 18:58:50,595 charges_calc.py:45  ERROR the end date of 2016-10-27 00:00:00 occurs before the start date of 2017-08-04 00:00:00
+2019-08-10 18:58:50,595 charges_calc.py:45  ERROR the end date of 2016-12-07 00:00:00 occurs before the start date of 2017-03-06 00:00:00
+2019-08-10 18:58:50,596 charges_calc.py:45  ERROR the end date of 2016-01-04 00:00:00 occurs before the start date of 2018-07-06 00:00:00
+2019-08-10 18:58:50,596 charges_calc.py:45  ERROR the end date of 2017-07-07 00:00:00 occurs before the start date of 2017-10-09 00:00:00
+2019-08-10 18:58:50,596 charges_calc.py:45  ERROR the end date of 2016-11-18 00:00:00 occurs before the start date of 2017-08-30 00:00:00
+2019-08-10 18:58:50,596 charges_calc.py:45  ERROR the end date of 2016-11-19 00:00:00 occurs before the start date of 2017-04-08 00:00:00
+2019-08-10 18:58:50,597 charges_calc.py:45  ERROR the end date of 2017-12-26 00:00:00 occurs before the start date of 2018-04-22 00:00:00
+2019-08-10 18:58:50,597 charges_calc.py:45  ERROR the end date of 2017-08-21 00:00:00 occurs before the start date of 2017-09-06 00:00:00
+2019-08-10 18:58:50,597 charges_calc.py:45  ERROR the end date of 2016-05-17 00:00:00 occurs before the start date of 2018-05-23 00:00:00
+2019-08-10 18:58:50,597 charges_calc.py:45  ERROR the end date of 2016-01-17 00:00:00 occurs before the start date of 2016-10-14 00:00:00
+2019-08-10 18:58:50,598 charges_calc.py:45  ERROR the end date of 2016-09-05 00:00:00 occurs before the start date of 2018-11-20 00:00:00
+2019-08-10 18:58:50,598 charges_calc.py:45  ERROR the end date of 2016-07-03 00:00:00 occurs before the start date of 2018-07-04 00:00:00
+2019-08-10 18:58:50,598 charges_calc.py:45  ERROR the end date of 2017-12-19 00:00:00 occurs before the start date of 2018-08-09 00:00:00
+2019-08-10 18:58:50,598 charges_calc.py:45  ERROR the end date of 2016-05-30 00:00:00 occurs before the start date of 2017-02-17 00:00:00
+2019-08-10 18:58:50,598 charges_calc.py:45  ERROR the end date of 2018-07-20 00:00:00 occurs before the start date of 2018-08-10 00:00:00
+2019-08-10 18:58:50,599 charges_calc.py:45  ERROR the end date of 2017-02-25 00:00:00 occurs before the start date of 2018-04-17 00:00:00
+2019-08-10 18:58:50,599 charges_calc.py:45  ERROR the end date of 2017-06-13 00:00:00 occurs before the start date of 2018-01-20 00:00:00
+2019-08-10 18:58:50,599 charges_calc.py:45  ERROR the end date of 2016-04-03 00:00:00 occurs before the start date of 2018-05-12 00:00:00
+2019-08-10 18:58:50,599 charges_calc.py:45  ERROR the end date of 2017-04-12 00:00:00 occurs before the start date of 2017-09-08 00:00:00
+2019-08-10 18:58:50,600 charges_calc.py:45  ERROR the end date of 2017-07-18 00:00:00 occurs before the start date of 2017-08-17 00:00:00
+2019-08-10 18:58:50,600 charges_calc.py:45  ERROR the end date of 2016-04-01 00:00:00 occurs before the start date of 2017-10-10 00:00:00
+2019-08-10 18:58:50,600 charges_calc.py:45  ERROR the end date of 2016-08-04 00:00:00 occurs before the start date of 2017-01-11 00:00:00
+2019-08-10 18:58:50,600 charges_calc.py:45  ERROR the end date of 2016-11-24 00:00:00 occurs before the start date of 2018-03-17 00:00:00
+2019-08-10 18:58:50,600 charges_calc.py:45  ERROR the end date of 2016-04-30 00:00:00 occurs before the start date of 2018-05-15 00:00:00
+2019-08-10 18:58:50,601 charges_calc.py:45  ERROR the end date of 2018-02-21 00:00:00 occurs before the start date of 2018-03-02 00:00:00
+2019-08-10 18:58:50,601 charges_calc.py:45  ERROR the end date of 2017-03-14 00:00:00 occurs before the start date of 2017-03-27 00:00:00
+2019-08-10 18:58:50,601 charges_calc.py:45  ERROR the end date of 2016-08-07 00:00:00 occurs before the start date of 2017-06-30 00:00:00
+2019-08-10 18:58:50,601 charges_calc.py:45  ERROR the end date of 2016-03-23 00:00:00 occurs before the start date of 2017-12-10 00:00:00
+2019-08-10 18:58:50,602 charges_calc.py:45  ERROR the end date of 2016-10-15 00:00:00 occurs before the start date of 2016-10-23 00:00:00
+2019-08-10 18:58:50,602 charges_calc.py:45  ERROR the end date of 2017-02-21 00:00:00 occurs before the start date of 2017-04-07 00:00:00
+2019-08-10 18:58:50,602 charges_calc.py:45  ERROR the end date of 2016-02-10 00:00:00 occurs before the start date of 2017-07-19 00:00:00
+2019-08-10 18:58:50,602 charges_calc.py:45  ERROR the end date of 2017-07-22 00:00:00 occurs before the start date of 2018-07-19 00:00:00
+2019-08-10 18:58:50,603 charges_calc.py:45  ERROR the end date of 2017-08-19 00:00:00 occurs before the start date of 2017-11-12 00:00:00
+2019-08-10 18:58:50,603 charges_calc.py:45  ERROR the end date of 2016-09-11 00:00:00 occurs before the start date of 2016-11-26 00:00:00
+2019-08-10 18:58:50,603 charges_calc.py:45  ERROR the end date of 2017-05-09 00:00:00 occurs before the start date of 2018-11-30 00:00:00
+2019-08-10 18:58:50,603 charges_calc.py:45  ERROR the end date of 2016-01-19 00:00:00 occurs before the start date of 2016-08-30 00:00:00
+2019-08-10 18:58:50,603 charges_calc.py:45  ERROR the end date of 2016-12-16 00:00:00 occurs before the start date of 2018-08-27 00:00:00
+2019-08-10 18:58:50,604 charges_calc.py:45  ERROR the end date of 2017-07-09 00:00:00 occurs before the start date of 2017-10-15 00:00:00
+2019-08-10 18:58:50,604 charges_calc.py:45  ERROR the end date of 2016-02-29 00:00:00 occurs before the start date of 2016-05-17 00:00:00
+2019-08-10 18:58:50,604 charges_calc.py:45  ERROR the end date of 2017-11-01 00:00:00 occurs before the start date of 2018-06-14 00:00:00
+2019-08-10 18:58:50,604 charges_calc.py:45  ERROR the end date of 2016-11-13 00:00:00 occurs before the start date of 2017-06-21 00:00:00
+2019-08-10 18:58:50,604 charges_calc.py:45  ERROR the end date of 2016-07-21 00:00:00 occurs before the start date of 2017-02-08 00:00:00
+2019-08-10 18:58:50,605 charges_calc.py:45  ERROR the end date of 2016-10-22 00:00:00 occurs before the start date of 2018-03-01 00:00:00
+2019-08-10 18:58:50,605 charges_calc.py:45  ERROR the end date of 2018-03-19 00:00:00 occurs before the start date of 2018-05-14 00:00:00
+2019-08-10 18:58:50,605 charges_calc.py:45  ERROR the end date of 2017-06-25 00:00:00 occurs before the start date of 2017-08-20 00:00:00
+2019-08-10 18:58:50,605 charges_calc.py:45  ERROR the end date of 2016-12-13 00:00:00 occurs before the start date of 2017-01-16 00:00:00
+2019-08-10 18:58:50,606 charges_calc.py:45  ERROR the end date of 2017-10-13 00:00:00 occurs before the start date of 2017-12-15 00:00:00
+2019-08-10 18:58:50,606 charges_calc.py:45  ERROR the end date of 2017-04-06 00:00:00 occurs before the start date of 2018-10-18 00:00:00
+2019-08-10 18:58:50,606 charges_calc.py:45  ERROR the end date of 2016-05-27 00:00:00 occurs before the start date of 2018-06-28 00:00:00
+2019-08-10 18:58:50,606 charges_calc.py:45  ERROR the end date of 2016-04-19 00:00:00 occurs before the start date of 2018-02-26 00:00:00
+2019-08-10 18:58:50,607 charges_calc.py:45  ERROR the end date of 2017-01-13 00:00:00 occurs before the start date of 2017-11-20 00:00:00
+2019-08-10 18:58:50,607 charges_calc.py:45  ERROR the end date of 2018-02-28 00:00:00 occurs before the start date of 2018-10-23 00:00:00
+2019-08-10 18:58:50,607 charges_calc.py:45  ERROR the end date of 2016-10-10 00:00:00 occurs before the start date of 2017-04-05 00:00:00
+2019-08-10 18:58:50,607 charges_calc.py:45  ERROR the end date of 2016-04-16 00:00:00 occurs before the start date of 2017-09-23 00:00:00
+2019-08-10 18:58:50,608 charges_calc.py:45  ERROR the end date of 2016-03-16 00:00:00 occurs before the start date of 2016-11-03 00:00:00
+2019-08-10 18:58:50,608 charges_calc.py:45  ERROR the end date of 2016-01-16 00:00:00 occurs before the start date of 2016-11-11 00:00:00
+2019-08-10 18:58:50,608 charges_calc.py:45  ERROR the end date of 2016-06-30 00:00:00 occurs before the start date of 2016-11-08 00:00:00
+2019-08-10 18:58:50,608 charges_calc.py:45  ERROR the end date of 2016-03-11 00:00:00 occurs before the start date of 2018-11-20 00:00:00
+2019-08-10 18:58:50,608 charges_calc.py:45  ERROR the end date of 2016-02-28 00:00:00 occurs before the start date of 2017-09-10 00:00:00
+2019-08-10 18:58:50,609 charges_calc.py:45  ERROR the end date of 2016-04-07 00:00:00 occurs before the start date of 2018-10-25 00:00:00
+2019-08-10 18:58:50,609 charges_calc.py:45  ERROR the end date of 2017-01-02 00:00:00 occurs before the start date of 2017-06-04 00:00:00
+2019-08-10 18:58:50,609 charges_calc.py:45  ERROR the end date of 2016-04-14 00:00:00 occurs before the start date of 2018-09-02 00:00:00
+2019-08-10 18:58:50,610 charges_calc.py:45  ERROR the end date of 2016-10-02 00:00:00 occurs before the start date of 2018-10-12 00:00:00
+2019-08-10 18:58:50,650 charges_calc.py:124 ERROR loggin error
+2019-08-10 18:58:50,651 charges_calc.py:125 WARNING warning
+2019-08-10 18:58:50,651 charges_calc.py:126 CRITICAL critical
+2019-08-10 19:03:08,167 charges_calc.py:46  ERROR for key: RNT001 the end date of 2017-03-22 00:00:00 occurs before the start date of 2017-06-12 00:00:00
+2019-08-10 19:03:08,168 charges_calc.py:46  ERROR for key: RNT006 the end date of 2018-07-29 00:00:00 occurs before the start date of 2018-08-26 00:00:00
+2019-08-10 19:03:08,168 charges_calc.py:46  ERROR for key: RNT007 the end date of 2017-05-31 00:00:00 occurs before the start date of 2017-07-10 00:00:00
+2019-08-10 19:03:08,168 charges_calc.py:46  ERROR for key: RNT008 the end date of 2018-07-04 00:00:00 occurs before the start date of 2018-10-25 00:00:00
+2019-08-10 19:03:08,169 charges_calc.py:46  ERROR for key: RNT009 the end date of 2016-07-28 00:00:00 occurs before the start date of 2018-11-03 00:00:00
+2019-08-10 19:03:08,169 charges_calc.py:46  ERROR for key: RNT010 the end date of 2017-08-27 00:00:00 occurs before the start date of 2018-03-15 00:00:00
+2019-08-10 19:03:08,169 charges_calc.py:46  ERROR for key: RNT011 the end date of 2016-04-29 00:00:00 occurs before the start date of 2017-09-29 00:00:00
+2019-08-10 19:03:08,169 charges_calc.py:46  ERROR for key: RNT012 the end date of 2016-01-15 00:00:00 occurs before the start date of 2017-10-24 00:00:00
+2019-08-10 19:03:08,170 charges_calc.py:46  ERROR for key: RNT014 the end date of 2016-07-30 00:00:00 occurs before the start date of 2017-01-30 00:00:00
+2019-08-10 19:03:08,170 charges_calc.py:46  ERROR for key: RNT016 the end date of 2016-02-05 00:00:00 occurs before the start date of 2018-06-18 00:00:00
+2019-08-10 19:03:08,170 charges_calc.py:46  ERROR for key: RNT017 the end date of 2018-04-11 00:00:00 occurs before the start date of 2018-04-28 00:00:00
+2019-08-10 19:03:08,170 charges_calc.py:46  ERROR for key: RNT018 the end date of 2016-01-13 00:00:00 occurs before the start date of 2016-08-16 00:00:00
+2019-08-10 19:03:08,170 charges_calc.py:46  ERROR for key: RNT019 the end date of 2016-05-10 00:00:00 occurs before the start date of 2017-12-16 00:00:00
+2019-08-10 19:03:08,171 charges_calc.py:46  ERROR for key: RNT020 the end date of 2016-01-12 00:00:00 occurs before the start date of 2018-06-20 00:00:00
+2019-08-10 19:03:08,171 charges_calc.py:46  ERROR for key: RNT021 the end date of 2016-02-09 00:00:00 occurs before the start date of 2017-08-31 00:00:00
+2019-08-10 19:03:08,171 charges_calc.py:46  ERROR for key: RNT025 the end date of 2016-05-28 00:00:00 occurs before the start date of 2018-03-02 00:00:00
+2019-08-10 19:03:08,171 charges_calc.py:46  ERROR for key: RNT026 the end date of 2016-04-21 00:00:00 occurs before the start date of 2018-03-27 00:00:00
+2019-08-10 19:03:08,172 charges_calc.py:46  ERROR for key: RNT028 the end date of 2017-05-06 00:00:00 occurs before the start date of 2018-07-06 00:00:00
+2019-08-10 19:03:08,172 charges_calc.py:46  ERROR for key: RNT030 the end date of 2017-04-18 00:00:00 occurs before the start date of 2017-07-01 00:00:00
+2019-08-10 19:03:08,172 charges_calc.py:46  ERROR for key: RNT031 the end date of 2017-04-13 00:00:00 occurs before the start date of 2018-04-18 00:00:00
+2019-08-10 19:03:08,172 charges_calc.py:46  ERROR for key: RNT034 the end date of 2016-04-03 00:00:00 occurs before the start date of 2017-10-11 00:00:00
+2019-08-10 19:03:08,173 charges_calc.py:46  ERROR for key: RNT040 the end date of 2016-12-30 00:00:00 occurs before the start date of 2017-12-01 00:00:00
+2019-08-10 19:03:08,173 charges_calc.py:46  ERROR for key: RNT041 the end date of 2017-03-30 00:00:00 occurs before the start date of 2018-02-19 00:00:00
+2019-08-10 19:03:08,173 charges_calc.py:46  ERROR for key: RNT044 the end date of 2016-12-19 00:00:00 occurs before the start date of 2018-09-04 00:00:00
+2019-08-10 19:03:08,173 charges_calc.py:46  ERROR for key: RNT045 the end date of 2018-11-12 00:00:00 occurs before the start date of 2018-12-19 00:00:00
+2019-08-10 19:03:08,174 charges_calc.py:46  ERROR for key: RNT046 the end date of 2018-01-08 00:00:00 occurs before the start date of 2018-10-15 00:00:00
+2019-08-10 19:03:08,174 charges_calc.py:46  ERROR for key: RNT047 the end date of 2016-06-24 00:00:00 occurs before the start date of 2018-08-03 00:00:00
+2019-08-10 19:03:08,174 charges_calc.py:46  ERROR for key: RNT048 the end date of 2016-10-28 00:00:00 occurs before the start date of 2017-09-05 00:00:00
+2019-08-10 19:03:08,175 charges_calc.py:46  ERROR for key: RNT050 the end date of 2017-06-30 00:00:00 occurs before the start date of 2018-12-06 00:00:00
+2019-08-10 19:03:08,176 charges_calc.py:46  ERROR for key: RNT056 the end date of 2016-02-27 00:00:00 occurs before the start date of 2018-04-12 00:00:00
+2019-08-10 19:03:08,176 charges_calc.py:46  ERROR for key: RNT058 the end date of 2017-01-25 00:00:00 occurs before the start date of 2017-07-14 00:00:00
+2019-08-10 19:03:08,176 charges_calc.py:46  ERROR for key: RNT060 the end date of 2016-01-18 00:00:00 occurs before the start date of 2016-02-15 00:00:00
+2019-08-10 19:03:08,177 charges_calc.py:46  ERROR for key: RNT061 the end date of 2017-02-28 00:00:00 occurs before the start date of 2018-02-12 00:00:00
+2019-08-10 19:03:08,177 charges_calc.py:46  ERROR for key: RNT062 the end date of 2018-06-03 00:00:00 occurs before the start date of 2018-08-25 00:00:00
+2019-08-10 19:03:08,177 charges_calc.py:46  ERROR for key: RNT065 the end date of 2016-12-12 00:00:00 occurs before the start date of 2018-10-11 00:00:00
+2019-08-10 19:03:08,178 charges_calc.py:46  ERROR for key: RNT067 the end date of 2017-10-18 00:00:00 occurs before the start date of 2018-01-18 00:00:00
+2019-08-10 19:03:08,179 charges_calc.py:46  ERROR for key: RNT071 the end date of 2016-05-25 00:00:00 occurs before the start date of 2016-10-05 00:00:00
+2019-08-10 19:03:08,179 charges_calc.py:46  ERROR for key: RNT074 the end date of 2017-07-14 00:00:00 occurs before the start date of 2017-09-09 00:00:00
+2019-08-10 19:03:08,180 charges_calc.py:46  ERROR for key: RNT076 the end date of 2016-05-12 00:00:00 occurs before the start date of 2018-06-06 00:00:00
+2019-08-10 19:03:08,180 charges_calc.py:46  ERROR for key: RNT077 the end date of 2016-11-19 00:00:00 occurs before the start date of 2018-08-15 00:00:00
+2019-08-10 19:03:08,180 charges_calc.py:46  ERROR for key: RNT079 the end date of 2018-01-27 00:00:00 occurs before the start date of 2018-11-27 00:00:00
+2019-08-10 19:03:08,181 charges_calc.py:46  ERROR for key: RNT084 the end date of 2016-04-29 00:00:00 occurs before the start date of 2017-05-13 00:00:00
+2019-08-10 19:03:08,181 charges_calc.py:46  ERROR for key: RNT086 the end date of 2018-03-20 00:00:00 occurs before the start date of 2018-12-03 00:00:00
+2019-08-10 19:03:08,182 charges_calc.py:46  ERROR for key: RNT087 the end date of 2016-06-18 00:00:00 occurs before the start date of 2016-08-10 00:00:00
+2019-08-10 19:03:08,182 charges_calc.py:46  ERROR for key: RNT089 the end date of 2018-08-15 00:00:00 occurs before the start date of 2018-11-05 00:00:00
+2019-08-10 19:03:08,183 charges_calc.py:46  ERROR for key: RNT092 the end date of 2016-05-23 00:00:00 occurs before the start date of 2017-03-10 00:00:00
+2019-08-10 19:03:08,183 charges_calc.py:46  ERROR for key: RNT095 the end date of 2017-07-23 00:00:00 occurs before the start date of 2018-08-05 00:00:00
+2019-08-10 19:03:08,184 charges_calc.py:46  ERROR for key: RNT097 the end date of 2016-08-29 00:00:00 occurs before the start date of 2017-01-11 00:00:00
+2019-08-10 19:03:08,184 charges_calc.py:46  ERROR for key: RNT099 the end date of 2016-10-21 00:00:00 occurs before the start date of 2018-11-23 00:00:00
+2019-08-10 19:03:08,184 charges_calc.py:46  ERROR for key: RNT100 the end date of 2016-05-21 00:00:00 occurs before the start date of 2018-06-16 00:00:00
+2019-08-10 19:03:08,185 charges_calc.py:46  ERROR for key: RNT101 the end date of 2017-09-20 00:00:00 occurs before the start date of 2018-12-03 00:00:00
+2019-08-10 19:03:08,185 charges_calc.py:46  ERROR for key: RNT102 the end date of 2016-12-08 00:00:00 occurs before the start date of 2017-07-17 00:00:00
+2019-08-10 19:03:08,186 charges_calc.py:46  ERROR for key: RNT103 the end date of 2016-02-18 00:00:00 occurs before the start date of 2017-01-24 00:00:00
+2019-08-10 19:03:08,186 charges_calc.py:46  ERROR for key: RNT104 the end date of 2016-08-30 00:00:00 occurs before the start date of 2017-12-20 00:00:00
+2019-08-10 19:03:08,186 charges_calc.py:46  ERROR for key: RNT105 the end date of 2016-02-20 00:00:00 occurs before the start date of 2017-12-29 00:00:00
+2019-08-10 19:03:08,187 charges_calc.py:46  ERROR for key: RNT106 the end date of 2018-01-01 00:00:00 occurs before the start date of 2018-03-14 00:00:00
+2019-08-10 19:03:08,187 charges_calc.py:46  ERROR for key: RNT107 the end date of 2016-06-04 00:00:00 occurs before the start date of 2017-05-30 00:00:00
+2019-08-10 19:03:08,187 charges_calc.py:46  ERROR for key: RNT109 the end date of 2017-01-09 00:00:00 occurs before the start date of 2018-06-26 00:00:00
+2019-08-10 19:03:08,188 charges_calc.py:46  ERROR for key: RNT114 the end date of 2016-01-09 00:00:00 occurs before the start date of 2017-06-06 00:00:00
+2019-08-10 19:03:08,188 charges_calc.py:46  ERROR for key: RNT115 the end date of 2016-02-03 00:00:00 occurs before the start date of 2018-05-11 00:00:00
+2019-08-10 19:03:08,188 charges_calc.py:46  ERROR for key: RNT116 the end date of 2016-08-04 00:00:00 occurs before the start date of 2017-04-14 00:00:00
+2019-08-10 19:03:08,189 charges_calc.py:46  ERROR for key: RNT118 the end date of 2017-06-04 00:00:00 occurs before the start date of 2018-07-23 00:00:00
+2019-08-10 19:03:08,189 charges_calc.py:46  ERROR for key: RNT119 the end date of 2017-12-18 00:00:00 occurs before the start date of 2018-07-19 00:00:00
+2019-08-10 19:03:08,190 charges_calc.py:46  ERROR for key: RNT120 the end date of 2016-08-01 00:00:00 occurs before the start date of 2017-01-03 00:00:00
+2019-08-10 19:03:08,190 charges_calc.py:46  ERROR for key: RNT121 the end date of 2017-02-25 00:00:00 occurs before the start date of 2018-11-30 00:00:00
+2019-08-10 19:03:08,190 charges_calc.py:46  ERROR for key: RNT122 the end date of 2017-04-05 00:00:00 occurs before the start date of 2018-12-04 00:00:00
+2019-08-10 19:03:08,190 charges_calc.py:46  ERROR for key: RNT123 the end date of 2017-07-25 00:00:00 occurs before the start date of 2018-03-02 00:00:00
+2019-08-10 19:03:08,191 charges_calc.py:46  ERROR for key: RNT125 the end date of 2018-07-30 00:00:00 occurs before the start date of 2018-12-15 00:00:00
+2019-08-10 19:03:08,191 charges_calc.py:46  ERROR for key: RNT129 the end date of 2017-05-23 00:00:00 occurs before the start date of 2018-03-23 00:00:00
+2019-08-10 19:03:08,191 charges_calc.py:46  ERROR for key: RNT130 the end date of 2017-06-21 00:00:00 occurs before the start date of 2018-12-17 00:00:00
+2019-08-10 19:03:08,192 charges_calc.py:46  ERROR for key: RNT135 the end date of 2016-08-11 00:00:00 occurs before the start date of 2016-10-13 00:00:00
+2019-08-10 19:03:08,192 charges_calc.py:46  ERROR for key: RNT139 the end date of 2017-05-01 00:00:00 occurs before the start date of 2017-09-13 00:00:00
+2019-08-10 19:03:08,193 charges_calc.py:46  ERROR for key: RNT141 the end date of 2017-03-22 00:00:00 occurs before the start date of 2018-01-20 00:00:00
+2019-08-10 19:03:08,193 charges_calc.py:46  ERROR for key: RNT142 the end date of 2016-05-02 00:00:00 occurs before the start date of 2016-11-15 00:00:00
+2019-08-10 19:03:08,193 charges_calc.py:46  ERROR for key: RNT143 the end date of 2016-01-03 00:00:00 occurs before the start date of 2018-11-20 00:00:00
+2019-08-10 19:03:08,194 charges_calc.py:46  ERROR for key: RNT145 the end date of 2016-07-15 00:00:00 occurs before the start date of 2018-07-28 00:00:00
+2019-08-10 19:03:08,194 charges_calc.py:46  ERROR for key: RNT148 the end date of 2018-09-17 00:00:00 occurs before the start date of 2018-10-20 00:00:00
+2019-08-10 19:03:08,194 charges_calc.py:46  ERROR for key: RNT149 the end date of 2016-11-03 00:00:00 occurs before the start date of 2018-09-29 00:00:00
+2019-08-10 19:03:08,195 charges_calc.py:46  ERROR for key: RNT151 the end date of 2016-08-16 00:00:00 occurs before the start date of 2018-08-11 00:00:00
+2019-08-10 19:03:08,196 charges_calc.py:46  ERROR for key: RNT154 the end date of 2016-03-30 00:00:00 occurs before the start date of 2017-05-24 00:00:00
+2019-08-10 19:03:08,196 charges_calc.py:46  ERROR for key: RNT155 the end date of 2017-07-19 00:00:00 occurs before the start date of 2018-01-07 00:00:00
+2019-08-10 19:03:08,196 charges_calc.py:46  ERROR for key: RNT157 the end date of 2017-05-19 00:00:00 occurs before the start date of 2018-12-23 00:00:00
+2019-08-10 19:03:08,196 charges_calc.py:46  ERROR for key: RNT158 the end date of 2016-03-06 00:00:00 occurs before the start date of 2018-07-10 00:00:00
+2019-08-10 19:03:08,197 charges_calc.py:46  ERROR for key: RNT160 the end date of 2018-03-14 00:00:00 occurs before the start date of 2018-05-18 00:00:00
+2019-08-10 19:03:08,197 charges_calc.py:46  ERROR for key: RNT163 the end date of 2016-09-10 00:00:00 occurs before the start date of 2016-12-16 00:00:00
+2019-08-10 19:03:08,197 charges_calc.py:46  ERROR for key: RNT164 the end date of 2017-08-07 00:00:00 occurs before the start date of 2018-04-24 00:00:00
+2019-08-10 19:03:08,198 charges_calc.py:46  ERROR for key: RNT166 the end date of 2016-02-15 00:00:00 occurs before the start date of 2018-04-14 00:00:00
+2019-08-10 19:03:08,198 charges_calc.py:46  ERROR for key: RNT167 the end date of 2016-12-11 00:00:00 occurs before the start date of 2017-02-03 00:00:00
+2019-08-10 19:03:08,199 charges_calc.py:46  ERROR for key: RNT168 the end date of 2016-05-25 00:00:00 occurs before the start date of 2016-10-15 00:00:00
+2019-08-10 19:03:08,199 charges_calc.py:46  ERROR for key: RNT169 the end date of 2016-09-25 00:00:00 occurs before the start date of 2018-03-18 00:00:00
+2019-08-10 19:03:08,199 charges_calc.py:46  ERROR for key: RNT170 the end date of 2017-01-11 00:00:00 occurs before the start date of 2018-09-16 00:00:00
+2019-08-10 19:03:08,200 charges_calc.py:46  ERROR for key: RNT175 the end date of 2018-03-15 00:00:00 occurs before the start date of 2018-05-16 00:00:00
+2019-08-10 19:03:08,200 charges_calc.py:46  ERROR for key: RNT178 the end date of 2018-04-07 00:00:00 occurs before the start date of 2018-08-01 00:00:00
+2019-08-10 19:03:08,200 charges_calc.py:46  ERROR for key: RNT179 the end date of 2018-08-14 00:00:00 occurs before the start date of 2018-08-24 00:00:00
+2019-08-10 19:03:08,200 charges_calc.py:46  ERROR for key: RNT180 the end date of 2016-09-08 00:00:00 occurs before the start date of 2018-12-29 00:00:00
+2019-08-10 19:03:08,201 charges_calc.py:46  ERROR for key: RNT183 the end date of 2018-04-08 00:00:00 occurs before the start date of 2018-05-31 00:00:00
+2019-08-10 19:03:08,201 charges_calc.py:46  ERROR for key: RNT184 the end date of 2016-09-28 00:00:00 occurs before the start date of 2018-03-12 00:00:00
+2019-08-10 19:03:08,201 charges_calc.py:46  ERROR for key: RNT187 the end date of 2016-01-11 00:00:00 occurs before the start date of 2017-10-05 00:00:00
+2019-08-10 19:03:08,202 charges_calc.py:46  ERROR for key: RNT189 the end date of 2016-08-17 00:00:00 occurs before the start date of 2016-11-20 00:00:00
+2019-08-10 19:03:08,202 charges_calc.py:46  ERROR for key: RNT192 the end date of 2017-04-30 00:00:00 occurs before the start date of 2017-05-10 00:00:00
+2019-08-10 19:03:08,202 charges_calc.py:46  ERROR for key: RNT195 the end date of 2016-01-06 00:00:00 occurs before the start date of 2018-05-04 00:00:00
+2019-08-10 19:03:08,203 charges_calc.py:46  ERROR for key: RNT196 the end date of 2016-05-04 00:00:00 occurs before the start date of 2018-10-28 00:00:00
+2019-08-10 19:03:08,203 charges_calc.py:46  ERROR for key: RNT197 the end date of 2017-11-14 00:00:00 occurs before the start date of 2018-03-02 00:00:00
+2019-08-10 19:03:08,204 charges_calc.py:46  ERROR for key: RNT201 the end date of 2016-09-17 00:00:00 occurs before the start date of 2017-10-12 00:00:00
+2019-08-10 19:03:08,204 charges_calc.py:46  ERROR for key: RNT202 the end date of 2016-02-07 00:00:00 occurs before the start date of 2018-11-04 00:00:00
+2019-08-10 19:03:08,204 charges_calc.py:46  ERROR for key: RNT207 the end date of 2016-06-03 00:00:00 occurs before the start date of 2018-03-15 00:00:00
+2019-08-10 19:03:08,204 charges_calc.py:46  ERROR for key: RNT208 the end date of 2016-02-18 00:00:00 occurs before the start date of 2016-02-24 00:00:00
+2019-08-10 19:03:08,205 charges_calc.py:46  ERROR for key: RNT210 the end date of 2017-01-02 00:00:00 occurs before the start date of 2017-07-05 00:00:00
+2019-08-10 19:03:08,205 charges_calc.py:46  ERROR for key: RNT214 the end date of 2016-06-29 00:00:00 occurs before the start date of 2016-12-04 00:00:00
+2019-08-10 19:03:08,205 charges_calc.py:46  ERROR for key: RNT216 the end date of 2016-02-10 00:00:00 occurs before the start date of 2016-04-20 00:00:00
+2019-08-10 19:03:08,206 charges_calc.py:46  ERROR for key: RNT217 the end date of 2016-08-04 00:00:00 occurs before the start date of 2018-08-18 00:00:00
+2019-08-10 19:03:08,206 charges_calc.py:46  ERROR for key: RNT218 the end date of 2016-12-23 00:00:00 occurs before the start date of 2017-12-11 00:00:00
+2019-08-10 19:03:08,206 charges_calc.py:46  ERROR for key: RNT221 the end date of 2016-07-28 00:00:00 occurs before the start date of 2018-10-26 00:00:00
+2019-08-10 19:03:08,207 charges_calc.py:46  ERROR for key: RNT223 the end date of 2016-04-28 00:00:00 occurs before the start date of 2018-02-03 00:00:00
+2019-08-10 19:03:08,207 charges_calc.py:46  ERROR for key: RNT224 the end date of 2016-10-07 00:00:00 occurs before the start date of 2017-11-05 00:00:00
+2019-08-10 19:03:08,207 charges_calc.py:46  ERROR for key: RNT225 the end date of 2016-12-24 00:00:00 occurs before the start date of 2017-05-15 00:00:00
+2019-08-10 19:03:08,207 charges_calc.py:46  ERROR for key: RNT227 the end date of 2016-02-04 00:00:00 occurs before the start date of 2018-05-11 00:00:00
+2019-08-10 19:03:08,208 charges_calc.py:46  ERROR for key: RNT229 the end date of 2016-11-03 00:00:00 occurs before the start date of 2017-02-23 00:00:00
+2019-08-10 19:03:08,209 charges_calc.py:46  ERROR for key: RNT233 the end date of 2016-07-25 00:00:00 occurs before the start date of 2018-04-27 00:00:00
+2019-08-10 19:03:08,209 charges_calc.py:46  ERROR for key: RNT234 the end date of 2018-01-20 00:00:00 occurs before the start date of 2018-04-25 00:00:00
+2019-08-10 19:03:08,210 charges_calc.py:46  ERROR for key: RNT236 the end date of 2016-03-25 00:00:00 occurs before the start date of 2018-12-17 00:00:00
+2019-08-10 19:03:08,210 charges_calc.py:46  ERROR for key: RNT238 the end date of 2017-08-07 00:00:00 occurs before the start date of 2018-01-01 00:00:00
+2019-08-10 19:03:08,210 charges_calc.py:46  ERROR for key: RNT241 the end date of 2017-12-07 00:00:00 occurs before the start date of 2018-07-02 00:00:00
+2019-08-10 19:03:08,211 charges_calc.py:46  ERROR for key: RNT242 the end date of 2016-02-18 00:00:00 occurs before the start date of 2017-01-31 00:00:00
+2019-08-10 19:03:08,211 charges_calc.py:46  ERROR for key: RNT243 the end date of 2016-10-13 00:00:00 occurs before the start date of 2017-12-08 00:00:00
+2019-08-10 19:03:08,211 charges_calc.py:46  ERROR for key: RNT244 the end date of 2016-09-16 00:00:00 occurs before the start date of 2018-06-25 00:00:00
+2019-08-10 19:03:08,211 charges_calc.py:46  ERROR for key: RNT246 the end date of 2017-08-28 00:00:00 occurs before the start date of 2018-02-02 00:00:00
+2019-08-10 19:03:08,212 charges_calc.py:46  ERROR for key: RNT247 the end date of 2017-06-10 00:00:00 occurs before the start date of 2017-07-10 00:00:00
+2019-08-10 19:03:08,213 charges_calc.py:46  ERROR for key: RNT254 the end date of 2016-04-17 00:00:00 occurs before the start date of 2016-10-31 00:00:00
+2019-08-10 19:03:08,213 charges_calc.py:46  ERROR for key: RNT258 the end date of 2017-04-10 00:00:00 occurs before the start date of 2017-10-21 00:00:00
+2019-08-10 19:03:08,213 charges_calc.py:46  ERROR for key: RNT259 the end date of 2016-08-16 00:00:00 occurs before the start date of 2018-02-14 00:00:00
+2019-08-10 19:03:08,214 charges_calc.py:46  ERROR for key: RNT260 the end date of 2017-01-19 00:00:00 occurs before the start date of 2018-01-28 00:00:00
+2019-08-10 19:03:08,214 charges_calc.py:46  ERROR for key: RNT261 the end date of 2017-11-10 00:00:00 occurs before the start date of 2018-03-14 00:00:00
+2019-08-10 19:03:08,214 charges_calc.py:46  ERROR for key: RNT264 the end date of 2016-09-26 00:00:00 occurs before the start date of 2018-09-25 00:00:00
+2019-08-10 19:03:08,214 charges_calc.py:46  ERROR for key: RNT265 the end date of 2017-10-07 00:00:00 occurs before the start date of 2017-10-08 00:00:00
+2019-08-10 19:03:08,215 charges_calc.py:46  ERROR for key: RNT270 the end date of 2016-07-24 00:00:00 occurs before the start date of 2016-08-30 00:00:00
+2019-08-10 19:03:08,215 charges_calc.py:46  ERROR for key: RNT271 the end date of 2016-08-07 00:00:00 occurs before the start date of 2018-11-27 00:00:00
+2019-08-10 19:03:08,215 charges_calc.py:46  ERROR for key: RNT272 the end date of 2017-05-19 00:00:00 occurs before the start date of 2017-07-31 00:00:00
+2019-08-10 19:03:08,215 charges_calc.py:46  ERROR for key: RNT274 the end date of 2017-02-12 00:00:00 occurs before the start date of 2018-12-15 00:00:00
+2019-08-10 19:03:08,216 charges_calc.py:46  ERROR for key: RNT277 the end date of 2016-10-21 00:00:00 occurs before the start date of 2018-08-07 00:00:00
+2019-08-10 19:03:08,216 charges_calc.py:46  ERROR for key: RNT282 the end date of 2017-09-04 00:00:00 occurs before the start date of 2018-02-03 00:00:00
+2019-08-10 19:03:08,216 charges_calc.py:46  ERROR for key: RNT283 the end date of 2018-06-30 00:00:00 occurs before the start date of 2018-07-18 00:00:00
+2019-08-10 19:03:08,217 charges_calc.py:46  ERROR for key: RNT288 the end date of 2018-09-13 00:00:00 occurs before the start date of 2018-12-31 00:00:00
+2019-08-10 19:03:08,217 charges_calc.py:46  ERROR for key: RNT290 the end date of 2016-05-12 00:00:00 occurs before the start date of 2016-05-17 00:00:00
+2019-08-10 19:03:08,217 charges_calc.py:46  ERROR for key: RNT295 the end date of 2016-04-25 00:00:00 occurs before the start date of 2016-11-10 00:00:00
+2019-08-10 19:03:08,217 charges_calc.py:46  ERROR for key: RNT296 the end date of 2016-05-13 00:00:00 occurs before the start date of 2017-12-08 00:00:00
+2019-08-10 19:03:08,218 charges_calc.py:46  ERROR for key: RNT298 the end date of 2018-07-08 00:00:00 occurs before the start date of 2018-12-11 00:00:00
+2019-08-10 19:03:08,218 charges_calc.py:46  ERROR for key: RNT299 the end date of 2016-10-08 00:00:00 occurs before the start date of 2016-10-13 00:00:00
+2019-08-10 19:03:08,218 charges_calc.py:46  ERROR for key: RNT300 the end date of 2016-06-30 00:00:00 occurs before the start date of 2017-01-27 00:00:00
+2019-08-10 19:03:08,218 charges_calc.py:46  ERROR for key: RNT301 the end date of 2016-01-29 00:00:00 occurs before the start date of 2017-08-10 00:00:00
+2019-08-10 19:03:08,219 charges_calc.py:46  ERROR for key: RNT302 the end date of 2016-02-22 00:00:00 occurs before the start date of 2016-12-02 00:00:00
+2019-08-10 19:03:08,219 charges_calc.py:46  ERROR for key: RNT303 the end date of 2017-05-23 00:00:00 occurs before the start date of 2018-07-02 00:00:00
+2019-08-10 19:03:08,219 charges_calc.py:46  ERROR for key: RNT304 the end date of 2017-12-31 00:00:00 occurs before the start date of 2018-06-29 00:00:00
+2019-08-10 19:03:08,219 charges_calc.py:46  ERROR for key: RNT305 the end date of 2016-04-20 00:00:00 occurs before the start date of 2018-01-10 00:00:00
+2019-08-10 19:03:08,220 charges_calc.py:46  ERROR for key: RNT306 the end date of 2017-01-21 00:00:00 occurs before the start date of 2018-08-06 00:00:00
+2019-08-10 19:03:08,220 charges_calc.py:46  ERROR for key: RNT308 the end date of 2016-04-28 00:00:00 occurs before the start date of 2016-07-25 00:00:00
+2019-08-10 19:03:08,220 charges_calc.py:46  ERROR for key: RNT309 the end date of 2017-10-26 00:00:00 occurs before the start date of 2017-12-03 00:00:00
+2019-08-10 19:03:08,220 charges_calc.py:46  ERROR for key: RNT310 the end date of 2016-07-05 00:00:00 occurs before the start date of 2018-11-28 00:00:00
+2019-08-10 19:03:08,220 charges_calc.py:46  ERROR for key: RNT311 the end date of 2017-05-19 00:00:00 occurs before the start date of 2018-12-24 00:00:00
+2019-08-10 19:03:08,221 charges_calc.py:46  ERROR for key: RNT312 the end date of 2017-03-26 00:00:00 occurs before the start date of 2017-06-17 00:00:00
+2019-08-10 19:03:08,221 charges_calc.py:46  ERROR for key: RNT313 the end date of 2017-02-17 00:00:00 occurs before the start date of 2018-01-23 00:00:00
+2019-08-10 19:03:08,221 charges_calc.py:46  ERROR for key: RNT314 the end date of 2017-03-06 00:00:00 occurs before the start date of 2018-07-25 00:00:00
+2019-08-10 19:03:08,221 charges_calc.py:46  ERROR for key: RNT315 the end date of 2016-12-21 00:00:00 occurs before the start date of 2017-09-19 00:00:00
+2019-08-10 19:03:08,221 charges_calc.py:46  ERROR for key: RNT316 the end date of 2016-04-14 00:00:00 occurs before the start date of 2017-01-09 00:00:00
+2019-08-10 19:03:08,222 charges_calc.py:46  ERROR for key: RNT320 the end date of 2017-08-25 00:00:00 occurs before the start date of 2018-10-16 00:00:00
+2019-08-10 19:03:08,222 charges_calc.py:46  ERROR for key: RNT321 the end date of 2017-06-09 00:00:00 occurs before the start date of 2018-04-18 00:00:00
+2019-08-10 19:03:08,222 charges_calc.py:46  ERROR for key: RNT324 the end date of 2016-02-03 00:00:00 occurs before the start date of 2018-12-29 00:00:00
+2019-08-10 19:03:08,222 charges_calc.py:46  ERROR for key: RNT325 the end date of 2016-06-10 00:00:00 occurs before the start date of 2018-05-18 00:00:00
+2019-08-10 19:03:08,223 charges_calc.py:46  ERROR for key: RNT331 the end date of 2017-07-06 00:00:00 occurs before the start date of 2017-07-08 00:00:00
+2019-08-10 19:03:08,223 charges_calc.py:46  ERROR for key: RNT335 the end date of 2017-12-04 00:00:00 occurs before the start date of 2017-12-19 00:00:00
+2019-08-10 19:03:08,223 charges_calc.py:46  ERROR for key: RNT336 the end date of 2016-12-13 00:00:00 occurs before the start date of 2017-09-03 00:00:00
+2019-08-10 19:03:08,223 charges_calc.py:46  ERROR for key: RNT337 the end date of 2017-03-25 00:00:00 occurs before the start date of 2017-12-16 00:00:00
+2019-08-10 19:03:08,224 charges_calc.py:46  ERROR for key: RNT339 the end date of 2016-03-01 00:00:00 occurs before the start date of 2017-07-12 00:00:00
+2019-08-10 19:03:08,224 charges_calc.py:46  ERROR for key: RNT343 the end date of 2017-01-17 00:00:00 occurs before the start date of 2017-02-15 00:00:00
+2019-08-10 19:03:08,224 charges_calc.py:46  ERROR for key: RNT345 the end date of 2016-10-22 00:00:00 occurs before the start date of 2017-05-15 00:00:00
+2019-08-10 19:03:08,225 charges_calc.py:46  ERROR for key: RNT346 the end date of 2017-03-21 00:00:00 occurs before the start date of 2018-09-17 00:00:00
+2019-08-10 19:03:08,225 charges_calc.py:46  ERROR for key: RNT347 the end date of 2017-09-21 00:00:00 occurs before the start date of 2018-04-17 00:00:00
+2019-08-10 19:03:08,225 charges_calc.py:46  ERROR for key: RNT352 the end date of 2017-01-15 00:00:00 occurs before the start date of 2018-07-16 00:00:00
+2019-08-10 19:03:08,225 charges_calc.py:46  ERROR for key: RNT353 the end date of 2016-12-13 00:00:00 occurs before the start date of 2017-10-04 00:00:00
+2019-08-10 19:03:08,226 charges_calc.py:46  ERROR for key: RNT355 the end date of 2018-07-30 00:00:00 occurs before the start date of 2018-09-13 00:00:00
+2019-08-10 19:03:08,226 charges_calc.py:46  ERROR for key: RNT356 the end date of 2017-08-21 00:00:00 occurs before the start date of 2018-01-16 00:00:00
+2019-08-10 19:03:08,226 charges_calc.py:46  ERROR for key: RNT361 the end date of 2016-03-05 00:00:00 occurs before the start date of 2018-01-29 00:00:00
+2019-08-10 19:03:08,227 charges_calc.py:46  ERROR for key: RNT363 the end date of 2018-05-21 00:00:00 occurs before the start date of 2018-06-12 00:00:00
+2019-08-10 19:03:08,227 charges_calc.py:46  ERROR for key: RNT364 the end date of 2018-05-14 00:00:00 occurs before the start date of 2018-06-24 00:00:00
+2019-08-10 19:03:08,227 charges_calc.py:46  ERROR for key: RNT366 the end date of 2017-10-08 00:00:00 occurs before the start date of 2018-07-24 00:00:00
+2019-08-10 19:03:08,227 charges_calc.py:46  ERROR for key: RNT371 the end date of 2017-06-10 00:00:00 occurs before the start date of 2018-11-20 00:00:00
+2019-08-10 19:03:08,228 charges_calc.py:46  ERROR for key: RNT372 the end date of 2016-09-17 00:00:00 occurs before the start date of 2017-09-14 00:00:00
+2019-08-10 19:03:08,228 charges_calc.py:46  ERROR for key: RNT374 the end date of 2018-01-15 00:00:00 occurs before the start date of 2018-06-28 00:00:00
+2019-08-10 19:03:08,228 charges_calc.py:46  ERROR for key: RNT376 the end date of 2017-04-20 00:00:00 occurs before the start date of 2017-11-20 00:00:00
+2019-08-10 19:03:08,228 charges_calc.py:46  ERROR for key: RNT379 the end date of 2016-11-21 00:00:00 occurs before the start date of 2018-09-11 00:00:00
+2019-08-10 19:03:08,229 charges_calc.py:46  ERROR for key: RNT381 the end date of 2016-12-26 00:00:00 occurs before the start date of 2018-05-28 00:00:00
+2019-08-10 19:03:08,229 charges_calc.py:46  ERROR for key: RNT383 the end date of 2017-05-06 00:00:00 occurs before the start date of 2017-05-28 00:00:00
+2019-08-10 19:03:08,230 charges_calc.py:46  ERROR for key: RNT384 the end date of 2017-05-29 00:00:00 occurs before the start date of 2017-11-28 00:00:00
+2019-08-10 19:03:08,230 charges_calc.py:46  ERROR for key: RNT386 the end date of 2016-06-09 00:00:00 occurs before the start date of 2017-01-05 00:00:00
+2019-08-10 19:03:08,230 charges_calc.py:46  ERROR for key: RNT387 the end date of 2016-07-18 00:00:00 occurs before the start date of 2018-12-28 00:00:00
+2019-08-10 19:03:08,230 charges_calc.py:46  ERROR for key: RNT388 the end date of 2016-12-11 00:00:00 occurs before the start date of 2018-07-21 00:00:00
+2019-08-10 19:03:08,231 charges_calc.py:46  ERROR for key: RNT391 the end date of 2017-08-06 00:00:00 occurs before the start date of 2017-08-18 00:00:00
+2019-08-10 19:03:08,231 charges_calc.py:46  ERROR for key: RNT392 the end date of 2018-04-04 00:00:00 occurs before the start date of 2018-07-17 00:00:00
+2019-08-10 19:03:08,231 charges_calc.py:46  ERROR for key: RNT394 the end date of 2017-01-10 00:00:00 occurs before the start date of 2018-02-15 00:00:00
+2019-08-10 19:03:08,231 charges_calc.py:46  ERROR for key: RNT395 the end date of 2017-12-29 00:00:00 occurs before the start date of 2018-03-31 00:00:00
+2019-08-10 19:03:08,232 charges_calc.py:46  ERROR for key: RNT397 the end date of 2016-05-11 00:00:00 occurs before the start date of 2017-06-22 00:00:00
+2019-08-10 19:03:08,232 charges_calc.py:46  ERROR for key: RNT400 the end date of 2017-03-06 00:00:00 occurs before the start date of 2018-10-12 00:00:00
+2019-08-10 19:03:08,232 charges_calc.py:46  ERROR for key: RNT405 the end date of 2017-04-17 00:00:00 occurs before the start date of 2018-10-09 00:00:00
+2019-08-10 19:03:08,232 charges_calc.py:46  ERROR for key: RNT408 the end date of 2017-01-02 00:00:00 occurs before the start date of 2017-02-01 00:00:00
+2019-08-10 19:03:08,233 charges_calc.py:46  ERROR for key: RNT409 the end date of 2016-11-18 00:00:00 occurs before the start date of 2017-08-16 00:00:00
+2019-08-10 19:03:08,233 charges_calc.py:46  ERROR for key: RNT412 the end date of 2017-09-16 00:00:00 occurs before the start date of 2018-06-30 00:00:00
+2019-08-10 19:03:08,233 charges_calc.py:46  ERROR for key: RNT413 the end date of 2017-10-01 00:00:00 occurs before the start date of 2018-09-22 00:00:00
+2019-08-10 19:03:08,233 charges_calc.py:46  ERROR for key: RNT414 the end date of 2016-11-04 00:00:00 occurs before the start date of 2017-08-05 00:00:00
+2019-08-10 19:03:08,234 charges_calc.py:46  ERROR for key: RNT416 the end date of 2017-02-18 00:00:00 occurs before the start date of 2017-10-26 00:00:00
+2019-08-10 19:03:08,234 charges_calc.py:46  ERROR for key: RNT421 the end date of 2016-04-14 00:00:00 occurs before the start date of 2017-12-06 00:00:00
+2019-08-10 19:03:08,234 charges_calc.py:46  ERROR for key: RNT422 the end date of 2016-07-18 00:00:00 occurs before the start date of 2016-12-24 00:00:00
+2019-08-10 19:03:08,234 charges_calc.py:46  ERROR for key: RNT423 the end date of 2016-01-25 00:00:00 occurs before the start date of 2016-10-17 00:00:00
+2019-08-10 19:03:08,234 charges_calc.py:46  ERROR for key: RNT424 the end date of 2016-04-27 00:00:00 occurs before the start date of 2018-09-27 00:00:00
+2019-08-10 19:03:08,235 charges_calc.py:46  ERROR for key: RNT427 the end date of 2017-01-09 00:00:00 occurs before the start date of 2018-05-05 00:00:00
+2019-08-10 19:03:08,235 charges_calc.py:46  ERROR for key: RNT428 the end date of 2016-06-11 00:00:00 occurs before the start date of 2016-11-11 00:00:00
+2019-08-10 19:03:08,235 charges_calc.py:46  ERROR for key: RNT430 the end date of 2018-04-11 00:00:00 occurs before the start date of 2018-05-03 00:00:00
+2019-08-10 19:03:08,236 charges_calc.py:46  ERROR for key: RNT435 the end date of 2016-01-24 00:00:00 occurs before the start date of 2016-11-22 00:00:00
+2019-08-10 19:03:08,236 charges_calc.py:46  ERROR for key: RNT436 the end date of 2017-05-07 00:00:00 occurs before the start date of 2018-04-17 00:00:00
+2019-08-10 19:03:08,236 charges_calc.py:46  ERROR for key: RNT440 the end date of 2016-12-03 00:00:00 occurs before the start date of 2018-11-24 00:00:00
+2019-08-10 19:03:08,236 charges_calc.py:46  ERROR for key: RNT443 the end date of 2016-02-18 00:00:00 occurs before the start date of 2018-08-07 00:00:00
+2019-08-10 19:03:08,237 charges_calc.py:46  ERROR for key: RNT445 the end date of 2017-10-24 00:00:00 occurs before the start date of 2018-02-22 00:00:00
+2019-08-10 19:03:08,237 charges_calc.py:46  ERROR for key: RNT446 the end date of 2016-06-26 00:00:00 occurs before the start date of 2018-06-30 00:00:00
+2019-08-10 19:03:08,237 charges_calc.py:46  ERROR for key: RNT447 the end date of 2017-07-07 00:00:00 occurs before the start date of 2017-11-14 00:00:00
+2019-08-10 19:03:08,237 charges_calc.py:46  ERROR for key: RNT449 the end date of 2017-07-30 00:00:00 occurs before the start date of 2018-10-17 00:00:00
+2019-08-10 19:03:08,238 charges_calc.py:46  ERROR for key: RNT451 the end date of 2016-10-16 00:00:00 occurs before the start date of 2017-03-23 00:00:00
+2019-08-10 19:03:08,238 charges_calc.py:46  ERROR for key: RNT453 the end date of 2016-07-23 00:00:00 occurs before the start date of 2018-10-10 00:00:00
+2019-08-10 19:03:08,238 charges_calc.py:46  ERROR for key: RNT454 the end date of 2018-08-25 00:00:00 occurs before the start date of 2018-09-28 00:00:00
+2019-08-10 19:03:08,238 charges_calc.py:46  ERROR for key: RNT457 the end date of 2016-11-25 00:00:00 occurs before the start date of 2018-08-06 00:00:00
+2019-08-10 19:03:08,239 charges_calc.py:46  ERROR for key: RNT461 the end date of 2016-06-06 00:00:00 occurs before the start date of 2018-07-21 00:00:00
+2019-08-10 19:03:08,239 charges_calc.py:46  ERROR for key: RNT462 the end date of 2018-05-02 00:00:00 occurs before the start date of 2018-06-09 00:00:00
+2019-08-10 19:03:08,239 charges_calc.py:46  ERROR for key: RNT463 the end date of 2018-03-14 00:00:00 occurs before the start date of 2018-11-18 00:00:00
+2019-08-10 19:03:08,239 charges_calc.py:46  ERROR for key: RNT465 the end date of 2017-03-07 00:00:00 occurs before the start date of 2018-04-28 00:00:00
+2019-08-10 19:03:08,240 charges_calc.py:46  ERROR for key: RNT467 the end date of 2016-05-23 00:00:00 occurs before the start date of 2018-05-18 00:00:00
+2019-08-10 19:03:08,240 charges_calc.py:46  ERROR for key: RNT472 the end date of 2017-03-05 00:00:00 occurs before the start date of 2017-04-25 00:00:00
+2019-08-10 19:03:08,240 charges_calc.py:46  ERROR for key: RNT476 the end date of 2016-11-26 00:00:00 occurs before the start date of 2018-07-28 00:00:00
+2019-08-10 19:03:08,240 charges_calc.py:46  ERROR for key: RNT480 the end date of 2017-04-08 00:00:00 occurs before the start date of 2018-08-02 00:00:00
+2019-08-10 19:03:08,241 charges_calc.py:46  ERROR for key: RNT485 the end date of 2017-01-29 00:00:00 occurs before the start date of 2018-03-26 00:00:00
+2019-08-10 19:03:08,241 charges_calc.py:46  ERROR for key: RNT487 the end date of 2016-04-28 00:00:00 occurs before the start date of 2017-03-12 00:00:00
+2019-08-10 19:03:08,241 charges_calc.py:46  ERROR for key: RNT489 the end date of 2018-05-09 00:00:00 occurs before the start date of 2018-08-21 00:00:00
+2019-08-10 19:03:08,242 charges_calc.py:46  ERROR for key: RNT490 the end date of 2017-08-17 00:00:00 occurs before the start date of 2017-09-23 00:00:00
+2019-08-10 19:03:08,242 charges_calc.py:46  ERROR for key: RNT491 the end date of 2017-02-03 00:00:00 occurs before the start date of 2018-06-02 00:00:00
+2019-08-10 19:03:08,242 charges_calc.py:46  ERROR for key: RNT493 the end date of 2016-10-10 00:00:00 occurs before the start date of 2018-08-23 00:00:00
+2019-08-10 19:03:08,242 charges_calc.py:46  ERROR for key: RNT495 the end date of 2016-07-31 00:00:00 occurs before the start date of 2017-06-22 00:00:00
+2019-08-10 19:03:08,242 charges_calc.py:46  ERROR for key: RNT496 the end date of 2016-12-05 00:00:00 occurs before the start date of 2017-11-28 00:00:00
+2019-08-10 19:03:08,243 charges_calc.py:46  ERROR for key: RNT497 the end date of 2017-04-20 00:00:00 occurs before the start date of 2018-06-17 00:00:00
+2019-08-10 19:03:08,243 charges_calc.py:46  ERROR for key: RNT501 the end date of 2016-07-04 00:00:00 occurs before the start date of 2016-10-30 00:00:00
+2019-08-10 19:03:08,243 charges_calc.py:46  ERROR for key: RNT503 the end date of 2016-11-22 00:00:00 occurs before the start date of 2017-03-15 00:00:00
+2019-08-10 19:03:08,244 charges_calc.py:46  ERROR for key: RNT507 the end date of 2017-06-01 00:00:00 occurs before the start date of 2018-06-20 00:00:00
+2019-08-10 19:03:08,244 charges_calc.py:46  ERROR for key: RNT508 the end date of 2016-03-21 00:00:00 occurs before the start date of 2017-05-31 00:00:00
+2019-08-10 19:03:08,244 charges_calc.py:46  ERROR for key: RNT509 the end date of 2018-03-17 00:00:00 occurs before the start date of 2018-12-18 00:00:00
+2019-08-10 19:03:08,244 charges_calc.py:46  ERROR for key: RNT512 the end date of 2017-11-03 00:00:00 occurs before the start date of 2017-11-15 00:00:00
+2019-08-10 19:03:08,244 charges_calc.py:46  ERROR for key: RNT513 the end date of 2018-07-06 00:00:00 occurs before the start date of 2018-12-22 00:00:00
+2019-08-10 19:03:08,245 charges_calc.py:46  ERROR for key: RNT514 the end date of 2017-09-25 00:00:00 occurs before the start date of 2018-08-18 00:00:00
+2019-08-10 19:03:08,245 charges_calc.py:46  ERROR for key: RNT515 the end date of 2017-09-18 00:00:00 occurs before the start date of 2018-04-22 00:00:00
+2019-08-10 19:03:08,245 charges_calc.py:46  ERROR for key: RNT516 the end date of 2017-04-15 00:00:00 occurs before the start date of 2018-03-15 00:00:00
+2019-08-10 19:03:08,245 charges_calc.py:46  ERROR for key: RNT517 the end date of 2016-12-20 00:00:00 occurs before the start date of 2018-08-17 00:00:00
+2019-08-10 19:03:08,245 charges_calc.py:46  ERROR for key: RNT518 the end date of 2016-09-29 00:00:00 occurs before the start date of 2018-06-10 00:00:00
+2019-08-10 19:03:08,246 charges_calc.py:46  ERROR for key: RNT520 the end date of 2017-04-10 00:00:00 occurs before the start date of 2017-08-15 00:00:00
+2019-08-10 19:03:08,246 charges_calc.py:46  ERROR for key: RNT522 the end date of 2017-11-22 00:00:00 occurs before the start date of 2018-05-10 00:00:00
+2019-08-10 19:03:08,246 charges_calc.py:46  ERROR for key: RNT524 the end date of 2018-03-22 00:00:00 occurs before the start date of 2018-07-29 00:00:00
+2019-08-10 19:03:08,246 charges_calc.py:46  ERROR for key: RNT525 the end date of 2017-10-26 00:00:00 occurs before the start date of 2018-02-18 00:00:00
+2019-08-10 19:03:08,247 charges_calc.py:46  ERROR for key: RNT528 the end date of 2016-02-06 00:00:00 occurs before the start date of 2018-05-30 00:00:00
+2019-08-10 19:03:08,247 charges_calc.py:46  ERROR for key: RNT532 the end date of 2017-10-30 00:00:00 occurs before the start date of 2018-12-07 00:00:00
+2019-08-10 19:03:08,247 charges_calc.py:46  ERROR for key: RNT533 the end date of 2016-12-28 00:00:00 occurs before the start date of 2018-03-29 00:00:00
+2019-08-10 19:03:08,248 charges_calc.py:46  ERROR for key: RNT535 the end date of 2016-11-22 00:00:00 occurs before the start date of 2018-06-05 00:00:00
+2019-08-10 19:03:08,248 charges_calc.py:46  ERROR for key: RNT536 the end date of 2018-07-03 00:00:00 occurs before the start date of 2018-12-29 00:00:00
+2019-08-10 19:03:08,248 charges_calc.py:46  ERROR for key: RNT537 the end date of 2016-08-29 00:00:00 occurs before the start date of 2017-06-30 00:00:00
+2019-08-10 19:03:08,249 charges_calc.py:46  ERROR for key: RNT538 the end date of 2016-02-22 00:00:00 occurs before the start date of 2016-11-24 00:00:00
+2019-08-10 19:03:08,249 charges_calc.py:46  ERROR for key: RNT539 the end date of 2016-07-03 00:00:00 occurs before the start date of 2017-07-28 00:00:00
+2019-08-10 19:03:08,249 charges_calc.py:46  ERROR for key: RNT541 the end date of 2016-05-05 00:00:00 occurs before the start date of 2018-08-12 00:00:00
+2019-08-10 19:03:08,250 charges_calc.py:46  ERROR for key: RNT544 the end date of 2017-06-19 00:00:00 occurs before the start date of 2018-01-09 00:00:00
+2019-08-10 19:03:08,250 charges_calc.py:46  ERROR for key: RNT545 the end date of 2017-09-27 00:00:00 occurs before the start date of 2018-11-08 00:00:00
+2019-08-10 19:03:08,250 charges_calc.py:46  ERROR for key: RNT546 the end date of 2016-06-16 00:00:00 occurs before the start date of 2016-11-10 00:00:00
+2019-08-10 19:03:08,250 charges_calc.py:46  ERROR for key: RNT548 the end date of 2017-10-20 00:00:00 occurs before the start date of 2018-10-27 00:00:00
+2019-08-10 19:03:08,251 charges_calc.py:46  ERROR for key: RNT550 the end date of 2016-05-30 00:00:00 occurs before the start date of 2017-09-05 00:00:00
+2019-08-10 19:03:08,251 charges_calc.py:46  ERROR for key: RNT551 the end date of 2017-08-08 00:00:00 occurs before the start date of 2018-06-24 00:00:00
+2019-08-10 19:03:08,251 charges_calc.py:46  ERROR for key: RNT555 the end date of 2017-04-15 00:00:00 occurs before the start date of 2017-06-15 00:00:00
+2019-08-10 19:03:08,252 charges_calc.py:46  ERROR for key: RNT558 the end date of 2018-06-10 00:00:00 occurs before the start date of 2018-09-24 00:00:00
+2019-08-10 19:03:08,252 charges_calc.py:46  ERROR for key: RNT561 the end date of 2016-05-15 00:00:00 occurs before the start date of 2018-07-14 00:00:00
+2019-08-10 19:03:08,252 charges_calc.py:46  ERROR for key: RNT562 the end date of 2018-08-14 00:00:00 occurs before the start date of 2018-11-18 00:00:00
+2019-08-10 19:03:08,253 charges_calc.py:46  ERROR for key: RNT566 the end date of 2016-02-27 00:00:00 occurs before the start date of 2018-11-25 00:00:00
+2019-08-10 19:03:08,253 charges_calc.py:46  ERROR for key: RNT569 the end date of 2018-05-30 00:00:00 occurs before the start date of 2018-10-01 00:00:00
+2019-08-10 19:03:08,253 charges_calc.py:46  ERROR for key: RNT570 the end date of 2017-07-13 00:00:00 occurs before the start date of 2017-11-21 00:00:00
+2019-08-10 19:03:08,254 charges_calc.py:46  ERROR for key: RNT572 the end date of 2016-08-07 00:00:00 occurs before the start date of 2018-10-13 00:00:00
+2019-08-10 19:03:08,254 charges_calc.py:46  ERROR for key: RNT575 the end date of 2017-01-22 00:00:00 occurs before the start date of 2017-08-01 00:00:00
+2019-08-10 19:03:08,254 charges_calc.py:46  ERROR for key: RNT580 the end date of 2017-04-24 00:00:00 occurs before the start date of 2018-07-02 00:00:00
+2019-08-10 19:03:08,255 charges_calc.py:46  ERROR for key: RNT582 the end date of 2017-04-28 00:00:00 occurs before the start date of 2017-05-02 00:00:00
+2019-08-10 19:03:08,255 charges_calc.py:46  ERROR for key: RNT585 the end date of 2016-01-15 00:00:00 occurs before the start date of 2018-02-09 00:00:00
+2019-08-10 19:03:08,255 charges_calc.py:46  ERROR for key: RNT586 the end date of 2016-07-05 00:00:00 occurs before the start date of 2017-01-27 00:00:00
+2019-08-10 19:03:08,256 charges_calc.py:46  ERROR for key: RNT587 the end date of 2017-03-20 00:00:00 occurs before the start date of 2018-05-01 00:00:00
+2019-08-10 19:03:08,256 charges_calc.py:46  ERROR for key: RNT590 the end date of 2017-06-26 00:00:00 occurs before the start date of 2018-12-23 00:00:00
+2019-08-10 19:03:08,256 charges_calc.py:46  ERROR for key: RNT591 the end date of 2018-03-21 00:00:00 occurs before the start date of 2018-06-02 00:00:00
+2019-08-10 19:03:08,257 charges_calc.py:46  ERROR for key: RNT592 the end date of 2016-05-04 00:00:00 occurs before the start date of 2016-08-26 00:00:00
+2019-08-10 19:03:08,257 charges_calc.py:46  ERROR for key: RNT593 the end date of 2016-09-23 00:00:00 occurs before the start date of 2016-11-26 00:00:00
+2019-08-10 19:03:08,257 charges_calc.py:46  ERROR for key: RNT595 the end date of 2016-01-02 00:00:00 occurs before the start date of 2017-02-23 00:00:00
+2019-08-10 19:03:08,258 charges_calc.py:46  ERROR for key: RNT597 the end date of 2017-02-21 00:00:00 occurs before the start date of 2018-10-29 00:00:00
+2019-08-10 19:03:08,258 charges_calc.py:46  ERROR for key: RNT598 the end date of 2016-08-29 00:00:00 occurs before the start date of 2018-03-02 00:00:00
+2019-08-10 19:03:08,258 charges_calc.py:46  ERROR for key: RNT599 the end date of 2016-02-12 00:00:00 occurs before the start date of 2018-06-17 00:00:00
+2019-08-10 19:03:08,258 charges_calc.py:46  ERROR for key: RNT601 the end date of 2017-01-12 00:00:00 occurs before the start date of 2017-06-12 00:00:00
+2019-08-10 19:03:08,259 charges_calc.py:46  ERROR for key: RNT602 the end date of 2016-04-12 00:00:00 occurs before the start date of 2016-10-10 00:00:00
+2019-08-10 19:03:08,259 charges_calc.py:46  ERROR for key: RNT603 the end date of 2016-02-07 00:00:00 occurs before the start date of 2017-09-17 00:00:00
+2019-08-10 19:03:08,259 charges_calc.py:46  ERROR for key: RNT604 the end date of 2016-07-06 00:00:00 occurs before the start date of 2017-07-14 00:00:00
+2019-08-10 19:03:08,259 charges_calc.py:46  ERROR for key: RNT605 the end date of 2016-09-06 00:00:00 occurs before the start date of 2017-11-04 00:00:00
+2019-08-10 19:03:08,259 charges_calc.py:46  ERROR for key: RNT606 the end date of 2016-05-31 00:00:00 occurs before the start date of 2018-10-21 00:00:00
+2019-08-10 19:03:08,260 charges_calc.py:46  ERROR for key: RNT611 the end date of 2018-01-30 00:00:00 occurs before the start date of 2018-03-05 00:00:00
+2019-08-10 19:03:08,260 charges_calc.py:46  ERROR for key: RNT613 the end date of 2018-01-17 00:00:00 occurs before the start date of 2018-10-04 00:00:00
+2019-08-10 19:03:08,260 charges_calc.py:46  ERROR for key: RNT615 the end date of 2017-06-29 00:00:00 occurs before the start date of 2017-09-30 00:00:00
+2019-08-10 19:03:08,261 charges_calc.py:46  ERROR for key: RNT622 the end date of 2016-04-18 00:00:00 occurs before the start date of 2016-08-22 00:00:00
+2019-08-10 19:03:08,261 charges_calc.py:46  ERROR for key: RNT626 the end date of 2017-08-01 00:00:00 occurs before the start date of 2018-07-22 00:00:00
+2019-08-10 19:03:08,261 charges_calc.py:46  ERROR for key: RNT630 the end date of 2016-09-15 00:00:00 occurs before the start date of 2016-11-27 00:00:00
+2019-08-10 19:03:08,262 charges_calc.py:46  ERROR for key: RNT632 the end date of 2016-01-07 00:00:00 occurs before the start date of 2016-01-13 00:00:00
+2019-08-10 19:03:08,262 charges_calc.py:46  ERROR for key: RNT633 the end date of 2018-02-01 00:00:00 occurs before the start date of 2018-07-09 00:00:00
+2019-08-10 19:03:08,263 charges_calc.py:46  ERROR for key: RNT634 the end date of 2018-08-07 00:00:00 occurs before the start date of 2018-09-16 00:00:00
+2019-08-10 19:03:08,263 charges_calc.py:46  ERROR for key: RNT636 the end date of 2017-09-15 00:00:00 occurs before the start date of 2018-11-02 00:00:00
+2019-08-10 19:03:08,263 charges_calc.py:46  ERROR for key: RNT638 the end date of 2016-03-20 00:00:00 occurs before the start date of 2017-02-24 00:00:00
+2019-08-10 19:03:08,263 charges_calc.py:46  ERROR for key: RNT639 the end date of 2017-09-10 00:00:00 occurs before the start date of 2018-12-09 00:00:00
+2019-08-10 19:03:08,264 charges_calc.py:46  ERROR for key: RNT640 the end date of 2016-04-29 00:00:00 occurs before the start date of 2017-09-09 00:00:00
+2019-08-10 19:03:08,264 charges_calc.py:46  ERROR for key: RNT642 the end date of 2016-07-03 00:00:00 occurs before the start date of 2016-07-25 00:00:00
+2019-08-10 19:03:08,264 charges_calc.py:46  ERROR for key: RNT643 the end date of 2016-02-13 00:00:00 occurs before the start date of 2018-10-20 00:00:00
+2019-08-10 19:03:08,264 charges_calc.py:46  ERROR for key: RNT647 the end date of 2016-09-08 00:00:00 occurs before the start date of 2017-04-05 00:00:00
+2019-08-10 19:03:08,265 charges_calc.py:46  ERROR for key: RNT648 the end date of 2017-06-26 00:00:00 occurs before the start date of 2018-07-19 00:00:00
+2019-08-10 19:03:08,265 charges_calc.py:46  ERROR for key: RNT649 the end date of 2017-11-16 00:00:00 occurs before the start date of 2018-07-17 00:00:00
+2019-08-10 19:03:08,265 charges_calc.py:46  ERROR for key: RNT651 the end date of 2016-01-27 00:00:00 occurs before the start date of 2018-09-13 00:00:00
+2019-08-10 19:03:08,265 charges_calc.py:46  ERROR for key: RNT653 the end date of 2017-03-25 00:00:00 occurs before the start date of 2017-08-22 00:00:00
+2019-08-10 19:03:08,266 charges_calc.py:46  ERROR for key: RNT656 the end date of 2016-07-04 00:00:00 occurs before the start date of 2018-10-05 00:00:00
+2019-08-10 19:03:08,266 charges_calc.py:46  ERROR for key: RNT659 the end date of 2017-09-06 00:00:00 occurs before the start date of 2018-09-14 00:00:00
+2019-08-10 19:03:08,266 charges_calc.py:46  ERROR for key: RNT662 the end date of 2018-02-13 00:00:00 occurs before the start date of 2018-04-27 00:00:00
+2019-08-10 19:03:08,266 charges_calc.py:46  ERROR for key: RNT663 the end date of 2017-01-20 00:00:00 occurs before the start date of 2018-01-03 00:00:00
+2019-08-10 19:03:08,267 charges_calc.py:46  ERROR for key: RNT664 the end date of 2016-08-20 00:00:00 occurs before the start date of 2018-07-02 00:00:00
+2019-08-10 19:03:08,267 charges_calc.py:46  ERROR for key: RNT665 the end date of 2017-02-04 00:00:00 occurs before the start date of 2017-09-08 00:00:00
+2019-08-10 19:03:08,267 charges_calc.py:46  ERROR for key: RNT667 the end date of 2016-03-31 00:00:00 occurs before the start date of 2018-01-04 00:00:00
+2019-08-10 19:03:08,267 charges_calc.py:46  ERROR for key: RNT668 the end date of 2016-01-01 00:00:00 occurs before the start date of 2016-02-17 00:00:00
+2019-08-10 19:03:08,268 charges_calc.py:46  ERROR for key: RNT670 the end date of 2016-01-30 00:00:00 occurs before the start date of 2016-11-27 00:00:00
+2019-08-10 19:03:08,268 charges_calc.py:46  ERROR for key: RNT671 the end date of 2017-06-16 00:00:00 occurs before the start date of 2018-03-05 00:00:00
+2019-08-10 19:03:08,268 charges_calc.py:46  ERROR for key: RNT674 the end date of 2017-04-24 00:00:00 occurs before the start date of 2018-07-24 00:00:00
+2019-08-10 19:03:08,268 charges_calc.py:46  ERROR for key: RNT677 the end date of 2017-08-17 00:00:00 occurs before the start date of 2017-09-03 00:00:00
+2019-08-10 19:03:08,269 charges_calc.py:46  ERROR for key: RNT678 the end date of 2016-11-13 00:00:00 occurs before the start date of 2016-11-27 00:00:00
+2019-08-10 19:03:08,269 charges_calc.py:46  ERROR for key: RNT679 the end date of 2016-02-03 00:00:00 occurs before the start date of 2017-11-21 00:00:00
+2019-08-10 19:03:08,269 charges_calc.py:46  ERROR for key: RNT682 the end date of 2018-10-19 00:00:00 occurs before the start date of 2018-12-31 00:00:00
+2019-08-10 19:03:08,269 charges_calc.py:46  ERROR for key: RNT684 the end date of 2016-04-03 00:00:00 occurs before the start date of 2017-06-26 00:00:00
+2019-08-10 19:03:08,270 charges_calc.py:46  ERROR for key: RNT688 the end date of 2018-06-02 00:00:00 occurs before the start date of 2018-07-06 00:00:00
+2019-08-10 19:03:08,270 charges_calc.py:46  ERROR for key: RNT691 the end date of 2016-09-10 00:00:00 occurs before the start date of 2018-09-19 00:00:00
+2019-08-10 19:03:08,270 charges_calc.py:46  ERROR for key: RNT692 the end date of 2017-07-29 00:00:00 occurs before the start date of 2017-08-27 00:00:00
+2019-08-10 19:03:08,270 charges_calc.py:46  ERROR for key: RNT694 the end date of 2017-09-15 00:00:00 occurs before the start date of 2018-12-09 00:00:00
+2019-08-10 19:03:08,270 charges_calc.py:46  ERROR for key: RNT695 the end date of 2016-03-05 00:00:00 occurs before the start date of 2016-07-14 00:00:00
+2019-08-10 19:03:08,271 charges_calc.py:46  ERROR for key: RNT698 the end date of 2016-11-22 00:00:00 occurs before the start date of 2018-04-02 00:00:00
+2019-08-10 19:03:08,271 charges_calc.py:46  ERROR for key: RNT702 the end date of 2016-12-08 00:00:00 occurs before the start date of 2017-09-26 00:00:00
+2019-08-10 19:03:08,271 charges_calc.py:46  ERROR for key: RNT703 the end date of 2018-03-01 00:00:00 occurs before the start date of 2018-06-15 00:00:00
+2019-08-10 19:03:08,271 charges_calc.py:46  ERROR for key: RNT704 the end date of 2016-04-02 00:00:00 occurs before the start date of 2017-12-23 00:00:00
+2019-08-10 19:03:08,272 charges_calc.py:46  ERROR for key: RNT706 the end date of 2017-05-17 00:00:00 occurs before the start date of 2017-09-08 00:00:00
+2019-08-10 19:03:08,272 charges_calc.py:46  ERROR for key: RNT709 the end date of 2017-01-15 00:00:00 occurs before the start date of 2017-05-18 00:00:00
+2019-08-10 19:03:08,272 charges_calc.py:46  ERROR for key: RNT711 the end date of 2017-04-25 00:00:00 occurs before the start date of 2018-04-25 00:00:00
+2019-08-10 19:03:08,272 charges_calc.py:46  ERROR for key: RNT712 the end date of 2016-08-08 00:00:00 occurs before the start date of 2017-10-09 00:00:00
+2019-08-10 19:03:08,273 charges_calc.py:46  ERROR for key: RNT715 the end date of 2016-06-23 00:00:00 occurs before the start date of 2017-08-23 00:00:00
+2019-08-10 19:03:08,273 charges_calc.py:46  ERROR for key: RNT717 the end date of 2016-01-12 00:00:00 occurs before the start date of 2018-09-25 00:00:00
+2019-08-10 19:03:08,273 charges_calc.py:46  ERROR for key: RNT719 the end date of 2016-04-05 00:00:00 occurs before the start date of 2016-09-22 00:00:00
+2019-08-10 19:03:08,273 charges_calc.py:46  ERROR for key: RNT721 the end date of 2018-02-13 00:00:00 occurs before the start date of 2018-09-02 00:00:00
+2019-08-10 19:03:08,274 charges_calc.py:46  ERROR for key: RNT722 the end date of 2016-03-08 00:00:00 occurs before the start date of 2017-10-06 00:00:00
+2019-08-10 19:03:08,274 charges_calc.py:46  ERROR for key: RNT725 the end date of 2016-11-17 00:00:00 occurs before the start date of 2017-02-19 00:00:00
+2019-08-10 19:03:08,274 charges_calc.py:46  ERROR for key: RNT726 the end date of 2016-05-06 00:00:00 occurs before the start date of 2017-11-24 00:00:00
+2019-08-10 19:03:08,274 charges_calc.py:46  ERROR for key: RNT729 the end date of 2017-04-23 00:00:00 occurs before the start date of 2017-08-18 00:00:00
+2019-08-10 19:03:08,275 charges_calc.py:46  ERROR for key: RNT731 the end date of 2017-09-02 00:00:00 occurs before the start date of 2017-11-17 00:00:00
+2019-08-10 19:03:08,275 charges_calc.py:46  ERROR for key: RNT732 the end date of 2016-11-24 00:00:00 occurs before the start date of 2017-08-18 00:00:00
+2019-08-10 19:03:08,275 charges_calc.py:46  ERROR for key: RNT733 the end date of 2016-11-05 00:00:00 occurs before the start date of 2017-05-26 00:00:00
+2019-08-10 19:03:08,275 charges_calc.py:46  ERROR for key: RNT740 the end date of 2017-10-13 00:00:00 occurs before the start date of 2018-02-16 00:00:00
+2019-08-10 19:03:08,276 charges_calc.py:46  ERROR for key: RNT745 the end date of 2017-10-18 00:00:00 occurs before the start date of 2018-09-02 00:00:00
+2019-08-10 19:03:08,276 charges_calc.py:46  ERROR for key: RNT746 the end date of 2017-08-08 00:00:00 occurs before the start date of 2017-10-16 00:00:00
+2019-08-10 19:03:08,276 charges_calc.py:46  ERROR for key: RNT748 the end date of 2017-03-30 00:00:00 occurs before the start date of 2017-09-14 00:00:00
+2019-08-10 19:03:08,277 charges_calc.py:46  ERROR for key: RNT750 the end date of 2016-08-22 00:00:00 occurs before the start date of 2017-01-06 00:00:00
+2019-08-10 19:03:08,277 charges_calc.py:46  ERROR for key: RNT751 the end date of 2017-05-20 00:00:00 occurs before the start date of 2017-12-09 00:00:00
+2019-08-10 19:03:08,277 charges_calc.py:46  ERROR for key: RNT753 the end date of 2018-07-10 00:00:00 occurs before the start date of 2018-09-19 00:00:00
+2019-08-10 19:03:08,277 charges_calc.py:46  ERROR for key: RNT756 the end date of 2017-07-14 00:00:00 occurs before the start date of 2017-12-03 00:00:00
+2019-08-10 19:03:08,278 charges_calc.py:46  ERROR for key: RNT757 the end date of 2018-07-06 00:00:00 occurs before the start date of 2018-12-13 00:00:00
+2019-08-10 19:03:08,278 charges_calc.py:46  ERROR for key: RNT759 the end date of 2016-01-05 00:00:00 occurs before the start date of 2018-02-10 00:00:00
+2019-08-10 19:03:08,278 charges_calc.py:46  ERROR for key: RNT766 the end date of 2017-07-28 00:00:00 occurs before the start date of 2018-03-15 00:00:00
+2019-08-10 19:03:08,278 charges_calc.py:46  ERROR for key: RNT770 the end date of 2016-01-06 00:00:00 occurs before the start date of 2018-12-02 00:00:00
+2019-08-10 19:03:08,279 charges_calc.py:46  ERROR for key: RNT772 the end date of 2018-02-21 00:00:00 occurs before the start date of 2018-06-18 00:00:00
+2019-08-10 19:03:08,279 charges_calc.py:46  ERROR for key: RNT773 the end date of 2016-10-13 00:00:00 occurs before the start date of 2016-10-23 00:00:00
+2019-08-10 19:03:08,279 charges_calc.py:46  ERROR for key: RNT774 the end date of 2016-12-28 00:00:00 occurs before the start date of 2018-07-13 00:00:00
+2019-08-10 19:03:08,280 charges_calc.py:46  ERROR for key: RNT778 the end date of 2017-01-03 00:00:00 occurs before the start date of 2018-01-13 00:00:00
+2019-08-10 19:03:08,280 charges_calc.py:46  ERROR for key: RNT779 the end date of 2016-08-21 00:00:00 occurs before the start date of 2017-01-31 00:00:00
+2019-08-10 19:03:08,280 charges_calc.py:46  ERROR for key: RNT782 the end date of 2017-04-16 00:00:00 occurs before the start date of 2018-01-25 00:00:00
+2019-08-10 19:03:08,280 charges_calc.py:46  ERROR for key: RNT783 the end date of 2017-03-22 00:00:00 occurs before the start date of 2018-11-27 00:00:00
+2019-08-10 19:03:08,281 charges_calc.py:46  ERROR for key: RNT790 the end date of 2016-02-24 00:00:00 occurs before the start date of 2017-03-30 00:00:00
+2019-08-10 19:03:08,281 charges_calc.py:46  ERROR for key: RNT791 the end date of 2017-06-03 00:00:00 occurs before the start date of 2018-03-18 00:00:00
+2019-08-10 19:03:08,281 charges_calc.py:46  ERROR for key: RNT794 the end date of 2016-04-30 00:00:00 occurs before the start date of 2018-12-30 00:00:00
+2019-08-10 19:03:08,281 charges_calc.py:46  ERROR for key: RNT795 the end date of 2017-09-15 00:00:00 occurs before the start date of 2018-01-25 00:00:00
+2019-08-10 19:03:08,282 charges_calc.py:46  ERROR for key: RNT796 the end date of 2017-06-08 00:00:00 occurs before the start date of 2018-01-13 00:00:00
+2019-08-10 19:03:08,282 charges_calc.py:46  ERROR for key: RNT803 the end date of 2016-02-10 00:00:00 occurs before the start date of 2016-10-17 00:00:00
+2019-08-10 19:03:08,282 charges_calc.py:46  ERROR for key: RNT807 the end date of 2017-07-19 00:00:00 occurs before the start date of 2018-04-03 00:00:00
+2019-08-10 19:03:08,282 charges_calc.py:46  ERROR for key: RNT808 the end date of 2016-12-15 00:00:00 occurs before the start date of 2017-07-25 00:00:00
+2019-08-10 19:03:08,283 charges_calc.py:46  ERROR for key: RNT809 the end date of 2017-04-07 00:00:00 occurs before the start date of 2017-12-04 00:00:00
+2019-08-10 19:03:08,283 charges_calc.py:46  ERROR for key: RNT812 the end date of 2016-08-18 00:00:00 occurs before the start date of 2016-10-25 00:00:00
+2019-08-10 19:03:08,283 charges_calc.py:46  ERROR for key: RNT814 the end date of 2017-05-03 00:00:00 occurs before the start date of 2018-05-16 00:00:00
+2019-08-10 19:03:08,283 charges_calc.py:46  ERROR for key: RNT815 the end date of 2017-03-26 00:00:00 occurs before the start date of 2017-11-29 00:00:00
+2019-08-10 19:03:08,284 charges_calc.py:46  ERROR for key: RNT816 the end date of 2017-07-06 00:00:00 occurs before the start date of 2017-12-20 00:00:00
+2019-08-10 19:03:08,284 charges_calc.py:46  ERROR for key: RNT817 the end date of 2016-02-11 00:00:00 occurs before the start date of 2018-11-27 00:00:00
+2019-08-10 19:03:08,284 charges_calc.py:46  ERROR for key: RNT818 the end date of 2016-05-13 00:00:00 occurs before the start date of 2017-11-13 00:00:00
+2019-08-10 19:03:08,284 charges_calc.py:46  ERROR for key: RNT819 the end date of 2017-09-25 00:00:00 occurs before the start date of 2017-12-07 00:00:00
+2019-08-10 19:03:08,284 charges_calc.py:46  ERROR for key: RNT820 the end date of 2016-04-25 00:00:00 occurs before the start date of 2016-05-03 00:00:00
+2019-08-10 19:03:08,285 charges_calc.py:46  ERROR for key: RNT822 the end date of 2017-08-11 00:00:00 occurs before the start date of 2017-12-15 00:00:00
+2019-08-10 19:03:08,285 charges_calc.py:46  ERROR for key: RNT825 the end date of 2017-11-25 00:00:00 occurs before the start date of 2018-03-18 00:00:00
+2019-08-10 19:03:08,285 charges_calc.py:46  ERROR for key: RNT831 the end date of 2017-02-25 00:00:00 occurs before the start date of 2017-02-28 00:00:00
+2019-08-10 19:03:08,286 charges_calc.py:46  ERROR for key: RNT835 the end date of 2016-01-08 00:00:00 occurs before the start date of 2017-08-24 00:00:00
+2019-08-10 19:03:08,286 charges_calc.py:46  ERROR for key: RNT836 the end date of 2016-07-09 00:00:00 occurs before the start date of 2016-07-14 00:00:00
+2019-08-10 19:03:08,286 charges_calc.py:46  ERROR for key: RNT839 the end date of 2018-06-25 00:00:00 occurs before the start date of 2018-12-21 00:00:00
+2019-08-10 19:03:08,286 charges_calc.py:46  ERROR for key: RNT840 the end date of 2017-02-04 00:00:00 occurs before the start date of 2018-11-01 00:00:00
+2019-08-10 19:03:08,287 charges_calc.py:46  ERROR for key: RNT842 the end date of 2016-04-16 00:00:00 occurs before the start date of 2017-10-16 00:00:00
+2019-08-10 19:03:08,287 charges_calc.py:46  ERROR for key: RNT843 the end date of 2016-06-26 00:00:00 occurs before the start date of 2017-11-07 00:00:00
+2019-08-10 19:03:08,287 charges_calc.py:46  ERROR for key: RNT844 the end date of 2017-09-09 00:00:00 occurs before the start date of 2018-04-14 00:00:00
+2019-08-10 19:03:08,287 charges_calc.py:46  ERROR for key: RNT846 the end date of 2016-06-29 00:00:00 occurs before the start date of 2017-09-08 00:00:00
+2019-08-10 19:03:08,287 charges_calc.py:46  ERROR for key: RNT847 the end date of 2018-03-07 00:00:00 occurs before the start date of 2018-10-19 00:00:00
+2019-08-10 19:03:08,288 charges_calc.py:46  ERROR for key: RNT849 the end date of 2016-08-18 00:00:00 occurs before the start date of 2018-07-19 00:00:00
+2019-08-10 19:03:08,288 charges_calc.py:46  ERROR for key: RNT853 the end date of 2016-02-09 00:00:00 occurs before the start date of 2018-05-14 00:00:00
+2019-08-10 19:03:08,288 charges_calc.py:46  ERROR for key: RNT855 the end date of 2018-06-16 00:00:00 occurs before the start date of 2018-10-06 00:00:00
+2019-08-10 19:03:08,289 charges_calc.py:46  ERROR for key: RNT858 the end date of 2018-06-07 00:00:00 occurs before the start date of 2018-08-15 00:00:00
+2019-08-10 19:03:08,289 charges_calc.py:46  ERROR for key: RNT861 the end date of 2016-09-12 00:00:00 occurs before the start date of 2018-01-30 00:00:00
+2019-08-10 19:03:08,289 charges_calc.py:46  ERROR for key: RNT863 the end date of 2016-03-31 00:00:00 occurs before the start date of 2016-11-05 00:00:00
+2019-08-10 19:03:08,289 charges_calc.py:46  ERROR for key: RNT864 the end date of 2018-01-12 00:00:00 occurs before the start date of 2018-01-20 00:00:00
+2019-08-10 19:03:08,289 charges_calc.py:46  ERROR for key: RNT866 the end date of 2017-05-07 00:00:00 occurs before the start date of 2018-01-01 00:00:00
+2019-08-10 19:03:08,290 charges_calc.py:46  ERROR for key: RNT867 the end date of 2017-01-19 00:00:00 occurs before the start date of 2017-06-14 00:00:00
+2019-08-10 19:03:08,290 charges_calc.py:46  ERROR for key: RNT869 the end date of 2016-12-02 00:00:00 occurs before the start date of 2017-09-27 00:00:00
+2019-08-10 19:03:08,290 charges_calc.py:46  ERROR for key: RNT871 the end date of 2017-02-20 00:00:00 occurs before the start date of 2017-04-30 00:00:00
+2019-08-10 19:03:08,290 charges_calc.py:46  ERROR for key: RNT873 the end date of 2017-11-24 00:00:00 occurs before the start date of 2018-02-08 00:00:00
+2019-08-10 19:03:08,291 charges_calc.py:46  ERROR for key: RNT874 the end date of 2018-08-08 00:00:00 occurs before the start date of 2018-08-11 00:00:00
+2019-08-10 19:03:08,291 charges_calc.py:46  ERROR for key: RNT876 the end date of 2016-09-20 00:00:00 occurs before the start date of 2017-04-30 00:00:00
+2019-08-10 19:03:08,291 charges_calc.py:46  ERROR for key: RNT879 the end date of 2016-06-11 00:00:00 occurs before the start date of 2018-05-05 00:00:00
+2019-08-10 19:03:08,292 charges_calc.py:46  ERROR for key: RNT882 the end date of 2016-04-13 00:00:00 occurs before the start date of 2018-01-27 00:00:00
+2019-08-10 19:03:08,292 charges_calc.py:46  ERROR for key: RNT883 the end date of 2017-11-20 00:00:00 occurs before the start date of 2018-06-14 00:00:00
+2019-08-10 19:03:08,292 charges_calc.py:46  ERROR for key: RNT884 the end date of 2016-05-01 00:00:00 occurs before the start date of 2016-12-03 00:00:00
+2019-08-10 19:03:08,293 charges_calc.py:46  ERROR for key: RNT886 the end date of 2016-10-23 00:00:00 occurs before the start date of 2017-01-24 00:00:00
+2019-08-10 19:03:08,293 charges_calc.py:46  ERROR for key: RNT890 the end date of 2016-03-21 00:00:00 occurs before the start date of 2018-06-12 00:00:00
+2019-08-10 19:03:08,293 charges_calc.py:46  ERROR for key: RNT892 the end date of 2016-11-20 00:00:00 occurs before the start date of 2017-03-29 00:00:00
+2019-08-10 19:03:08,294 charges_calc.py:46  ERROR for key: RNT893 the end date of 2016-10-27 00:00:00 occurs before the start date of 2017-08-04 00:00:00
+2019-08-10 19:03:08,294 charges_calc.py:46  ERROR for key: RNT894 the end date of 2016-12-07 00:00:00 occurs before the start date of 2017-03-06 00:00:00
+2019-08-10 19:03:08,294 charges_calc.py:46  ERROR for key: RNT895 the end date of 2016-01-04 00:00:00 occurs before the start date of 2018-07-06 00:00:00
+2019-08-10 19:03:08,294 charges_calc.py:46  ERROR for key: RNT896 the end date of 2017-07-07 00:00:00 occurs before the start date of 2017-10-09 00:00:00
+2019-08-10 19:03:08,295 charges_calc.py:46  ERROR for key: RNT898 the end date of 2016-11-18 00:00:00 occurs before the start date of 2017-08-30 00:00:00
+2019-08-10 19:03:08,295 charges_calc.py:46  ERROR for key: RNT901 the end date of 2016-11-19 00:00:00 occurs before the start date of 2017-04-08 00:00:00
+2019-08-10 19:03:08,295 charges_calc.py:46  ERROR for key: RNT903 the end date of 2017-12-26 00:00:00 occurs before the start date of 2018-04-22 00:00:00
+2019-08-10 19:03:08,296 charges_calc.py:46  ERROR for key: RNT905 the end date of 2017-08-21 00:00:00 occurs before the start date of 2017-09-06 00:00:00
+2019-08-10 19:03:08,296 charges_calc.py:46  ERROR for key: RNT909 the end date of 2016-05-17 00:00:00 occurs before the start date of 2018-05-23 00:00:00
+2019-08-10 19:03:08,296 charges_calc.py:46  ERROR for key: RNT911 the end date of 2016-01-17 00:00:00 occurs before the start date of 2016-10-14 00:00:00
+2019-08-10 19:03:08,297 charges_calc.py:46  ERROR for key: RNT912 the end date of 2016-09-05 00:00:00 occurs before the start date of 2018-11-20 00:00:00
+2019-08-10 19:03:08,297 charges_calc.py:46  ERROR for key: RNT914 the end date of 2016-07-03 00:00:00 occurs before the start date of 2018-07-04 00:00:00
+2019-08-10 19:03:08,297 charges_calc.py:46  ERROR for key: RNT915 the end date of 2017-12-19 00:00:00 occurs before the start date of 2018-08-09 00:00:00
+2019-08-10 19:03:08,297 charges_calc.py:46  ERROR for key: RNT917 the end date of 2016-05-30 00:00:00 occurs before the start date of 2017-02-17 00:00:00
+2019-08-10 19:03:08,298 charges_calc.py:46  ERROR for key: RNT918 the end date of 2018-07-20 00:00:00 occurs before the start date of 2018-08-10 00:00:00
+2019-08-10 19:03:08,298 charges_calc.py:46  ERROR for key: RNT919 the end date of 2017-02-25 00:00:00 occurs before the start date of 2018-04-17 00:00:00
+2019-08-10 19:03:08,298 charges_calc.py:46  ERROR for key: RNT922 the end date of 2017-06-13 00:00:00 occurs before the start date of 2018-01-20 00:00:00
+2019-08-10 19:03:08,299 charges_calc.py:46  ERROR for key: RNT924 the end date of 2016-04-03 00:00:00 occurs before the start date of 2018-05-12 00:00:00
+2019-08-10 19:03:08,299 charges_calc.py:46  ERROR for key: RNT926 the end date of 2017-04-12 00:00:00 occurs before the start date of 2017-09-08 00:00:00
+2019-08-10 19:03:08,299 charges_calc.py:46  ERROR for key: RNT927 the end date of 2017-07-18 00:00:00 occurs before the start date of 2017-08-17 00:00:00
+2019-08-10 19:03:08,299 charges_calc.py:46  ERROR for key: RNT928 the end date of 2016-04-01 00:00:00 occurs before the start date of 2017-10-10 00:00:00
+2019-08-10 19:03:08,300 charges_calc.py:46  ERROR for key: RNT930 the end date of 2016-08-04 00:00:00 occurs before the start date of 2017-01-11 00:00:00
+2019-08-10 19:03:08,300 charges_calc.py:46  ERROR for key: RNT931 the end date of 2016-11-24 00:00:00 occurs before the start date of 2018-03-17 00:00:00
+2019-08-10 19:03:08,300 charges_calc.py:46  ERROR for key: RNT932 the end date of 2016-04-30 00:00:00 occurs before the start date of 2018-05-15 00:00:00
+2019-08-10 19:03:08,301 charges_calc.py:46  ERROR for key: RNT935 the end date of 2018-02-21 00:00:00 occurs before the start date of 2018-03-02 00:00:00
+2019-08-10 19:03:08,301 charges_calc.py:46  ERROR for key: RNT937 the end date of 2017-03-14 00:00:00 occurs before the start date of 2017-03-27 00:00:00
+2019-08-10 19:03:08,302 charges_calc.py:46  ERROR for key: RNT938 the end date of 2016-08-07 00:00:00 occurs before the start date of 2017-06-30 00:00:00
+2019-08-10 19:03:08,302 charges_calc.py:46  ERROR for key: RNT939 the end date of 2016-03-23 00:00:00 occurs before the start date of 2017-12-10 00:00:00
+2019-08-10 19:03:08,302 charges_calc.py:46  ERROR for key: RNT940 the end date of 2016-10-15 00:00:00 occurs before the start date of 2016-10-23 00:00:00
+2019-08-10 19:03:08,303 charges_calc.py:46  ERROR for key: RNT942 the end date of 2017-02-21 00:00:00 occurs before the start date of 2017-04-07 00:00:00
+2019-08-10 19:03:08,303 charges_calc.py:46  ERROR for key: RNT943 the end date of 2016-02-10 00:00:00 occurs before the start date of 2017-07-19 00:00:00
+2019-08-10 19:03:08,303 charges_calc.py:46  ERROR for key: RNT944 the end date of 2017-07-22 00:00:00 occurs before the start date of 2018-07-19 00:00:00
+2019-08-10 19:03:08,303 charges_calc.py:46  ERROR for key: RNT946 the end date of 2017-08-19 00:00:00 occurs before the start date of 2017-11-12 00:00:00
+2019-08-10 19:03:08,303 charges_calc.py:46  ERROR for key: RNT947 the end date of 2016-09-11 00:00:00 occurs before the start date of 2016-11-26 00:00:00
+2019-08-10 19:03:08,304 charges_calc.py:46  ERROR for key: RNT948 the end date of 2017-05-09 00:00:00 occurs before the start date of 2018-11-30 00:00:00
+2019-08-10 19:03:08,304 charges_calc.py:46  ERROR for key: RNT949 the end date of 2016-01-19 00:00:00 occurs before the start date of 2016-08-30 00:00:00
+2019-08-10 19:03:08,304 charges_calc.py:46  ERROR for key: RNT951 the end date of 2016-12-16 00:00:00 occurs before the start date of 2018-08-27 00:00:00
+2019-08-10 19:03:08,304 charges_calc.py:46  ERROR for key: RNT955 the end date of 2017-07-09 00:00:00 occurs before the start date of 2017-10-15 00:00:00
+2019-08-10 19:03:08,305 charges_calc.py:46  ERROR for key: RNT956 the end date of 2016-02-29 00:00:00 occurs before the start date of 2016-05-17 00:00:00
+2019-08-10 19:03:08,305 charges_calc.py:46  ERROR for key: RNT957 the end date of 2017-11-01 00:00:00 occurs before the start date of 2018-06-14 00:00:00
+2019-08-10 19:03:08,305 charges_calc.py:46  ERROR for key: RNT958 the end date of 2016-11-13 00:00:00 occurs before the start date of 2017-06-21 00:00:00
+2019-08-10 19:03:08,305 charges_calc.py:46  ERROR for key: RNT959 the end date of 2016-07-21 00:00:00 occurs before the start date of 2017-02-08 00:00:00
+2019-08-10 19:03:08,305 charges_calc.py:46  ERROR for key: RNT960 the end date of 2016-10-22 00:00:00 occurs before the start date of 2018-03-01 00:00:00
+2019-08-10 19:03:08,306 charges_calc.py:46  ERROR for key: RNT961 the end date of 2018-03-19 00:00:00 occurs before the start date of 2018-05-14 00:00:00
+2019-08-10 19:03:08,306 charges_calc.py:46  ERROR for key: RNT962 the end date of 2017-06-25 00:00:00 occurs before the start date of 2017-08-20 00:00:00
+2019-08-10 19:03:08,306 charges_calc.py:46  ERROR for key: RNT963 the end date of 2016-12-13 00:00:00 occurs before the start date of 2017-01-16 00:00:00
+2019-08-10 19:03:08,306 charges_calc.py:46  ERROR for key: RNT965 the end date of 2017-10-13 00:00:00 occurs before the start date of 2017-12-15 00:00:00
+2019-08-10 19:03:08,307 charges_calc.py:46  ERROR for key: RNT967 the end date of 2017-04-06 00:00:00 occurs before the start date of 2018-10-18 00:00:00
+2019-08-10 19:03:08,307 charges_calc.py:46  ERROR for key: RNT969 the end date of 2016-05-27 00:00:00 occurs before the start date of 2018-06-28 00:00:00
+2019-08-10 19:03:08,307 charges_calc.py:46  ERROR for key: RNT970 the end date of 2016-04-19 00:00:00 occurs before the start date of 2018-02-26 00:00:00
+2019-08-10 19:03:08,307 charges_calc.py:46  ERROR for key: RNT971 the end date of 2017-01-13 00:00:00 occurs before the start date of 2017-11-20 00:00:00
+2019-08-10 19:03:08,308 charges_calc.py:46  ERROR for key: RNT974 the end date of 2018-02-28 00:00:00 occurs before the start date of 2018-10-23 00:00:00
+2019-08-10 19:03:08,308 charges_calc.py:46  ERROR for key: RNT977 the end date of 2016-10-10 00:00:00 occurs before the start date of 2017-04-05 00:00:00
+2019-08-10 19:03:08,308 charges_calc.py:46  ERROR for key: RNT979 the end date of 2016-04-16 00:00:00 occurs before the start date of 2017-09-23 00:00:00
+2019-08-10 19:03:08,308 charges_calc.py:46  ERROR for key: RNT982 the end date of 2016-03-16 00:00:00 occurs before the start date of 2016-11-03 00:00:00
+2019-08-10 19:03:08,309 charges_calc.py:46  ERROR for key: RNT983 the end date of 2016-01-16 00:00:00 occurs before the start date of 2016-11-11 00:00:00
+2019-08-10 19:03:08,309 charges_calc.py:46  ERROR for key: RNT985 the end date of 2016-06-30 00:00:00 occurs before the start date of 2016-11-08 00:00:00
+2019-08-10 19:03:08,309 charges_calc.py:46  ERROR for key: RNT986 the end date of 2016-03-11 00:00:00 occurs before the start date of 2018-11-20 00:00:00
+2019-08-10 19:03:08,309 charges_calc.py:46  ERROR for key: RNT987 the end date of 2016-02-28 00:00:00 occurs before the start date of 2017-09-10 00:00:00
+2019-08-10 19:03:08,309 charges_calc.py:46  ERROR for key: RNT989 the end date of 2016-04-07 00:00:00 occurs before the start date of 2018-10-25 00:00:00
+2019-08-10 19:03:08,310 charges_calc.py:46  ERROR for key: RNT994 the end date of 2017-01-02 00:00:00 occurs before the start date of 2017-06-04 00:00:00
+2019-08-10 19:03:08,310 charges_calc.py:46  ERROR for key: RNT998 the end date of 2016-04-14 00:00:00 occurs before the start date of 2018-09-02 00:00:00
+2019-08-10 19:03:08,310 charges_calc.py:46  ERROR for key: RNT999 the end date of 2016-10-02 00:00:00 occurs before the start date of 2018-10-12 00:00:00
+2019-08-10 19:03:08,344 charges_calc.py:125 ERROR loggin error
+2019-08-10 19:03:08,344 charges_calc.py:126 WARNING warning
+2019-08-10 19:03:08,344 charges_calc.py:127 CRITICAL critical

@@ -8,9 +8,12 @@
     and the time taken to run the module.
 
 """
-
+src = '..//src//lin_par.py'
+import os
+import sys
 import pytest
-import fake_submission as l
+sys.path.insert(0,'../src')
+import lin_par as l
 
 @pytest.fixture
 def _all_answers():
@@ -61,3 +64,5 @@ def test_submission(_all_answers):
         assert answer["count_prior"] + answer["processed"] == answer["count_new"]
         assert type(answer["elapsed"]) == float
         assert answer["elapsed"] > 0.0
+    assert _all_answers[0]['elapsed'] + _all_answers[1]['elapsed'] > _all_answers[2]['elapsed']
+    # .join method on threads combines the 2 times so it's only compared to 1 of the times
