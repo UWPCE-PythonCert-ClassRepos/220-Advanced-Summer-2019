@@ -118,3 +118,5 @@ def list_active_customers():
 
 database.create_tables([Customer])
 
+if __name__ == "__main__";
+    data = []

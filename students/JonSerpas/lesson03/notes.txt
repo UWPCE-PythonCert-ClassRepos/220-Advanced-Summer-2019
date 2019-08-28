@@ -1,0 +1,63 @@
+# notes.txt
+
+class Person(BaseModel): 
+    person_name = CharField(primary_key=True, max_length=30) 
+    lives_in_town = CharField(max_length=50) 
+    nickname = CharField(max_length=20, null=True) 
+
+class Job(BaseModel): 
+    job_name = CharField(primary_key = True, max_length = 30) 
+    start_date = DateField(formats = 'YYYY-MM-DD') 
+    end_date = DateField(formats = 'YYYY-MM-DD') 
+    salary = DecimalField(max_digits = 7, decimal_places = 2) 
+    person_employed = ForeignKeyField(Person, related_name='was_filled_by', null = False) 
+ 
+class PersonNumKey(BaseModel):
+    person_name = CharField(max_length = 30)
+    lives_in_town = CharField(max_length = 40)
+    nickname = CharField(max_length = 20, null = True)
+
+database.execute_sql('drop table if exists job;')
+database.execute_sql('drop table if exists person;')
+database.execute_sql('drop table if exists personnumkey;')
+
+Person.create_table()
+Job.create_table()
+PersonNumKey.create_table()
+
+people = {
+    ('Andrew', 'Sumner', 'Andy'),
+    ('Peter', 'Seattle', None),
+    ('Susan', 'Boston', 'Beannie'),
+    ('Pam', 'Coventry', 'PJ'),
+    ('Steven', 'Colchester', None)
+}
+
+for person in people:
+    try:
+        with database.transaction():
+            new_person = Person.create(
+                person_name = person[0],
+                lives_in_town = person[1],
+                nickname = person[2]
+            )
+            print('success, person added')
+    except Exception as e:
+        print(f'Error creating {person[0]}')
+        print(e)
+
+for person in Person:
+    print(f'{person.person_name} lives in {person.lives_in_town} and likes to be known as {person.nickname}')
+
+try:
+    with database.transaction():
+        person = Person.get(Person.person_name == "Andrew")
+        person.delete_instance()
+except Exception as e:
+    print(f'Delete failed: {person.person_name}')
+    print(e)
+# if you get a FOREIGN KEY CONSTRAINT failed error
+# it means you're trying to delete a record that another table is using
+
+with sqlite3.connect("demo.db") as conn:
+    cursor = conn.execute()

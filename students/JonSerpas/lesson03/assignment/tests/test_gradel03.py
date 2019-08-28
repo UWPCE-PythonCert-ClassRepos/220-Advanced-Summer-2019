@@ -54,7 +54,7 @@ def _list_active_customers():
         ("594", "Name", "Lastname", "Address", "phone", "email", "active", 10),
         ("593", "Name", "Lastname", "Address", "phone", "email", "active", 99)
     ]
-
+# change all for-loops to list comprehension
 def test_list_active_customers(_list_active_customers):
     """ actives """
     for customer in _list_active_customers:
