@@ -27,7 +27,7 @@ find_files(".", ".png")
 
 
 # Some random homework related stuff
-import pymongo import MongoClient
+from pymongo import MongoClient
 
 # Just use a context manager
 class MongoDBConnection:
@@ -51,9 +51,28 @@ class MongoDBConnection:
         collection = db.people
 
         collection.insert_many([
-            # Some random dictionary of data goes here ¯\_(ツ)_/¯
+            {
+                "tests/lesson09/data/furniture/chair": [
+                    "metal_chair_back_isometric_400_clr_17527.png"
+                ],
+                "tests/lesson09/data/furniture/chair/couch": [
+                    "sofa_400_clr_10056.png"
+                ],
+                "tests/lesson09/data/furniture/table": [
+                    "basic_desk_main_400_clr_17523.png",
+                    "desk_isometric_back_400_clr_17524.png",
+                    "table_with_cloth_400_clr_10664.png"
+                ],
+                "tests/lesson09/data/new": [
+                    "chairs_balancing_stacked_400_clr_11525.png",
+                    "hotel_room_400_clr_12721.png"
+                ],
+                "tests/lesson09/data/old": [
+                    "couple_on_swing_bench_400_clr_12844.png",
+                    "sitting_in_chair_relaxing_400_clr_6028.png"
+                ]
+            }
         ])
 
         person = collection.find({"first_name": "Lisetta"})
         pprint(list(person))
-
