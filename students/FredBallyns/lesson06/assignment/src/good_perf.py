@@ -1,5 +1,5 @@
 """
-poorly performing, poorly written module
+good module
 
 """
 
