@@ -26,3 +26,12 @@ transactor = single_customer("Elisa miles", "elisa.csv")
 
 for d in data:
     transactor(*d[1:])
+
+
+def add_furniture(invoice_file, customer_name, item_code, item_description, item_monthly_price):
+    with open('invoice_file.csv', 'a') as invoice_file:
+        writer = csv.writer(invoice_file)
+        writer.writerow([invoice_file, customer_name, item_code,
+                         item_description, item_monthly_price])
+    return add_furniture # do I really need to return this here??
+
