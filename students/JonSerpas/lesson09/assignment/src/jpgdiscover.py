@@ -17,7 +17,7 @@ def find_files(folder, file_extension):
                 # print(item)
                 basename = os.path.basename(item)
                 dirname = os.path.dirname(item).strip("/")
-                data[dirname].append(basename)
+                data[dirname].append(basename) #key error here, dunno why?
 
 find_files(".", ".png")
 
