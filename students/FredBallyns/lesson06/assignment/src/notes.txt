@@ -1,0 +1,31 @@
+First changed filename = "../data/exercise.csv"
+Fixed poor_perf.py error with 2018 saying 2017 on line 44
+
+$ python -m cProfile poor_perf.py
+{'2013': 1115, '2014': 1087, '2015': 1216, '2016': 1092, '2017': 1110, '2018': 1101}
+'ao' was found 21945 times
+0:00:07.400233
+         1051777 function calls (1051760 primitive calls) in 7.489 seconds
+
+Note that largest time values besides overall main and analyze are {built-in method builtin.exec}, map, decode and {method 'append' of 'list' objects}
+
+Decided to start by removing the duplicate effort of reading a file.
+$ python -m cProfile good_perf.py
+{'2013': 1115, '2014': 1087, '2015': 1216, '2016': 1092, '2017': 1110, '2018': 1101}
+'ao' was found 21945 times
+0:00:03.642447
+         1026478 function calls (1026461 primitive calls) in 3.710 seconds
+
+Noticed time was cut in half meaning almost reading of a file line by line really is the most expensive part of the code.
+
+Considered seeing if could make if statements faster and more agile with for loop through year keys that exits with continue.
+Decided try method simplier and faster, but results showed overall imporvement small as reading file is still slowest part.
+
+$ python -m cProfile good_perf.py
+{'2013': 6653, '2014': 6679, '2015': 6854, '2016': 6693, '2017': 6688, '2018': 6691}
+'ao' was found 21945 times
+0:00:03.399171
+         26477 function calls (26460 primitive calls) in 3.403 seconds
+
+Did however uncover new error in poor_perf.py where if date format is not "MM/DD/YYYY" as expected it fails.
+Example file shortens 01/01/2019 to 1/1/2019 causing poor_perf.py errors, but not good_perf.py

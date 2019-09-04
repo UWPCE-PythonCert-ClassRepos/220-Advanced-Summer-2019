@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>App</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        body {
+            margin-top: 50px;
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+
+                <form class="form-horizontal" id="lookup">
+                    <fieldset>
+                        <legend>Rentals DB</legend><br>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="textinput">Item Inventory</label>
+                            <div class="col-md-4">
+                                <select name="product_id" id="product_list" class="form-control input-md">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </div><br>
+                    </fieldset>
+                    <button id="submit" type="button" class="btn btn-primary">Submit</button>
+                    <script>
+                        function compare(key) {
+                            return function (a, b) {
+                                const A = a[key].toUpperCase();
+                                const B = b[key].toUpperCase();
+
+                                let comparison = 0;
+                                if (A > B) {
+                                    comparison = 1;
+                                } else if (A < B) {
+                                    comparison = -1;
+                                }
+                                return comparison;
+                            }
+                        }
+
+                        $(document).ready(function () {
+                            var btn = $("#submit")
+                            btn.click(function (e) {
+                                e.preventDefault()
+                                var payload = $("#lookup").serialize()
+                                console.log(payload)
+                                $.post("/select", payload, function (data) {
+                                    var d = JSON.parse(data)
+                                    $("#results").html(JSON.stringify(d, undefined, 2))
+                                })
+                            })
+
+                            $.get("/all", function (d) {
+                                var data = JSON.parse(d)
+                                var c = compare("product_id")
+                                var products = data["product"].sort(c)
+
+                                data["product"].forEach(element => {
+                                    // console.log(element["product_id"])
+                                    $('#product_list')
+                                        .append($("<option></option>")
+                                            .attr("value", element["product_id"])
+                                            .text(
+                                                element["product_id"] + ' - ' +
+                                                element["description"] + ' (' +
+                                                element["product_type"] + ')'
+                                            ));
+                                });
+                            })
+                        })
+                    </script>
+                </form>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-10">
+                <pre id="results"></pre>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

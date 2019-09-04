@@ -6,6 +6,7 @@ poorly performing, poorly written module
 import datetime
 import csv
 
+
 def analyze(filename):
     start = datetime.datetime.now()
     with open(filename) as csvfile:
@@ -37,9 +38,9 @@ def analyze(filename):
             if new[0][6:] == '2017':
                 year_count["2017"] += 1
             if new[0][6:] == '2018':
-                year_count["2017"] += 1
+                year_count["2018"] += 1
 
-        print(year_count)
+        # print(year_count) # commented out to show the start and end times
 
     with open(filename) as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar='"')
@@ -51,14 +52,18 @@ def analyze(filename):
             if "ao" in line[6]:
                 found += 1
 
-        print(f"'ao' was found {found} times")
+        # print(f"'ao' was found {found} times") # commented out to show the start and end times
         end = datetime.datetime.now()
 
-    return (start, end, year_count, found)
+    return start, end, year_count, f"'ao' was found {found} times"
+
 
 def main():
-    filename = "data/exercise.csv"
-    analyze(filename)
+    filename = "/Users/colephalen/220-Advanced-Summer-2019/students/colephalen/lesson06/assignment/src/big_ass_csv.csv"
+    # filename = "/Users/colephalen/220-Advanced-Summer-2019/students/colephalen/lesson06/assignment/data/exercise.csv"
+
+
+    print(analyze(filename))  # added a print statement to see the datetimes
 
 
 if __name__ == "__main__":
