@@ -1,0 +1,82 @@
+INFO:root:Database connected
+INFO:root:Database connected
+2019-07-24 13:10:27,164 basic_operations.py:18  INFO Database connected
+2019-07-24 13:10:34,232 basic_operations.py:18  INFO Database connected
+2019-07-24 13:11:22,167 basic_operations.py:135 WARNING Database connection failed!
+2019-07-24 13:11:27,132 basic_operations.py:135 WARNING Database connection failed!
+2019-07-24 13:12:46,426 basic_operations.py:135 WARNING Database connection failed!
+2019-07-24 13:13:26,762 basic_operations.py:12  INFO Database connected
+2019-07-24 13:14:42,085 basic_operations.py:12  INFO Database connected
+2019-07-24 13:14:46,168 basic_operations.py:12  INFO Database connected
+2019-07-24 13:22:16,804 basic_operations.py:118 ERROR unable to update 102
+2019-07-24 13:22:39,381 basic_operations.py:118 ERROR unable to update 104
+2019-07-24 13:23:54,121 alias.py:221 ERROR Invalid alias: The name clear can't be aliased because it is another magic command.
+2019-07-24 13:23:54,122 alias.py:221 ERROR Invalid alias: The name more can't be aliased because it is another magic command.
+2019-07-24 13:23:54,122 alias.py:221 ERROR Invalid alias: The name less can't be aliased because it is another magic command.
+2019-07-24 13:23:54,122 alias.py:221 ERROR Invalid alias: The name man can't be aliased because it is another magic command.
+2019-07-24 13:24:17,115 basic_operations.py:11  INFO Database connected
+2019-07-24 13:24:21,870 basic_operations.py:11  INFO Database connected
+2019-07-24 13:24:35,231 basic_operations.py:120 INFO customer 103 credit updated from <FloatField: Customer.credit_limit> to 300
+2019-07-24 13:28:36,464 basic_operations.py:11  INFO Database connected
+2019-07-24 13:28:36,466 basic_operations.py:142 INFO initializing....
+2019-07-24 14:21:37,473 basic_operations.py:11  INFO Database connected
+2019-07-24 14:21:37,474 basic_operations.py:144 INFO initializing....
+2019-07-24 14:22:15,690 alias.py:221 ERROR Invalid alias: The name clear can't be aliased because it is another magic command.
+2019-07-24 14:22:15,690 alias.py:221 ERROR Invalid alias: The name more can't be aliased because it is another magic command.
+2019-07-24 14:22:15,690 alias.py:221 ERROR Invalid alias: The name less can't be aliased because it is another magic command.
+2019-07-24 14:22:15,690 alias.py:221 ERROR Invalid alias: The name man can't be aliased because it is another magic command.
+2019-07-24 14:22:23,694 basic_operations.py:11  INFO Database connected
+2019-07-24 14:22:23,695 basic_operations.py:144 INFO initializing....
+2019-07-24 14:22:29,417 basic_operations.py:11  INFO Database connected
+2019-07-24 14:22:35,352 basic_operations.py:95  INFO showing all customers from db
+2019-07-24 14:23:04,118 basic_operations.py:123 INFO customer 101 credit updated from <FloatField: Customer.credit_limit> to 450
+2019-07-24 14:23:10,275 basic_operations.py:95  INFO showing all customers from db
+2019-07-24 14:32:26,105 alias.py:221 ERROR Invalid alias: The name clear can't be aliased because it is another magic command.
+2019-07-24 14:32:26,105 alias.py:221 ERROR Invalid alias: The name more can't be aliased because it is another magic command.
+2019-07-24 14:32:26,105 alias.py:221 ERROR Invalid alias: The name less can't be aliased because it is another magic command.
+2019-07-24 14:32:26,105 alias.py:221 ERROR Invalid alias: The name man can't be aliased because it is another magic command.
+2019-07-24 14:33:23,285 basic_operations.py:11  INFO Database connected
+2019-07-24 14:33:23,287 basic_operations.py:165 INFO initializing....
+2019-07-24 14:33:31,010 basic_operations.py:11  INFO Database connected
+2019-07-24 14:33:36,527 basic_operations.py:95  INFO showing all customers from db
+2019-07-24 14:34:59,782 basic_operations.py:125 ERROR unable to update 102
+2019-07-24 14:35:06,479 basic_operations.py:123 INFO customer 104 credit updated from <FloatField: Customer.credit_limit> to 350
+2019-07-24 14:35:37,990 alias.py:221 ERROR Invalid alias: The name clear can't be aliased because it is another magic command.
+2019-07-24 14:35:37,990 alias.py:221 ERROR Invalid alias: The name more can't be aliased because it is another magic command.
+2019-07-24 14:35:37,990 alias.py:221 ERROR Invalid alias: The name less can't be aliased because it is another magic command.
+2019-07-24 14:35:37,990 alias.py:221 ERROR Invalid alias: The name man can't be aliased because it is another magic command.
+2019-07-24 14:37:26,097 basic_operations.py:11  INFO Database connected
+2019-07-24 14:37:26,098 basic_operations.py:166 INFO initializing....
+2019-07-24 14:37:37,816 basic_operations.py:11  INFO Database connected
+2019-07-24 14:42:03,016 alias.py:221 ERROR Invalid alias: The name clear can't be aliased because it is another magic command.
+2019-07-24 14:42:03,017 alias.py:221 ERROR Invalid alias: The name more can't be aliased because it is another magic command.
+2019-07-24 14:42:03,017 alias.py:221 ERROR Invalid alias: The name less can't be aliased because it is another magic command.
+2019-07-24 14:42:03,017 alias.py:221 ERROR Invalid alias: The name man can't be aliased because it is another magic command.
+2019-07-24 14:42:11,159 basic_operations.py:11  INFO Database connected
+2019-07-24 14:42:11,162 basic_operations.py:168 INFO initializing....
+2019-07-24 14:42:20,924 basic_operations.py:11  INFO Database connected
+2019-07-24 14:43:18,538 basic_operations.py:11  INFO Database connected
+2019-07-24 14:43:18,539 basic_operations.py:168 INFO initializing....
+2019-07-24 14:43:41,610 basic_operations.py:11  INFO Database connected
+2019-07-24 14:43:51,406 basic_operations.py:11  INFO Database connected
+2019-07-24 14:44:41,293 basic_operations.py:11  INFO Database connected
+2019-07-24 14:44:41,295 basic_operations.py:166 INFO initializing....
+2019-07-24 14:44:44,818 basic_operations.py:11  INFO Database connected
+2019-07-24 14:45:07,118 alias.py:221 ERROR Invalid alias: The name clear can't be aliased because it is another magic command.
+2019-07-24 14:45:07,118 alias.py:221 ERROR Invalid alias: The name more can't be aliased because it is another magic command.
+2019-07-24 14:45:07,118 alias.py:221 ERROR Invalid alias: The name less can't be aliased because it is another magic command.
+2019-07-24 14:45:07,119 alias.py:221 ERROR Invalid alias: The name man can't be aliased because it is another magic command.
+2019-07-24 14:45:23,962 basic_operations.py:11  INFO Database connected
+2019-07-24 14:45:23,964 basic_operations.py:166 INFO initializing....
+2019-07-24 14:45:27,980 basic_operations.py:11  INFO Database connected
+2019-07-24 14:47:16,638 alias.py:221 ERROR Invalid alias: The name clear can't be aliased because it is another magic command.
+2019-07-24 14:47:16,639 alias.py:221 ERROR Invalid alias: The name more can't be aliased because it is another magic command.
+2019-07-24 14:47:16,639 alias.py:221 ERROR Invalid alias: The name less can't be aliased because it is another magic command.
+2019-07-24 14:47:16,639 alias.py:221 ERROR Invalid alias: The name man can't be aliased because it is another magic command.
+2019-07-24 14:47:24,057 basic_operations.py:11  INFO Database connected
+2019-07-24 14:47:24,058 basic_operations.py:166 INFO initializing....
+2019-07-24 14:47:28,025 basic_operations.py:11  INFO Database connected
+2019-07-24 14:48:25,727 alias.py:221 ERROR Invalid alias: The name clear can't be aliased because it is another magic command.
+2019-07-24 14:48:25,727 alias.py:221 ERROR Invalid alias: The name more can't be aliased because it is another magic command.
+2019-07-24 14:48:25,727 alias.py:221 ERROR Invalid alias: The name less can't be aliased because it is another magic command.
+2019-07-24 14:48:25,727 alias.py:221 ERROR Invalid alias: The name man can't be aliased because it is another magic command.
