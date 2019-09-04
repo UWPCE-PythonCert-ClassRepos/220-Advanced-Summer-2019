@@ -1,0 +1,977 @@
+# Used pycharm's debugger.  Comments about findings are located in charges_calc.py
+
+pydev debugger: process 4784 is connecting
+
+2019-08-31 15:29:46,384	charges_calc.py	:152	INFO	Script started at 2019-08-31 15:29:46.384123
+2019-08-31 15:29:46,388	charges_calc.py	:156	INFO	Setting logging level to INFO
+2019-08-31 15:29:46,391	charges_calc.py	:63 	INFO	Loaded 999 records from source.json
+2019-08-31 15:29:46,498	charges_calc.py	:87 	ERROR	Product Code PRD70 has an invalid rental_end date of
+2019-08-31 15:29:46,507	charges_calc.py	:131	WARNING	Error calculating unit_cost for Product Code PRD79: 0 units rented
+2019-08-31 15:29:46,531	charges_calc.py	:134	INFO	Calculated fields for 998 records
+2019-08-31 15:29:46,838	charges_calc.py	:145	INFO	JSON data written to output.json
+2019-08-31 15:29:46,838	charges_calc.py	:165	INFO	Script ended at 2019-08-31 15:29:46.838638
+
+pydev debugger: process 4476 is connecting
+
+2019-08-31 14:39:03,797	charges_calc.py	:146	INFO	Script started at 2019-08-31
+2019-08-31 14:39:03,801	charges_calc.py	:150	INFO	Setting logging level to INFO
+2019-08-31 14:39:03,886	charges_calc.py	:84 	WARNING	Product Code PRD70 has an invalid rental_end date of .
+2019-08-31 14:39:03,892	charges_calc.py	:129	WARNING	Error calculating unit_cost for Product Code PRD79: 0 units rented.
+2019-08-31 14:39:03,911	charges_calc.py	:141	ERROR	Error writing JSON data to !@#$%^&*()+|}{[]\';:/.,<>? -l INFO: [Errno 2] No such file or directory: "!@#$%^&*()+|}{[]\\';:/.,<>? -l INFO".  Exiting script...
+
+
+pydev debugger: process 4429 is connecting
+
+2019-08-31 14:27:55,723	charges_calc.py	:139	INFO	Script started at 2019-08-31
+2019-08-31 14:27:55,728	charges_calc.py	:143	INFO	Setting logging level to INFO
+2019-08-31 14:27:55,805	charges_calc.py	:83 	WARNING	Product Code PRD70 has an invalid rental_end date of .
+2019-08-31 14:27:55,811	charges_calc.py	:128	WARNING	Error calculating unit_cost for Product Code PRD79: 0 units rented.
+2019-08-31 14:27:56,075	charges_calc.py	:152	INFO	Script ended at 2019-08-31
+
+pydev debugger: process 4357 is connecting
+
+2019-08-31 14:13:40,555	charges_calc.py	:134	INFO	Script started at 2019-08-31
+2019-08-31 14:13:40,568	charges_calc.py	:138	INFO	Setting logging level to INFO
+2019-08-31 14:13:40,764	charges_calc.py	:83 	WARNING	Product Code PRD70 has an invalid rental_end date of .
+Traceback (most recent call last):
+  File "/Users/james/code/220-Advanced-Summer-2019/students/jsward/lesson02/assignment/src/charges_calc.py", line 121, in calculate_additional_fields
+    value['unit_cost'] = value['total_price'] / value['units_rented']
+ZeroDivisionError: division by zero
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Applications/PyCharm CE.app/Contents/helpers/pydev/pydevd.py", line 1664, in <module>
+    main()
+  File "/Applications/PyCharm CE.app/Contents/helpers/pydev/pydevd.py", line 1658, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Applications/PyCharm CE.app/Contents/helpers/pydev/pydevd.py", line 1068, in run
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "/Applications/PyCharm CE.app/Contents/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/Users/james/code/220-Advanced-Summer-2019/students/jsward/lesson02/assignment/src/charges_calc.py", line 143, in <module>
+    data = calculate_additional_fields(data)
+  File "/Users/james/code/220-Advanced-Summer-2019/students/jsward/lesson02/assignment/src/charges_calc.py", line 124, in calculate_additional_fields
+    logger.warning("Error calculating unit_cost for Product Code {}: {}".format(value['product_code'], e))
+  File "/Applications/PyCharm CE.app/Contents/helpers/pydev/_pydevd_frame_eval/pydevd_frame_tracing.py", line 81, in _pydev_stop_at_break
+    debugger.do_wait_suspend(t, frame, 'line', None, "frame_eval")
+  File "/Applications/PyCharm CE.app/Contents/helpers/pydev/pydevd.py", line 812, in do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+
+pydev debugger: process 4335 is connecting
+
+2019-08-31 14:09:37,543	charges_calc.py	:132	INFO	Script started at 2019-08-31
+2019-08-31 14:09:37,551	charges_calc.py	:136	INFO	Setting logging level to DEBUG
+2019-08-31 14:09:37,552	charges_calc.py	:50 	DEBUG	Entering load_rentals_file function
+2019-08-31 14:09:37,576	charges_calc.py	:90 	DEBUG	For Product Code PRD80 rental_start is 2017-03-22 00:00:00, rental_end is 2017-06-12 00:00:00
+***** LINES REMOVED ******
+2019-08-31 14:09:44,947	charges_calc.py	:82 	WARNING	Product Code PRD70 has an invalid rental_end date of .
+Traceback (most recent call last):
+  File "/Applications/PyCharm CE.app/Contents/helpers/pydev/pydevd.py", line 1664, in <module>
+    main()
+  File "/Applications/PyCharm CE.app/Contents/helpers/pydev/pydevd.py", line 1658, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Applications/PyCharm CE.app/Contents/helpers/pydev/pydevd.py", line 1068, in run
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "/Applications/PyCharm CE.app/Contents/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/Users/james/code/220-Advanced-Summer-2019/students/jsward/lesson02/assignment/src/charges_calc.py", line 141, in <module>
+    data = calculate_additional_fields(data)
+  File "/Users/james/code/220-Advanced-Summer-2019/students/jsward/lesson02/assignment/src/charges_calc.py", line 86, in calculate_additional_fields
+    if date2 < date1:
+TypeError: '<' not supported between instances of 'str' and 'datetime.datetime'
+We've got an error while stopping in post-mortem: <class 'KeyboardInterrupt'>
+
+pydev debugger: process 4318 is connecting
+
+2019-08-31 14:03:55,311	charges_calc.py	:130	INFO	Script started at 2019-08-31
+2019-08-31 14:03:55,317	charges_calc.py	:134	INFO	Setting logging level to DEBUG
+2019-08-31 14:03:55,317	charges_calc.py	:50 	DEBUG	Entering load_rentals_file function
+2019-08-31 14:03:55,341	charges_calc.py	:88 	DEBUG	For Product Code PRD80 rental_start is 2017-03-22 00:00:00, rental_end is 2017-06-12 00:00:00
+2019-08-31 14:03:55,341	charges_calc.py	:93 	DEBUG	For Product Code PRD11 rental_start is 2016-07-20 00:00:00, rental_end is 2018-09-30 00:00:00
+2019-08-31 14:03:55,341	charges_calc.py	:93 	DEBUG	For Product Code PRD22 rental_start is 2016-02-01 00:00:00, rental_end is 2017-06-04 00:00:00
+2019-08-31 14:03:55,341	charges_calc.py	:93 	DEBUG	For Product Code PRD86 rental_start is 2016-08-14 00:00:00, rental_end is 2017-12-07 00:00:00
+2019-08-31 14:03:55,342	charges_calc.py	:93 	DEBUG	For Product Code PRD70 rental_start is 2017-07-12 00:00:00, rental_end is 2018-11-23 00:00:00
+2019-08-31 14:03:55,342	charges_calc.py	:88 	DEBUG	For Product Code PRD51 rental_start is 2018-07-29 00:00:00, rental_end is 2018-08-26 00:00:00
+2019-08-31 14:03:55,342	charges_calc.py	:88 	DEBUG	For Product Code PRD42 rental_start is 2017-05-31 00:00:00, rental_end is 2017-07-10 00:00:00
+2019-08-31 14:03:55,342	charges_calc.py	:88 	DEBUG	For Product Code PRD32 rental_start is 2018-07-04 00:00:00, rental_end is 2018-10-25 00:00:00
+2019-08-31 14:03:55,343	charges_calc.py	:88 	DEBUG	For Product Code PRD13 rental_start is 2016-07-28 00:00:00, rental_end is 2018-11-03 00:00:00
+2019-08-31 14:03:55,343	charges_calc.py	:88 	DEBUG	For Product Code PRD22 rental_start is 2017-08-27 00:00:00, rental_end is 2018-03-15 00:00:00
+2019-08-31 14:03:55,343	charges_calc.py	:88 	DEBUG	For Product Code PRD17 rental_start is 2016-04-29 00:00:00, rental_end is 2017-09-29 00:00:00
+2019-08-31 14:03:55,343	charges_calc.py	:88 	DEBUG	For Product Code PRD55 rental_start is 2016-01-15 00:00:00, rental_end is 2017-10-24 00:00:00
+2019-08-31 14:03:55,344	charges_calc.py	:93 	DEBUG	For Product Code PRD81 rental_start is 2017-02-03 00:00:00, rental_end is 2017-08-31 00:00:00
+2019-08-31 14:03:55,344	charges_calc.py	:88 	DEBUG	For Product Code PRD0 rental_start is 2016-07-30 00:00:00, rental_end is 2017-01-30 00:00:00
+2019-08-31 14:03:55,344	charges_calc.py	:93 	DEBUG	For Product Code PRD82 rental_start is 2017-05-02 00:00:00, rental_end is 2018-06-22 00:00:00
+2019-08-31 14:03:55,344	charges_calc.py	:88 	DEBUG	For Product Code PRD52 rental_start is 2016-02-05 00:00:00, rental_end is 2018-06-18 00:00:00
+2019-08-31 14:03:55,345	charges_calc.py	:88 	DEBUG	For Product Code PRD5 rental_start is 2018-04-11 00:00:00, rental_end is 2018-04-28 00:00:00
+2019-08-31 14:03:55,345	charges_calc.py	:88 	DEBUG	For Product Code PRD59 rental_start is 2016-01-13 00:00:00, rental_end is 2016-08-16 00:00:00
+2019-08-31 14:03:55,345	charges_calc.py	:88 	DEBUG	For Product Code PRD6 rental_start is 2016-05-10 00:00:00, rental_end is 2017-12-16 00:00:00
+2019-08-31 14:03:55,345	charges_calc.py	:88 	DEBUG	For Product Code PRD2 rental_start is 2016-01-12 00:00:00, rental_end is 2018-06-20 00:00:00
+2019-08-31 14:03:55,346	charges_calc.py	:88 	DEBUG	For Product Code PRD97 rental_start is 2016-02-09 00:00:00, rental_end is 2017-08-31 00:00:00
+2019-08-31 14:03:55,346	charges_calc.py	:93 	DEBUG	For Product Code PRD66 rental_start is 2016-10-03 00:00:00, rental_end is 2017-11-01 00:00:00
+2019-08-31 14:03:55,346	charges_calc.py	:93 	DEBUG	For Product Code PRD14 rental_start is 2016-09-13 00:00:00, rental_end is 2018-11-16 00:00:00
+2019-08-31 14:03:55,346	charges_calc.py	:93 	DEBUG	For Product Code PRD78 rental_start is 2017-07-14 00:00:00, rental_end is 2018-11-25 00:00:00
+2019-08-31 14:03:55,347	charges_calc.py	:88 	DEBUG	For Product Code PRD28 rental_start is 2016-05-28 00:00:00, rental_end is 2018-03-02 00:00:00
+2019-08-31 14:03:55,347	charges_calc.py	:88 	DEBUG	For Product Code PRD40 rental_start is 2016-04-21 00:00:00, rental_end is 2018-03-27 00:00:00
+2019-08-31 14:03:55,347	charges_calc.py	:93 	DEBUG	For Product Code PRD11 rental_start is 2016-03-28 00:00:00, rental_end is 2016-08-03 00:00:00
+2019-08-31 14:03:55,347	charges_calc.py	:88 	DEBUG	For Product Code PRD63 rental_start is 2017-05-06 00:00:00, rental_end is 2018-07-06 00:00:00
+2019-08-31 14:03:55,348	charges_calc.py	:93 	DEBUG	For Product Code PRD77 rental_start is 2016-09-05 00:00:00, rental_end is 2018-05-03 00:00:00
+2019-08-31 14:03:55,348	charges_calc.py	:88 	DEBUG	For Product Code PRD43 rental_start is 2017-04-18 00:00:00, rental_end is 2017-07-01 00:00:00
+2019-08-31 14:03:55,348	charges_calc.py	:88 	DEBUG	For Product Code PRD51 rental_start is 2017-04-13 00:00:00, rental_end is 2018-04-18 00:00:00
+2019-08-31 14:03:55,348	charges_calc.py	:93 	DEBUG	For Product Code PRD97 rental_start is 2016-07-02 00:00:00, rental_end is 2016-07-18 00:00:00
+2019-08-31 14:03:55,349	charges_calc.py	:93 	DEBUG	For Product Code PRD0 rental_start is 2017-02-05 00:00:00, rental_end is 2017-03-28 00:00:00
+2019-08-31 14:03:55,349	charges_calc.py	:88 	DEBUG	For Product Code PRD72 rental_start is 2016-04-03 00:00:00, rental_end is 2017-10-11 00:00:00
+2019-08-31 14:03:55,350	charges_calc.py	:93 	DEBUG	For Product Code PRD19 rental_start is 2016-09-15 00:00:00, rental_end is 2017-11-04 00:00:00
+2019-08-31 14:03:55,350	charges_calc.py	:93 	DEBUG	For Product Code PRD94 rental_start is 2017-10-16 00:00:00, rental_end is 2018-01-09 00:00:00
+2019-08-31 14:03:55,350	charges_calc.py	:93 	DEBUG	For Product Code PRD6 rental_start is 2018-03-20 00:00:00, rental_end is 2018-09-13 00:00:00
+2019-08-31 14:03:55,351	charges_calc.py	:93 	DEBUG	For Product Code PRD5 rental_start is 2017-02-16 00:00:00, rental_end is 2017-06-24 00:00:00
+2019-08-31 14:03:55,351	charges_calc.py	:93 	DEBUG	For Product Code PRD61 rental_start is 2016-07-24 00:00:00, rental_end is 2016-07-24 00:00:00
+2019-08-31 14:03:55,351	charges_calc.py	:88 	DEBUG	For Product Code PRD51 rental_start is 2016-12-30 00:00:00, rental_end is 2017-12-01 00:00:00
+2019-08-31 14:03:55,351	charges_calc.py	:88 	DEBUG	For Product Code PRD59 rental_start is 2017-03-30 00:00:00, rental_end is 2018-02-19 00:00:00
+2019-08-31 14:03:55,351	charges_calc.py	:93 	DEBUG	For Product Code PRD18 rental_start is 2017-07-27 00:00:00, rental_end is 2017-10-19 00:00:00
+2019-08-31 14:03:55,352	charges_calc.py	:93 	DEBUG	For Product Code PRD68 rental_start is 2017-04-09 00:00:00, rental_end is 2018-07-05 00:00:00
+2019-08-31 14:03:55,352	charges_calc.py	:88 	DEBUG	For Product Code PRD43 rental_start is 2016-12-19 00:00:00, rental_end is 2018-09-04 00:00:00
+2019-08-31 14:03:55,352	charges_calc.py	:88 	DEBUG	For Product Code PRD62 rental_start is 2018-11-12 00:00:00, rental_end is 2018-12-19 00:00:00
+2019-08-31 14:03:55,352	charges_calc.py	:88 	DEBUG	For Product Code PRD46 rental_start is 2018-01-08 00:00:00, rental_end is 2018-10-15 00:00:00
+2019-08-31 14:03:55,353	charges_calc.py	:88 	DEBUG	For Product Code PRD52 rental_start is 2016-06-24 00:00:00, rental_end is 2018-08-03 00:00:00
+2019-08-31 14:03:55,353	charges_calc.py	:88 	DEBUG	For Product Code PRD32 rental_start is 2016-10-28 00:00:00, rental_end is 2017-09-05 00:00:00
+2019-08-31 14:03:55,353	charges_calc.py	:93 	DEBUG	For Product Code PRD77 rental_start is 2018-01-09 00:00:00, rental_end is 2018-03-14 00:00:00
+2019-08-31 14:03:55,353	charges_calc.py	:88 	DEBUG	For Product Code PRD6 rental_start is 2017-06-30 00:00:00, rental_end is 2018-12-06 00:00:00
+2019-08-31 14:03:55,353	charges_calc.py	:93 	DEBUG	For Product Code PRD45 rental_start is 2016-02-18 00:00:00, rental_end is 2017-07-19 00:00:00
+2019-08-31 14:03:55,354	charges_calc.py	:93 	DEBUG	For Product Code PRD53 rental_start is 2016-10-30 00:00:00, rental_end is 2017-03-13 00:00:00
+2019-08-31 14:03:55,354	charges_calc.py	:93 	DEBUG	For Product Code PRD17 rental_start is 2016-12-12 00:00:00, rental_end is 2017-09-20 00:00:00
+2019-08-31 14:03:55,354	charges_calc.py	:93 	DEBUG	For Product Code PRD62 rental_start is 2016-12-31 00:00:00, rental_end is 2017-12-21 00:00:00
+2019-08-31 14:03:55,354	charges_calc.py	:93 	DEBUG	For Product Code PRD16 rental_start is 2018-02-04 00:00:00, rental_end is 2018-09-14 00:00:00
+2019-08-31 14:03:55,355	charges_calc.py	:88 	DEBUG	For Product Code PRD43 rental_start is 2016-02-27 00:00:00, rental_end is 2018-04-12 00:00:00
+2019-08-31 14:03:55,355	charges_calc.py	:93 	DEBUG	For Product Code PRD58 rental_start is 2017-09-23 00:00:00, rental_end is 2018-09-17 00:00:00
+2019-08-31 14:03:55,355	charges_calc.py	:88 	DEBUG	For Product Code PRD35 rental_start is 2017-01-25 00:00:00, rental_end is 2017-07-14 00:00:00
+2019-08-31 14:03:55,356	charges_calc.py	:93 	DEBUG	For Product Code PRD9 rental_start is 2016-03-26 00:00:00, rental_end is 2016-10-11 00:00:00
+2019-08-31 14:03:55,356	charges_calc.py	:88 	DEBUG	For Product Code PRD84 rental_start is 2016-01-18 00:00:00, rental_end is 2016-02-15 00:00:00
+2019-08-31 14:03:55,356	charges_calc.py	:88 	DEBUG	For Product Code PRD35 rental_start is 2017-02-28 00:00:00, rental_end is 2018-02-12 00:00:00
+2019-08-31 14:03:55,356	charges_calc.py	:88 	DEBUG	For Product Code PRD29 rental_start is 2018-06-03 00:00:00, rental_end is 2018-08-25 00:00:00
+2019-08-31 14:03:55,356	charges_calc.py	:93 	DEBUG	For Product Code PRD47 rental_start is 2017-01-11 00:00:00, rental_end is 2018-05-18 00:00:00
+2019-08-31 14:03:55,357	charges_calc.py	:93 	DEBUG	For Product Code PRD83 rental_start is 2017-02-24 00:00:00, rental_end is 2017-06-28 00:00:00
+2019-08-31 14:03:55,357	charges_calc.py	:88 	DEBUG	For Product Code PRD61 rental_start is 2016-12-12 00:00:00, rental_end is 2018-10-11 00:00:00
+2019-08-31 14:03:55,357	charges_calc.py	:93 	DEBUG	For Product Code PRD74 rental_start is 2016-02-28 00:00:00, rental_end is 2017-11-12 00:00:00
+2019-08-31 14:03:55,357	charges_calc.py	:88 	DEBUG	For Product Code PRD29 rental_start is 2017-10-18 00:00:00, rental_end is 2018-01-18 00:00:00
+2019-08-31 14:03:55,358	charges_calc.py	:93 	DEBUG	For Product Code PRD71 rental_start is 2016-03-28 00:00:00, rental_end is 2016-05-20 00:00:00
+2019-08-31 14:03:55,358	charges_calc.py	:93 	DEBUG	For Product Code PRD38 rental_start is 2016-10-21 00:00:00, rental_end is 2017-02-17 00:00:00
+2019-08-31 14:03:55,358	charges_calc.py	:93 	DEBUG	For Product Code PRD82 rental_start is 2017-10-24 00:00:00, rental_end is 2018-10-21 00:00:00
+2019-08-31 14:03:55,358	charges_calc.py	:88 	DEBUG	For Product Code PRD38 rental_start is 2016-05-25 00:00:00, rental_end is 2016-10-05 00:00:00
+2019-08-31 14:03:55,359	charges_calc.py	:93 	DEBUG	For Product Code PRD53 rental_start is 2016-10-06 00:00:00, rental_end is 2018-06-19 00:00:00
+2019-08-31 14:03:55,359	charges_calc.py	:93 	DEBUG	For Product Code PRD37 rental_start is 2018-04-03 00:00:00, rental_end is 2018-09-08 00:00:00
+2019-08-31 14:03:55,359	charges_calc.py	:88 	DEBUG	For Product Code PRD33 rental_start is 2017-07-14 00:00:00, rental_end is 2017-09-09 00:00:00
+2019-08-31 14:03:55,359	charges_calc.py	:93 	DEBUG	For Product Code PRD2 rental_start is 2016-04-25 00:00:00, rental_end is 2018-11-13 00:00:00
+2019-08-31 14:03:55,360	charges_calc.py	:88 	DEBUG	For Product Code PRD64 rental_start is 2016-05-12 00:00:00, rental_end is 2018-06-06 00:00:00
+2019-08-31 14:03:55,360	charges_calc.py	:88 	DEBUG	For Product Code PRD6 rental_start is 2016-11-19 00:00:00, rental_end is 2018-08-15 00:00:00
+2019-08-31 14:03:55,360	charges_calc.py	:93 	DEBUG	For Product Code PRD72 rental_start is 2017-01-06 00:00:00, rental_end is 2017-11-01 00:00:00
+2019-08-31 14:03:55,360	charges_calc.py	:88 	DEBUG	For Product Code PRD85 rental_start is 2018-01-27 00:00:00, rental_end is 2018-11-27 00:00:00
+2019-08-31 14:03:55,360	charges_calc.py	:93 	DEBUG	For Product Code PRD8 rental_start is 2017-06-27 00:00:00, rental_end is 2018-04-18 00:00:00
+2019-08-31 14:03:55,361	charges_calc.py	:93 	DEBUG	For Product Code PRD52 rental_start is 2018-02-08 00:00:00, rental_end is 2018-12-09 00:00:00
+2019-08-31 14:03:55,361	charges_calc.py	:93 	DEBUG	For Product Code PRD2 rental_start is 2016-10-03 00:00:00, rental_end is 2017-11-16 00:00:00
+2019-08-31 14:03:55,361	charges_calc.py	:93 	DEBUG	For Product Code PRD70 rental_start is 2017-09-09 00:00:00, rental_end is 2018-02-06 00:00:00
+2019-08-31 14:03:55,361	charges_calc.py	:88 	DEBUG	For Product Code PRD75 rental_start is 2016-04-29 00:00:00, rental_end is 2017-05-13 00:00:00
+2019-08-31 14:03:55,362	charges_calc.py	:93 	DEBUG	For Product Code PRD16 rental_start is 2018-02-21 00:00:00, rental_end is 2018-03-20 00:00:00
+2019-08-31 14:03:55,362	charges_calc.py	:88 	DEBUG	For Product Code PRD87 rental_start is 2018-03-20 00:00:00, rental_end is 2018-12-03 00:00:00
+2019-08-31 14:03:55,362	charges_calc.py	:88 	DEBUG	For Product Code PRD0 rental_start is 2016-06-18 00:00:00, rental_end is 2016-08-10 00:00:00
+2019-08-31 14:03:55,362	charges_calc.py	:93 	DEBUG	For Product Code PRD84 rental_start is 2016-06-09 00:00:00, rental_end is 2017-02-25 00:00:00
+2019-08-31 14:03:55,363	charges_calc.py	:88 	DEBUG	For Product Code PRD58 rental_start is 2018-08-15 00:00:00, rental_end is 2018-11-05 00:00:00
+2019-08-31 14:03:55,363	charges_calc.py	:93 	DEBUG	For Product Code PRD18 rental_start is 2017-01-14 00:00:00, rental_end is 2018-08-19 00:00:00
+2019-08-31 14:03:55,363	charges_calc.py	:93 	DEBUG	For Product Code PRD46 rental_start is 2017-06-27 00:00:00, rental_end is 2017-10-25 00:00:00
+2019-08-31 14:03:55,363	charges_calc.py	:88 	DEBUG	For Product Code PRD6 rental_start is 2016-05-23 00:00:00, rental_end is 2017-03-10 00:00:00
+2019-08-31 14:03:55,364	charges_calc.py	:93 	DEBUG	For Product Code PRD64 rental_start is 2016-04-02 00:00:00, rental_end is 2018-11-19 00:00:00
+2019-08-31 14:03:55,364	charges_calc.py	:93 	DEBUG	For Product Code PRD28 rental_start is 2016-08-22 00:00:00, rental_end is 2016-08-24 00:00:00
+2019-08-31 14:03:55,364	charges_calc.py	:88 	DEBUG	For Product Code PRD83 rental_start is 2017-07-23 00:00:00, rental_end is 2018-08-05 00:00:00
+2019-08-31 14:03:55,364	charges_calc.py	:93 	DEBUG	For Product Code PRD97 rental_start is 2016-02-06 00:00:00, rental_end is 2016-07-09 00:00:00
+2019-08-31 14:03:55,365	charges_calc.py	:88 	DEBUG	For Product Code PRD36 rental_start is 2016-08-29 00:00:00, rental_end is 2017-01-11 00:00:00
+2019-08-31 14:03:55,365	charges_calc.py	:93 	DEBUG	For Product Code PRD5 rental_start is 2017-01-28 00:00:00, rental_end is 2018-02-11 00:00:00
+2019-08-31 14:03:55,365	charges_calc.py	:88 	DEBUG	For Product Code PRD42 rental_start is 2016-10-21 00:00:00, rental_end is 2018-11-23 00:00:00
+2019-08-31 14:03:55,365	charges_calc.py	:88 	DEBUG	For Product Code PRD66 rental_start is 2016-05-21 00:00:00, rental_end is 2018-06-16 00:00:00
+2019-08-31 14:03:55,366	charges_calc.py	:88 	DEBUG	For Product Code PRD42 rental_start is 2017-09-20 00:00:00, rental_end is 2018-12-03 00:00:00
+2019-08-31 14:03:55,366	charges_calc.py	:88 	DEBUG	For Product Code PRD68 rental_start is 2016-12-08 00:00:00, rental_end is 2017-07-17 00:00:00
+2019-08-31 14:03:55,366	charges_calc.py	:88 	DEBUG	For Product Code PRD76 rental_start is 2016-02-18 00:00:00, rental_end is 2017-01-24 00:00:00
+2019-08-31 14:03:55,366	charges_calc.py	:88 	DEBUG	For Product Code PRD98 rental_start is 2016-08-30 00:00:00, rental_end is 2017-12-20 00:00:00
+2019-08-31 14:03:55,366	charges_calc.py	:88 	DEBUG	For Product Code PRD3 rental_start is 2016-02-20 00:00:00, rental_end is 2017-12-29 00:00:00
+2019-08-31 14:03:55,367	charges_calc.py	:88 	DEBUG	For Product Code PRD80 rental_start is 2018-01-01 00:00:00, rental_end is 2018-03-14 00:00:00
+2019-08-31 14:03:55,367	charges_calc.py	:88 	DEBUG	For Product Code PRD84 rental_start is 2016-06-04 00:00:00, rental_end is 2017-05-30 00:00:00
+2019-08-31 14:03:55,367	charges_calc.py	:93 	DEBUG	For Product Code PRD44 rental_start is 2016-06-05 00:00:00, rental_end is 2017-03-15 00:00:00
+2019-08-31 14:03:55,367	charges_calc.py	:88 	DEBUG	For Product Code PRD88 rental_start is 2017-01-09 00:00:00, rental_end is 2018-06-26 00:00:00
+2019-08-31 14:03:55,368	charges_calc.py	:93 	DEBUG	For Product Code PRD42 rental_start is 2016-10-25 00:00:00, rental_end is 2018-07-14 00:00:00
+2019-08-31 14:03:55,368	charges_calc.py	:93 	DEBUG	For Product Code PRD10 rental_start is 2016-09-04 00:00:00, rental_end is 2017-11-10 00:00:00
+2019-08-31 14:03:55,368	charges_calc.py	:93 	DEBUG	For Product Code PRD99 rental_start is 2016-07-11 00:00:00, rental_end is 2016-09-01 00:00:00
+2019-08-31 14:03:55,369	charges_calc.py	:93 	DEBUG	For Product Code PRD65 rental_start is 2018-10-19 00:00:00, rental_end is 2018-11-06 00:00:00
+2019-08-31 14:03:55,369	charges_calc.py	:88 	DEBUG	For Product Code PRD89 rental_start is 2016-01-09 00:00:00, rental_end is 2017-06-06 00:00:00
+2019-08-31 14:03:55,369	charges_calc.py	:88 	DEBUG	For Product Code PRD22 rental_start is 2016-02-03 00:00:00, rental_end is 2018-05-11 00:00:00
+2019-08-31 14:03:55,369	charges_calc.py	:88 	DEBUG	For Product Code PRD74 rental_start is 2016-08-04 00:00:00, rental_end is 2017-04-14 00:00:00
+2019-08-31 14:03:55,370	charges_calc.py	:93 	DEBUG	For Product Code PRD11 rental_start is 2018-06-12 00:00:00, rental_end is 2018-12-23 00:00:00
+2019-08-31 14:03:55,370	charges_calc.py	:88 	DEBUG	For Product Code PRD11 rental_start is 2017-06-04 00:00:00, rental_end is 2018-07-23 00:00:00
+2019-08-31 14:03:55,370	charges_calc.py	:88 	DEBUG	For Product Code PRD58 rental_start is 2017-12-18 00:00:00, rental_end is 2018-07-19 00:00:00
+2019-08-31 14:03:55,370	charges_calc.py	:88 	DEBUG	For Product Code PRD83 rental_start is 2016-08-01 00:00:00, rental_end is 2017-01-03 00:00:00
+2019-08-31 14:03:55,371	charges_calc.py	:88 	DEBUG	For Product Code PRD39 rental_start is 2017-02-25 00:00:00, rental_end is 2018-11-30 00:00:00
+2019-08-31 14:03:55,371	charges_calc.py	:88 	DEBUG	For Product Code PRD9 rental_start is 2017-04-05 00:00:00, rental_end is 2018-12-04 00:00:00
+2019-08-31 14:03:55,371	charges_calc.py	:88 	DEBUG	For Product Code PRD83 rental_start is 2017-07-25 00:00:00, rental_end is 2018-03-02 00:00:00
+2019-08-31 14:03:55,371	charges_calc.py	:93 	DEBUG	For Product Code PRD42 rental_start is 2016-11-03 00:00:00, rental_end is 2017-03-10 00:00:00
+2019-08-31 14:03:55,371	charges_calc.py	:88 	DEBUG	For Product Code PRD76 rental_start is 2018-07-30 00:00:00, rental_end is 2018-12-15 00:00:00
+2019-08-31 14:03:55,372	charges_calc.py	:93 	DEBUG	For Product Code PRD8 rental_start is 2016-01-10 00:00:00, rental_end is 2017-07-07 00:00:00
+2019-08-31 14:03:55,372	charges_calc.py	:93 	DEBUG	For Product Code PRD95 rental_start is 2016-04-08 00:00:00, rental_end is 2018-08-25 00:00:00
+2019-08-31 14:03:55,372	charges_calc.py	:93 	DEBUG	For Product Code PRD59 rental_start is 2017-04-08 00:00:00, rental_end is 2017-12-07 00:00:00
+2019-08-31 14:03:55,372	charges_calc.py	:88 	DEBUG	For Product Code PRD75 rental_start is 2017-05-23 00:00:00, rental_end is 2018-03-23 00:00:00
+2019-08-31 14:03:55,373	charges_calc.py	:88 	DEBUG	For Product Code PRD23 rental_start is 2017-06-21 00:00:00, rental_end is 2018-12-17 00:00:00
+2019-08-31 14:03:55,373	charges_calc.py	:93 	DEBUG	For Product Code PRD74 rental_start is 2016-01-15 00:00:00, rental_end is 2016-05-31 00:00:00
+2019-08-31 14:03:55,373	charges_calc.py	:93 	DEBUG	For Product Code PRD23 rental_start is 2016-03-17 00:00:00, rental_end is 2017-02-20 00:00:00
+2019-08-31 14:03:55,373	charges_calc.py	:93 	DEBUG	For Product Code PRD0 rental_start is 2017-02-14 00:00:00, rental_end is 2018-09-24 00:00:00
+2019-08-31 14:03:55,374	charges_calc.py	:93 	DEBUG	For Product Code PRD64 rental_start is 2018-01-23 00:00:00, rental_end is 2018-09-07 00:00:00
+2019-08-31 14:03:55,374	charges_calc.py	:88 	DEBUG	For Product Code PRD79 rental_start is 2016-08-11 00:00:00, rental_end is 2016-10-13 00:00:00
+2019-08-31 14:03:55,374	charges_calc.py	:93 	DEBUG	For Product Code PRD79 rental_start is 2017-06-10 00:00:00, rental_end is 2017-10-15 00:00:00
+2019-08-31 14:03:55,374	charges_calc.py	:93 	DEBUG	For Product Code PRD74 rental_start is 2016-11-06 00:00:00, rental_end is 2017-09-11 00:00:00
+2019-08-31 14:03:55,375	charges_calc.py	:93 	DEBUG	For Product Code PRD23 rental_start is 2018-01-04 00:00:00, rental_end is 2018-12-22 00:00:00
+2019-08-31 14:03:55,375	charges_calc.py	:88 	DEBUG	For Product Code PRD13 rental_start is 2017-05-01 00:00:00, rental_end is 2017-09-13 00:00:00
+2019-08-31 14:03:55,375	charges_calc.py	:93 	DEBUG	For Product Code PRD70 rental_start is 2016-12-14 00:00:00, rental_end is 2017-02-26 00:00:00
+2019-08-31 14:03:55,375	charges_calc.py	:88 	DEBUG	For Product Code PRD63 rental_start is 2017-03-22 00:00:00, rental_end is 2018-01-20 00:00:00
+2019-08-31 14:03:55,375	charges_calc.py	:88 	DEBUG	For Product Code PRD66 rental_start is 2016-05-02 00:00:00, rental_end is 2016-11-15 00:00:00
+2019-08-31 14:03:55,376	charges_calc.py	:88 	DEBUG	For Product Code PRD38 rental_start is 2016-01-03 00:00:00, rental_end is 2018-11-20 00:00:00
+2019-08-31 14:03:55,376	charges_calc.py	:93 	DEBUG	For Product Code PRD51 rental_start is 2016-05-18 00:00:00, rental_end is 2018-05-29 00:00:00
+2019-08-31 14:03:55,376	charges_calc.py	:88 	DEBUG	For Product Code PRD31 rental_start is 2016-07-15 00:00:00, rental_end is 2018-07-28 00:00:00
+2019-08-31 14:03:55,376	charges_calc.py	:93 	DEBUG	For Product Code PRD56 rental_start is 2016-05-08 00:00:00, rental_end is 2017-09-17 00:00:00
+2019-08-31 14:03:55,377	charges_calc.py	:93 	DEBUG	For Product Code PRD94 rental_start is 2017-04-08 00:00:00, rental_end is 2017-10-10 00:00:00
+2019-08-31 14:03:55,377	charges_calc.py	:88 	DEBUG	For Product Code PRD33 rental_start is 2018-09-17 00:00:00, rental_end is 2018-10-20 00:00:00
+2019-08-31 14:03:55,377	charges_calc.py	:88 	DEBUG	For Product Code PRD34 rental_start is 2016-11-03 00:00:00, rental_end is 2018-09-29 00:00:00
+2019-08-31 14:03:55,377	charges_calc.py	:93 	DEBUG	For Product Code PRD88 rental_start is 2016-02-03 00:00:00, rental_end is 2017-07-14 00:00:00
+2019-08-31 14:03:55,378	charges_calc.py	:88 	DEBUG	For Product Code PRD93 rental_start is 2016-08-16 00:00:00, rental_end is 2018-08-11 00:00:00
+2019-08-31 14:03:55,378	charges_calc.py	:93 	DEBUG	For Product Code PRD89 rental_start is 2017-12-24 00:00:00, rental_end is 2017-12-24 00:00:00
+2019-08-31 14:03:55,378	charges_calc.py	:93 	DEBUG	For Product Code PRD12 rental_start is 2016-03-31 00:00:00, rental_end is 2016-08-19 00:00:00
+2019-08-31 14:03:55,378	charges_calc.py	:88 	DEBUG	For Product Code PRD35 rental_start is 2016-03-30 00:00:00, rental_end is 2017-05-24 00:00:00
+2019-08-31 14:03:55,379	charges_calc.py	:88 	DEBUG	For Product Code PRD30 rental_start is 2017-07-19 00:00:00, rental_end is 2018-01-07 00:00:00
+2019-08-31 14:03:55,379	charges_calc.py	:93 	DEBUG	For Product Code PRD2 rental_start is 2016-05-08 00:00:00, rental_end is 2017-05-12 00:00:00
+2019-08-31 14:03:55,380	charges_calc.py	:88 	DEBUG	For Product Code PRD72 rental_start is 2017-05-19 00:00:00, rental_end is 2018-12-23 00:00:00
+2019-08-31 14:03:55,382	charges_calc.py	:88 	DEBUG	For Product Code PRD3 rental_start is 2016-03-06 00:00:00, rental_end is 2018-07-10 00:00:00
+2019-08-31 14:03:55,382	charges_calc.py	:93 	DEBUG	For Product Code PRD51 rental_start is 2016-04-14 00:00:00, rental_end is 2017-09-14 00:00:00
+2019-08-31 14:03:55,382	charges_calc.py	:88 	DEBUG	For Product Code PRD61 rental_start is 2018-03-14 00:00:00, rental_end is 2018-05-18 00:00:00
+2019-08-31 14:03:55,383	charges_calc.py	:93 	DEBUG	For Product Code PRD13 rental_start is 2016-02-23 00:00:00, rental_end is 2017-03-07 00:00:00
+2019-08-31 14:03:55,383	charges_calc.py	:93 	DEBUG	For Product Code PRD52 rental_start is 2016-02-27 00:00:00, rental_end is 2016-11-17 00:00:00
+2019-08-31 14:03:55,383	charges_calc.py	:88 	DEBUG	For Product Code PRD43 rental_start is 2016-09-10 00:00:00, rental_end is 2016-12-16 00:00:00
+2019-08-31 14:03:55,383	charges_calc.py	:88 	DEBUG	For Product Code PRD71 rental_start is 2017-08-07 00:00:00, rental_end is 2018-04-24 00:00:00
+2019-08-31 14:03:55,383	charges_calc.py	:93 	DEBUG	For Product Code PRD33 rental_start is 2016-05-29 00:00:00, rental_end is 2017-09-09 00:00:00
+2019-08-31 14:03:55,384	charges_calc.py	:88 	DEBUG	For Product Code PRD60 rental_start is 2016-02-15 00:00:00, rental_end is 2018-04-14 00:00:00
+2019-08-31 14:03:55,384	charges_calc.py	:88 	DEBUG	For Product Code PRD34 rental_start is 2016-12-11 00:00:00, rental_end is 2017-02-03 00:00:00
+2019-08-31 14:03:55,384	charges_calc.py	:88 	DEBUG	For Product Code PRD44 rental_start is 2016-05-25 00:00:00, rental_end is 2016-10-15 00:00:00
+2019-08-31 14:03:55,384	charges_calc.py	:88 	DEBUG	For Product Code PRD0 rental_start is 2016-09-25 00:00:00, rental_end is 2018-03-18 00:00:00
+2019-08-31 14:03:55,385	charges_calc.py	:88 	DEBUG	For Product Code PRD54 rental_start is 2017-01-11 00:00:00, rental_end is 2018-09-16 00:00:00
+2019-08-31 14:03:55,385	charges_calc.py	:93 	DEBUG	For Product Code PRD89 rental_start is 2016-10-03 00:00:00, rental_end is 2017-08-17 00:00:00
+2019-08-31 14:03:55,385	charges_calc.py	:93 	DEBUG	For Product Code PRD21 rental_start is 2018-03-29 00:00:00, rental_end is 2018-04-24 00:00:00
+2019-08-31 14:03:55,386	charges_calc.py	:93 	DEBUG	For Product Code PRD31 rental_start is 2017-10-12 00:00:00, rental_end is 2018-06-08 00:00:00
+2019-08-31 14:03:55,386	charges_calc.py	:93 	DEBUG	For Product Code PRD40 rental_start is 2016-02-05 00:00:00, rental_end is 2017-02-15 00:00:00
+2019-08-31 14:03:55,386	charges_calc.py	:88 	DEBUG	For Product Code PRD48 rental_start is 2018-03-15 00:00:00, rental_end is 2018-05-16 00:00:00
+2019-08-31 14:03:55,386	charges_calc.py	:93 	DEBUG	For Product Code PRD10 rental_start is 2017-02-25 00:00:00, rental_end is 2017-05-18 00:00:00
+2019-08-31 14:03:55,386	charges_calc.py	:93 	DEBUG	For Product Code PRD27 rental_start is 2016-06-06 00:00:00, rental_end is 2017-09-15 00:00:00
+2019-08-31 14:03:55,387	charges_calc.py	:88 	DEBUG	For Product Code PRD35 rental_start is 2018-04-07 00:00:00, rental_end is 2018-08-01 00:00:00
+2019-08-31 14:03:55,387	charges_calc.py	:88 	DEBUG	For Product Code PRD16 rental_start is 2018-08-14 00:00:00, rental_end is 2018-08-24 00:00:00
+2019-08-31 14:03:55,387	charges_calc.py	:88 	DEBUG	For Product Code PRD12 rental_start is 2016-09-08 00:00:00, rental_end is 2018-12-29 00:00:00
+2019-08-31 14:03:55,387	charges_calc.py	:93 	DEBUG	For Product Code PRD90 rental_start is 2016-09-13 00:00:00, rental_end is 2016-12-22 00:00:00
+2019-08-31 14:03:55,388	charges_calc.py	:93 	DEBUG	For Product Code PRD7 rental_start is 2018-02-08 00:00:00, rental_end is 2018-09-21 00:00:00
+2019-08-31 14:03:55,388	charges_calc.py	:88 	DEBUG	For Product Code PRD10 rental_start is 2018-04-08 00:00:00, rental_end is 2018-05-31 00:00:00
+2019-08-31 14:03:55,390	charges_calc.py	:88 	DEBUG	For Product Code PRD66 rental_start is 2016-09-28 00:00:00, rental_end is 2018-03-12 00:00:00
+2019-08-31 14:03:55,390	charges_calc.py	:93 	DEBUG	For Product Code PRD39 rental_start is 2016-12-11 00:00:00, rental_end is 2018-01-12 00:00:00
+2019-08-31 14:03:55,390	charges_calc.py	:93 	DEBUG	For Product Code PRD48 rental_start is 2017-12-23 00:00:00, rental_end is 2018-02-20 00:00:00
+2019-08-31 14:03:55,391	charges_calc.py	:88 	DEBUG	For Product Code PRD12 rental_start is 2016-01-11 00:00:00, rental_end is 2017-10-05 00:00:00
+2019-08-31 14:03:55,391	charges_calc.py	:93 	DEBUG	For Product Code PRD76 rental_start is 2017-03-20 00:00:00, rental_end is 2018-10-01 00:00:00
+2019-08-31 14:03:55,392	charges_calc.py	:88 	DEBUG	For Product Code PRD54 rental_start is 2016-08-17 00:00:00, rental_end is 2016-11-20 00:00:00
+2019-08-31 14:03:55,392	charges_calc.py	:93 	DEBUG	For Product Code PRD45 rental_start is 2017-01-29 00:00:00, rental_end is 2017-10-11 00:00:00
+2019-08-31 14:03:55,392	charges_calc.py	:93 	DEBUG	For Product Code PRD69 rental_start is 2016-06-01 00:00:00, rental_end is 2018-11-06 00:00:00
+2019-08-31 14:03:55,393	charges_calc.py	:88 	DEBUG	For Product Code PRD59 rental_start is 2017-04-30 00:00:00, rental_end is 2017-05-10 00:00:00
+2019-08-31 14:03:55,393	charges_calc.py	:93 	DEBUG	For Product Code PRD50 rental_start is 2016-10-19 00:00:00, rental_end is 2017-02-17 00:00:00
+2019-08-31 14:03:55,393	charges_calc.py	:93 	DEBUG	For Product Code PRD49 rental_start is 2017-08-14 00:00:00, rental_end is 2018-02-22 00:00:00
+2019-08-31 14:03:55,394	charges_calc.py	:88 	DEBUG	For Product Code PRD93 rental_start is 2016-01-06 00:00:00, rental_end is 2018-05-04 00:00:00
+2019-08-31 14:03:55,394	charges_calc.py	:88 	DEBUG	For Product Code PRD92 rental_start is 2016-05-04 00:00:00, rental_end is 2018-10-28 00:00:00
+2019-08-31 14:03:55,394	charges_calc.py	:88 	DEBUG	For Product Code PRD69 rental_start is 2017-11-14 00:00:00, rental_end is 2018-03-02 00:00:00
+2019-08-31 14:03:55,394	charges_calc.py	:93 	DEBUG	For Product Code PRD45 rental_start is 2016-06-01 00:00:00, rental_end is 2017-12-06 00:00:00
+2019-08-31 14:03:55,395	charges_calc.py	:93 	DEBUG	For Product Code PRD95 rental_start is 2018-02-22 00:00:00, rental_end is 2018-05-26 00:00:00
+2019-08-31 14:03:55,395	charges_calc.py	:93 	DEBUG	For Product Code PRD9 rental_start is 2018-08-06 00:00:00, rental_end is 2018-08-30 00:00:00
+2019-08-31 14:03:55,395	charges_calc.py	:88 	DEBUG	For Product Code PRD14 rental_start is 2016-09-17 00:00:00, rental_end is 2017-10-12 00:00:00
+2019-08-31 14:03:55,395	charges_calc.py	:88 	DEBUG	For Product Code PRD93 rental_start is 2016-02-07 00:00:00, rental_end is 2018-11-04 00:00:00
+2019-08-31 14:03:55,396	charges_calc.py	:93 	DEBUG	For Product Code PRD85 rental_start is 2017-08-21 00:00:00, rental_end is 2018-08-27 00:00:00
+2019-08-31 14:03:55,396	charges_calc.py	:93 	DEBUG	For Product Code PRD70 rental_start is 2017-04-15 00:00:00, rental_end is 2018-04-03 00:00:00
+2019-08-31 14:03:55,396	charges_calc.py	:93 	DEBUG	For Product Code PRD46 rental_start is 2016-12-04 00:00:00, rental_end is 2018-03-28 00:00:00
+2019-08-31 14:03:55,396	charges_calc.py	:93 	DEBUG	For Product Code PRD59 rental_start is 2018-02-16 00:00:00, rental_end is 2018-02-19 00:00:00
+2019-08-31 14:03:55,397	charges_calc.py	:88 	DEBUG	For Product Code PRD21 rental_start is 2016-06-03 00:00:00, rental_end is 2018-03-15 00:00:00
+2019-08-31 14:03:55,397	charges_calc.py	:88 	DEBUG	For Product Code PRD86 rental_start is 2016-02-18 00:00:00, rental_end is 2016-02-24 00:00:00
+2019-08-31 14:03:55,397	charges_calc.py	:93 	DEBUG	For Product Code PRD95 rental_start is 2016-09-12 00:00:00, rental_end is 2017-12-15 00:00:00
+2019-08-31 14:03:55,397	charges_calc.py	:88 	DEBUG	For Product Code PRD2 rental_start is 2017-01-02 00:00:00, rental_end is 2017-07-05 00:00:00
+2019-08-31 14:03:55,397	charges_calc.py	:93 	DEBUG	For Product Code PRD89 rental_start is 2018-06-15 00:00:00, rental_end is 2018-07-23 00:00:00
+2019-08-31 14:03:55,398	charges_calc.py	:93 	DEBUG	For Product Code PRD16 rental_start is 2016-09-03 00:00:00, rental_end is 2016-09-26 00:00:00
+2019-08-31 14:03:55,398	charges_calc.py	:93 	DEBUG	For Product Code PRD44 rental_start is 2016-04-09 00:00:00, rental_end is 2018-09-04 00:00:00
+2019-08-31 14:03:55,398	charges_calc.py	:88 	DEBUG	For Product Code PRD6 rental_start is 2016-06-29 00:00:00, rental_end is 2016-12-04 00:00:00
+2019-08-31 14:03:55,398	charges_calc.py	:93 	DEBUG	For Product Code PRD36 rental_start is 2016-04-25 00:00:00, rental_end is 2017-08-03 00:00:00
+2019-08-31 14:03:55,399	charges_calc.py	:88 	DEBUG	For Product Code PRD6 rental_start is 2016-02-10 00:00:00, rental_end is 2016-04-20 00:00:00
+2019-08-31 14:03:55,399	charges_calc.py	:88 	DEBUG	For Product Code PRD11 rental_start is 2016-08-04 00:00:00, rental_end is 2018-08-18 00:00:00
+2019-08-31 14:03:55,399	charges_calc.py	:88 	DEBUG	For Product Code PRD20 rental_start is 2016-12-23 00:00:00, rental_end is 2017-12-11 00:00:00
+2019-08-31 14:03:55,399	charges_calc.py	:93 	DEBUG	For Product Code PRD79 rental_start is 2017-01-24 00:00:00, rental_end is 2017-12-16 00:00:00
+2019-08-31 14:03:55,400	charges_calc.py	:93 	DEBUG	For Product Code PRD69 rental_start is 2016-01-01 00:00:00, rental_end is 2017-02-14 00:00:00
+2019-08-31 14:03:55,401	charges_calc.py	:88 	DEBUG	For Product Code PRD12 rental_start is 2016-07-28 00:00:00, rental_end is 2018-10-26 00:00:00
+2019-08-31 14:03:55,401	charges_calc.py	:93 	DEBUG	For Product Code PRD97 rental_start is 2016-05-05 00:00:00, rental_end is 2017-02-27 00:00:00
+2019-08-31 14:03:55,402	charges_calc.py	:88 	DEBUG	For Product Code PRD51 rental_start is 2016-04-28 00:00:00, rental_end is 2018-02-03 00:00:00
+2019-08-31 14:03:55,402	charges_calc.py	:88 	DEBUG	For Product Code PRD10 rental_start is 2016-10-07 00:00:00, rental_end is 2017-11-05 00:00:00
+2019-08-31 14:03:55,403	charges_calc.py	:88 	DEBUG	For Product Code PRD51 rental_start is 2016-12-24 00:00:00, rental_end is 2017-05-15 00:00:00
+2019-08-31 14:03:55,404	charges_calc.py	:93 	DEBUG	For Product Code PRD90 rental_start is 2017-10-19 00:00:00, rental_end is 2017-12-03 00:00:00
+2019-08-31 14:03:55,404	charges_calc.py	:88 	DEBUG	For Product Code PRD32 rental_start is 2016-02-04 00:00:00, rental_end is 2018-05-11 00:00:00
+2019-08-31 14:03:55,405	charges_calc.py	:93 	DEBUG	For Product Code PRD61 rental_start is 2018-01-28 00:00:00, rental_end is 2018-12-09 00:00:00
+2019-08-31 14:03:55,405	charges_calc.py	:88 	DEBUG	For Product Code PRD75 rental_start is 2016-11-03 00:00:00, rental_end is 2017-02-23 00:00:00
+2019-08-31 14:03:55,406	charges_calc.py	:93 	DEBUG	For Product Code PRD99 rental_start is 2017-10-27 00:00:00, rental_end is 2018-01-04 00:00:00
+2019-08-31 14:03:55,406	charges_calc.py	:93 	DEBUG	For Product Code PRD20 rental_start is 2016-05-25 00:00:00, rental_end is 2018-12-28 00:00:00
+2019-08-31 14:03:55,406	charges_calc.py	:93 	DEBUG	For Product Code PRD26 rental_start is 2016-09-30 00:00:00, rental_end is 2017-10-06 00:00:00
+2019-08-31 14:03:55,406	charges_calc.py	:88 	DEBUG	For Product Code PRD35 rental_start is 2016-07-25 00:00:00, rental_end is 2018-04-27 00:00:00
+2019-08-31 14:03:55,407	charges_calc.py	:88 	DEBUG	For Product Code PRD2 rental_start is 2018-01-20 00:00:00, rental_end is 2018-04-25 00:00:00
+2019-08-31 14:03:55,407	charges_calc.py	:93 	DEBUG	For Product Code PRD34 rental_start is 2018-10-11 00:00:00, rental_end is 2018-10-17 00:00:00
+2019-08-31 14:03:55,408	charges_calc.py	:88 	DEBUG	For Product Code PRD16 rental_start is 2016-03-25 00:00:00, rental_end is 2018-12-17 00:00:00
+2019-08-31 14:03:55,408	charges_calc.py	:93 	DEBUG	For Product Code PRD9 rental_start is 2016-03-25 00:00:00, rental_end is 2017-12-04 00:00:00
+2019-08-31 14:03:55,408	charges_calc.py	:88 	DEBUG	For Product Code PRD43 rental_start is 2017-08-07 00:00:00, rental_end is 2018-01-01 00:00:00
+2019-08-31 14:03:55,409	charges_calc.py	:93 	DEBUG	For Product Code PRD79 rental_start is 2016-03-26 00:00:00, rental_end is 2016-04-23 00:00:00
+2019-08-31 14:03:55,409	charges_calc.py	:93 	DEBUG	For Product Code PRD20 rental_start is 2016-06-17 00:00:00, rental_end is 2016-12-05 00:00:00
+2019-08-31 14:03:55,409	charges_calc.py	:88 	DEBUG	For Product Code PRD97 rental_start is 2017-12-07 00:00:00, rental_end is 2018-07-02 00:00:00
+2019-08-31 14:03:55,410	charges_calc.py	:88 	DEBUG	For Product Code PRD14 rental_start is 2016-02-18 00:00:00, rental_end is 2017-01-31 00:00:00
+2019-08-31 14:03:55,410	charges_calc.py	:88 	DEBUG	For Product Code PRD0 rental_start is 2016-10-13 00:00:00, rental_end is 2017-12-08 00:00:00
+2019-08-31 14:03:55,410	charges_calc.py	:88 	DEBUG	For Product Code PRD23 rental_start is 2016-09-16 00:00:00, rental_end is 2018-06-25 00:00:00
+2019-08-31 14:03:55,410	charges_calc.py	:93 	DEBUG	For Product Code PRD0 rental_start is 2016-06-11 00:00:00, rental_end is 2018-09-10 00:00:00
+2019-08-31 14:03:55,411	charges_calc.py	:88 	DEBUG	For Product Code PRD85 rental_start is 2017-08-28 00:00:00, rental_end is 2018-02-02 00:00:00
+2019-08-31 14:03:55,411	charges_calc.py	:88 	DEBUG	For Product Code PRD33 rental_start is 2017-06-10 00:00:00, rental_end is 2017-07-10 00:00:00
+2019-08-31 14:03:55,411	charges_calc.py	:93 	DEBUG	For Product Code PRD79 rental_start is 2016-06-23 00:00:00, rental_end is 2017-07-29 00:00:00
+2019-08-31 14:03:55,411	charges_calc.py	:93 	DEBUG	For Product Code PRD6 rental_start is 2016-10-28 00:00:00, rental_end is 2017-02-16 00:00:00
+2019-08-31 14:03:55,412	charges_calc.py	:93 	DEBUG	For Product Code PRD83 rental_start is 2018-03-23 00:00:00, rental_end is 2018-04-28 00:00:00
+2019-08-31 14:03:55,412	charges_calc.py	:93 	DEBUG	For Product Code PRD58 rental_start is 2018-01-12 00:00:00, rental_end is 2018-10-06 00:00:00
+2019-08-31 14:03:55,412	charges_calc.py	:93 	DEBUG	For Product Code PRD5 rental_start is 2016-12-30 00:00:00, rental_end is 2017-08-27 00:00:00
+2019-08-31 14:03:55,412	charges_calc.py	:93 	DEBUG	For Product Code PRD10 rental_start is 2017-01-11 00:00:00, rental_end is 2018-12-17 00:00:00
+2019-08-31 14:03:55,413	charges_calc.py	:88 	DEBUG	For Product Code PRD13 rental_start is 2016-04-17 00:00:00, rental_end is 2016-10-31 00:00:00
+2019-08-31 14:03:55,413	charges_calc.py	:93 	DEBUG	For Product Code PRD10 rental_start is 2017-04-01 00:00:00, rental_end is 2018-09-02 00:00:00
+2019-08-31 14:03:55,413	charges_calc.py	:93 	DEBUG	For Product Code PRD60 rental_start is 2017-09-05 00:00:00, rental_end is 2017-11-23 00:00:00
+2019-08-31 14:03:55,413	charges_calc.py	:93 	DEBUG	For Product Code PRD0 rental_start is 2016-04-04 00:00:00, rental_end is 2018-12-15 00:00:00
+2019-08-31 14:03:55,414	charges_calc.py	:88 	DEBUG	For Product Code PRD70 rental_start is 2017-04-10 00:00:00, rental_end is 2017-10-21 00:00:00
+2019-08-31 14:03:55,414	charges_calc.py	:88 	DEBUG	For Product Code PRD86 rental_start is 2016-08-16 00:00:00, rental_end is 2018-02-14 00:00:00
+2019-08-31 14:03:55,414	charges_calc.py	:88 	DEBUG	For Product Code PRD17 rental_start is 2017-01-19 00:00:00, rental_end is 2018-01-28 00:00:00
+2019-08-31 14:03:55,414	charges_calc.py	:88 	DEBUG	For Product Code PRD82 rental_start is 2017-11-10 00:00:00, rental_end is 2018-03-14 00:00:00
+2019-08-31 14:03:55,415	charges_calc.py	:93 	DEBUG	For Product Code PRD59 rental_start is 2016-11-24 00:00:00, rental_end is 2017-03-13 00:00:00
+2019-08-31 14:03:55,415	charges_calc.py	:93 	DEBUG	For Product Code PRD90 rental_start is 2018-03-03 00:00:00, rental_end is 2018-12-05 00:00:00
+2019-08-31 14:03:55,415	charges_calc.py	:88 	DEBUG	For Product Code PRD50 rental_start is 2016-09-26 00:00:00, rental_end is 2018-09-25 00:00:00
+2019-08-31 14:03:55,415	charges_calc.py	:88 	DEBUG	For Product Code PRD15 rental_start is 2017-10-07 00:00:00, rental_end is 2017-10-08 00:00:00
+2019-08-31 14:03:55,415	charges_calc.py	:93 	DEBUG	For Product Code PRD35 rental_start is 2018-01-07 00:00:00, rental_end is 2018-01-20 00:00:00
+2019-08-31 14:03:55,416	charges_calc.py	:93 	DEBUG	For Product Code PRD44 rental_start is 2016-04-12 00:00:00, rental_end is 2017-08-05 00:00:00
+2019-08-31 14:03:55,416	charges_calc.py	:93 	DEBUG	For Product Code PRD27 rental_start is 2016-06-10 00:00:00, rental_end is 2016-07-16 00:00:00
+2019-08-31 14:03:55,416	charges_calc.py	:93 	DEBUG	For Product Code PRD5 rental_start is 2017-06-17 00:00:00, rental_end is 2018-11-20 00:00:00
+2019-08-31 14:03:55,416	charges_calc.py	:88 	DEBUG	For Product Code PRD19 rental_start is 2016-07-24 00:00:00, rental_end is 2016-08-30 00:00:00
+2019-08-31 14:03:55,417	charges_calc.py	:88 	DEBUG	For Product Code PRD33 rental_start is 2016-08-07 00:00:00, rental_end is 2018-11-27 00:00:00
+2019-08-31 14:03:55,417	charges_calc.py	:88 	DEBUG	For Product Code PRD57 rental_start is 2017-05-19 00:00:00, rental_end is 2017-07-31 00:00:00
+2019-08-31 14:03:55,417	charges_calc.py	:93 	DEBUG	For Product Code PRD96 rental_start is 2017-10-27 00:00:00, rental_end is 2018-06-30 00:00:00
+2019-08-31 14:03:55,417	charges_calc.py	:88 	DEBUG	For Product Code PRD3 rental_start is 2017-02-12 00:00:00, rental_end is 2018-12-15 00:00:00
+2019-08-31 14:03:55,418	charges_calc.py	:93 	DEBUG	For Product Code PRD17 rental_start is 2016-11-14 00:00:00, rental_end is 2016-12-30 00:00:00
+2019-08-31 14:03:55,418	charges_calc.py	:93 	DEBUG	For Product Code PRD84 rental_start is 2016-07-02 00:00:00, rental_end is 2018-04-02 00:00:00
+2019-08-31 14:03:55,418	charges_calc.py	:88 	DEBUG	For Product Code PRD28 rental_start is 2016-10-21 00:00:00, rental_end is 2018-08-07 00:00:00
+2019-08-31 14:03:55,419	charges_calc.py	:93 	DEBUG	For Product Code PRD64 rental_start is 2016-07-25 00:00:00, rental_end is 2018-12-23 00:00:00
+2019-08-31 14:03:55,419	charges_calc.py	:93 	DEBUG	For Product Code PRD14 rental_start is 2016-05-23 00:00:00, rental_end is 2018-04-25 00:00:00
+2019-08-31 14:03:55,419	charges_calc.py	:93 	DEBUG	For Product Code PRD14 rental_start is 2016-07-25 00:00:00, rental_end is 2018-08-01 00:00:00
+2019-08-31 14:03:55,419	charges_calc.py	:93 	DEBUG	For Product Code PRD29 rental_start is 2017-07-18 00:00:00, rental_end is 2018-05-25 00:00:00
+2019-08-31 14:03:55,419	charges_calc.py	:88 	DEBUG	For Product Code PRD28 rental_start is 2017-09-04 00:00:00, rental_end is 2018-02-03 00:00:00
+2019-08-31 14:03:55,420	charges_calc.py	:88 	DEBUG	For Product Code PRD85 rental_start is 2018-06-30 00:00:00, rental_end is 2018-07-18 00:00:00
+2019-08-31 14:03:55,420	charges_calc.py	:93 	DEBUG	For Product Code PRD40 rental_start is 2016-01-17 00:00:00, rental_end is 2016-12-19 00:00:00
+2019-08-31 14:03:55,420	charges_calc.py	:93 	DEBUG	For Product Code PRD19 rental_start is 2017-03-31 00:00:00, rental_end is 2017-05-05 00:00:00
+2019-08-31 14:03:55,420	charges_calc.py	:93 	DEBUG	For Product Code PRD1 rental_start is 2016-04-26 00:00:00, rental_end is 2017-03-27 00:00:00
+2019-08-31 14:03:55,420	charges_calc.py	:93 	DEBUG	For Product Code PRD28 rental_start is 2016-06-09 00:00:00, rental_end is 2017-01-01 00:00:00
+2019-08-31 14:03:55,421	charges_calc.py	:88 	DEBUG	For Product Code PRD74 rental_start is 2018-09-13 00:00:00, rental_end is 2018-12-31 00:00:00
+2019-08-31 14:03:55,421	charges_calc.py	:93 	DEBUG	For Product Code PRD75 rental_start is 2018-06-11 00:00:00, rental_end is 2018-07-01 00:00:00
+2019-08-31 14:03:55,421	charges_calc.py	:88 	DEBUG	For Product Code PRD90 rental_start is 2016-05-12 00:00:00, rental_end is 2016-05-17 00:00:00
+2019-08-31 14:03:55,421	charges_calc.py	:93 	DEBUG	For Product Code PRD19 rental_start is 2016-07-26 00:00:00, rental_end is 2018-10-10 00:00:00
+2019-08-31 14:03:55,422	charges_calc.py	:93 	DEBUG	For Product Code PRD14 rental_start is 2017-01-13 00:00:00, rental_end is 2017-03-31 00:00:00
+2019-08-31 14:03:55,422	charges_calc.py	:93 	DEBUG	For Product Code PRD75 rental_start is 2018-04-06 00:00:00, rental_end is 2018-12-03 00:00:00
+2019-08-31 14:03:55,422	charges_calc.py	:93 	DEBUG	For Product Code PRD40 rental_start is 2016-01-14 00:00:00, rental_end is 2018-11-16 00:00:00
+2019-08-31 14:03:55,422	charges_calc.py	:88 	DEBUG	For Product Code PRD71 rental_start is 2016-04-25 00:00:00, rental_end is 2016-11-10 00:00:00
+2019-08-31 14:03:55,423	charges_calc.py	:88 	DEBUG	For Product Code PRD84 rental_start is 2016-05-13 00:00:00, rental_end is 2017-12-08 00:00:00
+2019-08-31 14:03:55,423	charges_calc.py	:93 	DEBUG	For Product Code PRD61 rental_start is 2017-12-29 00:00:00, rental_end is 2018-09-04 00:00:00
+2019-08-31 14:03:55,423	charges_calc.py	:88 	DEBUG	For Product Code PRD29 rental_start is 2018-07-08 00:00:00, rental_end is 2018-12-11 00:00:00
+2019-08-31 14:03:55,423	charges_calc.py	:88 	DEBUG	For Product Code PRD69 rental_start is 2016-10-08 00:00:00, rental_end is 2016-10-13 00:00:00
+2019-08-31 14:03:55,424	charges_calc.py	:88 	DEBUG	For Product Code PRD18 rental_start is 2016-06-30 00:00:00, rental_end is 2017-01-27 00:00:00
+2019-08-31 14:03:55,424	charges_calc.py	:88 	DEBUG	For Product Code PRD89 rental_start is 2016-01-29 00:00:00, rental_end is 2017-08-10 00:00:00
+2019-08-31 14:03:55,424	charges_calc.py	:88 	DEBUG	For Product Code PRD37 rental_start is 2016-02-22 00:00:00, rental_end is 2016-12-02 00:00:00
+2019-08-31 14:03:55,424	charges_calc.py	:88 	DEBUG	For Product Code PRD13 rental_start is 2017-05-23 00:00:00, rental_end is 2018-07-02 00:00:00
+2019-08-31 14:03:55,424	charges_calc.py	:88 	DEBUG	For Product Code PRD11 rental_start is 2017-12-31 00:00:00, rental_end is 2018-06-29 00:00:00
+2019-08-31 14:03:55,425	charges_calc.py	:88 	DEBUG	For Product Code PRD12 rental_start is 2016-04-20 00:00:00, rental_end is 2018-01-10 00:00:00
+2019-08-31 14:03:55,425	charges_calc.py	:88 	DEBUG	For Product Code PRD18 rental_start is 2017-01-21 00:00:00, rental_end is 2018-08-06 00:00:00
+2019-08-31 14:03:55,425	charges_calc.py	:93 	DEBUG	For Product Code PRD90 rental_start is 2017-11-04 00:00:00, rental_end is 2018-06-18 00:00:00
+2019-08-31 14:03:55,426	charges_calc.py	:88 	DEBUG	For Product Code PRD23 rental_start is 2016-04-28 00:00:00, rental_end is 2016-07-25 00:00:00
+2019-08-31 14:03:55,426	charges_calc.py	:88 	DEBUG	For Product Code PRD14 rental_start is 2017-10-26 00:00:00, rental_end is 2017-12-03 00:00:00
+2019-08-31 14:03:55,426	charges_calc.py	:88 	DEBUG	For Product Code PRD29 rental_start is 2016-07-05 00:00:00, rental_end is 2018-11-28 00:00:00
+2019-08-31 14:03:55,426	charges_calc.py	:88 	DEBUG	For Product Code PRD45 rental_start is 2017-05-19 00:00:00, rental_end is 2018-12-24 00:00:00
+2019-08-31 14:03:55,427	charges_calc.py	:88 	DEBUG	For Product Code PRD98 rental_start is 2017-03-26 00:00:00, rental_end is 2017-06-17 00:00:00
+2019-08-31 14:03:55,427	charges_calc.py	:88 	DEBUG	For Product Code PRD75 rental_start is 2017-02-17 00:00:00, rental_end is 2018-01-23 00:00:00
+2019-08-31 14:03:55,427	charges_calc.py	:88 	DEBUG	For Product Code PRD71 rental_start is 2017-03-06 00:00:00, rental_end is 2018-07-25 00:00:00
+2019-08-31 14:03:55,427	charges_calc.py	:88 	DEBUG	For Product Code PRD86 rental_start is 2016-12-21 00:00:00, rental_end is 2017-09-19 00:00:00
+2019-08-31 14:03:55,428	charges_calc.py	:88 	DEBUG	For Product Code PRD92 rental_start is 2016-04-14 00:00:00, rental_end is 2017-01-09 00:00:00
+2019-08-31 14:03:55,428	charges_calc.py	:93 	DEBUG	For Product Code PRD41 rental_start is 2016-09-12 00:00:00, rental_end is 2018-09-15 00:00:00
+2019-08-31 14:03:55,428	charges_calc.py	:93 	DEBUG	For Product Code PRD95 rental_start is 2016-12-29 00:00:00, rental_end is 2017-11-05 00:00:00
+2019-08-31 14:03:55,429	charges_calc.py	:93 	DEBUG	For Product Code PRD96 rental_start is 2016-02-07 00:00:00, rental_end is 2018-12-24 00:00:00
+2019-08-31 14:03:55,429	charges_calc.py	:88 	DEBUG	For Product Code PRD90 rental_start is 2017-08-25 00:00:00, rental_end is 2018-10-16 00:00:00
+2019-08-31 14:03:55,430	charges_calc.py	:88 	DEBUG	For Product Code PRD65 rental_start is 2017-06-09 00:00:00, rental_end is 2018-04-18 00:00:00
+2019-08-31 14:03:55,431	charges_calc.py	:93 	DEBUG	For Product Code PRD29 rental_start is 2017-01-27 00:00:00, rental_end is 2017-06-06 00:00:00
+2019-08-31 14:03:55,432	charges_calc.py	:93 	DEBUG	For Product Code PRD82 rental_start is 2016-08-15 00:00:00, rental_end is 2017-02-02 00:00:00
+2019-08-31 14:03:55,432	charges_calc.py	:88 	DEBUG	For Product Code PRD18 rental_start is 2016-02-03 00:00:00, rental_end is 2018-12-29 00:00:00
+2019-08-31 14:03:55,432	charges_calc.py	:88 	DEBUG	For Product Code PRD42 rental_start is 2016-06-10 00:00:00, rental_end is 2018-05-18 00:00:00
+2019-08-31 14:03:55,432	charges_calc.py	:93 	DEBUG	For Product Code PRD28 rental_start is 2016-01-05 00:00:00, rental_end is 2017-07-18 00:00:00
+2019-08-31 14:03:55,433	charges_calc.py	:93 	DEBUG	For Product Code PRD10 rental_start is 2016-04-19 00:00:00, rental_end is 2018-01-10 00:00:00
+2019-08-31 14:03:55,433	charges_calc.py	:93 	DEBUG	For Product Code PRD26 rental_start is 2017-08-25 00:00:00, rental_end is 2017-12-05 00:00:00
+2019-08-31 14:03:55,433	charges_calc.py	:93 	DEBUG	For Product Code PRD85 rental_start is 2016-07-16 00:00:00, rental_end is 2017-08-06 00:00:00
+2019-08-31 14:03:55,433	charges_calc.py	:93 	DEBUG	For Product Code PRD18 rental_start is 2017-01-20 00:00:00, rental_end is 2017-05-05 00:00:00
+2019-08-31 14:03:55,434	charges_calc.py	:88 	DEBUG	For Product Code PRD68 rental_start is 2017-07-06 00:00:00, rental_end is 2017-07-08 00:00:00
+2019-08-31 14:03:55,434	charges_calc.py	:93 	DEBUG	For Product Code PRD30 rental_start is 2016-08-08 00:00:00, rental_end is 2018-01-08 00:00:00
+2019-08-31 14:03:55,434	charges_calc.py	:93 	DEBUG	For Product Code PRD24 rental_start is 2016-02-25 00:00:00, rental_end is 2018-09-30 00:00:00
+2019-08-31 14:03:55,434	charges_calc.py	:93 	DEBUG	For Product Code PRD82 rental_start is 2017-02-21 00:00:00, rental_end is 2017-04-27 00:00:00
+2019-08-31 14:03:55,435	charges_calc.py	:88 	DEBUG	For Product Code PRD37 rental_start is 2017-12-04 00:00:00, rental_end is 2017-12-19 00:00:00
+2019-08-31 14:03:55,435	charges_calc.py	:88 	DEBUG	For Product Code PRD95 rental_start is 2016-12-13 00:00:00, rental_end is 2017-09-03 00:00:00
+2019-08-31 14:03:55,435	charges_calc.py	:88 	DEBUG	For Product Code PRD31 rental_start is 2017-03-25 00:00:00, rental_end is 2017-12-16 00:00:00
+2019-08-31 14:03:55,435	charges_calc.py	:93 	DEBUG	For Product Code PRD29 rental_start is 2017-01-23 00:00:00, rental_end is 2017-11-23 00:00:00
+2019-08-31 14:03:55,436	charges_calc.py	:88 	DEBUG	For Product Code PRD43 rental_start is 2016-03-01 00:00:00, rental_end is 2017-07-12 00:00:00
+2019-08-31 14:03:55,436	charges_calc.py	:93 	DEBUG	For Product Code PRD81 rental_start is 2016-01-23 00:00:00, rental_end is 2017-12-09 00:00:00
+2019-08-31 14:03:55,436	charges_calc.py	:93 	DEBUG	For Product Code PRD11 rental_start is 2016-09-23 00:00:00, rental_end is 2017-08-30 00:00:00
+2019-08-31 14:03:55,436	charges_calc.py	:93 	DEBUG	For Product Code PRD91 rental_start is 2016-12-23 00:00:00, rental_end is 2018-06-21 00:00:00
+2019-08-31 14:03:55,436	charges_calc.py	:88 	DEBUG	For Product Code PRD73 rental_start is 2017-01-17 00:00:00, rental_end is 2017-02-15 00:00:00
+2019-08-31 14:03:55,437	charges_calc.py	:93 	DEBUG	For Product Code PRD61 rental_start is 2018-08-03 00:00:00, rental_end is 2018-08-27 00:00:00
+2019-08-31 14:03:55,437	charges_calc.py	:88 	DEBUG	For Product Code PRD44 rental_start is 2016-10-22 00:00:00, rental_end is 2017-05-15 00:00:00
+2019-08-31 14:03:55,437	charges_calc.py	:88 	DEBUG	For Product Code PRD59 rental_start is 2017-03-21 00:00:00, rental_end is 2018-09-17 00:00:00
+2019-08-31 14:03:55,437	charges_calc.py	:88 	DEBUG	For Product Code PRD32 rental_start is 2017-09-21 00:00:00, rental_end is 2018-04-17 00:00:00
+2019-08-31 14:03:55,438	charges_calc.py	:93 	DEBUG	For Product Code PRD37 rental_start is 2016-02-19 00:00:00, rental_end is 2016-05-28 00:00:00
+2019-08-31 14:03:55,438	charges_calc.py	:93 	DEBUG	For Product Code PRD0 rental_start is 2016-10-11 00:00:00, rental_end is 2018-04-05 00:00:00
+2019-08-31 14:03:55,438	charges_calc.py	:93 	DEBUG	For Product Code PRD22 rental_start is 2016-11-12 00:00:00, rental_end is 2017-03-14 00:00:00
+2019-08-31 14:03:55,438	charges_calc.py	:93 	DEBUG	For Product Code PRD66 rental_start is 2016-01-07 00:00:00, rental_end is 2017-06-03 00:00:00
+2019-08-31 14:03:55,439	charges_calc.py	:88 	DEBUG	For Product Code PRD92 rental_start is 2017-01-15 00:00:00, rental_end is 2018-07-16 00:00:00
+2019-08-31 14:03:55,439	charges_calc.py	:88 	DEBUG	For Product Code PRD38 rental_start is 2016-12-13 00:00:00, rental_end is 2017-10-04 00:00:00
+2019-08-31 14:03:55,439	charges_calc.py	:93 	DEBUG	For Product Code PRD36 rental_start is 2016-09-17 00:00:00, rental_end is 2017-10-17 00:00:00
+2019-08-31 14:03:55,439	charges_calc.py	:88 	DEBUG	For Product Code PRD29 rental_start is 2018-07-30 00:00:00, rental_end is 2018-09-13 00:00:00
+2019-08-31 14:03:55,439	charges_calc.py	:88 	DEBUG	For Product Code PRD59 rental_start is 2017-08-21 00:00:00, rental_end is 2018-01-16 00:00:00
+2019-08-31 14:03:55,440	charges_calc.py	:93 	DEBUG	For Product Code PRD28 rental_start is 2018-03-16 00:00:00, rental_end is 2018-08-29 00:00:00
+2019-08-31 14:03:55,440	charges_calc.py	:93 	DEBUG	For Product Code PRD46 rental_start is 2016-09-15 00:00:00, rental_end is 2017-09-19 00:00:00
+2019-08-31 14:03:55,440	charges_calc.py	:93 	DEBUG	For Product Code PRD30 rental_start is 2016-08-20 00:00:00, rental_end is 2017-08-13 00:00:00
+2019-08-31 14:03:55,440	charges_calc.py	:93 	DEBUG	For Product Code PRD96 rental_start is 2016-01-29 00:00:00, rental_end is 2017-03-03 00:00:00
+2019-08-31 14:03:55,440	charges_calc.py	:88 	DEBUG	For Product Code PRD31 rental_start is 2016-03-05 00:00:00, rental_end is 2018-01-29 00:00:00
+2019-08-31 14:03:55,441	charges_calc.py	:93 	DEBUG	For Product Code PRD99 rental_start is 2017-03-18 00:00:00, rental_end is 2018-10-03 00:00:00
+2019-08-31 14:03:55,441	charges_calc.py	:88 	DEBUG	For Product Code PRD40 rental_start is 2018-05-21 00:00:00, rental_end is 2018-06-12 00:00:00
+2019-08-31 14:03:55,441	charges_calc.py	:88 	DEBUG	For Product Code PRD51 rental_start is 2018-05-14 00:00:00, rental_end is 2018-06-24 00:00:00
+2019-08-31 14:03:55,442	charges_calc.py	:93 	DEBUG	For Product Code PRD76 rental_start is 2016-09-29 00:00:00, rental_end is 2017-11-18 00:00:00
+2019-08-31 14:03:55,442	charges_calc.py	:88 	DEBUG	For Product Code PRD73 rental_start is 2017-10-08 00:00:00, rental_end is 2018-07-24 00:00:00
+2019-08-31 14:03:55,442	charges_calc.py	:93 	DEBUG	For Product Code PRD71 rental_start is 2017-08-12 00:00:00, rental_end is 2017-11-26 00:00:00
+2019-08-31 14:03:55,442	charges_calc.py	:93 	DEBUG	For Product Code PRD31 rental_start is 2017-03-09 00:00:00, rental_end is 2017-06-18 00:00:00
+2019-08-31 14:03:55,443	charges_calc.py	:93 	DEBUG	For Product Code PRD2 rental_start is 2018-06-01 00:00:00, rental_end is 2018-09-11 00:00:00
+2019-08-31 14:03:55,443	charges_calc.py	:93 	DEBUG	For Product Code PRD3 rental_start is 2016-07-23 00:00:00, rental_end is 2018-02-23 00:00:00
+2019-08-31 14:03:55,443	charges_calc.py	:88 	DEBUG	For Product Code PRD2 rental_start is 2017-06-10 00:00:00, rental_end is 2018-11-20 00:00:00
+2019-08-31 14:03:55,443	charges_calc.py	:88 	DEBUG	For Product Code PRD40 rental_start is 2016-09-17 00:00:00, rental_end is 2017-09-14 00:00:00
+2019-08-31 14:03:55,443	charges_calc.py	:93 	DEBUG	For Product Code PRD30 rental_start is 2017-09-17 00:00:00, rental_end is 2017-12-24 00:00:00
+2019-08-31 14:03:55,444	charges_calc.py	:88 	DEBUG	For Product Code PRD85 rental_start is 2018-01-15 00:00:00, rental_end is 2018-06-28 00:00:00
+2019-08-31 14:03:55,444	charges_calc.py	:93 	DEBUG	For Product Code PRD1 rental_start is 2017-05-18 00:00:00, rental_end is 2017-07-17 00:00:00
+2019-08-31 14:03:55,444	charges_calc.py	:88 	DEBUG	For Product Code PRD75 rental_start is 2017-04-20 00:00:00, rental_end is 2017-11-20 00:00:00
+2019-08-31 14:03:55,444	charges_calc.py	:93 	DEBUG	For Product Code PRD76 rental_start is 2016-04-09 00:00:00, rental_end is 2018-03-10 00:00:00
+2019-08-31 14:03:55,444	charges_calc.py	:93 	DEBUG	For Product Code PRD68 rental_start is 2016-06-24 00:00:00, rental_end is 2017-12-19 00:00:00
+2019-08-31 14:03:55,445	charges_calc.py	:88 	DEBUG	For Product Code PRD44 rental_start is 2016-11-21 00:00:00, rental_end is 2018-09-11 00:00:00
+2019-08-31 14:03:55,445	charges_calc.py	:93 	DEBUG	For Product Code PRD12 rental_start is 2016-03-06 00:00:00, rental_end is 2017-05-23 00:00:00
+2019-08-31 14:03:55,445	charges_calc.py	:88 	DEBUG	For Product Code PRD30 rental_start is 2016-12-26 00:00:00, rental_end is 2018-05-28 00:00:00
+2019-08-31 14:03:55,445	charges_calc.py	:93 	DEBUG	For Product Code PRD95 rental_start is 2017-05-19 00:00:00, rental_end is 2018-12-08 00:00:00
+2019-08-31 14:03:55,446	charges_calc.py	:88 	DEBUG	For Product Code PRD58 rental_start is 2017-05-06 00:00:00, rental_end is 2017-05-28 00:00:00
+2019-08-31 14:03:55,446	charges_calc.py	:88 	DEBUG	For Product Code PRD73 rental_start is 2017-05-29 00:00:00, rental_end is 2017-11-28 00:00:00
+2019-08-31 14:03:55,446	charges_calc.py	:93 	DEBUG	For Product Code PRD29 rental_start is 2016-12-17 00:00:00, rental_end is 2018-08-30 00:00:00
+2019-08-31 14:03:55,446	charges_calc.py	:88 	DEBUG	For Product Code PRD99 rental_start is 2016-06-09 00:00:00, rental_end is 2017-01-05 00:00:00
+2019-08-31 14:03:55,447	charges_calc.py	:88 	DEBUG	For Product Code PRD38 rental_start is 2016-07-18 00:00:00, rental_end is 2018-12-28 00:00:00
+2019-08-31 14:03:55,447	charges_calc.py	:88 	DEBUG	For Product Code PRD38 rental_start is 2016-12-11 00:00:00, rental_end is 2018-07-21 00:00:00
+2019-08-31 14:03:55,447	charges_calc.py	:93 	DEBUG	For Product Code PRD71 rental_start is 2017-04-06 00:00:00, rental_end is 2018-08-25 00:00:00
+2019-08-31 14:03:55,447	charges_calc.py	:93 	DEBUG	For Product Code PRD81 rental_start is 2016-12-16 00:00:00, rental_end is 2017-10-19 00:00:00
+2019-08-31 14:03:55,448	charges_calc.py	:88 	DEBUG	For Product Code PRD2 rental_start is 2017-08-06 00:00:00, rental_end is 2017-08-18 00:00:00
+2019-08-31 14:03:55,448	charges_calc.py	:88 	DEBUG	For Product Code PRD64 rental_start is 2018-04-04 00:00:00, rental_end is 2018-07-17 00:00:00
+2019-08-31 14:03:55,448	charges_calc.py	:93 	DEBUG	For Product Code PRD49 rental_start is 2016-03-10 00:00:00, rental_end is 2017-04-06 00:00:00
+2019-08-31 14:03:55,448	charges_calc.py	:88 	DEBUG	For Product Code PRD11 rental_start is 2017-01-10 00:00:00, rental_end is 2018-02-15 00:00:00
+2019-08-31 14:03:55,449	charges_calc.py	:88 	DEBUG	For Product Code PRD22 rental_start is 2017-12-29 00:00:00, rental_end is 2018-03-31 00:00:00
+2019-08-31 14:03:55,449	charges_calc.py	:93 	DEBUG	For Product Code PRD10 rental_start is 2016-08-09 00:00:00, rental_end is 2018-05-16 00:00:00
+2019-08-31 14:03:55,449	charges_calc.py	:88 	DEBUG	For Product Code PRD81 rental_start is 2016-05-11 00:00:00, rental_end is 2017-06-22 00:00:00
+2019-08-31 14:03:55,449	charges_calc.py	:93 	DEBUG	For Product Code PRD46 rental_start is 2018-05-27 00:00:00, rental_end is 2018-06-05 00:00:00
+2019-08-31 14:03:55,450	charges_calc.py	:93 	DEBUG	For Product Code PRD10 rental_start is 2016-01-21 00:00:00, rental_end is 2017-10-11 00:00:00
+2019-08-31 14:03:55,450	charges_calc.py	:88 	DEBUG	For Product Code PRD59 rental_start is 2017-03-06 00:00:00, rental_end is 2018-10-12 00:00:00
+2019-08-31 14:03:55,450	charges_calc.py	:93 	DEBUG	For Product Code PRD86 rental_start is 2018-01-01 00:00:00, rental_end is 2018-05-10 00:00:00
+2019-08-31 14:03:55,450	charges_calc.py	:93 	DEBUG	For Product Code PRD69 rental_start is 2017-03-08 00:00:00, rental_end is 2017-12-03 00:00:00
+2019-08-31 14:03:55,450	charges_calc.py	:93 	DEBUG	For Product Code PRD59 rental_start is 2016-08-16 00:00:00, rental_end is 2017-10-07 00:00:00
+2019-08-31 14:03:55,451	charges_calc.py	:93 	DEBUG	For Product Code PRD95 rental_start is 2016-09-01 00:00:00, rental_end is 2017-11-23 00:00:00
+2019-08-31 14:03:55,451	charges_calc.py	:88 	DEBUG	For Product Code PRD48 rental_start is 2017-04-17 00:00:00, rental_end is 2018-10-09 00:00:00
+2019-08-31 14:03:55,451	charges_calc.py	:93 	DEBUG	For Product Code PRD49 rental_start is 2017-03-02 00:00:00, rental_end is 2018-01-05 00:00:00
+2019-08-31 14:03:55,451	charges_calc.py	:93 	DEBUG	For Product Code PRD75 rental_start is 2016-08-07 00:00:00, rental_end is 2017-03-18 00:00:00
+2019-08-31 14:03:55,451	charges_calc.py	:88 	DEBUG	For Product Code PRD42 rental_start is 2017-01-02 00:00:00, rental_end is 2017-02-01 00:00:00
+2019-08-31 14:03:55,452	charges_calc.py	:88 	DEBUG	For Product Code PRD12 rental_start is 2016-11-18 00:00:00, rental_end is 2017-08-16 00:00:00
+2019-08-31 14:03:55,452	charges_calc.py	:93 	DEBUG	For Product Code PRD56 rental_start is 2018-08-08 00:00:00, rental_end is 2018-09-07 00:00:00
+2019-08-31 14:03:55,452	charges_calc.py	:93 	DEBUG	For Product Code PRD99 rental_start is 2016-10-07 00:00:00, rental_end is 2018-06-02 00:00:00
+2019-08-31 14:03:55,452	charges_calc.py	:88 	DEBUG	For Product Code PRD58 rental_start is 2017-09-16 00:00:00, rental_end is 2018-06-30 00:00:00
+2019-08-31 14:03:55,453	charges_calc.py	:88 	DEBUG	For Product Code PRD6 rental_start is 2017-10-01 00:00:00, rental_end is 2018-09-22 00:00:00
+2019-08-31 14:03:55,453	charges_calc.py	:88 	DEBUG	For Product Code PRD65 rental_start is 2016-11-04 00:00:00, rental_end is 2017-08-05 00:00:00
+2019-08-31 14:03:55,453	charges_calc.py	:93 	DEBUG	For Product Code PRD26 rental_start is 2016-04-12 00:00:00, rental_end is 2017-09-13 00:00:00
+2019-08-31 14:03:55,453	charges_calc.py	:88 	DEBUG	For Product Code PRD71 rental_start is 2017-02-18 00:00:00, rental_end is 2017-10-26 00:00:00
+2019-08-31 14:03:55,453	charges_calc.py	:93 	DEBUG	For Product Code PRD14 rental_start is 2016-05-04 00:00:00, rental_end is 2016-09-22 00:00:00
+2019-08-31 14:03:55,454	charges_calc.py	:93 	DEBUG	For Product Code PRD31 rental_start is 2016-09-29 00:00:00, rental_end is 2017-06-30 00:00:00
+2019-08-31 14:03:55,454	charges_calc.py	:93 	DEBUG	For Product Code PRD12 rental_start is 2016-02-03 00:00:00, rental_end is 2018-09-02 00:00:00
+2019-08-31 14:03:55,454	charges_calc.py	:93 	DEBUG	For Product Code PRD49 rental_start is 2016-08-22 00:00:00, rental_end is 2018-11-27 00:00:00
+2019-08-31 14:03:55,454	charges_calc.py	:88 	DEBUG	For Product Code PRD92 rental_start is 2016-04-14 00:00:00, rental_end is 2017-12-06 00:00:00
+2019-08-31 14:03:55,455	charges_calc.py	:88 	DEBUG	For Product Code PRD14 rental_start is 2016-07-18 00:00:00, rental_end is 2016-12-24 00:00:00
+2019-08-31 14:03:55,455	charges_calc.py	:88 	DEBUG	For Product Code PRD45 rental_start is 2016-01-25 00:00:00, rental_end is 2016-10-17 00:00:00
+2019-08-31 14:03:55,455	charges_calc.py	:88 	DEBUG	For Product Code PRD5 rental_start is 2016-04-27 00:00:00, rental_end is 2018-09-27 00:00:00
+2019-08-31 14:03:55,455	charges_calc.py	:93 	DEBUG	For Product Code PRD26 rental_start is 2017-01-30 00:00:00, rental_end is 2018-06-23 00:00:00
+2019-08-31 14:03:55,456	charges_calc.py	:93 	DEBUG	For Product Code PRD33 rental_start is 2016-03-06 00:00:00, rental_end is 2017-04-26 00:00:00
+2019-08-31 14:03:55,456	charges_calc.py	:88 	DEBUG	For Product Code PRD59 rental_start is 2017-01-09 00:00:00, rental_end is 2018-05-05 00:00:00
+2019-08-31 14:03:55,456	charges_calc.py	:88 	DEBUG	For Product Code PRD86 rental_start is 2016-06-11 00:00:00, rental_end is 2016-11-11 00:00:00
+2019-08-31 14:03:55,456	charges_calc.py	:93 	DEBUG	For Product Code PRD9 rental_start is 2016-02-13 00:00:00, rental_end is 2016-09-04 00:00:00
+2019-08-31 14:03:55,457	charges_calc.py	:88 	DEBUG	For Product Code PRD57 rental_start is 2018-04-11 00:00:00, rental_end is 2018-05-03 00:00:00
+2019-08-31 14:03:55,457	charges_calc.py	:93 	DEBUG	For Product Code PRD90 rental_start is 2016-03-30 00:00:00, rental_end is 2018-07-23 00:00:00
+2019-08-31 14:03:55,457	charges_calc.py	:93 	DEBUG	For Product Code PRD12 rental_start is 2017-12-24 00:00:00, rental_end is 2018-12-27 00:00:00
+2019-08-31 14:03:55,457	charges_calc.py	:93 	DEBUG	For Product Code PRD31 rental_start is 2016-01-31 00:00:00, rental_end is 2018-11-06 00:00:00
+2019-08-31 14:03:55,457	charges_calc.py	:93 	DEBUG	For Product Code PRD18 rental_start is 2017-08-18 00:00:00, rental_end is 2018-11-03 00:00:00
+2019-08-31 14:03:55,458	charges_calc.py	:88 	DEBUG	For Product Code PRD70 rental_start is 2016-01-24 00:00:00, rental_end is 2016-11-22 00:00:00
+2019-08-31 14:03:55,458	charges_calc.py	:88 	DEBUG	For Product Code PRD37 rental_start is 2017-05-07 00:00:00, rental_end is 2018-04-17 00:00:00
+2019-08-31 14:03:55,458	charges_calc.py	:93 	DEBUG	For Product Code PRD39 rental_start is 2016-08-31 00:00:00, rental_end is 2017-09-17 00:00:00
+2019-08-31 14:03:55,458	charges_calc.py	:93 	DEBUG	For Product Code PRD10 rental_start is 2016-04-24 00:00:00, rental_end is 2016-06-29 00:00:00
+2019-08-31 14:03:55,459	charges_calc.py	:93 	DEBUG	For Product Code PRD76 rental_start is 2018-04-30 00:00:00, rental_end is 2018-07-24 00:00:00
+2019-08-31 14:03:55,459	charges_calc.py	:88 	DEBUG	For Product Code PRD43 rental_start is 2016-12-03 00:00:00, rental_end is 2018-11-24 00:00:00
+2019-08-31 14:03:55,459	charges_calc.py	:93 	DEBUG	For Product Code PRD33 rental_start is 2016-06-01 00:00:00, rental_end is 2018-05-01 00:00:00
+2019-08-31 14:03:55,459	charges_calc.py	:93 	DEBUG	For Product Code PRD68 rental_start is 2017-02-06 00:00:00, rental_end is 2018-08-21 00:00:00
+2019-08-31 14:03:55,460	charges_calc.py	:88 	DEBUG	For Product Code PRD82 rental_start is 2016-02-18 00:00:00, rental_end is 2018-08-07 00:00:00
+2019-08-31 14:03:55,460	charges_calc.py	:93 	DEBUG	For Product Code PRD0 rental_start is 2017-06-16 00:00:00, rental_end is 2017-12-08 00:00:00
+2019-08-31 14:03:55,460	charges_calc.py	:88 	DEBUG	For Product Code PRD87 rental_start is 2017-10-24 00:00:00, rental_end is 2018-02-22 00:00:00
+2019-08-31 14:03:55,460	charges_calc.py	:88 	DEBUG	For Product Code PRD55 rental_start is 2016-06-26 00:00:00, rental_end is 2018-06-30 00:00:00
+2019-08-31 14:03:55,460	charges_calc.py	:88 	DEBUG	For Product Code PRD67 rental_start is 2017-07-07 00:00:00, rental_end is 2017-11-14 00:00:00
+2019-08-31 14:03:55,461	charges_calc.py	:93 	DEBUG	For Product Code PRD33 rental_start is 2017-06-20 00:00:00, rental_end is 2017-12-25 00:00:00
+2019-08-31 14:03:55,461	charges_calc.py	:88 	DEBUG	For Product Code PRD89 rental_start is 2017-07-30 00:00:00, rental_end is 2018-10-17 00:00:00
+2019-08-31 14:03:55,461	charges_calc.py	:93 	DEBUG	For Product Code PRD40 rental_start is 2016-12-31 00:00:00, rental_end is 2017-12-25 00:00:00
+2019-08-31 14:03:55,461	charges_calc.py	:88 	DEBUG	For Product Code PRD3 rental_start is 2016-10-16 00:00:00, rental_end is 2017-03-23 00:00:00
+2019-08-31 14:03:55,461	charges_calc.py	:93 	DEBUG	For Product Code PRD57 rental_start is 2017-02-06 00:00:00, rental_end is 2018-11-17 00:00:00
+2019-08-31 14:03:55,462	charges_calc.py	:88 	DEBUG	For Product Code PRD52 rental_start is 2016-07-23 00:00:00, rental_end is 2018-10-10 00:00:00
+2019-08-31 14:03:55,462	charges_calc.py	:88 	DEBUG	For Product Code PRD46 rental_start is 2018-08-25 00:00:00, rental_end is 2018-09-28 00:00:00
+2019-08-31 14:03:55,462	charges_calc.py	:93 	DEBUG	For Product Code PRD73 rental_start is 2016-11-16 00:00:00, rental_end is 2017-05-03 00:00:00
+2019-08-31 14:03:55,462	charges_calc.py	:93 	DEBUG	For Product Code PRD24 rental_start is 2016-02-16 00:00:00, rental_end is 2016-04-23 00:00:00
+2019-08-31 14:03:55,463	charges_calc.py	:88 	DEBUG	For Product Code PRD56 rental_start is 2016-11-25 00:00:00, rental_end is 2018-08-06 00:00:00
+2019-08-31 14:03:55,463	charges_calc.py	:93 	DEBUG	For Product Code PRD70 rental_start is 2017-09-24 00:00:00, rental_end is 2018-02-26 00:00:00
+2019-08-31 14:03:55,463	charges_calc.py	:93 	DEBUG	For Product Code PRD92 rental_start is 2016-05-23 00:00:00, rental_end is 2017-02-25 00:00:00
+2019-08-31 14:03:55,463	charges_calc.py	:93 	DEBUG	For Product Code PRD23 rental_start is 2016-11-17 00:00:00, rental_end is 2018-03-15 00:00:00
+2019-08-31 14:03:55,463	charges_calc.py	:88 	DEBUG	For Product Code PRD80 rental_start is 2016-06-06 00:00:00, rental_end is 2018-07-21 00:00:00
+2019-08-31 14:03:55,464	charges_calc.py	:88 	DEBUG	For Product Code PRD82 rental_start is 2018-05-02 00:00:00, rental_end is 2018-06-09 00:00:00
+2019-08-31 14:03:55,464	charges_calc.py	:88 	DEBUG	For Product Code PRD6 rental_start is 2018-03-14 00:00:00, rental_end is 2018-11-18 00:00:00
+2019-08-31 14:03:55,464	charges_calc.py	:93 	DEBUG	For Product Code PRD80 rental_start is 2018-03-31 00:00:00, rental_end is 2018-07-23 00:00:00
+2019-08-31 14:03:55,464	charges_calc.py	:88 	DEBUG	For Product Code PRD81 rental_start is 2017-03-07 00:00:00, rental_end is 2018-04-28 00:00:00
+2019-08-31 14:03:55,465	charges_calc.py	:93 	DEBUG	For Product Code PRD93 rental_start is 2017-01-14 00:00:00, rental_end is 2018-08-20 00:00:00
+2019-08-31 14:03:55,465	charges_calc.py	:88 	DEBUG	For Product Code PRD65 rental_start is 2016-05-23 00:00:00, rental_end is 2018-05-18 00:00:00
+2019-08-31 14:03:55,465	charges_calc.py	:93 	DEBUG	For Product Code PRD90 rental_start is 2016-05-12 00:00:00, rental_end is 2016-07-19 00:00:00
+2019-08-31 14:03:55,465	charges_calc.py	:93 	DEBUG	For Product Code PRD49 rental_start is 2016-12-27 00:00:00, rental_end is 2018-11-21 00:00:00
+2019-08-31 14:03:55,465	charges_calc.py	:93 	DEBUG	For Product Code PRD74 rental_start is 2018-03-04 00:00:00, rental_end is 2018-07-01 00:00:00
+2019-08-31 14:03:55,466	charges_calc.py	:93 	DEBUG	For Product Code PRD52 rental_start is 2016-11-25 00:00:00, rental_end is 2018-11-22 00:00:00
+2019-08-31 14:03:55,466	charges_calc.py	:88 	DEBUG	For Product Code PRD44 rental_start is 2017-03-05 00:00:00, rental_end is 2017-04-25 00:00:00
+2019-08-31 14:03:55,466	charges_calc.py	:93 	DEBUG	For Product Code PRD22 rental_start is 2017-01-25 00:00:00, rental_end is 2018-12-03 00:00:00
+2019-08-31 14:03:55,466	charges_calc.py	:93 	DEBUG	For Product Code PRD81 rental_start is 2017-05-23 00:00:00, rental_end is 2017-06-04 00:00:00
+2019-08-31 14:03:55,467	charges_calc.py	:93 	DEBUG	For Product Code PRD31 rental_start is 2017-08-15 00:00:00, rental_end is 2018-07-29 00:00:00
+2019-08-31 14:03:55,467	charges_calc.py	:88 	DEBUG	For Product Code PRD40 rental_start is 2016-11-26 00:00:00, rental_end is 2018-07-28 00:00:00
+2019-08-31 14:03:55,467	charges_calc.py	:93 	DEBUG	For Product Code PRD15 rental_start is 2016-08-24 00:00:00, rental_end is 2018-01-23 00:00:00
+2019-08-31 14:03:55,467	charges_calc.py	:93 	DEBUG	For Product Code PRD39 rental_start is 2016-01-12 00:00:00, rental_end is 2016-03-29 00:00:00
+2019-08-31 14:03:55,467	charges_calc.py	:93 	DEBUG	For Product Code PRD59 rental_start is 2016-09-13 00:00:00, rental_end is 2016-09-28 00:00:00
+2019-08-31 14:03:55,468	charges_calc.py	:88 	DEBUG	For Product Code PRD42 rental_start is 2017-04-08 00:00:00, rental_end is 2018-08-02 00:00:00
+2019-08-31 14:03:55,468	charges_calc.py	:93 	DEBUG	For Product Code PRD76 rental_start is 2017-05-16 00:00:00, rental_end is 2017-09-04 00:00:00
+2019-08-31 14:03:55,468	charges_calc.py	:93 	DEBUG	For Product Code PRD96 rental_start is 2016-01-25 00:00:00, rental_end is 2017-01-24 00:00:00
+2019-08-31 14:03:55,468	charges_calc.py	:93 	DEBUG	For Product Code PRD63 rental_start is 2017-01-13 00:00:00, rental_end is 2018-03-19 00:00:00
+2019-08-31 14:03:55,468	charges_calc.py	:93 	DEBUG	For Product Code PRD40 rental_start is 2016-06-23 00:00:00, rental_end is 2017-09-07 00:00:00
+2019-08-31 14:03:55,469	charges_calc.py	:88 	DEBUG	For Product Code PRD56 rental_start is 2017-01-29 00:00:00, rental_end is 2018-03-26 00:00:00
+2019-08-31 14:03:55,469	charges_calc.py	:93 	DEBUG	For Product Code PRD20 rental_start is 2017-10-26 00:00:00, rental_end is 2018-10-09 00:00:00
+2019-08-31 14:03:55,469	charges_calc.py	:88 	DEBUG	For Product Code PRD93 rental_start is 2016-04-28 00:00:00, rental_end is 2017-03-12 00:00:00
+2019-08-31 14:03:55,469	charges_calc.py	:93 	DEBUG	For Product Code PRD66 rental_start is 2016-03-08 00:00:00, rental_end is 2018-02-15 00:00:00
+2019-08-31 14:03:55,470	charges_calc.py	:88 	DEBUG	For Product Code PRD69 rental_start is 2018-05-09 00:00:00, rental_end is 2018-08-21 00:00:00
+2019-08-31 14:03:55,470	charges_calc.py	:88 	DEBUG	For Product Code PRD58 rental_start is 2017-08-17 00:00:00, rental_end is 2017-09-23 00:00:00
+2019-08-31 14:03:55,470	charges_calc.py	:88 	DEBUG	For Product Code PRD14 rental_start is 2017-02-03 00:00:00, rental_end is 2018-06-02 00:00:00
+2019-08-31 14:03:55,470	charges_calc.py	:93 	DEBUG	For Product Code PRD26 rental_start is 2017-01-22 00:00:00, rental_end is 2017-10-10 00:00:00
+2019-08-31 14:03:55,471	charges_calc.py	:88 	DEBUG	For Product Code PRD95 rental_start is 2016-10-10 00:00:00, rental_end is 2018-08-23 00:00:00
+2019-08-31 14:03:55,471	charges_calc.py	:93 	DEBUG	For Product Code PRD88 rental_start is 2016-07-31 00:00:00, rental_end is 2016-12-29 00:00:00
+2019-08-31 14:03:55,471	charges_calc.py	:88 	DEBUG	For Product Code PRD23 rental_start is 2016-07-31 00:00:00, rental_end is 2017-06-22 00:00:00
+2019-08-31 14:03:55,471	charges_calc.py	:88 	DEBUG	For Product Code PRD8 rental_start is 2016-12-05 00:00:00, rental_end is 2017-11-28 00:00:00
+2019-08-31 14:03:55,471	charges_calc.py	:88 	DEBUG	For Product Code PRD12 rental_start is 2017-04-20 00:00:00, rental_end is 2018-06-17 00:00:00
+2019-08-31 14:03:55,472	charges_calc.py	:93 	DEBUG	For Product Code PRD95 rental_start is 2016-05-01 00:00:00, rental_end is 2017-04-30 00:00:00
+2019-08-31 14:03:55,472	charges_calc.py	:93 	DEBUG	For Product Code PRD64 rental_start is 2017-08-18 00:00:00, rental_end is 2018-04-20 00:00:00
+2019-08-31 14:03:55,472	charges_calc.py	:93 	DEBUG	For Product Code PRD88 rental_start is 2016-03-16 00:00:00, rental_end is 2016-06-05 00:00:00
+2019-08-31 14:03:55,472	charges_calc.py	:88 	DEBUG	For Product Code PRD51 rental_start is 2016-07-04 00:00:00, rental_end is 2016-10-30 00:00:00
+2019-08-31 14:03:55,473	charges_calc.py	:93 	DEBUG	For Product Code PRD97 rental_start is 2017-02-26 00:00:00, rental_end is 2018-07-02 00:00:00
+2019-08-31 14:03:55,473	charges_calc.py	:88 	DEBUG	For Product Code PRD37 rental_start is 2016-11-22 00:00:00, rental_end is 2017-03-15 00:00:00
+2019-08-31 14:03:55,473	charges_calc.py	:93 	DEBUG	For Product Code PRD88 rental_start is 2016-12-22 00:00:00, rental_end is 2018-03-07 00:00:00
+2019-08-31 14:03:55,473	charges_calc.py	:93 	DEBUG	For Product Code PRD28 rental_start is 2016-05-18 00:00:00, rental_end is 2016-10-04 00:00:00
+2019-08-31 14:03:55,473	charges_calc.py	:93 	DEBUG	For Product Code PRD97 rental_start is 2018-01-25 00:00:00, rental_end is 2018-11-19 00:00:00
+2019-08-31 14:03:55,474	charges_calc.py	:88 	DEBUG	For Product Code PRD1 rental_start is 2017-06-01 00:00:00, rental_end is 2018-06-20 00:00:00
+2019-08-31 14:03:55,474	charges_calc.py	:88 	DEBUG	For Product Code PRD53 rental_start is 2016-03-21 00:00:00, rental_end is 2017-05-31 00:00:00
+2019-08-31 14:03:55,474	charges_calc.py	:88 	DEBUG	For Product Code PRD78 rental_start is 2018-03-17 00:00:00, rental_end is 2018-12-18 00:00:00
+2019-08-31 14:03:55,474	charges_calc.py	:93 	DEBUG	For Product Code PRD74 rental_start is 2016-07-14 00:00:00, rental_end is 2016-07-29 00:00:00
+2019-08-31 14:03:55,475	charges_calc.py	:93 	DEBUG	For Product Code PRD23 rental_start is 2018-03-27 00:00:00, rental_end is 2018-12-27 00:00:00
+2019-08-31 14:03:55,475	charges_calc.py	:88 	DEBUG	For Product Code PRD29 rental_start is 2017-11-03 00:00:00, rental_end is 2017-11-15 00:00:00
+2019-08-31 14:03:55,475	charges_calc.py	:88 	DEBUG	For Product Code PRD2 rental_start is 2018-07-06 00:00:00, rental_end is 2018-12-22 00:00:00
+2019-08-31 14:03:55,475	charges_calc.py	:88 	DEBUG	For Product Code PRD23 rental_start is 2017-09-25 00:00:00, rental_end is 2018-08-18 00:00:00
+2019-08-31 14:03:55,475	charges_calc.py	:88 	DEBUG	For Product Code PRD24 rental_start is 2017-09-18 00:00:00, rental_end is 2018-04-22 00:00:00
+2019-08-31 14:03:55,476	charges_calc.py	:88 	DEBUG	For Product Code PRD91 rental_start is 2017-04-15 00:00:00, rental_end is 2018-03-15 00:00:00
+2019-08-31 14:03:55,476	charges_calc.py	:88 	DEBUG	For Product Code PRD74 rental_start is 2016-12-20 00:00:00, rental_end is 2018-08-17 00:00:00
+2019-08-31 14:03:55,476	charges_calc.py	:88 	DEBUG	For Product Code PRD41 rental_start is 2016-09-29 00:00:00, rental_end is 2018-06-10 00:00:00
+2019-08-31 14:03:55,476	charges_calc.py	:93 	DEBUG	For Product Code PRD10 rental_start is 2017-08-27 00:00:00, rental_end is 2017-08-28 00:00:00
+2019-08-31 14:03:55,477	charges_calc.py	:88 	DEBUG	For Product Code PRD96 rental_start is 2017-04-10 00:00:00, rental_end is 2017-08-15 00:00:00
+2019-08-31 14:03:55,477	charges_calc.py	:93 	DEBUG	For Product Code PRD98 rental_start is 2017-02-05 00:00:00, rental_end is 2017-09-27 00:00:00
+2019-08-31 14:03:55,477	charges_calc.py	:88 	DEBUG	For Product Code PRD85 rental_start is 2017-11-22 00:00:00, rental_end is 2018-05-10 00:00:00
+2019-08-31 14:03:55,477	charges_calc.py	:93 	DEBUG	For Product Code PRD53 rental_start is 2016-01-23 00:00:00, rental_end is 2016-04-02 00:00:00
+2019-08-31 14:03:55,478	charges_calc.py	:88 	DEBUG	For Product Code PRD63 rental_start is 2018-03-22 00:00:00, rental_end is 2018-07-29 00:00:00
+2019-08-31 14:03:55,478	charges_calc.py	:88 	DEBUG	For Product Code PRD86 rental_start is 2017-10-26 00:00:00, rental_end is 2018-02-18 00:00:00
+2019-08-31 14:03:55,478	charges_calc.py	:93 	DEBUG	For Product Code PRD2 rental_start is 2016-04-24 00:00:00, rental_end is 2018-02-04 00:00:00
+2019-08-31 14:03:55,478	charges_calc.py	:93 	DEBUG	For Product Code PRD99 rental_start is 2016-04-28 00:00:00, rental_end is 2018-01-12 00:00:00
+2019-08-31 14:03:55,478	charges_calc.py	:88 	DEBUG	For Product Code PRD59 rental_start is 2016-02-06 00:00:00, rental_end is 2018-05-30 00:00:00
+2019-08-31 14:03:55,479	charges_calc.py	:93 	DEBUG	For Product Code PRD96 rental_start is 2016-09-12 00:00:00, rental_end is 2016-12-03 00:00:00
+2019-08-31 14:03:55,479	charges_calc.py	:93 	DEBUG	For Product Code PRD10 rental_start is 2016-03-11 00:00:00, rental_end is 2017-07-13 00:00:00
+2019-08-31 14:03:55,479	charges_calc.py	:93 	DEBUG	For Product Code PRD5 rental_start is 2017-10-05 00:00:00, rental_end is 2018-11-26 00:00:00
+2019-08-31 14:03:55,479	charges_calc.py	:88 	DEBUG	For Product Code PRD81 rental_start is 2017-10-30 00:00:00, rental_end is 2018-12-07 00:00:00
+2019-08-31 14:03:55,480	charges_calc.py	:88 	DEBUG	For Product Code PRD66 rental_start is 2016-12-28 00:00:00, rental_end is 2018-03-29 00:00:00
+2019-08-31 14:03:55,480	charges_calc.py	:93 	DEBUG	For Product Code PRD30 rental_start is 2016-06-09 00:00:00, rental_end is 2017-06-24 00:00:00
+2019-08-31 14:03:55,480	charges_calc.py	:88 	DEBUG	For Product Code PRD79 rental_start is 2016-11-22 00:00:00, rental_end is 2018-06-05 00:00:00
+2019-08-31 14:03:55,480	charges_calc.py	:88 	DEBUG	For Product Code PRD94 rental_start is 2018-07-03 00:00:00, rental_end is 2018-12-29 00:00:00
+2019-08-31 14:03:55,481	charges_calc.py	:88 	DEBUG	For Product Code PRD71 rental_start is 2016-08-29 00:00:00, rental_end is 2017-06-30 00:00:00
+2019-08-31 14:03:55,481	charges_calc.py	:88 	DEBUG	For Product Code PRD5 rental_start is 2016-02-22 00:00:00, rental_end is 2016-11-24 00:00:00
+2019-08-31 14:03:55,481	charges_calc.py	:88 	DEBUG	For Product Code PRD74 rental_start is 2016-07-03 00:00:00, rental_end is 2017-07-28 00:00:00
+2019-08-31 14:03:55,481	charges_calc.py	:93 	DEBUG	For Product Code PRD84 rental_start is 2017-11-20 00:00:00, rental_end is 2018-01-11 00:00:00
+2019-08-31 14:03:55,481	charges_calc.py	:88 	DEBUG	For Product Code PRD54 rental_start is 2016-05-05 00:00:00, rental_end is 2018-08-12 00:00:00
+2019-08-31 14:03:55,482	charges_calc.py	:93 	DEBUG	For Product Code PRD44 rental_start is 2017-12-20 00:00:00, rental_end is 2018-11-19 00:00:00
+2019-08-31 14:03:55,482	charges_calc.py	:93 	DEBUG	For Product Code PRD26 rental_start is 2017-02-27 00:00:00, rental_end is 2017-03-04 00:00:00
+2019-08-31 14:03:55,482	charges_calc.py	:88 	DEBUG	For Product Code PRD53 rental_start is 2017-06-19 00:00:00, rental_end is 2018-01-09 00:00:00
+2019-08-31 14:03:55,482	charges_calc.py	:88 	DEBUG	For Product Code PRD66 rental_start is 2017-09-27 00:00:00, rental_end is 2018-11-08 00:00:00
+2019-08-31 14:03:55,482	charges_calc.py	:88 	DEBUG	For Product Code PRD81 rental_start is 2016-06-16 00:00:00, rental_end is 2016-11-10 00:00:00
+2019-08-31 14:03:55,483	charges_calc.py	:93 	DEBUG	For Product Code PRD28 rental_start is 2016-05-28 00:00:00, rental_end is 2017-12-02 00:00:00
+2019-08-31 14:03:55,483	charges_calc.py	:88 	DEBUG	For Product Code PRD58 rental_start is 2017-10-20 00:00:00, rental_end is 2018-10-27 00:00:00
+2019-08-31 14:03:55,483	charges_calc.py	:93 	DEBUG	For Product Code PRD0 rental_start is 2017-07-20 00:00:00, rental_end is 2017-10-14 00:00:00
+2019-08-31 14:03:55,483	charges_calc.py	:88 	DEBUG	For Product Code PRD40 rental_start is 2016-05-30 00:00:00, rental_end is 2017-09-05 00:00:00
+2019-08-31 14:03:55,484	charges_calc.py	:88 	DEBUG	For Product Code PRD34 rental_start is 2017-08-08 00:00:00, rental_end is 2018-06-24 00:00:00
+2019-08-31 14:03:55,484	charges_calc.py	:93 	DEBUG	For Product Code PRD16 rental_start is 2016-01-11 00:00:00, rental_end is 2018-01-06 00:00:00
+2019-08-31 14:03:55,484	charges_calc.py	:93 	DEBUG	For Product Code PRD75 rental_start is 2016-12-17 00:00:00, rental_end is 2017-07-31 00:00:00
+2019-08-31 14:03:55,484	charges_calc.py	:93 	DEBUG	For Product Code PRD70 rental_start is 2016-05-07 00:00:00, rental_end is 2018-03-10 00:00:00
+2019-08-31 14:03:55,484	charges_calc.py	:88 	DEBUG	For Product Code PRD42 rental_start is 2017-04-15 00:00:00, rental_end is 2017-06-15 00:00:00
+2019-08-31 14:03:55,485	charges_calc.py	:93 	DEBUG	For Product Code PRD81 rental_start is 2017-11-23 00:00:00, rental_end is 2018-11-09 00:00:00
+2019-08-31 14:03:55,485	charges_calc.py	:93 	DEBUG	For Product Code PRD99 rental_start is 2016-03-18 00:00:00, rental_end is 2017-07-16 00:00:00
+2019-08-31 14:03:55,485	charges_calc.py	:88 	DEBUG	For Product Code PRD45 rental_start is 2018-06-10 00:00:00, rental_end is 2018-09-24 00:00:00
+2019-08-31 14:03:55,485	charges_calc.py	:93 	DEBUG	For Product Code PRD82 rental_start is 2017-11-25 00:00:00, rental_end is 2018-07-28 00:00:00
+2019-08-31 14:03:55,485	charges_calc.py	:93 	DEBUG	For Product Code PRD0 rental_start is 2016-06-20 00:00:00, rental_end is 2017-01-18 00:00:00
+2019-08-31 14:03:55,486	charges_calc.py	:88 	DEBUG	For Product Code PRD35 rental_start is 2016-05-15 00:00:00, rental_end is 2018-07-14 00:00:00
+2019-08-31 14:03:55,486	charges_calc.py	:88 	DEBUG	For Product Code PRD9 rental_start is 2018-08-14 00:00:00, rental_end is 2018-11-18 00:00:00
+2019-08-31 14:03:55,486	charges_calc.py	:93 	DEBUG	For Product Code PRD49 rental_start is 2017-07-19 00:00:00, rental_end is 2018-06-11 00:00:00
+2019-08-31 14:03:55,486	charges_calc.py	:93 	DEBUG	For Product Code PRD72 rental_start is 2017-07-26 00:00:00, rental_end is 2018-04-11 00:00:00
+2019-08-31 14:03:55,486	charges_calc.py	:93 	DEBUG	For Product Code PRD37 rental_start is 2017-06-04 00:00:00, rental_end is 2017-08-20 00:00:00
+2019-08-31 14:03:55,487	charges_calc.py	:88 	DEBUG	For Product Code PRD3 rental_start is 2016-02-27 00:00:00, rental_end is 2018-11-25 00:00:00
+2019-08-31 14:03:55,487	charges_calc.py	:93 	DEBUG	For Product Code PRD49 rental_start is 2016-11-07 00:00:00, rental_end is 2017-12-02 00:00:00
+2019-08-31 14:03:55,487	charges_calc.py	:93 	DEBUG	For Product Code PRD85 rental_start is 2017-04-17 00:00:00, rental_end is 2018-09-17 00:00:00
+2019-08-31 14:03:55,488	charges_calc.py	:88 	DEBUG	For Product Code PRD43 rental_start is 2018-05-30 00:00:00, rental_end is 2018-10-01 00:00:00
+2019-08-31 14:03:55,488	charges_calc.py	:88 	DEBUG	For Product Code PRD7 rental_start is 2017-07-13 00:00:00, rental_end is 2017-11-21 00:00:00
+2019-08-31 14:03:55,488	charges_calc.py	:93 	DEBUG	For Product Code PRD40 rental_start is 2016-07-03 00:00:00, rental_end is 2016-07-10 00:00:00
+2019-08-31 14:03:55,488	charges_calc.py	:88 	DEBUG	For Product Code PRD38 rental_start is 2016-08-07 00:00:00, rental_end is 2018-10-13 00:00:00
+2019-08-31 14:03:55,488	charges_calc.py	:93 	DEBUG	For Product Code PRD62 rental_start is 2018-02-20 00:00:00, rental_end is 2018-03-12 00:00:00
+2019-08-31 14:03:55,489	charges_calc.py	:93 	DEBUG	For Product Code PRD13 rental_start is 2016-05-18 00:00:00, rental_end is 2018-08-19 00:00:00
+2019-08-31 14:03:55,489	charges_calc.py	:88 	DEBUG	For Product Code PRD91 rental_start is 2017-01-22 00:00:00, rental_end is 2017-08-01 00:00:00
+2019-08-31 14:03:55,489	charges_calc.py	:93 	DEBUG	For Product Code PRD95 rental_start is 2016-10-07 00:00:00, rental_end is 2018-06-09 00:00:00
+2019-08-31 14:03:55,489	charges_calc.py	:93 	DEBUG	For Product Code PRD89 rental_start is 2017-01-06 00:00:00, rental_end is 2018-04-23 00:00:00
+2019-08-31 14:03:55,489	charges_calc.py	:93 	DEBUG	For Product Code PRD79 rental_start is 2016-01-05 00:00:00, rental_end is 2016-03-09 00:00:00
+2019-08-31 14:03:55,490	charges_calc.py	:93 	DEBUG	For Product Code PRD31 rental_start is 2017-07-14 00:00:00, rental_end is 2017-09-05 00:00:00
+2019-08-31 14:03:55,490	charges_calc.py	:88 	DEBUG	For Product Code PRD81 rental_start is 2017-04-24 00:00:00, rental_end is 2018-07-02 00:00:00
+2019-08-31 14:03:55,490	charges_calc.py	:93 	DEBUG	For Product Code PRD33 rental_start is 2016-08-03 00:00:00, rental_end is 2018-05-09 00:00:00
+2019-08-31 14:03:55,490	charges_calc.py	:88 	DEBUG	For Product Code PRD10 rental_start is 2017-04-28 00:00:00, rental_end is 2017-05-02 00:00:00
+2019-08-31 14:03:55,490	charges_calc.py	:93 	DEBUG	For Product Code PRD3 rental_start is 2017-06-15 00:00:00, rental_end is 2018-05-19 00:00:00
+2019-08-31 14:03:55,491	charges_calc.py	:93 	DEBUG	For Product Code PRD37 rental_start is 2016-04-16 00:00:00, rental_end is 2018-10-06 00:00:00
+2019-08-31 14:03:55,491	charges_calc.py	:88 	DEBUG	For Product Code PRD75 rental_start is 2016-01-15 00:00:00, rental_end is 2018-02-09 00:00:00
+2019-08-31 14:03:55,491	charges_calc.py	:88 	DEBUG	For Product Code PRD73 rental_start is 2016-07-05 00:00:00, rental_end is 2017-01-27 00:00:00
+2019-08-31 14:03:55,491	charges_calc.py	:88 	DEBUG	For Product Code PRD63 rental_start is 2017-03-20 00:00:00, rental_end is 2018-05-01 00:00:00
+2019-08-31 14:03:55,492	charges_calc.py	:93 	DEBUG	For Product Code PRD70 rental_start is 2016-05-13 00:00:00, rental_end is 2017-09-23 00:00:00
+2019-08-31 14:03:55,492	charges_calc.py	:93 	DEBUG	For Product Code PRD60 rental_start is 2016-04-03 00:00:00, rental_end is 2016-06-01 00:00:00
+2019-08-31 14:03:55,492	charges_calc.py	:88 	DEBUG	For Product Code PRD67 rental_start is 2017-06-26 00:00:00, rental_end is 2018-12-23 00:00:00
+2019-08-31 14:03:55,492	charges_calc.py	:88 	DEBUG	For Product Code PRD73 rental_start is 2018-03-21 00:00:00, rental_end is 2018-06-02 00:00:00
+2019-08-31 14:03:55,493	charges_calc.py	:88 	DEBUG	For Product Code PRD1 rental_start is 2016-05-04 00:00:00, rental_end is 2016-08-26 00:00:00
+2019-08-31 14:03:55,493	charges_calc.py	:88 	DEBUG	For Product Code PRD69 rental_start is 2016-09-23 00:00:00, rental_end is 2016-11-26 00:00:00
+2019-08-31 14:03:55,493	charges_calc.py	:93 	DEBUG	For Product Code PRD51 rental_start is 2016-05-06 00:00:00, rental_end is 2017-08-21 00:00:00
+2019-08-31 14:03:55,493	charges_calc.py	:88 	DEBUG	For Product Code PRD24 rental_start is 2016-01-02 00:00:00, rental_end is 2017-02-23 00:00:00
+2019-08-31 14:03:55,494	charges_calc.py	:93 	DEBUG	For Product Code PRD72 rental_start is 2017-03-09 00:00:00, rental_end is 2017-10-02 00:00:00
+2019-08-31 14:03:55,494	charges_calc.py	:88 	DEBUG	For Product Code PRD45 rental_start is 2017-02-21 00:00:00, rental_end is 2018-10-29 00:00:00
+2019-08-31 14:03:55,494	charges_calc.py	:88 	DEBUG	For Product Code PRD48 rental_start is 2016-08-29 00:00:00, rental_end is 2018-03-02 00:00:00
+2019-08-31 14:03:55,494	charges_calc.py	:88 	DEBUG	For Product Code PRD87 rental_start is 2016-02-12 00:00:00, rental_end is 2018-06-17 00:00:00
+2019-08-31 14:03:55,494	charges_calc.py	:93 	DEBUG	For Product Code PRD99 rental_start is 2016-10-08 00:00:00, rental_end is 2017-08-20 00:00:00
+2019-08-31 14:03:55,495	charges_calc.py	:88 	DEBUG	For Product Code PRD71 rental_start is 2017-01-12 00:00:00, rental_end is 2017-06-12 00:00:00
+2019-08-31 14:03:55,495	charges_calc.py	:88 	DEBUG	For Product Code PRD24 rental_start is 2016-04-12 00:00:00, rental_end is 2016-10-10 00:00:00
+2019-08-31 14:03:55,495	charges_calc.py	:88 	DEBUG	For Product Code PRD65 rental_start is 2016-02-07 00:00:00, rental_end is 2017-09-17 00:00:00
+2019-08-31 14:03:55,495	charges_calc.py	:88 	DEBUG	For Product Code PRD72 rental_start is 2016-07-06 00:00:00, rental_end is 2017-07-14 00:00:00
+2019-08-31 14:03:55,495	charges_calc.py	:88 	DEBUG	For Product Code PRD48 rental_start is 2016-09-06 00:00:00, rental_end is 2017-11-04 00:00:00
+2019-08-31 14:03:55,496	charges_calc.py	:88 	DEBUG	For Product Code PRD61 rental_start is 2016-05-31 00:00:00, rental_end is 2018-10-21 00:00:00
+2019-08-31 14:03:55,496	charges_calc.py	:93 	DEBUG	For Product Code PRD83 rental_start is 2017-04-12 00:00:00, rental_end is 2018-10-16 00:00:00
+2019-08-31 14:03:55,496	charges_calc.py	:93 	DEBUG	For Product Code PRD38 rental_start is 2016-07-12 00:00:00, rental_end is 2016-07-31 00:00:00
+2019-08-31 14:03:55,496	charges_calc.py	:93 	DEBUG	For Product Code PRD96 rental_start is 2016-01-16 00:00:00, rental_end is 2018-07-24 00:00:00
+2019-08-31 14:03:55,497	charges_calc.py	:93 	DEBUG	For Product Code PRD94 rental_start is 2018-01-23 00:00:00, rental_end is 2018-11-04 00:00:00
+2019-08-31 14:03:55,497	charges_calc.py	:88 	DEBUG	For Product Code PRD97 rental_start is 2018-01-30 00:00:00, rental_end is 2018-03-05 00:00:00
+2019-08-31 14:03:55,497	charges_calc.py	:93 	DEBUG	For Product Code PRD90 rental_start is 2016-12-12 00:00:00, rental_end is 2017-08-29 00:00:00
+2019-08-31 14:03:55,497	charges_calc.py	:88 	DEBUG	For Product Code PRD99 rental_start is 2018-01-17 00:00:00, rental_end is 2018-10-04 00:00:00
+2019-08-31 14:03:55,497	charges_calc.py	:93 	DEBUG	For Product Code PRD56 rental_start is 2018-03-06 00:00:00, rental_end is 2018-12-07 00:00:00
+2019-08-31 14:03:55,497	charges_calc.py	:88 	DEBUG	For Product Code PRD29 rental_start is 2017-06-29 00:00:00, rental_end is 2017-09-30 00:00:00
+2019-08-31 14:03:55,498	charges_calc.py	:93 	DEBUG	For Product Code PRD99 rental_start is 2016-08-24 00:00:00, rental_end is 2017-04-27 00:00:00
+2019-08-31 14:03:55,498	charges_calc.py	:93 	DEBUG	For Product Code PRD87 rental_start is 2017-05-28 00:00:00, rental_end is 2018-04-15 00:00:00
+2019-08-31 14:03:55,498	charges_calc.py	:93 	DEBUG	For Product Code PRD96 rental_start is 2017-07-25 00:00:00, rental_end is 2018-01-03 00:00:00
+2019-08-31 14:03:55,499	charges_calc.py	:93 	DEBUG	For Product Code PRD30 rental_start is 2017-07-24 00:00:00, rental_end is 2017-08-21 00:00:00
+2019-08-31 14:03:55,499	charges_calc.py	:93 	DEBUG	For Product Code PRD81 rental_start is 2016-08-13 00:00:00, rental_end is 2018-01-19 00:00:00
+2019-08-31 14:03:55,499	charges_calc.py	:93 	DEBUG	For Product Code PRD40 rental_start is 2016-04-26 00:00:00, rental_end is 2018-03-15 00:00:00
+2019-08-31 14:03:55,499	charges_calc.py	:88 	DEBUG	For Product Code PRD40 rental_start is 2016-04-18 00:00:00, rental_end is 2016-08-22 00:00:00
+2019-08-31 14:03:55,499	charges_calc.py	:93 	DEBUG	For Product Code PRD44 rental_start is 2016-04-18 00:00:00, rental_end is 2016-06-30 00:00:00
+2019-08-31 14:03:55,500	charges_calc.py	:93 	DEBUG	For Product Code PRD15 rental_start is 2017-01-20 00:00:00, rental_end is 2017-04-02 00:00:00
+2019-08-31 14:03:55,500	charges_calc.py	:93 	DEBUG	For Product Code PRD7 rental_start is 2016-04-15 00:00:00, rental_end is 2016-05-01 00:00:00
+2019-08-31 14:03:55,500	charges_calc.py	:88 	DEBUG	For Product Code PRD11 rental_start is 2017-08-01 00:00:00, rental_end is 2018-07-22 00:00:00
+2019-08-31 14:03:55,500	charges_calc.py	:93 	DEBUG	For Product Code PRD91 rental_start is 2016-08-23 00:00:00, rental_end is 2018-12-31 00:00:00
+2019-08-31 14:03:55,501	charges_calc.py	:93 	DEBUG	For Product Code PRD81 rental_start is 2017-09-01 00:00:00, rental_end is 2018-12-07 00:00:00
+2019-08-31 14:03:55,501	charges_calc.py	:93 	DEBUG	For Product Code PRD81 rental_start is 2017-01-02 00:00:00, rental_end is 2017-08-31 00:00:00
+2019-08-31 14:03:55,501	charges_calc.py	:88 	DEBUG	For Product Code PRD68 rental_start is 2016-09-15 00:00:00, rental_end is 2016-11-27 00:00:00
+2019-08-31 14:03:55,501	charges_calc.py	:93 	DEBUG	For Product Code PRD68 rental_start is 2016-02-08 00:00:00, rental_end is 2018-10-05 00:00:00
+2019-08-31 14:03:55,501	charges_calc.py	:88 	DEBUG	For Product Code PRD45 rental_start is 2016-01-07 00:00:00, rental_end is 2016-01-13 00:00:00
+2019-08-31 14:03:55,502	charges_calc.py	:88 	DEBUG	For Product Code PRD54 rental_start is 2018-02-01 00:00:00, rental_end is 2018-07-09 00:00:00
+2019-08-31 14:03:55,502	charges_calc.py	:88 	DEBUG	For Product Code PRD99 rental_start is 2018-08-07 00:00:00, rental_end is 2018-09-16 00:00:00
+2019-08-31 14:03:55,502	charges_calc.py	:93 	DEBUG	For Product Code PRD81 rental_start is 2016-03-02 00:00:00, rental_end is 2017-01-22 00:00:00
+2019-08-31 14:03:55,503	charges_calc.py	:88 	DEBUG	For Product Code PRD81 rental_start is 2017-09-15 00:00:00, rental_end is 2018-11-02 00:00:00
+2019-08-31 14:03:55,503	charges_calc.py	:93 	DEBUG	For Product Code PRD85 rental_start is 2016-04-24 00:00:00, rental_end is 2017-11-28 00:00:00
+2019-08-31 14:03:55,503	charges_calc.py	:88 	DEBUG	For Product Code PRD15 rental_start is 2016-03-20 00:00:00, rental_end is 2017-02-24 00:00:00
+2019-08-31 14:03:55,503	charges_calc.py	:88 	DEBUG	For Product Code PRD47 rental_start is 2017-09-10 00:00:00, rental_end is 2018-12-09 00:00:00
+2019-08-31 14:03:55,503	charges_calc.py	:88 	DEBUG	For Product Code PRD35 rental_start is 2016-04-29 00:00:00, rental_end is 2017-09-09 00:00:00
+2019-08-31 14:03:55,504	charges_calc.py	:93 	DEBUG	For Product Code PRD94 rental_start is 2016-08-30 00:00:00, rental_end is 2018-05-10 00:00:00
+2019-08-31 14:03:55,504	charges_calc.py	:88 	DEBUG	For Product Code PRD14 rental_start is 2016-07-03 00:00:00, rental_end is 2016-07-25 00:00:00
+2019-08-31 14:03:55,504	charges_calc.py	:88 	DEBUG	For Product Code PRD59 rental_start is 2016-02-13 00:00:00, rental_end is 2018-10-20 00:00:00
+2019-08-31 14:03:55,504	charges_calc.py	:93 	DEBUG	For Product Code PRD45 rental_start is 2018-01-22 00:00:00, rental_end is 2018-02-27 00:00:00
+2019-08-31 14:03:55,505	charges_calc.py	:93 	DEBUG	For Product Code PRD65 rental_start is 2016-12-29 00:00:00, rental_end is 2017-04-12 00:00:00
+2019-08-31 14:03:55,505	charges_calc.py	:93 	DEBUG	For Product Code PRD8 rental_start is 2016-04-13 00:00:00, rental_end is 2018-09-17 00:00:00
+2019-08-31 14:03:55,505	charges_calc.py	:88 	DEBUG	For Product Code PRD8 rental_start is 2016-09-08 00:00:00, rental_end is 2017-04-05 00:00:00
+2019-08-31 14:03:55,505	charges_calc.py	:88 	DEBUG	For Product Code PRD53 rental_start is 2017-06-26 00:00:00, rental_end is 2018-07-19 00:00:00
+2019-08-31 14:03:55,506	charges_calc.py	:88 	DEBUG	For Product Code PRD64 rental_start is 2017-11-16 00:00:00, rental_end is 2018-07-17 00:00:00
+2019-08-31 14:03:55,506	charges_calc.py	:93 	DEBUG	For Product Code PRD47 rental_start is 2016-01-26 00:00:00, rental_end is 2017-06-10 00:00:00
+2019-08-31 14:03:55,506	charges_calc.py	:88 	DEBUG	For Product Code PRD94 rental_start is 2016-01-27 00:00:00, rental_end is 2018-09-13 00:00:00
+2019-08-31 14:03:55,506	charges_calc.py	:93 	DEBUG	For Product Code PRD46 rental_start is 2016-03-13 00:00:00, rental_end is 2017-01-02 00:00:00
+2019-08-31 14:03:55,506	charges_calc.py	:88 	DEBUG	For Product Code PRD54 rental_start is 2017-03-25 00:00:00, rental_end is 2017-08-22 00:00:00
+2019-08-31 14:03:55,507	charges_calc.py	:93 	DEBUG	For Product Code PRD95 rental_start is 2018-05-02 00:00:00, rental_end is 2018-12-31 00:00:00
+2019-08-31 14:03:55,507	charges_calc.py	:93 	DEBUG	For Product Code PRD3 rental_start is 2018-10-20 00:00:00, rental_end is 2018-11-03 00:00:00
+2019-08-31 14:03:55,507	charges_calc.py	:88 	DEBUG	For Product Code PRD34 rental_start is 2016-07-04 00:00:00, rental_end is 2018-10-05 00:00:00
+2019-08-31 14:03:55,507	charges_calc.py	:93 	DEBUG	For Product Code PRD81 rental_start is 2016-08-05 00:00:00, rental_end is 2018-11-15 00:00:00
+2019-08-31 14:03:55,507	charges_calc.py	:93 	DEBUG	For Product Code PRD96 rental_start is 2016-08-09 00:00:00, rental_end is 2018-11-27 00:00:00
+2019-08-31 14:03:55,508	charges_calc.py	:88 	DEBUG	For Product Code PRD9 rental_start is 2017-09-06 00:00:00, rental_end is 2018-09-14 00:00:00
+2019-08-31 14:03:55,508	charges_calc.py	:93 	DEBUG	For Product Code PRD89 rental_start is 2016-02-15 00:00:00, rental_end is 2016-12-18 00:00:00
+2019-08-31 14:03:55,508	charges_calc.py	:93 	DEBUG	For Product Code PRD56 rental_start is 2018-02-05 00:00:00, rental_end is 2018-07-18 00:00:00
+2019-08-31 14:03:55,509	charges_calc.py	:88 	DEBUG	For Product Code PRD12 rental_start is 2018-02-13 00:00:00, rental_end is 2018-04-27 00:00:00
+2019-08-31 14:03:55,509	charges_calc.py	:88 	DEBUG	For Product Code PRD85 rental_start is 2017-01-20 00:00:00, rental_end is 2018-01-03 00:00:00
+2019-08-31 14:03:55,509	charges_calc.py	:88 	DEBUG	For Product Code PRD4 rental_start is 2016-08-20 00:00:00, rental_end is 2018-07-02 00:00:00
+2019-08-31 14:03:55,509	charges_calc.py	:88 	DEBUG	For Product Code PRD78 rental_start is 2017-02-04 00:00:00, rental_end is 2017-09-08 00:00:00
+2019-08-31 14:03:55,510	charges_calc.py	:93 	DEBUG	For Product Code PRD75 rental_start is 2016-11-21 00:00:00, rental_end is 2017-09-01 00:00:00
+2019-08-31 14:03:55,510	charges_calc.py	:88 	DEBUG	For Product Code PRD30 rental_start is 2016-03-31 00:00:00, rental_end is 2018-01-04 00:00:00
+2019-08-31 14:03:55,510	charges_calc.py	:88 	DEBUG	For Product Code PRD85 rental_start is 2016-01-01 00:00:00, rental_end is 2016-02-17 00:00:00
+2019-08-31 14:03:55,510	charges_calc.py	:93 	DEBUG	For Product Code PRD43 rental_start is 2018-07-28 00:00:00, rental_end is 2018-12-16 00:00:00
+2019-08-31 14:03:55,511	charges_calc.py	:88 	DEBUG	For Product Code PRD65 rental_start is 2016-01-30 00:00:00, rental_end is 2016-11-27 00:00:00
+2019-08-31 14:03:55,511	charges_calc.py	:88 	DEBUG	For Product Code PRD51 rental_start is 2017-06-16 00:00:00, rental_end is 2018-03-05 00:00:00
+2019-08-31 14:03:55,511	charges_calc.py	:93 	DEBUG	For Product Code PRD64 rental_start is 2016-06-16 00:00:00, rental_end is 2018-04-09 00:00:00
+2019-08-31 14:03:55,511	charges_calc.py	:93 	DEBUG	For Product Code PRD88 rental_start is 2016-01-31 00:00:00, rental_end is 2016-10-04 00:00:00
+2019-08-31 14:03:55,512	charges_calc.py	:88 	DEBUG	For Product Code PRD56 rental_start is 2017-04-24 00:00:00, rental_end is 2018-07-24 00:00:00
+2019-08-31 14:03:55,512	charges_calc.py	:93 	DEBUG	For Product Code PRD48 rental_start is 2018-02-19 00:00:00, rental_end is 2018-02-22 00:00:00
+2019-08-31 14:03:55,512	charges_calc.py	:93 	DEBUG	For Product Code PRD46 rental_start is 2017-10-13 00:00:00, rental_end is 2018-11-07 00:00:00
+2019-08-31 14:03:55,512	charges_calc.py	:88 	DEBUG	For Product Code PRD69 rental_start is 2017-08-17 00:00:00, rental_end is 2017-09-03 00:00:00
+2019-08-31 14:03:55,513	charges_calc.py	:88 	DEBUG	For Product Code PRD44 rental_start is 2016-11-13 00:00:00, rental_end is 2016-11-27 00:00:00
+2019-08-31 14:03:55,513	charges_calc.py	:88 	DEBUG	For Product Code PRD26 rental_start is 2016-02-03 00:00:00, rental_end is 2017-11-21 00:00:00
+2019-08-31 14:03:55,513	charges_calc.py	:93 	DEBUG	For Product Code PRD21 rental_start is 2016-12-28 00:00:00, rental_end is 2018-12-03 00:00:00
+2019-08-31 14:03:55,513	charges_calc.py	:93 	DEBUG	For Product Code PRD70 rental_start is 2016-04-29 00:00:00, rental_end is 2018-09-19 00:00:00
+2019-08-31 14:03:55,513	charges_calc.py	:88 	DEBUG	For Product Code PRD68 rental_start is 2018-10-19 00:00:00, rental_end is 2018-12-31 00:00:00
+2019-08-31 14:03:55,514	charges_calc.py	:93 	DEBUG	For Product Code PRD17 rental_start is 2017-01-10 00:00:00, rental_end is 2018-04-12 00:00:00
+2019-08-31 14:03:55,514	charges_calc.py	:88 	DEBUG	For Product Code PRD74 rental_start is 2016-04-03 00:00:00, rental_end is 2017-06-26 00:00:00
+2019-08-31 14:03:55,514	charges_calc.py	:93 	DEBUG	For Product Code PRD17 rental_start is 2017-02-24 00:00:00, rental_end is 2017-03-03 00:00:00
+2019-08-31 14:03:55,515	charges_calc.py	:93 	DEBUG	For Product Code PRD81 rental_start is 2016-12-21 00:00:00, rental_end is 2018-10-28 00:00:00
+2019-08-31 14:03:55,515	charges_calc.py	:93 	DEBUG	For Product Code PRD37 rental_start is 2018-05-08 00:00:00, rental_end is 2018-05-30 00:00:00
+2019-08-31 14:03:55,515	charges_calc.py	:88 	DEBUG	For Product Code PRD74 rental_start is 2018-06-02 00:00:00, rental_end is 2018-07-06 00:00:00
+2019-08-31 14:03:55,516	charges_calc.py	:93 	DEBUG	For Product Code PRD1 rental_start is 2016-10-19 00:00:00, rental_end is 2016-12-20 00:00:00
+2019-08-31 14:03:55,516	charges_calc.py	:93 	DEBUG	For Product Code PRD30 rental_start is 2017-12-20 00:00:00, rental_end is 2018-06-15 00:00:00
+2019-08-31 14:03:55,517	charges_calc.py	:88 	DEBUG	For Product Code PRD84 rental_start is 2016-09-10 00:00:00, rental_end is 2018-09-19 00:00:00
+2019-08-31 14:03:55,517	charges_calc.py	:88 	DEBUG	For Product Code PRD50 rental_start is 2017-07-29 00:00:00, rental_end is 2017-08-27 00:00:00
+2019-08-31 14:03:55,518	charges_calc.py	:93 	DEBUG	For Product Code PRD80 rental_start is 2016-05-16 00:00:00, rental_end is 2018-04-12 00:00:00
+2019-08-31 14:03:55,518	charges_calc.py	:88 	DEBUG	For Product Code PRD12 rental_start is 2017-09-15 00:00:00, rental_end is 2018-12-09 00:00:00
+2019-08-31 14:03:55,518	charges_calc.py	:88 	DEBUG	For Product Code PRD47 rental_start is 2016-03-05 00:00:00, rental_end is 2016-07-14 00:00:00
+2019-08-31 14:03:55,519	charges_calc.py	:93 	DEBUG	For Product Code PRD12 rental_start is 2017-11-17 00:00:00, rental_end is 2018-05-18 00:00:00
+2019-08-31 14:03:55,519	charges_calc.py	:93 	DEBUG	For Product Code PRD24 rental_start is 2017-11-28 00:00:00, rental_end is 2018-08-21 00:00:00
+2019-08-31 14:03:55,519	charges_calc.py	:88 	DEBUG	For Product Code PRD69 rental_start is 2016-11-22 00:00:00, rental_end is 2018-04-02 00:00:00
+2019-08-31 14:03:55,519	charges_calc.py	:93 	DEBUG	For Product Code PRD66 rental_start is 2018-06-07 00:00:00, rental_end is 2018-07-24 00:00:00
+2019-08-31 14:03:55,520	charges_calc.py	:93 	DEBUG	For Product Code PRD44 rental_start is 2016-06-01 00:00:00, rental_end is 2018-10-27 00:00:00
+2019-08-31 14:03:55,520	charges_calc.py	:93 	DEBUG	For Product Code PRD42 rental_start is 2017-10-24 00:00:00, rental_end is 2018-10-11 00:00:00
+2019-08-31 14:03:55,520	charges_calc.py	:88 	DEBUG	For Product Code PRD88 rental_start is 2016-12-08 00:00:00, rental_end is 2017-09-26 00:00:00
+2019-08-31 14:03:55,520	charges_calc.py	:88 	DEBUG	For Product Code PRD41 rental_start is 2018-03-01 00:00:00, rental_end is 2018-06-15 00:00:00
+2019-08-31 14:03:55,520	charges_calc.py	:88 	DEBUG	For Product Code PRD6 rental_start is 2016-04-02 00:00:00, rental_end is 2017-12-23 00:00:00
+2019-08-31 14:03:55,521	charges_calc.py	:93 	DEBUG	For Product Code PRD74 rental_start is 2017-02-25 00:00:00, rental_end is 2017-06-23 00:00:00
+2019-08-31 14:03:55,521	charges_calc.py	:88 	DEBUG	For Product Code PRD59 rental_start is 2017-05-17 00:00:00, rental_end is 2017-09-08 00:00:00
+2019-08-31 14:03:55,521	charges_calc.py	:93 	DEBUG	For Product Code PRD13 rental_start is 2016-04-10 00:00:00, rental_end is 2018-10-13 00:00:00
+2019-08-31 14:03:55,522	charges_calc.py	:93 	DEBUG	For Product Code PRD28 rental_start is 2016-07-29 00:00:00, rental_end is 2017-01-15 00:00:00
+2019-08-31 14:03:55,522	charges_calc.py	:88 	DEBUG	For Product Code PRD26 rental_start is 2017-01-15 00:00:00, rental_end is 2017-05-18 00:00:00
+2019-08-31 14:03:55,522	charges_calc.py	:93 	DEBUG	For Product Code PRD58 rental_start is 2016-11-17 00:00:00, rental_end is 2018-12-29 00:00:00
+2019-08-31 14:03:55,522	charges_calc.py	:88 	DEBUG	For Product Code PRD41 rental_start is 2017-04-25 00:00:00, rental_end is 2018-04-25 00:00:00
+2019-08-31 14:03:55,522	charges_calc.py	:88 	DEBUG	For Product Code PRD74 rental_start is 2016-08-08 00:00:00, rental_end is 2017-10-09 00:00:00
+2019-08-31 14:03:55,523	charges_calc.py	:93 	DEBUG	For Product Code PRD11 rental_start is 2018-09-03 00:00:00, rental_end is 2018-11-27 00:00:00
+2019-08-31 14:03:55,523	charges_calc.py	:93 	DEBUG	For Product Code PRD18 rental_start is 2016-04-09 00:00:00, rental_end is 2017-10-18 00:00:00
+2019-08-31 14:03:55,523	charges_calc.py	:88 	DEBUG	For Product Code PRD78 rental_start is 2016-06-23 00:00:00, rental_end is 2017-08-23 00:00:00
+2019-08-31 14:03:55,523	charges_calc.py	:93 	DEBUG	For Product Code PRD12 rental_start is 2016-09-16 00:00:00, rental_end is 2016-11-27 00:00:00
+2019-08-31 14:03:55,523	charges_calc.py	:88 	DEBUG	For Product Code PRD90 rental_start is 2016-01-12 00:00:00, rental_end is 2018-09-25 00:00:00
+2019-08-31 14:03:55,524	charges_calc.py	:93 	DEBUG	For Product Code PRD87 rental_start is 2018-03-25 00:00:00, rental_end is 2018-04-26 00:00:00
+2019-08-31 14:03:55,524	charges_calc.py	:88 	DEBUG	For Product Code PRD18 rental_start is 2016-04-05 00:00:00, rental_end is 2016-09-22 00:00:00
+2019-08-31 14:03:55,525	charges_calc.py	:93 	DEBUG	For Product Code PRD58 rental_start is 2016-01-29 00:00:00, rental_end is 2018-04-18 00:00:00
+2019-08-31 14:03:55,525	charges_calc.py	:88 	DEBUG	For Product Code PRD58 rental_start is 2018-02-13 00:00:00, rental_end is 2018-09-02 00:00:00
+2019-08-31 14:03:55,525	charges_calc.py	:88 	DEBUG	For Product Code PRD24 rental_start is 2016-03-08 00:00:00, rental_end is 2017-10-06 00:00:00
+2019-08-31 14:03:55,525	charges_calc.py	:93 	DEBUG	For Product Code PRD46 rental_start is 2016-02-13 00:00:00, rental_end is 2017-03-08 00:00:00
+2019-08-31 14:03:55,526	charges_calc.py	:93 	DEBUG	For Product Code PRD82 rental_start is 2016-01-03 00:00:00, rental_end is 2018-10-29 00:00:00
+2019-08-31 14:03:55,526	charges_calc.py	:88 	DEBUG	For Product Code PRD71 rental_start is 2016-11-17 00:00:00, rental_end is 2017-02-19 00:00:00
+2019-08-31 14:03:55,527	charges_calc.py	:88 	DEBUG	For Product Code PRD22 rental_start is 2016-05-06 00:00:00, rental_end is 2017-11-24 00:00:00
+2019-08-31 14:03:55,527	charges_calc.py	:93 	DEBUG	For Product Code PRD69 rental_start is 2017-01-18 00:00:00, rental_end is 2018-07-15 00:00:00
+2019-08-31 14:03:55,528	charges_calc.py	:93 	DEBUG	For Product Code PRD48 rental_start is 2017-07-27 00:00:00, rental_end is 2018-07-23 00:00:00
+2019-08-31 14:03:55,528	charges_calc.py	:88 	DEBUG	For Product Code PRD16 rental_start is 2017-04-23 00:00:00, rental_end is 2017-08-18 00:00:00
+2019-08-31 14:03:55,528	charges_calc.py	:93 	DEBUG	For Product Code PRD18 rental_start is 2016-12-20 00:00:00, rental_end is 2018-08-23 00:00:00
+2019-08-31 14:03:55,528	charges_calc.py	:88 	DEBUG	For Product Code PRD30 rental_start is 2017-09-02 00:00:00, rental_end is 2017-11-17 00:00:00
+2019-08-31 14:03:55,529	charges_calc.py	:88 	DEBUG	For Product Code PRD96 rental_start is 2016-11-24 00:00:00, rental_end is 2017-08-18 00:00:00
+2019-08-31 14:03:55,529	charges_calc.py	:88 	DEBUG	For Product Code PRD40 rental_start is 2016-11-05 00:00:00, rental_end is 2017-05-26 00:00:00
+2019-08-31 14:03:55,530	charges_calc.py	:93 	DEBUG	For Product Code PRD4 rental_start is 2016-04-03 00:00:00, rental_end is 2017-10-25 00:00:00
+2019-08-31 14:03:55,530	charges_calc.py	:93 	DEBUG	For Product Code PRD22 rental_start is 2018-01-15 00:00:00, rental_end is 2018-11-03 00:00:00
+2019-08-31 14:03:55,530	charges_calc.py	:93 	DEBUG	For Product Code PRD31 rental_start is 2016-04-13 00:00:00, rental_end is 2017-06-09 00:00:00
+2019-08-31 14:03:55,531	charges_calc.py	:93 	DEBUG	For Product Code PRD92 rental_start is 2016-01-04 00:00:00, rental_end is 2016-12-06 00:00:00
+2019-08-31 14:03:55,531	charges_calc.py	:93 	DEBUG	For Product Code PRD59 rental_start is 2016-11-03 00:00:00, rental_end is 2017-07-01 00:00:00
+2019-08-31 14:03:55,531	charges_calc.py	:93 	DEBUG	For Product Code PRD73 rental_start is 2017-09-18 00:00:00, rental_end is 2018-06-02 00:00:00
+2019-08-31 14:03:55,531	charges_calc.py	:88 	DEBUG	For Product Code PRD81 rental_start is 2017-10-13 00:00:00, rental_end is 2018-02-16 00:00:00
+2019-08-31 14:03:55,532	charges_calc.py	:93 	DEBUG	For Product Code PRD1 rental_start is 2016-04-21 00:00:00, rental_end is 2018-02-07 00:00:00
+2019-08-31 14:03:55,532	charges_calc.py	:93 	DEBUG	For Product Code PRD9 rental_start is 2016-04-24 00:00:00, rental_end is 2017-08-21 00:00:00
+2019-08-31 14:03:55,532	charges_calc.py	:93 	DEBUG	For Product Code PRD44 rental_start is 2016-06-28 00:00:00, rental_end is 2018-12-22 00:00:00
+2019-08-31 14:03:55,532	charges_calc.py	:93 	DEBUG	For Product Code PRD39 rental_start is 2016-04-28 00:00:00, rental_end is 2017-08-27 00:00:00
+2019-08-31 14:03:55,532	charges_calc.py	:88 	DEBUG	For Product Code PRD36 rental_start is 2017-10-18 00:00:00, rental_end is 2018-09-02 00:00:00
+2019-08-31 14:03:55,533	charges_calc.py	:88 	DEBUG	For Product Code PRD40 rental_start is 2017-08-08 00:00:00, rental_end is 2017-10-16 00:00:00
+2019-08-31 14:03:55,533	charges_calc.py	:93 	DEBUG	For Product Code PRD65 rental_start is 2016-07-01 00:00:00, rental_end is 2018-04-11 00:00:00
+2019-08-31 14:03:55,533	charges_calc.py	:88 	DEBUG	For Product Code PRD91 rental_start is 2017-03-30 00:00:00, rental_end is 2017-09-14 00:00:00
+2019-08-31 14:03:55,534	charges_calc.py	:93 	DEBUG	For Product Code PRD70 rental_start is 2017-07-06 00:00:00, rental_end is 2018-01-11 00:00:00
+2019-08-31 14:03:55,534	charges_calc.py	:88 	DEBUG	For Product Code PRD67 rental_start is 2016-08-22 00:00:00, rental_end is 2017-01-06 00:00:00
+2019-08-31 14:03:55,534	charges_calc.py	:88 	DEBUG	For Product Code PRD2 rental_start is 2017-05-20 00:00:00, rental_end is 2017-12-09 00:00:00
+2019-08-31 14:03:55,535	charges_calc.py	:93 	DEBUG	For Product Code PRD1 rental_start is 2017-05-21 00:00:00, rental_end is 2018-10-29 00:00:00
+2019-08-31 14:03:55,535	charges_calc.py	:88 	DEBUG	For Product Code PRD81 rental_start is 2018-07-10 00:00:00, rental_end is 2018-09-19 00:00:00
+2019-08-31 14:03:55,535	charges_calc.py	:93 	DEBUG	For Product Code PRD80 rental_start is 2017-03-28 00:00:00, rental_end is 2018-09-18 00:00:00
+2019-08-31 14:03:55,535	charges_calc.py	:93 	DEBUG	For Product Code PRD28 rental_start is 2016-02-04 00:00:00, rental_end is 2017-03-30 00:00:00
+2019-08-31 14:03:55,536	charges_calc.py	:88 	DEBUG	For Product Code PRD44 rental_start is 2017-07-14 00:00:00, rental_end is 2017-12-03 00:00:00
+2019-08-31 14:03:55,536	charges_calc.py	:88 	DEBUG	For Product Code PRD52 rental_start is 2018-07-06 00:00:00, rental_end is 2018-12-13 00:00:00
+2019-08-31 14:03:55,536	charges_calc.py	:93 	DEBUG	For Product Code PRD34 rental_start is 2016-11-21 00:00:00, rental_end is 2017-08-31 00:00:00
+2019-08-31 14:03:55,536	charges_calc.py	:88 	DEBUG	For Product Code PRD53 rental_start is 2016-01-05 00:00:00, rental_end is 2018-02-10 00:00:00
+2019-08-31 14:03:55,537	charges_calc.py	:93 	DEBUG	For Product Code PRD11 rental_start is 2016-11-23 00:00:00, rental_end is 2018-05-09 00:00:00
+2019-08-31 14:03:55,537	charges_calc.py	:93 	DEBUG	For Product Code PRD2 rental_start is 2016-03-21 00:00:00, rental_end is 2017-11-27 00:00:00
+2019-08-31 14:03:55,537	charges_calc.py	:93 	DEBUG	For Product Code PRD78 rental_start is 2016-08-01 00:00:00, rental_end is 2017-03-02 00:00:00
+2019-08-31 14:03:55,538	charges_calc.py	:93 	DEBUG	For Product Code PRD43 rental_start is 2018-01-10 00:00:00, rental_end is 2018-05-21 00:00:00
+2019-08-31 14:03:55,538	charges_calc.py	:93 	DEBUG	For Product Code PRD26 rental_start is 2016-09-13 00:00:00, rental_end is 2018-02-02 00:00:00
+2019-08-31 14:03:55,538	charges_calc.py	:93 	DEBUG	For Product Code PRD25 rental_start is 2016-09-13 00:00:00, rental_end is 2017-04-28 00:00:00
+2019-08-31 14:03:55,538	charges_calc.py	:88 	DEBUG	For Product Code PRD86 rental_start is 2017-07-28 00:00:00, rental_end is 2018-03-15 00:00:00
+2019-08-31 14:03:55,539	charges_calc.py	:93 	DEBUG	For Product Code PRD29 rental_start is 2016-09-25 00:00:00, rental_end is 2018-03-02 00:00:00
+2019-08-31 14:03:55,539	charges_calc.py	:93 	DEBUG	For Product Code PRD68 rental_start is 2017-03-08 00:00:00, rental_end is 2018-09-05 00:00:00
+2019-08-31 14:03:55,539	charges_calc.py	:93 	DEBUG	For Product Code PRD51 rental_start is 2017-11-12 00:00:00, rental_end is 2018-11-18 00:00:00
+2019-08-31 14:03:55,540	charges_calc.py	:88 	DEBUG	For Product Code PRD83 rental_start is 2016-01-06 00:00:00, rental_end is 2018-12-02 00:00:00
+2019-08-31 14:03:55,540	charges_calc.py	:93 	DEBUG	For Product Code PRD65 rental_start is 2016-05-04 00:00:00, rental_end is 2016-06-12 00:00:00
+2019-08-31 14:03:55,540	charges_calc.py	:88 	DEBUG	For Product Code PRD71 rental_start is 2018-02-21 00:00:00, rental_end is 2018-06-18 00:00:00
+2019-08-31 14:03:55,541	charges_calc.py	:88 	DEBUG	For Product Code PRD14 rental_start is 2016-10-13 00:00:00, rental_end is 2016-10-23 00:00:00
+2019-08-31 14:03:55,541	charges_calc.py	:88 	DEBUG	For Product Code PRD30 rental_start is 2016-12-28 00:00:00, rental_end is 2018-07-13 00:00:00
+2019-08-31 14:03:55,541	charges_calc.py	:93 	DEBUG	For Product Code PRD2 rental_start is 2017-04-20 00:00:00, rental_end is 2018-10-10 00:00:00
+Traceback (most recent call last):
+  File "/Users/james/code/220-Advanced-Summer-2019/students/jsward/lesson02/assignment/src/charges_calc.py", line 78, in calculate_additional_fields
+    date2 = datetime.datetime.strptime(value['rental_end'], '%m/%d/%y')
+  File "/usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/_strptime.py", line 577, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "/usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/_strptime.py", line 359, in _strptime
+    (data_string, format))
+ValueError: time data '' does not match format '%m/%d/%y'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Applications/PyCharm CE.app/Contents/helpers/pydev/pydevd.py", line 1664, in <module>
+    main()
+  File "/Applications/PyCharm CE.app/Contents/helpers/pydev/pydevd.py", line 1658, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Applications/PyCharm CE.app/Contents/helpers/pydev/pydevd.py", line 1068, in run
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "/Applications/PyCharm CE.app/Contents/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/Users/james/code/220-Advanced-Summer-2019/students/jsward/lesson02/assignment/src/charges_calc.py", line 139, in <module>
+    data = calculate_additional_fields(data)
+  File "/Users/james/code/220-Advanced-Summer-2019/students/jsward/lesson02/assignment/src/charges_calc.py", line 81, in calculate_additional_fields
+    value['rental_end']))
+  File "/Users/james/code/220-Advanced-Summer-2019/students/jsward/lesson02/assignment/src/charges_calc.py", line 81, in calculate_additional_fields
+    value['rental_end']))
+  File "/Applications/PyCharm CE.app/Contents/helpers/pydev/_pydevd_bundle/pydevd_trace_dispatch.py", line 55, in trace_dispatch
+    return _trace_dispatch(py_db, frame, event, arg)
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 956, in _pydevd_bundle.pydevd_cython_darwin_37_64.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 1077, in _pydevd_bundle.pydevd_cython_darwin_37_64.ThreadTracer.__call__
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 881, in _pydevd_bundle.pydevd_cython_darwin_37_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 844, in _pydevd_bundle.pydevd_cython_darwin_37_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 254, in _pydevd_bundle.pydevd_cython_darwin_37_64.PyDBFrame.do_wait_suspend
+  File "/Applications/PyCharm CE.app/Contents/helpers/pydev/pydevd.py", line 812, in do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+
+pydev debugger: process 4100 is connecting
+
+2019-08-31 13:27:51,989	charges_calc.py	:114	INFO	Script started at 2019-08-31
+2019-08-31 13:27:51,995	charges_calc.py	:118	INFO	Setting logging level to DEBUG
+2019-08-31 13:27:51,996	charges_calc.py	:50 	DEBUG	Entering load_rentals_file function
+2019-08-31 13:27:52,017	charges_calc.py	:87 	WARNING	total_days of rental was -82, which is invalid.  total_days will be set to 0
+2019-08-31 13:28:07,884	charges_calc.py	:87 	WARNING	total_days of rental was -28, which is invalid.  total_days will be set to 0
+2019-08-31 13:28:22,127	charges_calc.py	:87 	WARNING	total_days of rental was -40, which is invalid.  total_days will be set to 0
+2019-08-31 13:28:33,666	charges_calc.py	:87 	WARNING	total_days of rental was -113, which is invalid.  total_days will be set to 0
+2019-08-31 13:28:33,667	charges_calc.py	:87 	WARNING	total_days of rental was -828, which is invalid.  total_days will be set to 0
+2019-08-31 13:28:33,668	charges_calc.py	:87 	WARNING	total_days of rental was -200, which is invalid.  total_days will be set to 0
+2019-08-31 13:28:33,668	charges_calc.py	:87 	WARNING	total_days of rental was -518, which is invalid.  total_days will be set to 0
+2019-08-31 13:28:33,669	charges_calc.py	:87 	WARNING	total_days of rental was -648, which is invalid.  total_days will be set to 0
+2019-08-31 13:28:33,669	charges_calc.py	:87 	WARNING	total_days of rental was -184, which is invalid.  total_days will be set to 0
+2019-08-31 13:28:33,669	charges_calc.py	:87 	WARNING	total_days of rental was -864, which is invalid.  total_days will be set to 0
+2019-08-31 13:28:33,670	charges_calc.py	:87 	WARNING	total_days of rental was -17, which is invalid.  total_days will be set to 0
+2019-08-31 13:28:33,670	charges_calc.py	:87 	WARNING	total_days of rental was -216, which is invalid.  total_days will be set to 0
+2019-08-31 13:28:33,671	charges_calc.py	:87 	WARNING	total_days of rental was -585, which is invalid.  total_days will be set to 0
+2019-08-31 13:28:33,671	charges_calc.py	:87 	WARNING	total_days of rental was -890, which is invalid.  total_days will be set to 0
+2019-08-31 13:28:33,672	charges_calc.py	:87 	WARNING	total_days of rental was -569, which is invalid.  total_days will be set to 0
+2019-08-31 13:28:33,672	charges_calc.py	:87 	WARNING	total_days of rental was -643, which is invalid.  total_days will be set to 0
+2019-08-31 13:28:33,673	charges_calc.py	:87 	WARNING	total_days of rental was -705, which is invalid.  total_days will be set to 0
+2019-08-31 13:28:33,673	charges_calc.py	:87 	WARNING	total_days of rental was -426, which is invalid.  total_days will be set to 0
+2019-08-31 13:28:33,674	charges_calc.py	:87 	WARNING	total_days of rental was -74, which is invalid.  total_days will be set to 0
+2019-08-31 13:28:33,674	charges_calc.py	:87 	WARNING	total_days of rental was -370, which is invalid.  total_days will be set to 0
+2019-08-31 13:28:33,675	charges_calc.py	:87 	WARNING	total_days of rental was -556, which is invalid.  total_days will be set to 0
+2019-08-31 13:28:33,676	charges_calc.py	:87 	WARNING	total_days of rental was -336, which is invalid.  total_days will be set to 0
+2019-08-31 13:28:33,676	charges_calc.py	:87 	WARNING	total_days of rental was -326, which is invalid.  total_days will be set to 0
+2019-08-31 13:28:33,677	charges_calc.py	:87 	WARNING	total_days of rental was -624, which is invalid.  total_days will be set to 0
+
+pydev debugger: process 4019 is connecting
+
+2019-08-31 12:57:16,689	charges_calc.py	:112	INFO	Starting started at 2019-08-31
+2019-08-31 12:57:16,696	charges_calc.py	:116	INFO	Setting logging level to DEBUG
+2019-08-31 12:57:16,696	charges_calc.py	:50 	DEBUG	Entering load_rentals_file function
+2019-08-31 12:57:24,689	charges_calc.py	:57 	ERROR	Error loading JSON data from bad_data.json: Expecting value: line 1 column 1 (char 0).  Exiting script...
+
+pydev debugger: process 3971 is connecting
+
+2019-08-31 12:51:21,365	charges_calc.py	:111	INFO	Starting started at 2019-08-31
+2019-08-31 12:51:21,369	charges_calc.py	:115	INFO	Setting logging level to DEBUG
+2019-08-31 12:51:21,370	charges_calc.py	:50 	DEBUG	Entering load_rentals_file function
+Traceback (most recent call last):
+  File "/Users/james/code/220-Advanced-Summer-2019/students/jsward/lesson02/assignment/src/charges_calc.py", line 54, in load_rentals_file
+    data = json.load(file)
+  File "/usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 296, in load
+    parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Applications/PyCharm CE.app/Contents/helpers/pydev/pydevd.py", line 1664, in <module>
+    main()
+  File "/Applications/PyCharm CE.app/Contents/helpers/pydev/pydevd.py", line 1658, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Applications/PyCharm CE.app/Contents/helpers/pydev/pydevd.py", line 1068, in run
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "/Applications/PyCharm CE.app/Contents/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/Users/james/code/220-Advanced-Summer-2019/students/jsward/lesson02/assignment/src/charges_calc.py", line 118, in <module>
+    data = load_rentals_file(args.input)
+  File "/Users/james/code/220-Advanced-Summer-2019/students/jsward/lesson02/assignment/src/charges_calc.py", line 57, in load_rentals_file
+    print(e)
+  File "/Applications/PyCharm CE.app/Contents/helpers/pydev/_pydevd_frame_eval/pydevd_frame_tracing.py", line 81, in _pydev_stop_at_break
+    debugger.do_wait_suspend(t, frame, 'line', None, "frame_eval")
+  File "/Applications/PyCharm CE.app/Contents/helpers/pydev/pydevd.py", line 812, in do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
