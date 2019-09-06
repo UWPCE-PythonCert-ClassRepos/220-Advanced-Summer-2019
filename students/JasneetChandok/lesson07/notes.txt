@@ -1,0 +1,18 @@
+$ time python database.py
+opening file: rental.csv
+opening file: customer.csv
+opening file: product.csv
+
+real    0m13.898s
+user    0m0.015s
+sys     0m0.000s
+
+$ time python database_not_multi.py
+
+real    0m20.872s
+user    0m0.000s
+sys     0m0.015s
+
+
+Multithreaded took 13.898s whereas non-multithreaded took 20.872s. 
+It took 50% less time to import the data with multi-threading than it did with non-multithreading
