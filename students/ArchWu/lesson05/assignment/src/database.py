@@ -62,13 +62,14 @@ def show_available_products():
 
 
 def list_unique_products():
-    products = db["product"]
+    products = db["product"].distinct('product_id')
     result = {}
     for product in products:
-        product_id = product["product_id"]
-        description = product["description"]
-        product_type = product["product_type"]
-        quantity_available = product["quantity_available"]
+        product_info = db["product"].find_one({"product_id":{'$eq':product}})
+        product_id = product
+        description = product_info["description"]
+        product_type = product_info["product_type"]
+        quantity_available = product_info["quantity_available"]
         result.update({product_id:{"description":description, "product_type":product_type,
                                     "quantity_available":quantity_available}})
     return result
