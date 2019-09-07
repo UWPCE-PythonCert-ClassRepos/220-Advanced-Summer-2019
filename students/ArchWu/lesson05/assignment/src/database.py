@@ -103,4 +103,6 @@ if __name__ == "__main__":
     ]
     print(import_data('data', files))
     print(show_available_products())
+    print(show_rentals('prd001'))
+    print(list_unique_products())
     print('Done!')
