@@ -1,0 +1,30 @@
+Found initial data files did not match Lesson05 format causing error.
+
+Ran with Lesson05 data
+
+83085 function calls (80801 primitive calls) in 0.822 seconds
+
+Then expanded Lesson05 data for 10 records to 1000 and reran
+
+1705165 function calls (1655287 primitive calls) in 2.789 seconds. Therefore even thought 100X more data only took 3X to process.
+
+Decided to cut down main to just data import since that im where multithreading is to be applied.
+
+1508751 function calls (1483304 primitive calls) in 2.485 seconds
+
+Undated output format:
+
+ python -m cProfile linear.py
+opening files: customers.csv
+opening files: product.csv
+[(1000, 0, 1000, 0.9554450511932373), (999, 0, 999, 0.9025847911834717)]
+         1054931 function calls (1037474 primitive calls) in 2.286 seconds
+
+
+python -m cProfile parallel.py
+opening file: customers.csv
+opening file: product.csv
+[(1000, 0, 1000, 1.149228811264038), (999, 0, 999, 1.1895442008972168)]
+         59307 function calls (57844 primitive calls) in 1.414 seconds
+
+Overall threading helped cut time down while drastically cutting down function calls. Time per individual import only slightly increased.
