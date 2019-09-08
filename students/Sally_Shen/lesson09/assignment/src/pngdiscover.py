@@ -3,28 +3,25 @@ from pprint import pprint
 data = {}
 
 
-def find_files(folder, file_extension):
-    for item in os.listdir(folder):
-        print(item)
-        item = "/".join(folder, item)
-        if os.path.isdir(item):
-            print(item)
-            data[item] = []
+def find_files(folder, file_extension, dirs=[], result=[]):
+    dirs.append(folder)
+    print(f"Checking folder: {folder}")
+    current_dir = "/".join(dirs)
+    print(f"current_dir: {current_dir}")
+    for item in os.listdir(current_dir):
+        print(f"Checking directory: {item}")
+        if os.path.isdir(current_dir + "/" + item):
+            find_files(item, file_extension, dirs, result)
 
-            find_files(item, file_extension)
-
-            if len(data[item]) == 0:
-                del data[item]
         else:
             if item[-1*len(file_extension):] == file_extension:
-                print(item)
-                basename = os.path.basename(item)
-                dirname = os.path.dirname(item).strip("/")
-                data[dirname].append(basename)
+                png_path = "/".join(dirs) + "/" + item
+                print(f"Found png: {png_path}")
+                result.append(png_path)
+    dirs.pop()
 
-                print(dirname)
+    return result
 
 
-find_files(".", ".png")
-
-pprint(data)
+result = find_files("../data", ".png")
+pprint(result)
