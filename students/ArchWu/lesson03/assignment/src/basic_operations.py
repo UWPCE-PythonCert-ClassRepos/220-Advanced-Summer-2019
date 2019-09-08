@@ -56,7 +56,10 @@ def add_customer(customer_id, name, lastname, address, phone_number, email, stat
 
 def delete_customer(customer_id):
     """Delete a customer of given customer_id"""
-    Customer.delete().where(Customer.customer_id == customer_id).execute()
+    if search_customer(customer_id) != {}:
+        Customer.delete().where(Customer.customer_id == customer_id).execute()
+    else:
+        logging.warning("No customer is deleted since non-exist")
     # debug_ = search_customer(customer_id)
     # logging.debug(debug_)
     return True
@@ -79,11 +82,14 @@ def search_customer(customer_id):
 
 def update_customer_credit(customer_id, credit_limit):
     """Update the credit_limit of customer of given customer_id"""
-    try:
-        customer = Customer.update(credit_limit=credit_limit).where(Customer.customer_id == customer_id).execute()
-        return customer
-    except ValueError as e:
-        logging.error("Error updating customer %s due to %s", customer_id, e)
+    if search_customer(customer_id) != {}:
+        try:
+            customer = Customer.update(credit_limit=credit_limit).where(Customer.customer_id == customer_id).execute()
+            return customer
+        except ValueError as e:
+            logging.error("Error updating customer %s due to %s", customer_id, e)
+    else:
+        logging.error("No customer found!")
 
 def list_active_customers():
     """Returns the number of customer that has an active status"""
