@@ -1,39 +1,107 @@
 """Program to generate random rows of data for lesson06 assignment"""
-import uuid
+import datetime
+import hashlib
 import csv
-import logging
-from datetime import date, timedelta
-from random import randint, choice, random
-# pylint: disable=C0103
+import argparse
+from faker import Faker
 
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+fake = Faker()
 
-def rdate():
-    """Generates random date between 2010-2018"""
-    start_date = date(2010, 1, 1)
-    years = 9
-    end_date = timedelta(years*365)
-    random_date = (start_date + end_date * random()).strftime('%m/%d/%Y')
-    return random_date
+def generate_rows(n):
+    for i in range(n):
+        yield [
+            # seq
+            i,
+            # guid-like id
+            hashlib.sha224(bytes(i)).hexdigest(),
+            # seq
+            i,
+            # seq
+            i,
+            # cc_number
+            fake.credit_card_number(card_type=None),
+            # expire_date
+            fake.date_between('-6y', '+0y').strftime("%m/%d/%Y"),
+            # billing_address
+            fake.address(),
+        ]
 
-def write_file():
-    """Generates a file called "exercise.csv" that contains
-    random dates, numbers and letters"""
-    with open('exercise.csv', 'w') as filename:
-        logger.info('starting to write file')
-        for i in range(1000000): # adjust for a million
-            l = []
-            l.append(i)
-            l.append(uuid.uuid4())
-            l.append(i)
-            l.append(i)
-            l.append(randint(10000000000, 10000000000000000))
-            l.append(rdate())
-            l.append(choice(['ao', None]))
-            writer = csv.writer(filename, lineterminator='\n')
-            writer.writerow(l)
-        logger.info('finished writing file')
+def generate_data_file(filepath, nrows):
+    with open(filepath, "w") as file:
+        writer = csv.writer(file, quoting=csv.QUOTE_MINIMAL)
+        for row in generate_rows(nrows):
+            writer.writerow(row)
 
-if __name__ == '__main__':
-    write_file()
+
+
+def analyze(filename, search_term):
+    start = datetime.datetime.now()
+    with open(filename) as csvfile:
+        reader = csv.reader(csvfile, delimiter=',', quotechar='"')
+        new_ones = []
+        for row in reader:
+            lrow = list(row)
+            if lrow[5] > '00/00/2012':
+                new_ones.append((lrow[5], lrow[0]))
+
+        year_count = {
+            "2013": 0,
+            "2014": 0,
+            "2015": 0,
+            "2016": 0,
+            "2017": 0,
+            "2018": 0
+        }
+
+        for new in new_ones:
+            if new[0][6:] == '2013':
+                year_count["2013"] += 1
+            if new[0][6:] == '2014':
+                year_count["2014"] += 1
+            if new[0][6:] == '2015':
+                year_count["2015"] += 1
+            if new[0][6:] == '2016':
+                year_count["2016"] += 1
+            if new[0][6:] == '2017':
+                year_count["2017"] += 1
+            if new[0][6:] == '2018':
+                year_count["2017"] += 1
+
+        print(year_count)
+
+    with open(filename) as csvfile:
+        reader = csv.reader(csvfile, delimiter=',', quotechar='"')
+
+        found = 0
+
+        for line in reader:
+            lrow = list(line)
+            if search_term in line[6]:
+                found += 1
+
+        print(f"'{search_term}' was found {found} times")
+        end = datetime.datetime.now()
+
+    return (start, end, year_count, found)
+
+
+def setup():
+    try:
+        parser = argparse.ArgumentParser()
+        parser.add_argument("--rows", type=int, default=10, help="Number of rows to generate in demo file")
+        parser.add_argument("--filename", type=str, default="data/demo.csv", help="Filename of demo data")
+        parser.add_argument("--search_term", type=str, default="Street", help="Search term to look for in address info")
+        args = parser.parse_args()
+        generate_data_file(args.filename, args.rows)
+        return args
+    except Exception as e:
+        print(e)
+        exit(-1)
+
+if __name__ == "__main__":
+    # SETUP
+    args = setup()
+
+    # MAIN
+    analyze(args.filename, args.search_term)
+    main()
