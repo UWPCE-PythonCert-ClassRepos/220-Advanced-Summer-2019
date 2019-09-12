@@ -1,0 +1,32 @@
+(base) arch@arch-MS-7821:~/python220/220-Advanced-Summer-2019/students/ArchWu/lesson07/assignment$ time python src/parallel.py 
+opening file product.csv
+creating collection product
+opening file customer.csv
+creating collection customer
+opening file rental.csv
+creating collection rental
+(6.02335524559021, 0, 9999, 9999)
+(6.02335524559021, 0, 9999, 9999)
+(6.044360399246216, 0, 9999, 9999)
+
+real	0m6.582s
+user	0m5.949s
+sys	0m0.734s
+
+
+(base) arch@arch-MS-7821:~/python220/220-Advanced-Summer-2019/students/ArchWu/lesson07/assignment$ time python src/serial.py 
+Opening file customer.csv
+Creating collection customer
+Opening file product.csv
+Creating collection product
+Opening file rental.csv
+Creating collection rental
+(8.189131259918213, 0, [9999, 9999, 9999], 9999)
+(8.189131259918213, 0, [9999, 9999, 9999], 9999)
+Done!
+
+real	0m8.580s
+user	0m5.219s
+sys	0m0.513s
+
+It takes 2 more seconds for serial to complete importing than parallel to complete.

@@ -8,6 +8,7 @@ As a HP Norton salesperson I want to see a list of the names and contact details
 
 from pymongo import MongoClient
 from pprint import pprint
+import time
 
 import csv
 
@@ -18,11 +19,12 @@ db = client.nortonDB
 
 
 def import_data(data_dir, files):
+    start = time.time()
     record_count = [0,0,0]
-    error_count = [0,0,0]
     for index, filepath in enumerate(files):
         print("Opening file %s" %filepath)
         collection_name = filepath.split('.')[0]
+        prev_count = db[collection_name].count_documents({})
         print("Creating collection %s" %collection_name)
         with open('/'.join([data_dir, filepath]), encoding='utf-8-sig') as file:
             csv_reader = csv.reader(file, delimiter=',')
@@ -42,9 +44,15 @@ def import_data(data_dir, files):
                         table.insert_one(data)
                     except Exception as e:
                         print(e)
-                        error_count[index] += 1
                     #pprint(data)
-    return tuple(record_count),tuple(error_count)
+    end = time.time()
+    global elapsed
+    if end - start > elapsed:
+        elapsed = end - start
+    after_count = db[collection_name].count_documents({})
+    result = (elapsed, prev_count, record_count, after_count)
+    print(result)
+    return result
 
 def show_available_products():
     column = db["product"]
@@ -96,7 +104,7 @@ if __name__ == "__main__":
     db.drop_collection("product")
     db.drop_collection("rental")
     db.drop_collection("customer")
-
+    elapsed = 0
     files = [
         "customer.csv",
         "product.csv",
