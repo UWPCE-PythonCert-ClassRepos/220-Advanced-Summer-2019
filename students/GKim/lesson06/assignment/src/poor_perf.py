@@ -2,7 +2,6 @@
 poorly performing, poorly written module
 
 """
-
 import datetime
 import csv
 

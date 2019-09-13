@@ -1,164 +1,129 @@
 """
     Create database example with Peewee ORM, sqlite and Python
 """
+import peewee
 import logging
-import datetime
-from peewee import OperationalError, DoesNotExist
-from customer_model import Customer, DATABASE
-# noqa # pylint: disable=unused-import,too-few-public-methods,too-many-arguments, broad-except
 
-LOG_FORMAT = "%(asctime)s %(filename)s:%(lineno)-3d %(levelname)s \
-                %(message)s"
+logger = logging.getLogger("basic_operations")
+logger.setLevel(logging.DEBUG)
+fh = logging.FileHandler("db.log")
+fh.setLevel(logging.DEBUG)
+logger.addHandler(fh)
 
-FORMATTER = logging.Formatter(LOG_FORMAT)
-
-LOG_FILE = datetime.datetime.now().strftime("%Y-%m-%d-")+"db.log"
-FILE_HANDLER = logging.FileHandler(LOG_FILE)
-FILE_HANDLER.setFormatter(FORMATTER)
-FILE_HANDLER.setLevel(logging.INFO)
-
-CONSOLE_HANDLER = logging.StreamHandler()
-CONSOLE_HANDLER.setLevel(logging.DEBUG)
-CONSOLE_HANDLER.setFormatter(FORMATTER)
-LOGGER = logging.getLogger()
-LOGGER.addHandler(FILE_HANDLER)
-
-LOGGER.info('One off program to build the classes from the model in \
-            the database')
-
-DATABASE.create_tables([
-    Customer
-    ])
-
-DATABASE.close()
-
-CUSTOMERS = [
-    (1, 'Allen', 'Iverson', 'Philadelphia', '555-123-4567',
-     'ai@gmail.com', True, 2000),
-    (2, 'Shaw', 'Kemp', 'Seattle', '123-512-3568',
-     'rainman@gmail.com', True, 1000),
-    (3, 'Vince', 'Carter', 'Torento', '236-123-4569',
-     'highligher@gmail.com', True, 5000),
-    (4, 'Rose', 'Derrick', 'Chicago', '854-123-4570',
-     'gDog@gmail.com', False, 2000),
-    (5, 'Steve', 'Nash', 'Phoenix', '654-568-4961',
-     'thehair@gmail.com', False, 100),
-    ]
+database = peewee.SqliteDatabase("customers.db")
+database.connect()
+database.execute_sql('PRAGMA foreign_key = ON;')
+database.execute_sql('drop table if exists customer;')
 
 
-def add_toy_customers():
-    '''
-    This function will add make-up customers to the sqlite3 database for
-    testing.
-    '''
-    delete_all_customers()
-
-    for customer in CUSTOMERS:
-        add_customer(*customer)
+class BaseModel(peewee.Model):
+    class Meta:
+        database = database
 
 
-def print_customers():
-    '''
-    This function will print all customers in the sqlite3 database
-    '''
-    customers = return_all_customers()
-    for customer in customers.dicts():
-        print(customer)
+class Customer(BaseModel):
+    """
+    This class defines a Customer in the databaase
+        Customer ID.
+        Name.
+        Lastname.
+        Home address.
+        Phone number.
+        Email address.
+        Status (active or inactive customer).
+        Credit limit.
+    """
+    customer_id = peewee.CharField(primary_key=True, max_length=30)
+    name = peewee.CharField(max_length=50)
+    last_name = peewee.CharField(max_length=50, null=True)
+    address = peewee.CharField(max_length=75)
+    phone_number = peewee.CharField(max_length=15)
+    email = peewee.CharField(max_length=320) # based on max email address length search
+    status = peewee.CharField(max_length=10) # "Inactive" or "Active"
+    credit_limit = peewee.FloatField()
 
 
-def add_customer(customer_id, name, lastname, home_address, phone_number,
-                 email_address, status, credit_limit):
-    '''
-    This function will add a new customer to the sqlite3 database.
-    '''
+def create_tables():
+    with database.transaction():
+        logger.debug("Creating table Customer")
+        database.create_tables([Customer])
+
+
+def drop_tables():
+    with database.transaction():
+        logger.debug("Dropping table Customer")
+        database.drop_tables([Customer])
+
+
+def add_customer(customer_id, name, last_name, address, phone_number, email, status, credit_limit):
     try:
-        # id is automatically created and incremented by 1
-        with DATABASE.transaction():
-            new_customer = Customer.create(
-                id=customer_id, name=name, last_name=lastname,
-                home_address=home_address, phone_number=phone_number,
-                email=email_address, status=status, credit_limit=credit_limit)
-            new_customer.save()
-            LOGGER.info(f'Database add successful for customerId {name}')
+        with database.transaction():
+            customer = Customer.create(
+                customer_id=customer_id,
+                name=name,
+                last_name=last_name,
+                address=address,
+                phone_number=phone_number,
+                email=email,
+                status=status,
+                credit_limit=credit_limit
+            )
+            logger.debug(f"Customer saved {customer_id}")
 
-    except (OperationalError,
-            DoesNotExist) as exc:
-        LOGGER.info(f'Error creating = {name}')
-        LOGGER.info(exc)
-
-
-def return_all_customers():
-    '''
-    This function will return all customers object with name,
-    lastname, email address and phone number of a customer or an empty
-    dictionary object if no customer was found.
-    '''
-
-    LOGGER.info(f'REturn all customers')
-    customers = Customer.select().where(Customer.id > 0)
-    return customers
+    except Exception as e:
+        logger.warning(f"error creating {customer_id}")
+        logger.warning(e)
 
 
 def search_customer(customer_id):
-    '''
-    This function will return a dictionary object with name,
-    lastname, email address and phone number of a customer or an empty
-    dictionary object if no customer was found.
-    '''
-
-    LOGGER.info(f'Search customer by Id: {customer_id}')
-    acustomer = Customer.select().where(Customer.id == customer_id)
-    if acustomer.exists():
-        acustomer = acustomer.dicts().get()
-    else:
-        acustomer = None
-    return acustomer
-
-
-def delete_all_customers():
-    '''
-    This function will delete all customers from the sqlite3 database.
-    '''
-    d_cust = Customer.delete()
-    d_cust.execute(DATABASE)
-    LOGGER.info(f'We will delete all customers...')
+    try:
+        customer = Customer.get(Customer.customer_id == customer_id)
+        logger.debug(f"Found customer {customer_id}")
+        return {
+            "name": customer.name,
+            "last_name": customer.last_name,
+            "phone_number": customer.phone_number,
+            "email": customer.email,
+        }
+    except Exception as e:
+        logger.warning(f"error reading customer {customer_id}")
+        logger.warning(e)
+        return {}
 
 
 def delete_customer(customer_id):
-    '''
-    This function will delete a customer from the sqlite3 database.
-    '''
-    acustomer = Customer.get(Customer.id == customer_id)
-    LOGGER.info(f'We will delete this customer {customer_id}...')
-
-    acustomer.delete_instance()
+    try:
+        customer = Customer.get(Customer.customer_id == customer_id)
+        with database.transaction():
+            customer.delete_instance()
+            logger.debug(f"Deleted customer id {customer_id}")
+            return True
+    except Exception as e:
+        logger.warning(e)
+        return False
 
 
 def update_customer_credit(customer_id, credit_limit):
-    '''
-    This function will search an existing customer by customer_id and update
-    their credit limit or raise a ValueError exception if
-    the customer does not exist.
-    '''
-
-    LOGGER.info(f'We will update this customer {customer_id}...')
-
     try:
-        acustomer = Customer.get(Customer.id == customer_id)
-        acustomer.credit_limit = credit_limit
-        acustomer.save()
-    except DoesNotExist:
-        raise ValueError(f"Customer Id {customer_id} not found")
+        with database.transaction():
+            customer = Customer.get(Customer.customer_id == customer_id)
+            customer.credit_limit = credit_limit
+            customer.save()
+    except Exception as e:
+        raise ValueError("NoCustomer {}".format(customer_id))
 
 
 def list_active_customers():
-    '''
-    This function will return an integer with the number of customers
-    whose status is currently active.
-    '''
-    count = Customer.select().where(Customer.status == 'Active').count()
+    try:
+        active_customers = Customer.select().where(Customer.status == 'active')
+        for customer in active_customers:
+            print(f"{customer.name} {customer.last_name} status is {customer.status}")
+        return len(active_customers)
+    except Exception as e:
+        print(e)
+        return 0
 
-    LOGGER.info('integer with the number of customers whose status is \
-        currently active')
 
-    return count
+if __name__ == '__main__':
+    add_customer(1, "George", "Kim", "903 Cherry Hill., Kent, WA, 98030", "206-931-6127",
+                 "gjkim44@gmail.com", "active", 2000)
