@@ -7,6 +7,13 @@ import csv
 
 
 def analyze(filename):
+    '''
+    Analyse file data.
+    Check if there are instance in the CSV file where that data is within 20013 and 2018
+    And also check if there is any instance of "ao" in the sentence section of the file
+    :param filename: filename to analyse
+    :return: analyse of the file with performance metric.
+    '''
     start = datetime.datetime.now()
     with open(filename) as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar='"')
