@@ -1,3 +1,4 @@
+faker
 ansimarkup==1.4.0
 astroid==2.0.4
 atomicwrites==1.2.1
