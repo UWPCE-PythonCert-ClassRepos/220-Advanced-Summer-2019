@@ -1,0 +1,7 @@
+
+FurnitureDatabase.__init__:0.028013
+FurnitureDatabase.import_data:23.516144
+FurnitureDatabase.import_data:20.852366
+FurnitureDatabase.import_data:20.720658
+FurnitureDatabase.show_available_products:0.00155
+FurnitureDatabase.show_rentals:0.002637
