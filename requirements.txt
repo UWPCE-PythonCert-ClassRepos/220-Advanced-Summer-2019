@@ -4,7 +4,7 @@ astroid==2.0.4
 atomicwrites==1.2.1
 attrs==18.2.0
 better-exceptions-fork==0.2.1.post6
-certifi==2018.10.15
+certifi==2022.12.7
 colorama==0.4.1
 coverage==4.5.2
 isort==4.3.4
